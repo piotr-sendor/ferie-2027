@@ -338,6 +338,25 @@ STATS = {
 # Thailand Turkish has the same title as the Philippines one; stats keyed by (slug,title) override:
 STATS_BY_SLUG = {("tajlandia","Turkish Airlines z Krakowa, wylot w sobotę"): (("13 h 40 min do Bangkoku","11 h 50 min","1 h 50 min","+ lot krajowy na Phuket (1 h 30)"),None)}
 
+
+ROUTE = {
+ "Air Arabia z Krakowa, przez Szardżę": "Kraków → Szardża (ZEA) → Kolombo",
+ "Air Arabia z Krakowa, wylot w sobotę": "Kraków → Szardża (ZEA) → Kolombo",
+ "flydubai z Warszawy, przez Dubaj": "Warszawa → Dubaj (ZEA) → Kolombo",
+ "KLM + IndiGo z Krakowa, przez Amsterdam i Indie": "Kraków → Amsterdam → Mumbaj → Kolombo",
+ "Lufthansa + Malaysia Airlines przez Frankfurt i Singapur, potem lot na Borneo": "Kraków → Frankfurt → Singapur → Kuala Lumpur → Kota Kinabalu",
+ "Austrian + Malaysia Airlines przez Wiedeń i Bangkok": "Kraków → Wiedeń → Bangkok → Kuala Lumpur",
+ "Turkish Airlines z Krakowa, przez Stambuł": "Kraków → Stambuł → Tajpej",
+ "Lufthansa + China Airlines z Krakowa do Kaohsiung (południe)": "Kraków → Frankfurt → Hongkong → Kaohsiung",
+ "Lufthansa + Malaysia Airlines do Kuala Lumpur, potem AirAsia do Siem Reap": "Kraków → Frankfurt → Singapur → Kuala Lumpur → Siem Reap",
+ "Turkish Airlines z Krakowa do Kantonu, potem China Southern do Sanyi": "Kraków → Stambuł → Kanton → Sanya",
+ "KLM + Vietnam Airlines z Krakowa, przez Amsterdam i Singapur": "Kraków → Amsterdam → Singapur → Sajgon",
+ "Turkish do Bangkoku + Bangkok Airways do Luang Prabang": "Kraków → Stambuł → Bangkok → Luang Prabang",
+}
+ROUTE_BY_SLUG = {("filipiny","Turkish Airlines z Krakowa, wylot w sobotę"): "Kraków → Stambuł → Manila → Palawan / Boracay",
+                 ("tajlandia","Turkish Airlines z Krakowa, wylot w sobotę"): "Kraków → Stambuł → Bangkok → Phuket"}
+def route_of(slug, o): return ROUTE_BY_SLUG.get((slug, o["title"])) or ROUTE.get(o["title"], "")
+
 def stats_html(st):
     if not st: return ""
     total, air, tr, extra = st
@@ -408,6 +427,7 @@ def tile(d):
     cls = "tile notrec" if d.get("notrec") else "tile"
     return f'''<a class="{cls}" href="{d["slug"]}.html"><div class="tflag">{d["flag"]}</div>
 <h2>{d["name"]}</h2><p class="place">{d["place"]}</p>
+<p class="route">✈ {route_of(d["slug"], d["options"][0])}</p>
 <div class="tprice"><b>{d["price"]}</b><span>za osobę, w obie strony · {d["price_note"]}</span></div>
 <p>{d["summary"]}</p>
 <div class="facts"><div>🕐 Różnica czasu: <b>{TZ[d["slug"]]}</b></div><div>🌡 {d["weather"]}</div><div>🌊 Morze: {d["sea"]}</div><div>🛂 {d["entry"]}</div></div>
@@ -432,7 +452,7 @@ def tl(items):
 def option(o, i, slug=''):
     badge = f'<span class="badge">{o["tag"]}</span> ' if o.get("tag") else f'<span class="badge num">Opcja {i}</span> '
     g = GULF if o["gulf"] else NOGULF
-    parts = [f'<div class="card {"best" if i==1 else ""}">{badge}{g}<h3 class="otitle">{o["title"]}</h3>',
+    parts = [f'<div class="card {"best" if i==1 else ""}">{badge}{g}<h3 class="otitle">{o["title"]}</h3><p class="route">✈ {route_of(slug, o)}</p>',
              f'<div class="price"><div><b>{o["pp"]}</b><span>za osobę, w obie strony{" · " + o["p7"] if str(o.get("p7","")).startswith("+") else ""}</span></div></div>',
              f'<p class="why">{o["why"]}</p>']
     if o.get("out"):
