@@ -284,6 +284,7 @@ DEST = [
   ]),
 ]
 
+TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h'}
 INDO_PENDING = dict(slug="indonezja", flag="🇮🇩", name="Indonezja (bez Bali)", place="np. Lombok, Flores (Komodo), Jawa", pending=True,
   summary="Research w toku – Bali odpada (tłok). Pojawi się tutaj pod tym samym linkiem.")
 
@@ -391,10 +392,9 @@ def page(title, body, back=False):
 <meta http-equiv="Cache-Control" content="no-cache"><title>{html.escape(title)}</title>
 <link rel="stylesheet" href="style.css?v=d"></head><body>
 <header><div class="wrap">{nav}<h1>{title}</h1>
-<p>Dwie rodziny: 4 dorosłych + 3 dzieci (8, 8 i 6 lat) · ferie małopolskie 15–28.02.2027</p>
-<div class="chips"><span class="chip">Wylot: pt 19.02 po 14:00</span><span class="chip">Powrót: ok. nd 7.03</span><span class="chip">Ceny z {UPDATED}</span></div>
+<div class="chips"><span class="chip">19.02 – 7.03.2027</span><span class="chip">ceny z {UPDATED}, za osobę</span></div>
 </div></header><div class="wrap">{body}
-<footer><p>Ceny: Google Flights, {UPDATED}, dla 7 pasażerów, w obie strony, najtańsza taryfa (bagaż podręczny); dziecko płaci tyle co dorosły. Ceny zmieniają się codziennie – to nie jest oferta.</p>
+<footer><p>Google Flights, {UPDATED}: w obie strony, najtańsza taryfa (bagaż podręczny), dziecko = dorosły.</p>
 <p><a href="info.html">Zatoka Perska · rezygnacja i ubezpieczenie · bagaż</a> · Ostatnia aktualizacja: {UPDATED}</p></footer>
 </div></body></html>'''
 
@@ -410,7 +410,7 @@ def tile(d):
 <h2>{d["name"]}</h2><p class="place">{d["place"]}</p>
 <div class="tprice"><b>{d["price"]}</b><span>za osobę, w obie strony · {d["price_note"]}</span></div>
 <p>{d["summary"]}</p>
-<div class="facts"><div>🌡 {d["weather"]}</div><div>🌊 Morze: {d["sea"]}</div><div>🛂 {d["entry"]}</div></div>
+<div class="facts"><div>🕐 Różnica czasu: <b>{TZ[d["slug"]]}</b></div><div>🌡 {d["weather"]}</div><div>🌊 Morze: {d["sea"]}</div><div>🛂 {d["entry"]}</div></div>
 <div class="flags">{chip_html(d["chips"])}</div>
 <span class="btn">Zobacz loty i szczegóły →</span></a>'''
 
@@ -451,19 +451,17 @@ def option(o, i, slug=''):
 def detail(d):
     body = [f'<div class="card intro"><div class="flags">{chip_html(d["chips"])}</div>',
             f'<p class="place big">{d["place"]}</p><p>{d["summary"]}</p>',
-            f'<div class="facts row3"><div><b>Pogoda 20.02–7.03</b><br>{d["weather"]}</div><div><b>Morze</b><br>{d["sea"]}</div><div><b>Wjazd dla Polaków</b><br>{d["entry"]}</div></div></div>',
-            '<h2>Loty – od najlepszego</h2><p class="note">Godziny lokalne, obok na szaro czas polski („biologiczny”).</p>']
+            f'<div class="facts row3"><div><b>Różnica czasu</b><br>{TZ[d["slug"]]} względem Polski</div><div><b>Pogoda 20.02–7.03</b><br>{d["weather"]}</div><div><b>Morze</b><br>{d["sea"]}</div><div><b>Wjazd dla Polaków</b><br>{d["entry"]}</div></div></div>',
+            '<h2>Loty – od najlepszego</h2><p class="note">Godziny lokalne; na szaro czas polski.</p>']
     for i, o in enumerate(d["options"], 1): body.append(option(o, i, d['slug']))
     if d.get("extra"): body.append(f'<div class="callout info">{d["extra"]}</div>')
-    body.append('<div class="callout">Co z bezpieczeństwem, rezygnacją, ubezpieczeniem i bagażem: <a href="info.html">przeczytaj tutaj →</a></div>')
+    body.append('<div class="callout"><a href="info.html">Zatoka, ubezpieczenie, bagaż →</a></div>')
     return page(f'{d["flag"]} {d["name"]}', ''.join(body), back=True)
 
 def index(dests):
     tiles = ''.join(tile(d) for d in dests)
-    body = f'''<h2 class="lead">Dokąd na ferie? Wybierz kierunek</h2>
-<p class="note">Kafelki od najciekawszych. Na każdym: cena za osobę, pogoda, wjazd i na co uważać. Szczegóły lotów (godziny, przesiadki, noclegi) po kliknięciu.</p>
-<div class="tiles">{tiles}</div>
-<div class="callout warn"><b>Zatoka Perska:</b> tanie loty do Azji idą zwykle przez Dubaj, Szardżę lub Dohę. W 2026 region jest niespokojny – dlatego zaznaczamy „przez Zatokę” / „bez Zatoki”. <a href="info.html">Więcej o bezpieczeństwie i ubezpieczeniu →</a></div>
+    body = f'''<div class="tiles">{tiles}</div>
+<div class="callout warn"><a href="info.html">Zatoka Perska, rezygnacja i ubezpieczenie, bagaż →</a></div>
 <h2>Kierunki, których nie bierzemy pod uwagę</h2>
 <div class="card rejected">
 <h3>Odrzucone przez nas</h3>
