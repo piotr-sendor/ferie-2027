@@ -453,6 +453,62 @@ def stats_html(st):
     ex = f'<div class="stx">{extra}</div>' if extra else ''
     return f'<div class="stats">{cells}</div>{ex}'
 
+
+# ---------- Malaysia update (deep-dive 24.10 evening) ----------
+_m = _d("malezja-borneo")
+_lh = _m["options"][0]
+_lh.update(pp="ok. 5 000 zł", tag="Najlepsza opcja – piątek",
+  why="Lufthansa do Kuala Lumpur 4 311 zł + AirAsia po Borneo ok. 690 zł (KL → Sandakan 281, Sandakan → Kota Kinabalu 98, Kota Kinabalu → KL 311).")
+_lh["out"][-3:] = [night("🛏 1–2 noce w Kuala Lumpur"),
+  dep("","","AirAsia KL → Sandakan (Sepilok, orangutany) – 3 noce"),
+  dep("","","AirAsia Sandakan → Kota Kinabalu – 7–8 nocy (wyspy, plaża, park Kinabalu)")]
+_lh["back"][0] = dep("po południu","","nd 7.03 · AirAsia Kota Kinabalu → Kuala Lumpur (2 h 40 min)")
+_tk = dict(title="Turkish Airlines przez Stambuł, sobota → sobota", tag="Powrót w niedzielę rano", gulf=False, pp="do ok. 5 410 zł",
+  why="Suma dwóch biletów w jedną stronę (2 699 + 2 019 zł) + AirAsia po Borneo ok. 690 zł. Bilet w obie strony powinien wyjść taniej (Google nie pokazał go przez przeciążenie). EcoFly bez walizki (z walizką ok. +290 zł).",
+  out_title="Tam: sob 20.02 → nd 21.02", out=[
+   dep("19:25","19:25","sob 20.02 · Kraków, TK 1274"),
+   stop("23:50","21:50","Stambuł (Turcja)","Przesiadka <b>2 h</b>"),
+   stop("01:50","23:50","wylot, TK 60 (nocny)"),
+   arr("17:20","10:20","nd 21.02 · Kuala Lumpur · Polska + 7 h"),
+   night("🛏 1–2 noce w KL, potem AirAsia na Borneo (jak w opcji 1)")],
+  back_title="Powrót: sob 6.03 → nd 7.03", back=[
+   dep("23:45","16:45","sob 6.03 · Kuala Lumpur, TK 61 (nocny)"),
+   stop("ok. 06:10","ok. 04:10","nd 7.03 · Stambuł","Przesiadka <b>1 h 50 min</b>"),
+   stop("08:00","06:00","wylot, TK 1271"),
+   arr("08:20","08:20","nd 7.03 · Kraków")],
+  back_bio="W domu w niedzielę rano – dzieci nie tracą szkoły.")
+_fi = dict(title="Finnair do Singapuru w niedzielę + AirAsia na Borneo, powrót Lufthansą", gulf=False, pp="ok. 4 510 zł",
+  why="Najtańszy długi lot (Finnair 1 846 zł) + AirAsia Singapur ↔ Kota Kinabalu (364 + 349 zł) + Lufthansa z Singapuru 1 948 zł. Cztery osobne bilety, wylot dopiero w niedzielę.",
+  out_title="Tam: nd 21.02 → pn 22.02", out=[
+   dep("18:55","18:55","nd 21.02 · Kraków, AY 1166"), stop("","","Helsinki (Finlandia)","Przesiadka"),
+   arr("18:40","11:40","pn 22.02 · Singapur"), night("🛏 Nocleg w Singapurze, potem AirAsia do Kota Kinabalu")],
+  back_title="Powrót: nd 7.03 → pn 8.03", back=[
+   dep("","","nd 7.03 · AirAsia Kota Kinabalu → Singapur"),
+   dep("23:55","16:55","nd 7.03 · Singapur, LH 781 (nocny)"), stop("06:15","06:15","pn 8.03 · Frankfurt","Przesiadka <b>1 h 45 min</b>"),
+   arr("09:35","09:35","pn 8.03 · Kraków")])
+_au = _m["options"][1]
+_au.update(title="Austrian + Malaysia Airlines przez Wiedeń i Bangkok, w niedzielę", pp="ok. 5 030 zł",
+  why="Tam 2 318 zł (nd 21.02, 14:45 z Krakowa – w sobotę nie lata), powrót Turkish w sobotę nocą 2 019 zł, plus AirAsia po Borneo. Albo powrót nd 7.03 KL 8:15 → Warszawa 18:15 (1 148 zł) – razem ok. 4 290 zł + pociąg.",
+  out_title="Tam: nd 21.02 → pn 22.02")
+for it in _au["out"]:
+    pass
+_au["out"] = [dep("14:45","14:45","nd 21.02 · Kraków, OS 680"), stop("15:45","15:45","Wiedeń","Przesiadka <b>4 h 30 min</b>"),
+  stop("12:20","06:20","pn 22.02 · Bangkok (Tajlandia)","Przesiadka <b>1 h 55 min</b>"), arr("17:35","10:35","pn 22.02 · Kuala Lumpur")]
+_au["back_title"] = "Powrót: jak Turkish (Kraków nd 7.03 8:20)"
+_m["options"] = [_lh, _tk, _fi, _au]
+_m.update(price="ok. 5 000 zł", price_note="z lotami po Borneo",
+  place="Borneo (Sabah): orangutany w Sepilok, wyspy przy Kota Kinabalu",
+  summary="KL 1–2 noce → Sandakan/Sepilok 3 noce (orangutany) → Kota Kinabalu 7–8 nocy (wyspy parku Tunku Abdul Rahman, plaża, park Kinabalu). Pora sucha – najbliżej klimatu Perhentian.",
+  chips=[("ok","Bez Zatoki"),("ok","Pora sucha na Borneo"),("ok","Piątek albo sobota z Krakowa"),("warn","Loty krajowe – osobne bilety")],
+  extra="Wschodnie wybrzeże (Perhentian, Redang, Tioman, Kapas) w tym terminie odpada: Perhentian Kecil otwiera się ok. 15–20 marca, Redang od ok. 1 marca, łodzie i morze jeszcze niepewne. Kraków–Bangkok bezpośrednio nie ma (bezpośrednio tylko LOT z Warszawy). Bilet prosto do Kota Kinabalu albo Penang – ok. 2× drożej niż KL + AirAsia. Alternatywa bez Borneo: Cameron Highlands + Penang (plaże słabsze).")
+STATS["Turkish Airlines przez Stambuł, sobota → sobota"] = (("14 h 55 min do KL","12 h 55 min","2 h","+ noc w KL i loty po Borneo"),("15 h 35 min","13 h 45 min","1 h 50 min","+ wcześniej lot z Kota Kinabalu do KL"))
+STATS["Finnair do Singapuru w niedzielę + AirAsia na Borneo, powrót Lufthansą"] = (("16 h 45 min do Singapuru","","1 przesiadka","+ noc w Singapurze i lot na Borneo"),("16 h 40 min z Singapuru","14 h 55 min","1 h 45 min",""))
+STATS["Austrian + Malaysia Airlines przez Wiedeń i Bangkok, w niedzielę"] = STATS.pop("Austrian + Malaysia Airlines przez Wiedeń i Bangkok")
+ROUTE["Lufthansa + Malaysia Airlines przez Frankfurt i Singapur, potem lot na Borneo"] = "Kraków → Frankfurt → Singapur → Kuala Lumpur → Sandakan → Kota Kinabalu"
+ROUTE["Turkish Airlines przez Stambuł, sobota → sobota"] = "Kraków → Stambuł → Kuala Lumpur → Borneo"
+ROUTE["Finnair do Singapuru w niedzielę + AirAsia na Borneo, powrót Lufthansą"] = "Kraków → Helsinki → Singapur → Kota Kinabalu"
+ROUTE["Austrian + Malaysia Airlines przez Wiedeń i Bangkok, w niedzielę"] = ROUTE.pop("Austrian + Malaysia Airlines przez Wiedeń i Bangkok")
+
 # ---------- booking links: (slug, option index) -> (Google Flights query, airline name, airline URL) ----------
 P = "4 adults 3 children"
 AL = {
@@ -460,7 +516,7 @@ AL = {
  "KLM": "https://www.klm.pl/", "Lufthansa": "https://www.lufthansa.com/pl/pl/homepage",
  "Austrian": "https://www.austrian.com/pl/pl/homepage", "Turkish Airlines": "https://www.turkishairlines.com/pl-pl/",
  "Korean Air": "https://www.koreanair.com/", "Condor": "https://www.condor.com/pl/",
- "AirAsia": "https://www.airasia.com/", "Scoot": "https://www.flyscoot.com/pl", "China Airlines": "https://www.china-airlines.com/pl/pl",
+ "AirAsia": "https://www.airasia.com/", "Finnair": "https://www.finnair.com/pl-pl", "Scoot": "https://www.flyscoot.com/pl", "China Airlines": "https://www.china-airlines.com/pl/pl",
 }
 BOOK = {
  ("sri-lanka",1): (f"Flights from KRK to CMB on 2027-02-19 return 2027-03-07 {P} Air Arabia", "Air Arabia"),
@@ -468,7 +524,9 @@ BOOK = {
  ("sri-lanka",3): (f"Flights from WAW to CMB on 2027-02-19 return 2027-03-07 {P} flydubai", "flydubai"),
  ("sri-lanka",4): (f"Flights from KRK to CMB on 2027-02-20 return 2027-03-07 {P} KLM", "KLM"),
  ("malezja-borneo",1): (f"Flights from KRK to KUL on 2027-02-19 return 2027-03-07 {P} Lufthansa", "Lufthansa"),
- ("malezja-borneo",2): (f"Flights from KRK to KUL on 2027-02-19 return 2027-03-07 {P} Austrian", "Austrian"),
+ ("malezja-borneo",2): (f"Flights from KRK to KUL on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
+ ("malezja-borneo",3): (f"One way flights from KRK to SIN on 2027-02-21 {P} Finnair", "Finnair"),
+ ("malezja-borneo",4): (f"One way flights from KRK to KUL on 2027-02-21 {P} Austrian", "Austrian"),
  ("tajwan",1): (f"Flights from KRK to TPE on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
  ("tajwan",2): (f"Flights from KRK to KHH on 2027-02-19 return 2027-03-07 {P} Lufthansa", "Lufthansa"),
  ("filipiny",1): (f"Flights from KRK to MNL on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
