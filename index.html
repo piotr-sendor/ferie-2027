@@ -1,324 +1,70 @@
-<!doctype html>
-<html lang="pl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<meta http-equiv="Cache-Control" content="no-cache">
-<title>Ferie 2027 – Sri Lanka i Indonezja: loty</title>
-<style>
-:root{--ink:#1f2a33;--muted:#62707c;--line:#e3e8ec;--bg:#f6f8f9;--card:#fff;--teal:#0b7a75;--teal2:#e6f4f3;--sun:#f4a52a;--sun2:#fff4e0;--red:#c2410c;--red2:#fff1ea;--green:#15803d;--green2:#eaf7ee}
-*{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.45;font-size:16px}
-.wrap{max-width:860px;margin:0 auto;padding:0 16px 48px}
-header{background:linear-gradient(135deg,#0b7a75,#0e5f8a);color:#fff;padding:28px 16px 22px}
-header .wrap{padding-bottom:0}
-h1{margin:0 0 6px;font-size:26px;line-height:1.2}
-header p{margin:4px 0;opacity:.92;font-size:15px}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-.chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:3px 10px;font-size:13px}
-nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;gap:4px;overflow-x:auto;padding:0 12px}
-nav a{white-space:nowrap;padding:12px 10px;color:var(--teal);text-decoration:none;font-weight:600;font-size:14px}
-h2{font-size:22px;margin:34px 0 12px}
-h3{font-size:17px;margin:20px 0 8px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:12px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
-.best{border:2px solid var(--teal)}
-.badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.02em;padding:3px 9px;border-radius:99px;background:var(--teal);color:#fff;text-transform:uppercase}
-.badge.gulf{background:var(--sun2);color:#9a5b00;border:1px solid #f3d29a;text-transform:none}
-.badge.nogulf{background:var(--green2);color:var(--green);border:1px solid #bfe3c8;text-transform:none}
-.price{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 4px}
-.price div{flex:1 1 140px;background:var(--teal2);border-radius:12px;padding:10px 12px}
-.price b{display:block;font-size:24px;color:var(--teal)}
-.price span{font-size:13px;color:var(--muted)}
-.leg-title{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:18px 0 6px;flex-wrap:wrap}
-.leg-title h3{margin:0}
-.leg-title small{color:var(--muted)}
-.tl{list-style:none;margin:0;padding:0;position:relative}
-.tl:before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:var(--line)}
-.tl li{position:relative;padding:6px 0 10px 34px}
-.tl li:before{content:"";position:absolute;left:5px;top:10px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--teal)}
-.tl li.fly:before{border-color:#9fb3c0;width:10px;height:10px;left:7px;top:12px}
-.tl li.stop:before{border-color:var(--sun)}
-.tl .t{font-weight:700;font-size:17px}
-.tl .pl{display:inline-block;margin-left:6px;font-size:13px;color:var(--muted);background:#f1f4f6;border-radius:6px;padding:1px 6px}
-.tl .d{color:var(--muted);font-size:14px}
-.tl li.fly .d{font-style:italic}
-.tl li.stop .box{background:var(--sun2);border:1px solid #f3d29a;border-radius:10px;padding:8px 10px;margin-top:4px;font-size:14px}
-.note{font-size:13px;color:var(--muted)}
-.bio{background:#f3f0ff;border:1px solid #ddd5ff;border-radius:10px;padding:10px 12px;font-size:14px;margin-top:8px}
-table{width:100%;border-collapse:collapse;font-size:14px}
-th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-size:12px;text-transform:uppercase;color:var(--muted);letter-spacing:.03em}
-td.n{white-space:nowrap;text-align:right;font-weight:700}
-.alt{display:grid;gap:10px}
-.alt .card{margin:0;padding:14px}
-.alt .row{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-.alt .row b{font-size:16px}
-.alt .pp{font-weight:800;color:var(--teal);white-space:nowrap}
-.alt p{margin:6px 0 0;font-size:14px;color:#3b4852}
-.callout{border-radius:12px;padding:12px 14px;margin:10px 0;font-size:15px}
-.callout.warn{background:var(--red2);border:1px solid #f7cbb5}
-.callout.ok{background:var(--green2);border:1px solid #bfe3c8}
-.callout.info{background:var(--teal2);border:1px solid #bfe1df}
-.scen{display:grid;gap:10px;grid-template-columns:1fr}
-@media(min-width:700px){.scen{grid-template-columns:1fr 1fr}}
-.scen .card{margin:0}
-.scen h3{margin-top:0}
-ul{padding-left:20px;margin:6px 0} li{margin:3px 0}
-.pending{border:2px dashed #b9c6cf;background:#fbfcfd;text-align:center;color:var(--muted)}
-footer{font-size:12px;color:var(--muted);margin-top:30px}
-footer a{color:var(--muted)}
-</style>
-</head>
-<body>
-<header><div class="wrap">
-  <h1>Ferie 2027: Sri Lanka czy Indonezja?</h1>
-  <p>Porównanie lotów dla dwóch rodzin: 4 dorosłych + 3 dzieci (8, 8 i 6 lat)</p>
-  <div class="chips">
-    <span class="chip">Ferie małopolskie 15–28.02.2027</span>
-    <span class="chip">Wylot: pt 19.02 po 14:00</span>
-    <span class="chip">Powrót: nd 7.03</span>
-    <span class="chip">Ceny z 24.10.2026</span>
-  </div>
-</div></header>
-
-<nav><div class="wrap">
-  <a href="#sri-lanka">🇱🇰 Sri Lanka</a>
-  <a href="#indonezja">🇮🇩 Indonezja</a>
-  <a href="#bez-zatoki">✈️ Bez Zatoki</a>
-  <a href="#zatoka">Zatoka Perska</a>
-  <a href="#ubezpieczenie">Rezygnacja i ubezpieczenie</a>
-  <a href="#bagaz">Bagaż</a>
-</div></nav>
-
-<div class="wrap">
-
-<h2 style="margin-top:24px">W skrócie</h2>
-<div class="scen">
-  <div class="card"><h3>🇱🇰 Sri Lanka</h3><div class="price" style="margin:6px 0"><div><b>3 005 zł</b><span>za osobę · 21 035 zł za 7</span></div></div>
-    <p>Air Arabia, pt 19.02 22:10 z Krakowa, 11 h, 1 przesiadka w Szardży (ZEA). Powrót nd 7.03, w Krakowie 11:20. <span class="badge gulf">Zatoka</span></p>
-    <a href="#sri-lanka">Szczegóły ↓</a></div>
-  <div class="card"><h3>✈️ Azja bez Zatoki – nr 1: Malezja (Borneo)</h3><div class="price" style="margin:6px 0"><div><b>ok. 4 920 zł</b><span>za osobę z lotem na Borneo · ok. 34 400 zł za 7</span></div></div>
-    <p>Lufthansa, pt 19.02 19:05 z Krakowa przez Frankfurt i Singapur, plus lot krajowy do Kota Kinabalu. Dalej w rankingu: Tajwan, Filipiny, Tajlandia, Kambodża/Chiny. Indonezja (bez Bali) w przygotowaniu. <span class="badge nogulf">bez Zatoki</span></p>
-    <a href="#bez-zatoki">Szczegóły ↓</a></div>
-</div>
-
-<!-- ================= SRI LANKA ================= -->
-<h2 id="sri-lanka">🇱🇰 Sri Lanka – najlepsza opcja</h2>
-
-<div class="card best">
-  <span class="badge">Najlepsza opcja</span> <span class="badge gulf">przesiadka w Zatoce Perskiej</span>
-  <h3 style="margin-top:10px">Air Arabia z Krakowa, przesiadka w Szardży (Zjednoczone Emiraty Arabskie)</h3>
-  <p class="note">Jedyny lot z Krakowa w piątek po południu – da się spokojnie zdążyć po pracy. Najtańsza i jedna z najszybszych opcji.</p>
-
-  <div class="price">
-    <div><b>3 005 zł</b><span>za osobę, w obie strony (dziecko płaci tyle samo)</span></div>
-    <div><b>21 035 zł</b><span>razem za 7 osób</span></div>
-  </div>
-
-  <div class="leg-title"><h3>Tam: pt 19.02 → sob 20.02</h3><small>łącznie 11 h 05 min</small></div>
-  <ul class="tl">
-    <li><span class="t">22:10</span><span class="pl">PL 22:10</span><div class="d">pt 19.02 · wylot z Krakowa (KRK)</div></li>
-    <li class="fly"><div class="d">lot ok. 5 h 40 min</div></li>
-    <li class="stop"><span class="t">ok. 06:50</span><span class="pl">PL ok. 03:50</span><div class="d">sob 20.02 · lądowanie w Szardży (SHJ), ZEA</div>
-      <div class="box">⏱ Przesiadka <b>1 h</b> · Szardża to jeden z 7 emiratów ZEA, ok. 25 min od Dubaju. Czas lokalny = Polska + 3 h.</div></li>
-    <li class="stop"><span class="t">ok. 07:50</span><span class="pl">PL ok. 04:50</span><div class="d">wylot z Szardży</div></li>
-    <li class="fly"><div class="d">lot ok. 4 h 25 min</div></li>
-    <li><span class="t">13:45</span><span class="pl">PL 09:15</span><div class="d">sob 20.02 · lądowanie w Kolombo (CMB), Sri Lanka. Czas lokalny = Polska + 4 h 30 min.</div></li>
-  </ul>
-  <div class="bio">🌙 <b>Dla organizmu:</b> wylot o porze snu dzieci, przesiadka w środku polskiej nocy (ok. 4:00), lądowanie o 9:15 polskiego czasu – czyli „rano”, a na miejscu jest już wczesne popołudnie.</div>
-
-  <div class="leg-title"><h3>Powrót: sob/nd 6–7.03</h3><small>łącznie 13 h 10 min</small></div>
-  <ul class="tl">
-    <li><span class="t">02:40</span><span class="pl">PL sob 22:10</span><div class="d">nd 7.03 (w nocy z soboty na niedzielę) · wylot z Kolombo (CMB). Na lotnisku ok. 23:40 w sobotę.</div></li>
-    <li class="fly"><div class="d">lot ok. 4 h 20 min</div></li>
-    <li class="stop"><span class="t">ok. 05:30</span><span class="pl">PL ok. 02:30</span><div class="d">nd 7.03 · lądowanie w Szardży (SHJ), ZEA</div>
-      <div class="box">⏱ Przesiadka <b>ok. 2 h</b></div></li>
-    <li class="stop"><span class="t">ok. 07:35</span><span class="pl">PL ok. 04:35</span><div class="d">wylot z Szardży</div></li>
-    <li class="fly"><div class="d">lot ok. 6 h 45 min</div></li>
-    <li><span class="t">11:20</span><span class="pl">PL 11:20</span><div class="d">nd 7.03 · lądowanie w Krakowie</div></li>
-  </ul>
-  <div class="bio">🌙 <b>Dla organizmu:</b> ostatni pełny dzień na wyspie to sobota 6.03. Wylot o 22:10 polskiego czasu, cała podróż w polską noc, w domu w niedzielę przed obiadem – dzień na odespanie przed szkołą.</div>
-  <p class="note">Godziny wylotów i przylotów oraz długość przesiadek – z Google Flights. Godziny w samej Szardży są wyliczone z rozkładu Air Arabia (± ok. 15 min); dokładne widać przy rezerwacji.</p>
-</div>
-
-<h3>Inne opcje (krócej)</h3>
-<div class="alt">
-  <div class="card"><div class="row"><b>Air Arabia z Krakowa, wylot sob 20.02</b><span class="pp">3 005 zł/os.</span></div>
-    <p>Sob 20.02 12:10 z Krakowa → przesiadka w Szardży 1 h 45 min → Kolombo nd 4:30 rano (PL 0:00). Powrót jak wyżej. Ta sama cena, ale przylot w środku nocy. <span class="badge gulf">Zatoka</span></p></div>
-  <div class="card"><div class="row"><b>flydubai z Warszawy, pt 19.02</b><span class="pp">3 974 zł/os.</span></div>
-    <p>Pt 19.02 20:30 z Warszawy (pociąg z Krakowa po pracy) → przesiadka w Dubaju (ZEA) 4 h 40 min → Kolombo sob 16:20. Powrót nd 7.03 9:15 → Dubaj 2 h 25 min → Warszawa 19:10. Razem 27 820 zł + pociąg. <span class="badge gulf">Zatoka</span></p></div>
-  <div class="card"><div class="row"><b>Lufthansa + Qatar z Krakowa, sob 20.02</b><span class="pp">3 918 zł/os.</span></div>
-    <p>Sob 20.02 6:00 → przesiadki w Monachium i Doha (Katar) → Kolombo nd 2:45 (16 h 15 min). Powrót nd 7.03 4:15 → Doha, Monachium → Kraków 16:55. Razem 27 429 zł. <span class="badge gulf">Zatoka</span></p></div>
-  <div class="card"><div class="row"><b>flydubai/Emirates z Krakowa, sob 20.02</b><span class="pp">4 059 zł/os.</span></div>
-    <p>Sob 20.02 23:10 → Dubaj 2 h 15 min → Kolombo nd 16:20 (12 h 40 min). Powrót nd 7.03 1:45 → Dubaj 2 h 15 min → Kraków 11:10. Razem 28 412 zł. <span class="badge gulf">Zatoka</span></p></div>
-  <div class="card"><div class="row"><b>KLM + IndiGo z Krakowa, sob 20.02</b><span class="pp">4 677 zł/os.</span></div>
-    <p>Sob 20.02 6:00 → Amsterdam, Mumbaj (Indie) → Kolombo nd 8:10 (22 h). Powrót nd 7.03 21:50 → Bangalore, Amsterdam → Kraków <b>pn 8.03</b> 11:15. Razem 32 739 zł. <span class="badge nogulf">bez Zatoki</span></p></div>
-</div>
-<p class="note">Sprawdzone też Wiedeń (Air Arabia ok. 3 330 zł/os.), Wrocław (tylko rano, od ok. 4 000 zł/os.) i Katowice (nic sensownego; Air Arabia ma latać z Katowic do Szardży od 17.12.2026). Bez przesiadki w Zatoce lata się przez Europę i Indie albo Stambuł/Zurych – ok. 50% drożej, dłużej i nic takiego nie startuje w piątek po pracy.</p>
-
-<!-- ================= INDONEZJA ================= -->
-<h2 id="indonezja">🇮🇩 Indonezja (bez Bali)</h2>
-<div class="card pending"><p><b>W przygotowaniu.</b> Bali odpada (tłok). Trwa research innych miejsc w Indonezji – np. Lombok, Flores (Komodo), Jawa – razem z pogodą w lutym i lotami. Pojawi się tutaj pod tym samym linkiem.</p></div>
-
-<h2 id="bez-zatoki">✈️ Azja bez Zatoki Perskiej</h2>
-<p class="note">Wszystkie trasy niżej omijają Dubaj, Szardżę, Abu Zabi, Dohę i resztę Zatoki – przesiadki w Europie, Stambule, Singapurze, Bangkoku albo Seulu. Indie, Birma i Bali – pominięte. Ceny dla 7 osób, tylko bagaż podręczny, z 24.10.2026.</p>
-
-<h3>Ranking: 5 najlepszych pomysłów</h3>
-<div class="alt">
-  <div class="card best" style="padding:14px"><div class="row"><b>1. Malezja: Borneo (Sabah – Kota Kinabalu)</b><span class="pp">ok. 4 920 zł/os.</span></div>
-    <p>Wylot w piątek po pracy z Krakowa (19:05). Wyspy parku Tunku Abdul Rahman, orangutany w Sepilok, morze 28–29°C, bez wizy. Pogoda dobra, ale z przelotnymi deszczami. Langkawi pominięte – już tam byliśmy. Szczegóły niżej.</p></div>
-  <div class="card"><div class="row"><b>2. Tajwan: Tajpej + Kenting (południe)</b><span class="pp">ok. 4 450 zł/os.</span></div>
-    <p>Bezpieczny, ciekawy, świetny dla dzieci, jedna krótka przesiadka w Stambule. Ale na północy chłodno i mokro (17–20°C), morze na południu tylko 24–25°C.</p></div>
-  <div class="card"><div class="row"><b>3. Filipiny: Palawan albo Boracay</b><span class="pp">ok. 4 150 zł/os.</span></div>
-    <p>Najpiękniejsze plaże i najpewniejsza pogoda (pora sucha). Minusy: tani lot jest z Wiednia o 19:30 – w piątek po pracy z Krakowa się nie zdąży, trzeba by wyjechać wcześniej; długi powrót (Wiedeń pn 17:10), nocleg w Manili po drodze. Z Krakowa w sobotę Turkish – ok. 6 300 zł/os. z lotem krajowym.</p></div>
-  <div class="card"><div class="row"><b>4. Tajlandia: Phuket / Krabi</b> <span class="note">(dla porównania)</span><span class="pp">ok. 3 700 zł/os.</span></div>
-    <p>Najtaniej bez Zatoki i sprawdzone. Condor z Wiednia przez Frankfurt; powrót nd 7.03 do Wiednia 21:30.</p></div>
-  <div class="card"><div class="row"><b>5. Kambodża (Angkor + Kuala Lumpur) albo Chiny (Sanya na Hainanie)</b><span class="pp">4 320–5 500 zł/os.</span></div>
-    <p>Kambodża: przygoda, ale upał 33–35°C. Sanya: ciepło, morze 23–24°C, drogi lot krajowy i <b>niepewne, czy w 2027 Polacy dalej wjadą do Chin bez wizy</b>.</p></div>
-</div>
-<div class="callout warn" style="margin-top:12px"><b>Odpadają w tym terminie:</b> Guilin/Yangshuo w Chinach (7–14°C i deszcz), wschodnie wybrzeże Malezji (monsun), Laos (od marca smog z wypalania pól, drogie loty).</div>
-
-<h3>Pogoda i wjazd (20.02–7.03)</h3>
-<div class="card" style="overflow-x:auto;padding:10px">
-<table>
-<tr><th>Gdzie</th><th>Pogoda</th><th>Morze</th><th>Wjazd dla Polaków</th></tr>
-<tr><td>Malezja – Langkawi, Penang, KL <span class="note">(Langkawi już znamy)</span></td><td>☀️ najlepsza pora: 32–33°C / noc 23–24°C, sucho</td><td>29–30°C</td><td>bez wizy 90 dni; karta MDAC online</td></tr>
-<tr><td><b>Malezja – Borneo (Kota Kinabalu)</b></td><td>🌤 31°C / 23°C, przelotne deszcze</td><td>28–29°C</td><td>bez wizy 90 dni; karta MDAC online</td></tr>
-<tr><td><b>Filipiny – Palawan, Boracay, Bohol</b></td><td>☀️ pora sucha: 30–31°C / 24°C</td><td>27–28°C</td><td>bez wizy 30 dni; rejestracja eTravel</td></tr>
-<tr><td><b>Tajwan – południe (Kenting)</b></td><td>🌤 24–26°C / 18°C</td><td>24–25°C</td><td>bez wizy 90 dni; karta TWAC online</td></tr>
-<tr><td>Tajwan – północ (Tajpej)</td><td>🌧 17–20°C / 12–15°C, 9–12 dni deszczu</td><td>za zimne</td><td>jw.</td></tr>
-<tr><td><b>Chiny – Hainan (Sanya)</b></td><td>☀️ 26–28°C / 19–21°C, sucho</td><td>23–24°C</td><td>bez wizy do 30 dni – na razie tylko do 31.12.2026; przedłużenie zwykle w listopadzie</td></tr>
-<tr><td>Chiny – Yunnan (Xishuangbanna)</td><td>☀️ 26–30°C, noce 11–14°C</td><td>brak morza</td><td>jw.</td></tr>
-<tr><td>Chiny – Kanton / Shenzhen</td><td>🌥 17–22°C / 12–15°C, mżawki</td><td>–</td><td>jw.</td></tr>
-<tr><td>Chiny – Guilin / Yangshuo</td><td>🌧 7–14°C, ok. 15 dni mżawki</td><td>–</td><td>jw.</td></tr>
-<tr><td><b>Kambodża – Angkor, Koh Rong</b></td><td>🔥 33–35°C / 21–23°C, bez deszczu</td><td>28–29°C</td><td>e-wiza 30 USD/os.</td></tr>
-<tr><td>Laos – Luang Prabang</td><td>☀️ 30–32°C / 14–17°C; od marca smog</td><td>brak morza</td><td>e-wiza ok. 50 USD/os.</td></tr>
-<tr><td>Wietnam – Phu Quoc</td><td>☀️ 31–32°C, sucho</td><td>27–28°C</td><td>bez wizy 45 dni</td></tr>
-<tr><td>Tajlandia – Phuket, Krabi</td><td>☀️ 32–33°C, sucho</td><td>29°C</td><td>bez wizy; karta TDAC online</td></tr>
-</table>
-<p class="note">Średnie wieloletnie; konkretny rok może się różnić. Każde dziecko potrzebuje własnego paszportu ważnego min. 6 miesięcy od przylotu.</p>
-</div>
-
-<h3>🇲🇾 Malezja (Borneo) – najlepsza opcja bez Zatoki</h3>
-<div class="card best">
-  <span class="badge">Nr 1</span> <span class="badge nogulf">bez Zatoki Perskiej</span>
-  <h3 style="margin-top:10px">Lufthansa + Malaysia Airlines z Krakowa, przez Frankfurt i Singapur, potem lot krajowy na Borneo (Kota Kinabalu)</h3>
-  <div class="price">
-    <div><b>4 311 zł</b><span>za osobę do Kuala Lumpur · 30 175 zł za 7</span></div>
-    <div><b>ok. 4 920 zł</b><span>za osobę z lotem na Borneo i z powrotem · ok. 34 400 zł za 7</span></div>
-  </div>
-  <div class="leg-title"><h3>Tam: pt 19.02 → sob 20.02</h3><small>do Kuala Lumpur 18 h 40 min</small></div>
-  <ul class="tl">
-    <li><span class="t">19:05</span><span class="pl">PL 19:05</span><div class="d">pt 19.02 · wylot z Krakowa, lot LH 1369</div></li>
-    <li class="stop"><span class="t">20:45</span><span class="pl">PL 20:45</span><div class="d">lądowanie we Frankfurcie (Niemcy)</div>
-      <div class="box">⏱ Przesiadka <b>55 min</b> – krótka, ale na jednym bilecie (przy spóźnieniu linia przebukowuje)</div></li>
-    <li class="stop"><span class="t">21:40</span><span class="pl">PL 21:40</span><div class="d">wylot z Frankfurtu, LH 780 (nocny)</div></li>
-    <li class="fly"><div class="d">lot ok. 12 h 25 min</div></li>
-    <li class="stop"><span class="t">17:05</span><span class="pl">PL 10:05</span><div class="d">sob 20.02 · lądowanie w Singapurze</div>
-      <div class="box">⏱ Przesiadka <b>ok. 2 h</b> · czas lokalny = Polska + 7 h</div></li>
-    <li class="stop"><span class="t">ok. 19:05</span><span class="pl">PL ok. 12:05</span><div class="d">wylot Malaysia Airlines do Kuala Lumpur</div></li>
-    <li><span class="t">20:45</span><span class="pl">PL 13:45</span><div class="d">sob 20.02 · lądowanie w Kuala Lumpur (Malezja)</div></li>
-    <li class="fly"><div class="d">nocleg w KL (albo 1–3 dni miasta), potem AirAsia / Firefly 2 h 40 min do Kota Kinabalu (Borneo) – ok. 300 zł/os. w jedną stronę</div></li>
-  </ul>
-  <div class="bio">🌙 <b>Dla organizmu:</b> wylot wieczorem, długi lot w polską noc, lądowanie w KL o 13:45 polskiego czasu – na miejscu wieczór.</div>
-  <div class="leg-title"><h3>Powrót: nd 7.03 → pn 8.03</h3><small>16 h 40 min</small></div>
-  <ul class="tl">
-    <li><span class="t">23:55</span><span class="pl">PL 16:55</span><div class="d">nd 7.03 · wylot z Kuala Lumpur, LH 705 (nocny) – wcześniej lot z Kota Kinabalu do KL</div></li>
-    <li class="fly"><div class="d">lot ok. 13 h</div></li>
-    <li class="stop"><span class="t">06:00</span><span class="pl">PL 06:00</span><div class="d">pn 8.03 · lądowanie we Frankfurcie</div>
-      <div class="box">⏱ Przesiadka <b>2 h</b></div></li>
-    <li class="stop"><span class="t">08:00</span><span class="pl">PL 08:00</span><div class="d">wylot z Frankfurtu, LH 1362</div></li>
-    <li><span class="t">09:35</span><span class="pl">PL 09:35</span><div class="d">pn 8.03 · lądowanie w Krakowie</div></li>
-  </ul>
-  <div class="bio">🌙 <b>Dla organizmu:</b> cała niedziela jeszcze w Malezji, lot nocny, w Krakowie w poniedziałek rano – dzieci tracą poniedziałek w szkole.</div>
-  <p class="note">Taniej: Austrian + Malaysia Airlines przez Wiedeń i Bangkok – 3 632 zł/os. (25 426 zł za 7), ale wylot z Krakowa o 14:45. Na Borneo: wyspy parku Tunku Abdul Rahman (łódką z Kota Kinabalu), orangutany w Sepilok (lot do Sandakanu). Lot KL → Kota Kinabalu to osobny bilet – przy spóźnieniu nikt nie przebukuje, więc lepiej z noclegiem w KL.</p>
-</div>
-
-<h3>Pozostałe kraje – najlepsze loty bez Zatoki</h3>
-<div class="alt">
-  <div class="card"><div class="row"><b>🇹🇼 Tajwan – Turkish z Krakowa, sob 20.02</b><span class="pp">4 164 zł/os.</span></div>
-    <p>Sob 20.02 19:25 z Krakowa → Stambuł (Turcja) 23:50, przesiadka 2 h 05 → <b>Tajpej nd 21.02 17:40</b> (PL 10:40), 15 h 15 min. Powrót sob 6.03 22:00 → Stambuł 2 h 10 → <b>Kraków nd 7.03 8:20</b>. Razem 29 151 zł. Na południe (Kenting) szybką koleją do Kaohsiung 1,5 h + 1,5–2 h autem. W piątek po pracy: Lufthansa + China Airlines przez Frankfurt i Hongkong, 19:05 → Kaohsiung sob 22:15, 5 221 zł/os.</p></div>
-  <div class="card"><div class="row"><b>🇵🇭 Filipiny – Korean Air z Wiednia, pt 19.02</b><span class="pp">3 817 zł/os.</span></div>
-    <p>Pt 19.02 19:30 z Wiednia → Seul (Korea Płd.) sob 14:30 (PL 06:30), przesiadka 4 h 25 → <b>Manila sob 22:10</b> (PL 15:10), 19 h 40 min. Powrót nd 7.03 23:35 → Seul 7 h 45 przesiadki → <b>Wiedeń pn 8.03 17:10</b>. Razem 26 720 zł + dojazd do Wiednia. Dalej Cebu Pacific na Palawan / Boracay / Bohol: ok. 150–170 zł/os. w jedną stronę. Z Krakowa: Turkish w sobotę 19:25 – 5 964 zł/os.</p></div>
-  <div class="card"><div class="row"><b>🇹🇭 Tajlandia – Condor z Wiednia, pt 19.02</b><span class="pp">3 258 zł/os.</span></div>
-    <p>Pt 19.02 17:10 z Wiednia → Frankfurt, przesiadka 2 h 45 → <b>Bangkok sob 14:20</b> (PL 08:20), 15 h 10 min. Powrót nd 7.03 11:35 → Frankfurt 1 h 45 → <b>Wiedeń nd 21:30</b>. Razem 22 808 zł; z lotem na Phuket ok. 3 700 zł/os. Uwaga: część lotów Condora ma międzylądowanie w Abu Zabi – sprawdzić przy rezerwacji. Z Krakowa: Turkish w sobotę 19:25 – 4 346 zł/os.</p></div>
-  <div class="card"><div class="row"><b>🇨🇳 Chiny – Turkish z Krakowa do Kantonu, sob 20.02</b><span class="pp">3 765 zł/os.</span></div>
-    <p>Sob 20.02 19:25 z Krakowa → Stambuł 1 h 45 przesiadki → <b>Kanton nd 21.02 16:35</b> (PL 09:35), 14 h 10 min. Powrót sob 6.03 23:15 → Stambuł 2 h 05 → <b>Kraków nd 7.03 8:20</b>. Razem 26 356 zł. Na Hainan (Sanya) lot krajowy ok. 866 zł/os. w jedną stronę – razem ok. 5 500 zł/os. Wjazd bez wizy w 2027 – do potwierdzenia.</p></div>
-  <div class="card"><div class="row"><b>🇰🇭 Kambodża – przez Kuala Lumpur + AirAsia</b><span class="pp">4 320–5 000 zł/os.</span></div>
-    <p>Bilet do Kuala Lumpur (jak Malezja) + AirAsia KL → Siem Reap 2 h 05, ok. 345 zł/os. w jedną stronę. Angkor rano, basen po południu; plaża Koh Rong daleko od Angkoru.</p></div>
-  <div class="card"><div class="row"><b>🇻🇳 Wietnam – KLM z Krakowa, pt 19.02</b> <span class="note">(dla porównania)</span><span class="pp">5 129 zł/os.</span></div>
-    <p>Pt 19.02 17:35 z Krakowa → Amsterdam 1 h 10 → Singapur 2 h 10 → <b>Sajgon sob 19:40</b> (PL 13:40), 20 h 05 min. Powrót nd 7.03 19:00 → Kuala Lumpur → Amsterdam → <b>Kraków pn 8.03 11:15</b>. Na Phu Quoc Vietjet ok. 150 zł/os. – razem ok. 5 430 zł/os.</p></div>
-  <div class="card"><div class="row"><b>🇱🇦 Laos – przez Bangkok</b><span class="pp">ok. 5 600 zł/os.</span></div>
-    <p>Condor z Wiednia do Bangkoku + Bangkok Airways do Luang Prabang (ok. 1 175 zł/os. w jedną stronę). Drogo, bez morza i smog od marca – w tym terminie nie polecamy.</p></div>
-</div>
-<p class="note">Do małych lotnisk (Langkawi, Phuket, Palawan, Sanya, Siem Reap) z Krakowa Google pokazuje prawie tylko trasy przez Zatokę – dlatego wszędzie: bilet do dużego portu + osobny lot krajowy, najlepiej z zapasem albo noclegiem. Linie z UE (LOT, Lufthansa, KLM, Austrian) omijają Rosję; chińskie linie latają nad Rosją.</p>
-
-<!-- ================= ZATOKA ================= -->
-<h2 id="zatoka">Przesiadki w Zatoce Perskiej</h2>
-<div class="card">
-  <ul>
-    <li><b>Szardża i Dubaj</b> to Zjednoczone Emiraty Arabskie (ZEA), <b>Doha</b> to Katar, <b>Abu Zabi</b> to też ZEA. Przez te lotniska idą prawie wszystkie tanie loty z jedną przesiadką do Azji.</li>
-    <li><b>Stan na 23–24.10.2026:</b> lotniska i przestrzeń powietrzna ZEA działają normalnie. Po wojnie z Iranem w 2026 sytuacja jest jednak napięta.</li>
-    <li>Europejska agencja bezpieczeństwa lotniczego (EASA) ma ostrzeżenie dla Zatoki Perskiej, przedłużone do 16.11.2026. Ambasada USA (18.10) ostrzega przed odwołaniami lotów z krótkim wyprzedzeniem.</li>
-    <li><b>Do Indonezji da się polecieć bez Zatoki</b> (np. KLM przez Amsterdam i Singapur, Turkish przez Stambuł) – na Sri Lankę tanie opcje idą tylko przez Zatokę.</li>
-    <li>Od marca 2026 polskie MSZ odradzało podróże do ZEA. Aktualny komunikat: <a href="https://www.gov.pl/web/dyplomacja/informacje-dla-podrozujacych">gov.pl – informacje dla podróżujących</a>.</li>
-  </ul>
-  <div class="callout info">Do lutego jest 4 miesiące. Decyzję „Zatoka czy nie” można oprzeć na ubezpieczeniu (niżej) – wtedy tania opcja nie zamyka drogi do rezygnacji.</div>
-</div>
-
-<!-- ================= UBEZPIECZENIE ================= -->
-<h2 id="ubezpieczenie">Rezygnacja i ubezpieczenie</h2>
-<div class="callout warn"><b>Najtańsze bilety (Air Arabia Basic, flydubai Lite) są bezzwrotne.</b> Od ryzyka chroni nas prawo (gdy linia odwoła lot) albo ubezpieczenie kosztów rezygnacji (gdy to my rezygnujemy).</div>
-
-<div class="scen">
-  <div class="card"><h3>✈️ Linia odwołuje lot</h3>
-    <p>Np. zamknięta przestrzeń powietrzna nad Zatoką.</p>
-    <ul><li>Przy wylocie z UE pieniądze albo inny lot należą się <b>z mocy prawa</b> (rozporządzenie UE 261), niezależnie od linii.</li>
-    <li>Ubezpieczenie nie jest do tego potrzebne.</li></ul></div>
-  <div class="card"><h3>⚠️ Loty latają, ale robi się groźnie</h3>
-    <ul><li>Sam strach nie wystarcza – polisy mają zamkniętą listę przyczyn, a działania wojenne są zwykle wyłączone.</li>
-    <li><b>HanseMerkur Premium</b> obejmuje <b>ostrzeżenie MSZ</b> (od ok. 25 zł/os., bez udziału własnego).</li>
-    <li>Do sprawdzenia w warunkach (OWU): czy liczy się ostrzeżenie dla kraju <b>przesiadki</b> (ZEA), a nie tylko dla Sri Lanki/Indonezji.</li></ul></div>
-  <div class="card"><h3>🤒 Choroba dziecka lub dorosłego</h3>
-    <ul><li>Objęta w każdym wariancie – potrzebne zaświadczenie lekarskie, że stan zdrowia uniemożliwia podróż.</li>
-    <li>W obu rodzinach są lekarze, więc dokument nie jest problemem. Do sprawdzenia w OWU: część ubezpieczycieli nie przyjmuje zaświadczeń od lekarza z rodziny – wtedy trzeba je wziąć od lekarza prowadzącego.</li>
-    <li>Wszystkich współpodróżnych warto mieć <b>na jednej polisie</b> (albo każda rodzina na swojej) – wtedy choroba jednej osoby pozwala zrezygnować pozostałym z polisy.</li></ul></div>
-  <div class="card"><h3>🏝️ Utknięcie w drodze powrotnej</h3>
-    <ul><li>Lot powrotny z Kolombo (Air Arabia) nie podlega przepisom UE – liczą się warunki linii. KLM to linia z UE – przepisy UE chronią też w drodze powrotnej.</li>
-    <li>HanseMerkur Premium pokrywa też <b>koszty opóźnionego powrotu</b>. Na sam wyjazd i tak potrzebne jest zwykłe ubezpieczenie turystyczne (leczenie, assistance).</li></ul></div>
-</div>
-
-<div class="card">
-  <h3 style="margin-top:0">Porównanie ubezpieczycieli</h3>
-  <table>
-    <tr><th>Polisa</th><th>Co ważne</th><th>Koszt</th></tr>
-    <tr><td><b>HanseMerkur Premium</b><br><span class="note">nasz typ</span></td><td>Ostrzeżenie MSZ, opóźniony powrót, same bilety lotnicze, bez udziału własnego. <b>Kupić do 7 dni od zakupu biletów.</b></td><td class="n">od ok. 25 zł/os.</td></tr>
-    <tr><td>HanseMerkur Komfort</td><td>Bez ostrzeżenia MSZ; udział własny 20% (min. 100 zł/os.)</td><td class="n">od ok. 20 zł/os.</td></tr>
-    <tr><td>TU Europa 100% Max</td><td>37 przyczyn, m.in. zamach terrorystyczny w kraju docelowym (do 30 dni przed wylotem, do 250 km od celu). Kupić najpóźniej 28 dni przed wylotem.</td><td class="n">ok. 3,2% ceny</td></tr>
-  </table>
-  <p class="note">Cena zależy od kosztu biletów. Przy 3 005–4 750 zł/os. polisa to zwykle ok. 70–200 zł na osobę.</p>
-</div>
-
-<!-- ================= BAGAŻ ================= -->
-<h2 id="bagaz">Bagaż</h2>
-<div class="card">
-  <p>Ceny wyżej są <b>tylko z bagażem podręcznym</b>.</p>
-  <ul>
-    <li><b>Air Arabia Basic:</b> 10 kg łącznie (walizka kabinowa + mała torba). Walizka do luku 20, 30 albo 40 kg za dopłatą – taniej przy rezerwacji niż na lotnisku; cena wychodzi w rezerwacji na airarabia.com. Taryfa „Value” ma bagaż w cenie.</li>
-    <li><b>flydubai Lite:</b> 7 kg podręcznego; taryfa „Value” – 20 kg w luku.</li>
-    <li><b>KLM Economy Light:</b> 12 kg podręcznego, bez walizki; Standard = 1 walizka 23 kg (cena przy rezerwacji).</li>
-    <li><b>Turkish EcoFly:</b> 8 kg kabinowa + torba; ExtraFly z walizką +288 zł/os. w obie strony.</li>
-    <li><b>Lufthansa, Qatar:</b> zależy od taryfy, do sprawdzenia przy rezerwacji.</li>
-  </ul>
-</div>
-
-<footer>
-  <p>Ceny: Google Flights, wyszukane 24.10.2026 dla 7 pasażerów, w obie strony. Ceny lotów zmieniają się codziennie – to nie jest oferta. Strona przygotowana dla dwóch rodzin; nie rezerwujemy przez nią niczego.</p>
-  <p>Źródła: <a href="https://www.portaloswiatowy.pl/komunikaty-men-i-cke/-ferie-zimowe-2027-terminy-na-rok-szkolny-20262027-26395.html">Portal Oświatowy (ferie)</a> · <a href="https://www.hansemerkur.pl/ubezpieczenie-od-rezygnacji-z-podrozy">HanseMerkur</a> · <a href="https://tueuropa.pl/ubezpieczenia-turystyczne/ubezpieczenie-koszty-rezygnacji.htm">TU Europa</a> · <a href="https://blog.wego.com/is-it-safe-to-fly-through-sharjah/">Wego – Szardża</a> · <a href="https://safeairspace.net/summary/">Safe Airspace</a> · <a href="https://gulfnews.com/business/aviation/uae-flights-status-emirates-etihad-flydubai-air-arabia-delays-and-cancellations-today-1.500677717">Gulf News</a></p>
-  <p>Ostatnia aktualizacja: 24.10.2026, wieczorem</p>
-</footer>
-</div>
-</body>
-</html>
+<!doctype html><html lang="pl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Cache-Control" content="no-cache"><title>Ferie 2027: dokąd w Azji?</title>
+<link rel="stylesheet" href="style.css?v=24102026b"></head><body>
+<header><div class="wrap"><h1>Ferie 2027: dokąd w Azji?</h1>
+<p>Dwie rodziny: 4 dorosłych + 3 dzieci (8, 8 i 6 lat) · ferie małopolskie 15–28.02.2027</p>
+<div class="chips"><span class="chip">Wylot: pt 19.02 po 14:00</span><span class="chip">Powrót: ok. nd 7.03</span><span class="chip">Ceny z 24.10.2026</span></div>
+</div></header><div class="wrap"><h2 class="lead">Dokąd na ferie? Wybierz kierunek</h2>
+<p class="note">Kafelki od najciekawszych. Na każdym: cena za osobę, pogoda, wjazd i na co uważać. Szczegóły lotów (godziny, przesiadki, noclegi) po kliknięciu.</p>
+<div class="tiles"><a class="tile" href="sri-lanka.html"><div class="tflag">🇱🇰</div>
+<h2>Sri Lanka</h2><p class="place">Kolombo → plaże i dżungla</p>
+<div class="tprice"><b>3 005 zł</b><span>za osobę · 21 035 zł za 7 · Air Arabia, wylot pt 19.02 22:10</span></div>
+<p>Najtaniej i najszybciej (11 h, 1 przesiadka), wylot w piątek po pracy prosto z Krakowa. Powrót nd 7.03 przed południem.</p>
+<div class="facts"><div>🌡 ☀️ 30–31°C, pora sucha na zachodzie i południu</div><div>🌊 Morze: 27–28°C</div><div>🛂 ETA online przed wylotem (sprawdzić, czy dla Polaków bezpłatna)</div></div>
+<div class="flags"><span class="flag warn">! Przesiadka w ZEA (Szardża) – Zatoka Perska</span><span class="flag ok">✓ Najtańsza opcja</span><span class="flag ok">✓ Powrót w niedzielę</span></div>
+<span class="btn">Zobacz loty i szczegóły →</span></a><a class="tile" href="malezja-borneo.html"><div class="tflag">🇲🇾</div>
+<h2>Malezja – Borneo</h2><p class="place">Kota Kinabalu (Sabah): wyspy, orangutany</p>
+<div class="tprice"><b>ok. 4 920 zł</b><span>za osobę · ok. 34 400 zł za 7 · z lotem krajowym na Borneo</span></div>
+<p>Wylot w piątek po pracy z Krakowa (19:05) przez Frankfurt i Singapur, nocleg w Kuala Lumpur, potem 2 h 40 min na Borneo. Bez wizy.</p>
+<div class="facts"><div>🌡 🌤 31°C / noc 23°C, przelotne deszcze</div><div>🌊 Morze: 28–29°C</div><div>🛂 bez wizy 90 dni; karta MDAC online</div></div>
+<div class="flags"><span class="flag ok">✓ Bez Zatoki</span><span class="flag ok">✓ Piątek po pracy z Krakowa</span><span class="flag warn">! Powrót w poniedziałek rano</span><span class="flag warn">! Osobny bilet na lot krajowy</span></div>
+<span class="btn">Zobacz loty i szczegóły →</span></a><a class="tile" href="tajwan.html"><div class="tflag">🇹🇼</div>
+<h2>Tajwan</h2><p class="place">Tajpej + Kenting na południu</p>
+<div class="tprice"><b>4 164 zł</b><span>za osobę · 29 151 zł za 7 · Turkish, wylot sob 20.02</span></div>
+<p>Jedna krótka przesiadka w Stambule, bezpieczny i świetny dla dzieci kraj. Powrót w niedzielę rano.</p>
+<div class="facts"><div>🌡 🌧 Tajpej 17–20°C i deszcz · 🌤 Kenting 24–26°C</div><div>🌊 Morze: 24–25°C (tylko południe)</div><div>🛂 bez wizy 90 dni; karta TWAC online</div></div>
+<div class="flags"><span class="flag ok">✓ Bez Zatoki</span><span class="flag ok">✓ 1 przesiadka</span><span class="flag warn">! Północ chłodna i deszczowa</span><span class="flag warn">! Morze tylko 24–25°C</span></div>
+<span class="btn">Zobacz loty i szczegóły →</span></a><a class="tile" href="filipiny.html"><div class="tflag">🇵🇭</div>
+<h2>Filipiny</h2><p class="place">Palawan / Boracay / Bohol</p>
+<div class="tprice"><b>ok. 4 150 zł</b><span>za osobę · ok. 29 000 zł za 7 · z Wiednia, z lotem krajowym</span></div>
+<p>Najpiękniejsze plaże i najpewniejsza pogoda (pora sucha). Ale tani lot jest z Wiednia – w piątek po pracy z Krakowa się nie zdąży.</p>
+<div class="facts"><div>🌡 ☀️ 30–31°C / noc 24°C, pora sucha</div><div>🌊 Morze: 27–28°C</div><div>🛂 bez wizy 30 dni; rejestracja eTravel online</div></div>
+<div class="flags"><span class="flag ok">✓ Bez Zatoki</span><span class="flag ok">✓ Najlepsze plaże</span><span class="flag warn">! Wylot z Wiednia o 19:30</span><span class="flag warn">! Nocleg w Manili po drodze</span></div>
+<span class="btn">Zobacz loty i szczegóły →</span></a><div class="tile pending"><div class="tflag">🇮🇩</div><h2>Indonezja (bez Bali)</h2><p class="place">np. Lombok, Flores (Komodo), Jawa</p>
+<p>Research w toku – Bali odpada (tłok). Pojawi się tutaj pod tym samym linkiem.</p><span class="btn disabled">W przygotowaniu</span></div><a class="tile" href="tajlandia.html"><div class="tflag">🇹🇭</div>
+<h2>Tajlandia</h2><p class="place">Phuket / Krabi (dla porównania)</p>
+<div class="tprice"><b>ok. 3 700 zł</b><span>za osobę · ok. 25 900 zł za 7 · Condor z Wiednia + lot na Phuket</span></div>
+<p>Najtaniej bez Zatoki i sprawdzone. Lot z Wiednia (Condor przez Frankfurt) albo Turkish z Krakowa w sobotę.</p>
+<div class="facts"><div>🌡 ☀️ 32–33°C, sucho – najlepsza pora</div><div>🌊 Morze: 29°C</div><div>🛂 bez wizy; karta TDAC online</div></div>
+<div class="flags"><span class="flag ok">✓ Bez Zatoki</span><span class="flag ok">✓ Najtaniej bez Zatoki</span><span class="flag warn">! Wylot z Wiednia</span><span class="flag warn">! Sprawdzić, czy lot Condora nie ląduje w Abu Zabi</span></div>
+<span class="btn">Zobacz loty i szczegóły →</span></a><a class="tile" href="kambodza.html"><div class="tflag">🇰🇭</div>
+<h2>Kambodża</h2><p class="place">Siem Reap (Angkor), przez Kuala Lumpur</p>
+<div class="tprice"><b>4 320–5 000 zł</b><span>za osobę · ok. 30 300–35 000 zł za 7 · bilet do KL + AirAsia</span></div>
+<p>Przygoda: świątynie Angkoru rano, basen po południu. Bilet do Kuala Lumpur + AirAsia 2 h do Siem Reap.</p>
+<div class="facts"><div>🌡 🔥 33–35°C, bez deszczu</div><div>🌊 Morze: 28–29°C (Koh Rong – daleko od Angkoru)</div><div>🛂 e-wiza 30 USD/os.</div></div>
+<div class="flags"><span class="flag ok">✓ Bez Zatoki</span><span class="flag warn">! Upał 33–35°C</span><span class="flag warn">! Osobne bilety, nocleg w KL</span><span class="flag warn">! Plaża daleko od Angkoru</span></div>
+<span class="btn">Zobacz loty i szczegóły →</span></a><a class="tile" href="chiny-hainan.html"><div class="tflag">🇨🇳</div>
+<h2>Chiny – Hainan</h2><p class="place">Sanya (plaże), przez Kanton</p>
+<div class="tprice"><b>ok. 5 500 zł</b><span>za osobę · ok. 38 500 zł za 7 · Turkish do Kantonu + lot na Hainan</span></div>
+<p>Jedyne naprawdę ciepłe miejsce w Chinach w lutym. Turkish w sobotę do Kantonu i drogi lot krajowy do Sanyi.</p>
+<div class="facts"><div>🌡 ☀️ Sanya 26–28°C, sucho · 🌧 Guilin 7–14°C i deszcz · 🌥 Kanton 17–22°C, mżawki</div><div>🌊 Morze: 23–24°C (chłodniej niż w Tajlandii)</div><div>🛂 bez wizy – na razie tylko do 31.12.2026</div></div>
+<div class="flags"><span class="flag ok">✓ Bez Zatoki</span><span class="flag warn">! Wiza w 2027 niepewna</span><span class="flag warn">! Guilin/Yangshuo: zimno i deszcz</span><span class="flag warn">! Drogi lot krajowy</span></div>
+<span class="btn">Zobacz loty i szczegóły →</span></a><a class="tile" href="wietnam.html"><div class="tflag">🇻🇳</div>
+<h2>Wietnam</h2><p class="place">Phu Quoc (dla porównania)</p>
+<div class="tprice"><b>ok. 5 430 zł</b><span>za osobę · ok. 38 000 zł za 7 · KLM do Sajgonu + lot na Phu Quoc</span></div>
+<p>Wylot w piątek o 17:35 z Krakowa (KLM przez Amsterdam i Singapur), plaże i parki rozrywki na Phu Quoc.</p>
+<div class="facts"><div>🌡 ☀️ 31–32°C, sucho – najlepsza pora</div><div>🌊 Morze: 27–28°C</div><div>🛂 bez wizy 45 dni</div></div>
+<div class="flags"><span class="flag ok">✓ Bez Zatoki</span><span class="flag ok">✓ Piątek po pracy z Krakowa</span><span class="flag warn">! Droższe</span><span class="flag warn">! Powrót w poniedziałek</span></div>
+<span class="btn">Zobacz loty i szczegóły →</span></a><a class="tile notrec" href="laos.html"><div class="tflag">🇱🇦</div>
+<h2>Laos</h2><p class="place">Luang Prabang</p>
+<div class="tprice"><b>ok. 5 600 zł</b><span>za osobę · ok. 39 250 zł za 7 · przez Bangkok</span></div>
+<p>W tym terminie nie polecamy: od początku marca smog z wypalania pól, brak morza, drogie loty.</p>
+<div class="facts"><div>🌡 ☀️ 30–32°C / noc 14–17°C · 🌫 od marca smog</div><div>🌊 Morze: brak morza</div><div>🛂 e-wiza ok. 50 USD/os.</div></div>
+<div class="flags"><span class="flag bad">✕ Smog od początku marca</span><span class="flag warn">! Drogo</span><span class="flag warn">! Bez morza</span></div>
+<span class="btn">Zobacz loty i szczegóły →</span></a></div>
+<div class="callout warn"><b>Zatoka Perska:</b> tanie loty do Azji idą zwykle przez Dubaj, Szardżę lub Dohę. W 2026 region jest niespokojny – dlatego zaznaczamy „przez Zatokę” / „bez Zatoki”. <a href="info.html">Więcej o bezpieczeństwie i ubezpieczeniu →</a></div>
+<div class="callout"><b>Odpadają w tym terminie:</b> Guilin/Yangshuo w Chinach (zimno i deszcz), wschodnie wybrzeże Malezji (monsun), Laos (smog od marca), Indie (niedawno byliśmy), Birma (wojna), Bali i Langkawi (już znamy).</div>
+<footer><p>Ceny: Google Flights, 24.10.2026, dla 7 pasażerów, w obie strony, najtańsza taryfa (bagaż podręczny); dziecko płaci tyle co dorosły. Ceny zmieniają się codziennie – to nie jest oferta.</p>
+<p><a href="info.html">Zatoka Perska · rezygnacja i ubezpieczenie · bagaż</a> · Ostatnia aktualizacja: 24.10.2026</p></footer>
+</div></body></html>
