@@ -389,7 +389,7 @@ def page(title, body, back=False):
     return f'''<!doctype html><html lang="pl"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Cache-Control" content="no-cache"><title>{html.escape(title)}</title>
-<link rel="stylesheet" href="style.css?v={UPDATED.replace('.','')}b"></head><body>
+<link rel="stylesheet" href="style.css?v=d"></head><body>
 <header><div class="wrap">{nav}<h1>{title}</h1>
 <p>Dwie rodziny: 4 dorosłych + 3 dzieci (8, 8 i 6 lat) · ferie małopolskie 15–28.02.2027</p>
 <div class="chips"><span class="chip">Wylot: pt 19.02 po 14:00</span><span class="chip">Powrót: ok. nd 7.03</span><span class="chip">Ceny z {UPDATED}</span></div>
@@ -464,13 +464,33 @@ def index(dests):
 <p class="note">Kafelki od najciekawszych. Na każdym: cena za osobę, pogoda, wjazd i na co uważać. Szczegóły lotów (godziny, przesiadki, noclegi) po kliknięciu.</p>
 <div class="tiles">{tiles}</div>
 <div class="callout warn"><b>Zatoka Perska:</b> tanie loty do Azji idą zwykle przez Dubaj, Szardżę lub Dohę. W 2026 region jest niespokojny – dlatego zaznaczamy „przez Zatokę” / „bez Zatoki”. <a href="info.html">Więcej o bezpieczeństwie i ubezpieczeniu →</a></div>
-<div class="callout"><b>Odpadają w tym terminie:</b> Guilin/Yangshuo w Chinach (zimno i deszcz), wschodnie wybrzeże Malezji (monsun), Laos (smog od marca), Indie (niedawno byliśmy), Birma (wojna), Bali i Langkawi (już znamy).</div>'''
+<h2>Kierunki, których nie bierzemy pod uwagę</h2>
+<div class="card rejected">
+<h3>Odrzucone przez nas</h3>
+<ul>
+<li><b>🇮🇳 Indie</b> – niedawno byliśmy.</li>
+<li><b>🇻🇳 Wietnam</b> – niedawno byliśmy.</li>
+<li><b>🇮🇩 Bali</b> – obie rodziny już były; tłok i bardzo dużo turystów.</li>
+<li><b>🇲🇾 Langkawi</b> – niedawno byliśmy (Malezja zostaje, ale Borneo).</li>
+<li><b>🇲🇲 Birma (Mjanma)</b> – trwa wojna.</li>
+<li><b>Przesiadki w Zatoce Perskiej</b> (Dubaj, Szardża, Abu Zabi, Doha) – tylko tam, gdzie nie ma sensownej alternatywy (Sri Lanka), zawsze z oznaczeniem.</li>
+<li><b>Wyloty z Wiednia w piątek</b> – po pracy w Krakowie nie da się zdążyć.</li>
+</ul>
+<h3>Odpadają w tym terminie (pogoda, bezpieczeństwo)</h3>
+<ul>
+<li><b>Chiny – Guilin / Yangshuo, Kanton</b> – w lutym 7–14°C (Kanton 17–22°C) i mżawki.</li>
+<li><b>Tajwan – północ (Tajpej)</b> – 17–20°C i deszcz; tylko na 2–3 dni miasta, na plażę południe.</li>
+<li><b>Malezja – wschodnie wybrzeże (Perhentian, Tioman)</b> – monsun do połowy marca, wyspy często zamknięte.</li>
+<li><b>🇱🇦 Laos</b> – od początku marca smog z wypalania pól, drogie loty (zostawiony na końcu kafelków dla porównania).</li>
+<li><b>Seul / Japonia</b> – w lutym mróz; Seul tylko jako przesiadka.</li>
+</ul>
+</div>'''
     return page("Ferie 2027: dokąd w Azji?", body)
 
 INFO = open(OUT / "info_body.html").read() if (OUT / "info_body.html").exists() else ""
 
 if __name__ == "__main__":
-    order = [DEST[0], DEST[1], DEST[2], DEST[3], INDO_PENDING, DEST[4], DEST[5], DEST[6], DEST[7], DEST[8]]
+    order = [DEST[0], DEST[1], DEST[2], DEST[3], INDO_PENDING, DEST[4], DEST[5], DEST[6], DEST[8]]  # Vietnam (DEST[7]) rejected: been there recently
     (OUT / "index.html").write_text(index(order))
     for d in DEST: (OUT / f'{d["slug"]}.html').write_text(detail(d))
     (OUT / "info.html").write_text(page("Bezpieczeństwo, rezygnacja, bagaż", INFO, back=True))
