@@ -357,7 +357,7 @@ DEST.append(dict(slug="indonezja", flag="🇮🇩", name="Indonezja – Lombok i
   ],
   extra="Na ten termin odradzamy: Yogyakartę jako jedyne miejsce (300–400 mm deszczu w lutym), Manado/Bunaken (wzburzone morze, a jedyny bilet z Krakowa idzie przez Dubaj), Belitung (rejsy często odwoływane), Raja Ampat (2 dni podróży w każdą stronę). Wszędzie w porze deszczowej: repelent z DEET (denga)."))
 
-TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)', 'kombinacje': '+7 h'}
+TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)', 'kombinacje': '+7 h', 'huby': '+6 h (Bangkok) / +7 h / +8 h (Seul)'}
 INDO_PENDING = dict(slug="indonezja", flag="🇮🇩", name="Indonezja (bez Bali)", place="np. Lombok, Flores (Komodo), Jawa", pending=True,
   summary="Research w toku – Bali odpada (tłok). Pojawi się tutaj pod tym samym linkiem.")
 
@@ -598,6 +598,78 @@ ROUTE.update({
 })
 
 
+
+DEST.append(dict(slug="huby", flag="🏙", name="Przez wielkie miasto (hub) + tani lot dalej", place="Singapur, Bangkok, Kuala Lumpur, Hongkong, Seul", gulf=False,
+  price="od ok. 4 000 zł", price7="", price_note="lot długi + loty lokalne, bez hoteli",
+  summary="Tani lot do wielkiego miasta, 2 noce na zwiedzanie, potem tania linia na plażę. Najlepiej: Singapur + Penang.",
+  weather="Penang, Krabi, Phuket: sucho, 32–33°C · Cebu/Bohol: sucho, 30°C", sea="28–30°C", entry="zależy od kraju – patrz kafelki krajów",
+  chips=[("ok","Bez Zatoki"),("ok","Miasto + plaża"),("warn","Loty lokalne – osobne bilety"),("warn","Ceny z wyszukiwania dla 1 os.")],
+  options=[
+   dict(title="Singapur + Penang", tag="Najlepszy plan", gulf=False, pp="ok. 4 110 zł",
+    why="Turkish Kraków ↔ Singapur + Scoot do Penang 256 zł + AirAsia z powrotem 189 zł. Na Borneo zamiast Penang: ok. 4 540 zł. W piątek po pracy: Lufthansa 19:05 przez Frankfurt, ok. 4 350 zł, powrót pn 9:35.",
+    out_title="Tam: sob 20.02 → nd 21.02", out=[
+     dep("19:25","19:25","sob 20.02 · Kraków, TK 1274"),
+     stop("23:50","21:50","Stambuł (Turcja)","Przesiadka <b>2 h</b>"),
+     stop("01:50","23:50","wylot, TK 54 (nocny)"), fly("lot ok. 10 h 50 min"),
+     arr("17:40","10:40","nd 21.02 · Singapur · Polska + 7 h"),
+     night("🛏 2 noce w Singapurze (Gardens by the Bay, zoo, Sentosa)"),
+     dep("08:00","01:00","wt 23.02 · Scoot do Penang (Malezja)"),
+     night("🏝 ok. 10 nocy Penang (George Town, Batu Ferringhi)")],
+    back_title="Powrót: pt 5.03 → nd 7.03", back=[
+     dep("","","pt 5.03 · AirAsia Penang → Singapur, noc w Singapurze"),
+     dep("23:15","16:15","sob 6.03 · Singapur, TK 55 (nocny)"),
+     stop("05:50","03:50","nd 7.03 · Stambuł","Przesiadka <b>2 h 10 min</b>"),
+     arr("08:20","08:20","nd 7.03 · Kraków")], back_bio="W domu w niedzielę rano."),
+   dict(title="Kuala Lumpur + Penang albo Borneo", gulf=False, pp="ok. 4 480 zł",
+    why="Lufthansa + Singapore Airlines w piątek po pracy + AirAsia do Penang 129 zł w każdą stronę (prawie co godzinę). Z Borneo zamiast Penang: ok. 4 850 zł.",
+    out_title="Tam: pt 19.02 → sob 20.02", out=[
+     dep("19:05","19:05","pt 19.02 · Kraków, LH 1369"), stop("20:45","20:45","Frankfurt","Przesiadka"),
+     stop("","","Singapur","Przesiadka"), arr("19:40","12:40","sob 20.02 · Kuala Lumpur"),
+     night("🛏 1–2 noce w KL, potem AirAsia do Penang (1 h)")],
+    back_title="Powrót: nd 7.03 → pn 8.03", back=[
+     dep("23:55","16:55","nd 7.03 · Kuala Lumpur (nocny)"), stop("06:00","06:00","pn 8.03 · Frankfurt","Przesiadka <b>2 h</b>"),
+     arr("09:35","09:35","pn 8.03 · Kraków")]),
+   dict(title="Hongkong + Cebu albo Bohol (Filipiny)", gulf=False, pp="ok. 4 350–4 640 zł",
+    why="Lufthansa Kraków ↔ Hongkong (ten sam rozkład pt, sob i nd) + Cebu Pacific Hongkong → Cebu 518 zł, z powrotem 439 zł. Palawan przez Manilę: ok. 4 550 zł; Kaohsiung (Tajwan): ok. 4 240 zł.",
+    out_title="Tam: sob 20.02 → nd 21.02", out=[
+     dep("19:05","19:05","sob 20.02 · Kraków, LH 1369"), stop("20:45","20:45","Frankfurt","Przesiadka <b>1 h 05 min</b>"),
+     stop("21:50","21:50","wylot, LH 796 (nocny)"), arr("16:30","09:30","nd 21.02 · Hongkong"),
+     night("🛏 2 noce w Hongkongu"), dep("21:35","14:35","wt 23.02 · Cebu Pacific"), arr("00:30","17:30","śr 24.02 · Cebu")],
+    back_title="Powrót: pt 5.03 → nd 7.03", back=[
+     dep("17:45","10:45","pt 5.03 · Cebu → Hongkong, noc w Hongkongu"),
+     dep("23:45","16:45","sob 6.03 · Hongkong (nocny)"), stop("06:10","06:10","nd 7.03 · Frankfurt","Przesiadka"),
+     arr("09:35","09:35","nd 7.03 · Kraków")]),
+   dict(title="Bangkok + Krabi albo Phuket (LOT z Warszawy bez przesiadki)", gulf=False, pp="ok. 4 770 zł",
+    why="LOT Warszawa ↔ Bangkok bez przesiadki + Thai Vietjet do Krabi 194 zł / Phuket 175 zł, z powrotem ok. 264 zł. Plus pociąg do Warszawy. Z Krakowa: SWISS nd 14:40 przez Zurych, ok. 4 490 zł (powrót 7 h 35 min czekania w Wiedniu).",
+    out_title="Tam: nd 21.02 → pn 22.02", out=[
+     dep("14:45","14:45","nd 21.02 · Warszawa, LO 65 (bez przesiadki)"), fly("lot 10 h 20 min"),
+     arr("07:05","01:05","pn 22.02 · Bangkok · Polska + 6 h"),
+     night("🛏 2 noce w Bangkoku, potem lot na Krabi / Phuket")],
+    back_title="Powrót: nd 7.03", back=[
+     dep("09:05","03:05","nd 7.03 · Bangkok, LO 66 (bez przesiadki)"), arr("15:00","15:00","nd 7.03 · Warszawa")]),
+   dict(title="Seul + Cebu (LOT z Warszawy)", gulf=False, pp="ok. 3 980 zł",
+    why="Najtańszy lot długi: LOT Warszawa ↔ Seul bez przesiadki 2 898 zł + Cebu Pacific Seul ↔ Cebu 425 + 654 zł. Najmniej wygodnie: mroźny Seul, nocny przylot do Cebu, 5-godzinne loty lokalne.",
+    out_title="Tam: sob 20.02 → nd 21.02", out=[
+     dep("11:50","11:50","sob 20.02 · Warszawa, LOT (bez przesiadki)"), fly("lot ok. 11 h"),
+     arr("07:00","23:00","nd 21.02 · Seul (Korea Płd.) · Polska + 8 h"), night("✈ Dalej Cebu Pacific do Cebu (ok. 5 h)")],
+    back_title="Powrót: przez Seul do Warszawy", back=[]),
+  ],
+  extra="Ceny z wyszukiwań dla 1 dorosłego (dla 7 osób Google dziś prawie nic nie pokazywał) – przed zakupem sprawdzić dla 7. Kraków–Bangkok bez przesiadki nie ma; LOT lata z Warszawy codziennie oprócz piątku. Chiny jako hub: 240-godzinny tranzyt bez wizy działa tylko przy locie dalej do innego kraju. Inne tanie loty lokalne: Singapur ↔ Kuala Lumpur 171–256 zł (ponad 30 dziennie), Hongkong → Manila 313 zł, Manila → Boracay 140 zł / Palawan 156 zł / Bohol 168 zł, Kuala Lumpur → Siem Reap 346 zł."))
+STATS.update({
+ "Singapur + Penang": (("15 h 15 min do Singapuru","13 h 15 min","2 h","+ 2 noce w Singapurze i ok. 1 h 30 min lotu do Penang"),("16 h 05 min z Singapuru","13 h 55 min","2 h 10 min","+ dzień wcześniej lot z Penang")),
+ "Kuala Lumpur + Penang albo Borneo": (("17 h 35 min do KL","","2 przesiadki","+ lot do Penang 1 h"),("16 h 40 min","14 h 40 min","2 h","")),
+ "Hongkong + Cebu albo Bohol (Filipiny)": (("14 h 25 min do Hongkongu","13 h 20 min","1 h 05 min","+ 2 noce w HK i lot do Cebu"),("16 h 50 min z Hongkongu","","1 przesiadka","")),
+ "Bangkok + Krabi albo Phuket (LOT z Warszawy bez przesiadki)": (("10 h 20 min","10 h 20 min","bez przesiadki","+ ok. 2 h 30 min pociągiem do Warszawy"),("11 h 55 min","11 h 55 min","bez przesiadki","+ pociąg do Krakowa")),
+ "Seul + Cebu (LOT z Warszawy)": (("11 h 10 min do Seulu","11 h 10 min","bez przesiadki","+ ok. 5 h lotu do Cebu"),None),
+})
+ROUTE.update({
+ "Singapur + Penang": "Kraków → Stambuł → Singapur · Penang · Singapur → Stambuł → Kraków",
+ "Kuala Lumpur + Penang albo Borneo": "Kraków → Frankfurt → Singapur → Kuala Lumpur · Penang",
+ "Hongkong + Cebu albo Bohol (Filipiny)": "Kraków → Frankfurt → Hongkong · Cebu · Hongkong → Frankfurt → Kraków",
+ "Bangkok + Krabi albo Phuket (LOT z Warszawy bez przesiadki)": "Warszawa → Bangkok (bez przesiadki) · Krabi / Phuket",
+ "Seul + Cebu (LOT z Warszawy)": "Warszawa → Seul (bez przesiadki) · Cebu",
+})
+
 # ---------- Warsaw comparison (warszawa-dane.md, 24.10 evening) ----------
 WAW = {
  "sri-lanka": "Warszawa: 2 988 zł (sob 11:45, przez Szardżę)",
@@ -619,7 +691,7 @@ AL = {
  "KLM": "https://www.klm.pl/", "Lufthansa": "https://www.lufthansa.com/pl/pl/homepage",
  "Austrian": "https://www.austrian.com/pl/pl/homepage", "Turkish Airlines": "https://www.turkishairlines.com/pl-pl/",
  "Korean Air": "https://www.koreanair.com/", "Condor": "https://www.condor.com/pl/",
- "AirAsia": "https://www.airasia.com/", "Finnair": "https://www.finnair.com/pl-pl", "Scoot": "https://www.flyscoot.com/pl", "China Airlines": "https://www.china-airlines.com/pl/pl",
+ "AirAsia": "https://www.airasia.com/", "LOT": "https://www.lot.com/pl/pl", "Finnair": "https://www.finnair.com/pl-pl", "Scoot": "https://www.flyscoot.com/pl", "China Airlines": "https://www.china-airlines.com/pl/pl",
 }
 BOOK = {
  ("sri-lanka",1): (f"Flights from KRK to CMB on 2027-02-19 return 2027-03-07 {P} Air Arabia", "Air Arabia"),
@@ -647,6 +719,11 @@ BOOK = {
  ("kombinacje",3): (f"Flights from KRK to TPE on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
  ("kombinacje",4): (f"Flights from KRK to SIN on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
  ("kombinacje",5): (f"Flights from KRK to HKG on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
+ ("huby",1): (f"Flights from KRK to SIN on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
+ ("huby",2): (f"Flights from KRK to KUL on 2027-02-19 return 2027-03-07 {P} Lufthansa", "Lufthansa"),
+ ("huby",3): (f"Flights from KRK to HKG on 2027-02-20 return 2027-03-06 {P} Lufthansa", "Lufthansa"),
+ ("huby",4): (f"Flights from WAW to BKK on 2027-02-21 return 2027-03-07 {P} LOT", "LOT"),
+ ("huby",5): (f"Flights from WAW to ICN on 2027-02-20 return 2027-03-06 {P} LOT", "LOT"),
  ("laos",1): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
 }
 from urllib.parse import quote
@@ -780,7 +857,7 @@ def index(dests):
 INFO = open(OUT / "info_body.html").read() if (OUT / "info_body.html").exists() else ""
 
 if __name__ == "__main__":
-    order = [DEST[0], DEST[10], DEST[1], DEST[9], DEST[2], DEST[3], DEST[4], DEST[5], DEST[6], DEST[8]]  # Vietnam (DEST[7]) rejected: been there recently
+    order = [DEST[0], DEST[10], DEST[11], DEST[1], DEST[9], DEST[2], DEST[3], DEST[4], DEST[5], DEST[6], DEST[8]]  # Vietnam (DEST[7]) rejected: been there recently
     (OUT / "index.html").write_text(index(order))
     for d in DEST: (OUT / f'{d["slug"]}.html').write_text(detail(d))
     (OUT / "info.html").write_text(page("Bezpieczeństwo, rezygnacja, bagaż", INFO, back=True))
