@@ -284,7 +284,80 @@ DEST = [
   ]),
 ]
 
-TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h'}
+
+DEST.append(dict(slug="indonezja", flag="🇮🇩", name="Indonezja – Lombok i Flores", place="Gili (bez samochodów), Komodo, opcjonalnie Yogyakarta", gulf=False,
+  price="ok. 5 080 zł", price7="", price_note="Lufthansa do Singapuru + Scoot na Lombok",
+  summary="Spokojniejsza „Bali sprzed 20 lat”: Gili Air/Meno z żółwiami przy plaży, puste plaże południa Lomboka, opcjonalnie 4–5 dni Komodo. Po drodze noc w Singapurze.",
+  weather="🌦 pora deszczowa: krótkie ulewy, 24–31°C, 6–8 h słońca", sea="29°C", entry="e-VOA ok. 120 zł/os. (zapowiedziana podwyżka); karta przyjazdu online",
+  chips=[("ok","Bez Zatoki"),("ok","Mało turystów"),("warn","Pora deszczowa"),("warn","Noc w Singapurze, osobne bilety"),("warn","Powrót w poniedziałek")],
+  options=[
+   dict(title="Lufthansa Kraków ↔ Singapur + Scoot na Lombok", tag="Najlepsza opcja", gulf=False, pp="ok. 5 080 zł",
+    why="Lufthansa w obie strony 3 902 zł + Scoot tam 548 zł i z powrotem 629 zł. Wieczór i noc w Singapurze (Gardens by the Bay). Taryfy: Lufthansa Light 8 kg podręcznego, Scoot Fly 10 kg.",
+    out_title="Tam: pt 19.02 → nd 21.02", out=[
+     dep("19:05","19:05","pt 19.02 · wylot z Krakowa, LH 1369"),
+     stop("20:45","20:45","Frankfurt (Niemcy)","Przesiadka <b>55 min</b>"),
+     stop("21:40","21:40","wylot, LH 780 (nocny)"), fly("lot 12 h 25 min"),
+     arr("17:05","10:05","sob 20.02 · Singapur · Polska + 7 h"),
+     night("🛏 Nocleg w Singapurze"),
+     dep("06:55","sob 23:55","nd 21.02 · Scoot TR 366"), fly("lot 2 h 55 min"),
+     arr("09:50","02:50","nd 21.02 · Lombok (LOP), Indonezja · Polska + 7 h"),
+     night("🚐 Na Gili: ok. 2 h autem do portu + 15 min łódką")],
+    out_bio="Lot nocny w polską noc, w Singapurze wieczór i normalna noc w hotelu – jetlag rozkłada się na dwa dni.",
+    back_title="Powrót: nd 7.03 → pn 8.03", back=[
+     dep("10:25","03:25","nd 7.03 · Lombok, Scoot TR 367"),
+     stop("13:20","06:20","Singapur","<b>10 h 35 min</b> – lotnisko Jewel (wodospad, place zabaw) albo pół dnia w mieście"),
+     stop("23:55","16:55","wylot, LH 781 (nocny)"), fly("lot 13 h 20 min"),
+     stop("06:15","06:15","pn 8.03 · Frankfurt","Przesiadka <b>1 h 45 min</b>"),
+     arr("09:35","09:35","pn 8.03 · Kraków")],
+    back_bio="W domu w poniedziałek rano – dzieci tracą poniedziałek. Spokojniej: Scoot z Lomboka w sobotę 6.03 o 17:30 i niedziela w Singapurze.",
+    note="Scoot to osobny bilet – przy spóźnieniu nikt nie przebukuje; dlatego noc w Singapurze w drodze tam i zapas w drodze powrotnej."),
+   dict(title="Flores (Komodo) 4–5 dni + Lombok", gulf=False, pp="ok. 5 500 zł",
+    why="Lufthansa 3 902 zł + Scoot do Labuan Bajo 570 zł + Wings Air Labuan Bajo → Lombok 402 zł + Scoot z Lomboka 629 zł. Smoki z Komodo, różowa plaża, manty – przy fali rejsy bywają przesuwane, warto mieć dzień zapasu.",
+    out_title="Tam: pt 19.02 → nd 21.02", out=[
+     dep("19:05","19:05","pt 19.02 · Kraków → Frankfurt → Singapur (jak wyżej)"),
+     arr("17:05","10:05","sob 20.02 · Singapur"), night("🛏 Nocleg w Singapurze"),
+     dep("14:30","07:30","nd 21.02 · Scoot do Labuan Bajo"), fly("lot 3 h 25 min"),
+     arr("17:55","10:55","nd 21.02 · Labuan Bajo (Flores)"),
+     night("✈ W połowie pobytu: Wings Air Labuan Bajo 09:20 → Lombok 10:40 (codziennie)")],
+    back_title="Powrót: jak w opcji 1 (z Lomboka, Kraków pn 8.03 9:35)", back=[]),
+   dict(title="Turkish Kraków ↔ Singapur w sobotę + Scoot", gulf=False, pp="ok. 4 770 zł",
+    why="Najtaniej i powrót w niedzielę rano, ale na Lombok dopiero w poniedziałek po południu. Cena Turkish (ok. 3 670 zł) z wyszukiwania dla 1 osoby – dla 7 może być nieco wyższa.",
+    out_title="Tam: sob 20.02 → pn 22.02", out=[
+     dep("19:25","19:25","sob 20.02 · wylot z Krakowa, TK 1274"),
+     stop("23:50","21:50","Stambuł (Turcja)","Przesiadka <b>2 h</b>"),
+     stop("01:50","23:50","wylot, TK 54 (nocny)"),
+     arr("17:40","10:40","nd 21.02 · Singapur"), night("🛏 Nocleg w Singapurze"),
+     dep("14:00","07:00","pn 22.02 · Scoot"), arr("16:55","09:55","pn 22.02 · Lombok")],
+    back_title="Powrót: sob 6.03 → nd 7.03", back=[
+     dep("17:30","10:30","sob 6.03 · Lombok, Scoot"),
+     stop("20:25","13:25","Singapur","Przesiadka <b>2 h 50 min</b> (osobne bilety)"),
+     stop("23:15","16:15","wylot, TK 55 (nocny)"),
+     stop("05:50","03:50","nd 7.03 · Stambuł","Przesiadka <b>2 h 10 min</b>"),
+     arr("08:20","08:20","nd 7.03 · Kraków")]),
+   dict(title="Yogyakarta (Borobudur) + Lombok", gulf=False, pp="ok. 5 360 zł",
+    why="Kultura na start (Borobudur, Prambanan, wulkan Merapi), potem plaża. Na Jawie szczyt pory deszczowej – zwiedzanie rano.",
+    out_title="Tam: pt 19.02 → nd 21.02", out=[
+     dep("19:05","19:05","pt 19.02 · Kraków → Frankfurt → Singapur (jak opcja 1)"),
+     arr("17:05","10:05","sob 20.02 · Singapur"), night("🛏 Nocleg w Singapurze"),
+     dep("08:00","01:00","nd 21.02 · Scoot TR 248 (albo 16:40)"),
+     arr("09:30","03:30","nd 21.02 · Yogyakarta (Jawa) · Polska + 6 h"),
+     night("✈ W połowie: Yogyakarta 17:45 → Lombok 20:15 (JT 778, 376 zł/os.)")],
+    back_title="Powrót: jak w opcji 1 (z Lomboka, Kraków pn 8.03 9:35)", back=[]),
+   dict(title="KLM przez Amsterdam i Singapur na Bali (tylko przesiadka) + Wings Air na Lombok", gulf=False, pp="ok. 5 190 zł",
+    why="Wylot o 17:35, noc przy lotnisku na Bali (bez zostawania na Bali). Minus: odprawa na Bali, możliwa opłata turystyczna ok. 35 zł/os.",
+    out_title="Tam: pt 19.02 → nd 21.02", out=[
+     dep("17:35","17:35","pt 19.02 · Kraków, KL 1328"), stop("19:35","19:35","Amsterdam","Przesiadka <b>1 h 10 min</b>"),
+     stop("16:15","09:15","sob 20.02 · Singapur","Postój <b>1 h 20 min</b>, ten sam samolot"),
+     arr("20:20","13:20","sob 20.02 · Bali (DPS)"), night("🛏 Nocleg przy lotnisku"),
+     dep("11:10","04:10","nd 21.02 · Wings Air"), arr("12:00","05:00","nd 21.02 · Lombok")],
+    back_title="Powrót: nd 7.03 → pn 8.03", back=[
+     dep("16:55","09:55","nd 7.03 · Lombok → Bali"), stop("21:40","14:40","wylot z Bali, KL 836","ok. 4 h na lotnisku na Bali"),
+     stop("08:35","08:35","pn 8.03 · Amsterdam","Przesiadka <b>6 h 30 min</b>"),
+     arr("17:00","17:00","pn 8.03 · Kraków")]),
+  ],
+  extra="Na ten termin odradzamy: Yogyakartę jako jedyne miejsce (300–400 mm deszczu w lutym), Manado/Bunaken (wzburzone morze, a jedyny bilet z Krakowa idzie przez Dubaj), Belitung (rejsy często odwoływane), Raja Ampat (2 dni podróży w każdą stronę). Wszędzie w porze deszczowej: repelent z DEET (denga)."))
+
+TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)'}
 INDO_PENDING = dict(slug="indonezja", flag="🇮🇩", name="Indonezja (bez Bali)", place="np. Lombok, Flores (Komodo), Jawa", pending=True,
   summary="Research w toku – Bali odpada (tłok). Pojawi się tutaj pod tym samym linkiem.")
 
@@ -336,6 +409,13 @@ STATS = {
  "Turkish do Bangkoku + Bangkok Airways do Luang Prabang": (("13 h 40 min do Bangkoku","11 h 50 min","1 h 50 min","+ nocleg w Bangkoku i 2 h 10 min lotu"),None),
 }
 # Thailand Turkish has the same title as the Philippines one; stats keyed by (slug,title) override:
+STATS.update({
+ "Lufthansa Kraków ↔ Singapur + Scoot na Lombok": (("31 h 45 min","17 h","55 min + noc w Singapurze","+ ok. 2 h 15 min na Gili"),("30 h 10 min","17 h 50 min","12 h 20 min","")),
+ "Flores (Komodo) 4–5 dni + Lombok": (("39 h 50 min","17 h 30 min","55 min + noc i przedpołudnie w Singapurze",""),None),
+ "Turkish Kraków ↔ Singapur w sobotę + Scoot": (("38 h 30 min","16 h 10 min","2 h + noc i przedpołudnie w Singapurze",""),("21 h 50 min","16 h 50 min","5 h","")),
+ "Yogyakarta (Borobudur) + Lombok": (("32 h 25 min","16 h 35 min","55 min + noc w Singapurze",""),None),
+ "KLM przez Amsterdam i Singapur na Bali (tylko przesiadka) + Wings Air na Lombok": (("35 h 25 min","18 h 05 min","1 h 10 min + 1 h 20 min + noc na Bali",""),("31 h 05 min","19 h 05 min","12 h","")),
+})
 STATS_BY_SLUG = {("tajlandia","Turkish Airlines z Krakowa, wylot w sobotę"): (("13 h 40 min do Bangkoku","11 h 50 min","1 h 50 min","+ lot krajowy na Phuket (1 h 30)"),None)}
 
 
@@ -353,6 +433,13 @@ ROUTE = {
  "KLM + Vietnam Airlines z Krakowa, przez Amsterdam i Singapur": "Kraków → Amsterdam → Singapur → Sajgon",
  "Turkish do Bangkoku + Bangkok Airways do Luang Prabang": "Kraków → Stambuł → Bangkok → Luang Prabang",
 }
+ROUTE.update({
+ "Lufthansa Kraków ↔ Singapur + Scoot na Lombok": "Kraków → Frankfurt → Singapur (nocleg) → Lombok",
+ "Flores (Komodo) 4–5 dni + Lombok": "Kraków → Frankfurt → Singapur (nocleg) → Labuan Bajo → Lombok",
+ "Turkish Kraków ↔ Singapur w sobotę + Scoot": "Kraków → Stambuł → Singapur (nocleg) → Lombok",
+ "Yogyakarta (Borobudur) + Lombok": "Kraków → Frankfurt → Singapur (nocleg) → Yogyakarta → Lombok",
+ "KLM przez Amsterdam i Singapur na Bali (tylko przesiadka) + Wings Air na Lombok": "Kraków → Amsterdam → Singapur → Bali (nocleg) → Lombok",
+})
 ROUTE_BY_SLUG = {("filipiny","Turkish Airlines z Krakowa, wylot w sobotę"): "Kraków → Stambuł → Manila → Palawan / Boracay",
                  ("tajlandia","Turkish Airlines z Krakowa, wylot w sobotę"): "Kraków → Stambuł → Bangkok → Phuket"}
 def route_of(slug, o): return ROUTE_BY_SLUG.get((slug, o["title"])) or ROUTE.get(o["title"], "")
@@ -373,7 +460,7 @@ AL = {
  "KLM": "https://www.klm.pl/", "Lufthansa": "https://www.lufthansa.com/pl/pl/homepage",
  "Austrian": "https://www.austrian.com/pl/pl/homepage", "Turkish Airlines": "https://www.turkishairlines.com/pl-pl/",
  "Korean Air": "https://www.koreanair.com/", "Condor": "https://www.condor.com/pl/",
- "AirAsia": "https://www.airasia.com/", "China Airlines": "https://www.china-airlines.com/pl/pl",
+ "AirAsia": "https://www.airasia.com/", "Scoot": "https://www.flyscoot.com/pl", "China Airlines": "https://www.china-airlines.com/pl/pl",
 }
 BOOK = {
  ("sri-lanka",1): (f"Flights from KRK to CMB on 2027-02-19 return 2027-03-07 {P} Air Arabia", "Air Arabia"),
@@ -389,6 +476,11 @@ BOOK = {
  ("kambodza",1): (f"Flights from KRK to KUL on 2027-02-19 return 2027-03-07 {P} Lufthansa", "Lufthansa"),
  ("chiny-hainan",1): (f"Flights from KRK to CAN on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
  ("wietnam",1): (f"Flights from KRK to SGN on 2027-02-19 return 2027-03-07 {P} KLM", "KLM"),
+ ("indonezja",1): (f"Flights from KRK to SIN on 2027-02-19 return 2027-03-07 {P} Lufthansa", "Lufthansa"),
+ ("indonezja",2): (f"Flights from KRK to SIN on 2027-02-19 return 2027-03-07 {P} Lufthansa", "Scoot"),
+ ("indonezja",3): (f"Flights from KRK to SIN on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
+ ("indonezja",4): (f"Flights from KRK to SIN on 2027-02-19 return 2027-03-07 {P} Lufthansa", "Scoot"),
+ ("indonezja",5): (f"Flights from KRK to DPS on 2027-02-19 return 2027-03-07 {P} KLM", "KLM"),
  ("laos",1): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
 }
 from urllib.parse import quote
@@ -428,7 +520,7 @@ def tile(d):
     return f'''<a class="{cls}" href="{d["slug"]}.html"><div class="tflag">{d["flag"]}</div>
 <h2>{d["name"]}</h2><p class="place">{d["place"]}</p>
 <p class="route">✈ {route_of(d["slug"], d["options"][0])}</p>
-<div class="tprice"><b>{d["price"]}</b><span>za osobę, w obie strony · {d["price_note"]}</span></div>
+<div class="tprice"><b>{d["price"]}</b><span>za osobę, w obie strony · {d["price_note"]}</span>{('<span class="alt">' + d["alt"] + '</span>') if d.get("alt") else ''}</div>
 <p>{d["summary"]}</p>
 <div class="facts"><div>🕐 Różnica czasu: <b>{TZ[d["slug"]]}</b></div><div>🌡 {d["weather"]}</div><div>🌊 Morze: {d["sea"]}</div><div>🛂 {d["entry"]}</div></div>
 <div class="flags">{chip_html(d["chips"])}</div>
@@ -453,7 +545,7 @@ def option(o, i, slug=''):
     badge = f'<span class="badge">{o["tag"]}</span> ' if o.get("tag") else f'<span class="badge num">Opcja {i}</span> '
     g = GULF if o["gulf"] else NOGULF
     parts = [f'<div class="card {"best" if i==1 else ""}">{badge}{g}<h3 class="otitle">{o["title"]}</h3><p class="route">✈ {route_of(slug, o)}</p>',
-             f'<div class="price"><div><b>{o["pp"]}</b><span>za osobę, w obie strony{" · " + o["p7"] if str(o.get("p7","")).startswith("+") else ""}</span></div></div>',
+             f'<div class="price"><div><b>{o["pp"]}</b><span>za osobę, w obie strony{" · " + o["p7"] if str(o.get("p7","")).startswith("+") else ""}</span>{('<span class="alt">' + o["alt"] + '</span>') if o.get("alt") else ''}</div></div>',
              f'<p class="why">{o["why"]}</p>']
     if o.get("out"):
         st = STATS_BY_SLUG.get((slug, o["title"])) or STATS.get(o["title"])
@@ -501,6 +593,7 @@ def index(dests):
 <li><b>Malezja – wschodnie wybrzeże (Perhentian, Tioman)</b> – monsun do połowy marca, wyspy często zamknięte.</li>
 <li><b>🇱🇦 Laos</b> – od początku marca smog z wypalania pól, drogie loty (zostawiony na końcu kafelków dla porównania).</li>
 <li><b>Seul / Japonia</b> – w lutym mróz; Seul tylko jako przesiadka.</li>
+<li><b>Indonezja: Manado/Bunaken, Belitung, Raja Ampat</b> – wzburzone morze i odwoływane rejsy w lutym; Raja Ampat 2 dni podróży.</li>
 </ul>
 </div>'''
     return page("Ferie 2027: dokąd w Azji?", body)
@@ -508,7 +601,7 @@ def index(dests):
 INFO = open(OUT / "info_body.html").read() if (OUT / "info_body.html").exists() else ""
 
 if __name__ == "__main__":
-    order = [DEST[0], DEST[1], DEST[2], DEST[3], INDO_PENDING, DEST[4], DEST[5], DEST[6], DEST[8]]  # Vietnam (DEST[7]) rejected: been there recently
+    order = [DEST[0], DEST[1], DEST[9], DEST[2], DEST[3], DEST[4], DEST[5], DEST[6], DEST[8]]  # Vietnam (DEST[7]) rejected: been there recently
     (OUT / "index.html").write_text(index(order))
     for d in DEST: (OUT / f'{d["slug"]}.html').write_text(detail(d))
     (OUT / "info.html").write_text(page("Bezpieczeństwo, rezygnacja, bagaż", INFO, back=True))
