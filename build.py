@@ -597,6 +597,21 @@ ROUTE.update({
  "Hongkong → Palawan (El Nido) → Manila": "Kraków → Stambuł → Hongkong · Palawan · Manila → Stambuł → Kraków",
 })
 
+
+# ---------- Warsaw comparison (warszawa-dane.md, 24.10 evening) ----------
+WAW = {
+ "sri-lanka": "Warszawa: 2 988 zł (sob 11:45, przez Szardżę)",
+ "malezja-borneo": "Warszawa: ok. 4 600 zł (Lufthansa pt 18:35)",
+ "indonezja": "Warszawa: ok. 4 910 zł (Austrian + Singapore Airlines pt 19:25)",
+ "tajwan": "Warszawa: 4 528 zł (LOT + KLM, nd 16:45)",
+ "filipiny": "Warszawa: ok. 5 260 zł (Turkish pt 18:40) – o 1 000 zł taniej",
+ "tajlandia": "Warszawa: ok. 4 240 zł (LOT bez przesiadki do Bangkoku, nd 14:45)",
+ "kambodza": "Warszawa: ok. 4 700 zł",
+ "chiny-hainan": "Warszawa: ok. 5 600 zł",
+}
+for _x in DEST:
+    if _x["slug"] in WAW: _x["alt"] = WAW[_x["slug"]]
+
 # ---------- booking links: (slug, option index) -> (Google Flights query, airline name, airline URL) ----------
 P = "4 adults 3 children"
 AL = {
