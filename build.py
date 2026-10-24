@@ -357,7 +357,7 @@ DEST.append(dict(slug="indonezja", flag="🇮🇩", name="Indonezja – Lombok i
   ],
   extra="Na ten termin odradzamy: Yogyakartę jako jedyne miejsce (300–400 mm deszczu w lutym), Manado/Bunaken (wzburzone morze, a jedyny bilet z Krakowa idzie przez Dubaj), Belitung (rejsy często odwoływane), Raja Ampat (2 dni podróży w każdą stronę). Wszędzie w porze deszczowej: repelent z DEET (denga)."))
 
-TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)'}
+TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)', 'kombinacje': '+7 h'}
 INDO_PENDING = dict(slug="indonezja", flag="🇮🇩", name="Indonezja (bez Bali)", place="np. Lombok, Flores (Komodo), Jawa", pending=True,
   summary="Research w toku – Bali odpada (tłok). Pojawi się tutaj pod tym samym linkiem.")
 
@@ -509,6 +509,94 @@ ROUTE["Turkish Airlines przez Stambuł, sobota → sobota"] = "Kraków → Stamb
 ROUTE["Finnair do Singapuru w niedzielę + AirAsia na Borneo, powrót Lufthansą"] = "Kraków → Helsinki → Singapur → Kota Kinabalu"
 ROUTE["Austrian + Malaysia Airlines przez Wiedeń i Bangkok, w niedzielę"] = ROUTE.pop("Austrian + Malaysia Airlines przez Wiedeń i Bangkok")
 
+
+DEST.append(dict(slug="kombinacje", flag="🧭", name="Kombinacje: tam do jednego miasta, z powrotem z innego", place="np. Hongkong → Borneo → Singapur", gulf=False,
+  price="od ok. 4 150 zł", price7="", price_note="wszystkie loty, bez hoteli",
+  summary="Długi lot do jednego wielkiego miasta, powrót z innego, a w środku tanie loty lokalne. Najczęściej Turkish w sobotę 19:25 z Krakowa i powrót w niedzielę 8:20.",
+  weather="zależy od planu – Borneo sucho, Palawan sucho, Tajwan chłodniej, Lombok deszczowo", sea="24–30°C", entry="zależy od krajów – patrz kafelki krajów",
+  chips=[("ok","Bez Zatoki"),("ok","Powrót w niedzielę rano"),("ok","2–3 różne miejsca"),("warn","Loty lokalne – osobne bilety")],
+  options=[
+   dict(title="Hongkong → Borneo (Kota Kinabalu) → Singapur", tag="Najlepszy plan", gulf=False, pp="ok. 4 270 zł",
+    why="Turkish Kraków → Hongkong, Singapur → Kraków na jednym bilecie 3 500 zł + HK Express Hongkong → Kota Kinabalu 419 zł + AirAsia Kota Kinabalu → Singapur 348 zł. Trzy światy: miasto, przyroda i plaża, miasto-ogród.",
+    out_title="Tam: sob 20.02 → nd 21.02", out=[
+     dep("19:25","19:25","sob 20.02 · Kraków, TK 1274"),
+     stop("23:50","21:50","Stambuł (Turcja)","Przesiadka <b>1 h 55 min</b>"),
+     stop("01:45","23:45","wylot (nocny)"), fly("lot ok. 10 h 20 min"),
+     arr("17:05","10:05","nd 21.02 · Hongkong · Polska + 7 h"),
+     night("🛏 2 noce w Hongkongu (Victoria Peak, Ocean Park / Disneyland)"),
+     dep("21:30","14:30","wt 23.02 · HK Express do Kota Kinabalu (albo AirAsia 13:15)"), arr("00:35","17:35","śr 24.02 · Kota Kinabalu, Borneo"),
+     night("🏝 9 nocy na Borneo: wyspy Tunku Abdul Rahman, plaże, orangutany w Sepilok"),
+     dep("09:05","02:05","czw 4.03 · AirAsia do Singapuru"), arr("11:30","04:30","Singapur"),
+     night("🛏 2 noce w Singapurze (Gardens by the Bay, zoo, Sentosa)")],
+    back_title="Powrót: sob 6.03 → nd 7.03", back=[
+     dep("23:15","16:15","sob 6.03 · Singapur (Turkish, nocny)"),
+     stop("05:50","03:50","nd 7.03 · Stambuł","Przesiadka <b>2 h 10 min</b>"),
+     stop("08:00","06:00","wylot, TK 1271"), arr("08:20","08:20","nd 7.03 · Kraków")],
+    back_bio="W domu w niedzielę rano."),
+   dict(title="Hongkong → Borneo → Kuala Lumpur (dwa osobne bilety)", tag="Najtańszy", gulf=False, pp="ok. 4 150 zł",
+    why="Lufthansa Kraków → Hongkong 1 682 zł + Turkish Kuala Lumpur → Kraków 1 742 zł + Hongkong → Kota Kinabalu 419 zł + Kota Kinabalu → KL 311 zł. Ten sam lot Lufthansy w piątek 19.02: +370 zł/os. Powrót nocny (nd rano): +276 zł/os.",
+    out_title="Tam: sob 20.02 → nd 21.02", out=[
+     dep("19:05","19:05","sob 20.02 (albo pt 19.02) · Kraków, LH 1369"),
+     stop("20:45","20:45","Frankfurt","Przesiadka <b>1 h 05 min</b>"),
+     stop("21:50","21:50","wylot, LH 796 (nocny)"), fly("lot 11 h 40 min"),
+     arr("16:30","09:30","nd 21.02 · Hongkong"),
+     night("🛏 2 noce w Hongkongu → 8 nocy w Kota Kinabalu → 2–3 noce w Kuala Lumpur")],
+    back_title="Powrót: sob 6.03", back=[
+     dep("08:15","01:15","sob 6.03 · Kuala Lumpur, TK 63"),
+     stop("14:40","12:40","Stambuł","Przesiadka <b>3 h 35 min</b>"),
+     arr("18:30","18:30","sob 6.03 · Kraków")],
+    back_bio="W domu w sobotę wieczorem – cała niedziela na odpoczynek."),
+   dict(title="Tajwan (Tajpej + Kenting) → Hongkong", gulf=False, pp="ok. 4 190 zł",
+    why="Turkish Kraków → Tajpej, Hongkong → Kraków 3 835 zł + HK Express Kaohsiung → Hongkong 353 zł + szybka kolej Tajpej → Kaohsiung (ok. 180 zł, dzieci taniej). Najchłodniej z planów.",
+    out_title="Tam: sob 20.02 → nd 21.02", out=[
+     dep("19:25","19:25","sob 20.02 · Kraków, TK 1274"),
+     stop("23:50","21:50","Stambuł","Przesiadka <b>2 h 05 min</b>"),
+     arr("17:40","10:40","nd 21.02 · Tajpej"),
+     night("🛏 3 noce Tajpej → kolej do Kaohsiung + 1,5–2 h → 7 nocy Kenting → lot do Hongkongu, 3 noce")],
+    back_title="Powrót: sob 6.03 → nd 7.03", back=[
+     dep("23:15","16:15","sob 6.03 · Hongkong (Turkish, nocny)"),
+     stop("06:10","04:10","nd 7.03 · Stambuł","Przesiadka <b>1 h 50 min</b>"),
+     arr("08:20","08:20","nd 7.03 · Kraków")]),
+   dict(title="Singapur → Lombok/Gili → Bali (tylko lotnisko)", gulf=False, pp="ok. 4 470 zł",
+    why="Turkish Kraków → Singapur, Denpasar → Kraków 3 818 zł + Scoot Singapur → Lombok 547 zł + szybka łódź na Bali (ok. 100 zł). Pora deszczowa w Indonezji.",
+    out_title="Tam: sob 20.02 → nd 21.02", out=[
+     dep("19:25","19:25","sob 20.02 · Kraków, TK 1274"),
+     stop("23:50","21:50","Stambuł","Przesiadka <b>2 h</b>"),
+     arr("17:40","10:40","nd 21.02 · Singapur"),
+     night("🛏 2 noce Singapur → Scoot na Lombok (wt 14:00 → 16:55) → ok. 10 nocy Lombok + Gili → łódź na Bali, noc przy lotnisku")],
+    back_title="Powrót: sob 6.03 → nd 7.03", back=[
+     dep("21:10","14:10","sob 6.03 · Bali (Denpasar), Turkish"),
+     stop("05:40","03:40","nd 7.03 · Stambuł","Przesiadka <b>2 h 20 min</b>"),
+     arr("08:20","08:20","nd 7.03 · Kraków")]),
+   dict(title="Hongkong → Palawan (El Nido) → Manila", gulf=False, pp="ok. 4 770 zł",
+    why="Turkish Kraków → Hongkong, Manila → Kraków 4 058 zł + Cebu Pacific Hongkong → Puerto Princesa (przez Manilę) 556 zł + Puerto Princesa → Manila 153 zł. Najpiękniejsze plaże, pora sucha; dużo przesiadek i długi dojazd do El Nido.",
+    out_title="Tam: sob 20.02 → nd 21.02", out=[
+     dep("19:25","19:25","sob 20.02 · Kraków, TK 1274"),
+     stop("23:50","21:50","Stambuł","Przesiadka <b>1 h 55 min</b>"),
+     arr("17:05","10:05","nd 21.02 · Hongkong"),
+     night("🛏 2 noce Hongkong → wt 11:00 Cebu Pacific → Puerto Princesa 17:10 → 10–11 nocy Palawan")],
+    back_title="Powrót: sob 6.03 → nd 7.03", back=[
+     dep("10:15","03:15","sob 6.03 · Puerto Princesa → Manila (Cebu Pacific)"),
+     dep("21:35","14:35","sob 6.03 · Manila, TK 85"),
+     stop("05:45","03:45","nd 7.03 · Stambuł","Przesiadka <b>2 h 15 min</b>"),
+     arr("08:20","08:20","nd 7.03 · Kraków")]),
+  ],
+  extra="Ceny biletów „tam do jednego, z powrotem z innego” z KAYAK (Google liczył je błędnie), loty lokalne z Google; dla 7 osób Turkish wychodzi nawet taniej niż dla 1 dorosłego (zniżka dla dzieci). Zasada przy osobnych biletach: pierwszy lot lokalny nie w dniu przylotu, ostatni dzień przed lotem do Europy. W piątek po 16:00 z Krakowa tylko Lufthansa 19:05 (Hongkong/Singapur ok. 4 600 zł/os. na jednym bilecie). Numery części lotów Turkish między Stambułem a Azją do sprawdzenia przy rezerwacji."))
+STATS.update({
+ "Hongkong → Borneo (Kota Kinabalu) → Singapur": (("14 h 40 min do Hongkongu","12 h 45 min","1 h 55 min",""),("16 h 05 min","13 h 55 min","2 h 10 min","")),
+ "Hongkong → Borneo → Kuala Lumpur (dwa osobne bilety)": (("14 h 25 min","13 h 20 min","1 h 05 min",""),("17 h 15 min","13 h 40 min","3 h 35 min","")),
+ "Tajwan (Tajpej + Kenting) → Hongkong": (("15 h 15 min","13 h 10 min","2 h 05 min",""),("16 h 05 min","14 h 15 min","1 h 50 min","")),
+ "Singapur → Lombok/Gili → Bali (tylko lotnisko)": (("15 h 15 min","13 h 15 min","2 h",""),("18 h 10 min","15 h 50 min","2 h 20 min","")),
+ "Hongkong → Palawan (El Nido) → Manila": (("14 h 40 min","12 h 45 min","1 h 55 min",""),("17 h 45 min z Manili","15 h 30 min","2 h 15 min","+ rano lot z Palawanu do Manili")),
+})
+ROUTE.update({
+ "Hongkong → Borneo (Kota Kinabalu) → Singapur": "Kraków → Stambuł → Hongkong · Kota Kinabalu · Singapur → Stambuł → Kraków",
+ "Hongkong → Borneo → Kuala Lumpur (dwa osobne bilety)": "Kraków → Frankfurt → Hongkong · Kota Kinabalu · Kuala Lumpur → Stambuł → Kraków",
+ "Tajwan (Tajpej + Kenting) → Hongkong": "Kraków → Stambuł → Tajpej · Kenting · Hongkong → Stambuł → Kraków",
+ "Singapur → Lombok/Gili → Bali (tylko lotnisko)": "Kraków → Stambuł → Singapur · Lombok · Bali → Stambuł → Kraków",
+ "Hongkong → Palawan (El Nido) → Manila": "Kraków → Stambuł → Hongkong · Palawan · Manila → Stambuł → Kraków",
+})
+
 # ---------- booking links: (slug, option index) -> (Google Flights query, airline name, airline URL) ----------
 P = "4 adults 3 children"
 AL = {
@@ -539,17 +627,35 @@ BOOK = {
  ("indonezja",3): (f"Flights from KRK to SIN on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
  ("indonezja",4): (f"Flights from KRK to SIN on 2027-02-19 return 2027-03-07 {P} Lufthansa", "Scoot"),
  ("indonezja",5): (f"Flights from KRK to DPS on 2027-02-19 return 2027-03-07 {P} KLM", "KLM"),
+ ("kombinacje",1): (f"Flights from KRK to HKG on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
+ ("kombinacje",2): (f"One way flights from KRK to HKG on 2027-02-20 {P} Lufthansa", "Lufthansa"),
+ ("kombinacje",3): (f"Flights from KRK to TPE on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
+ ("kombinacje",4): (f"Flights from KRK to SIN on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
+ ("kombinacje",5): (f"Flights from KRK to HKG on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
  ("laos",1): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
 }
 from urllib.parse import quote
+KAYAK = {
+ ("kombinacje",1): "KRK-HKG/2027-02-20/SIN-KRK/2027-03-06",
+ ("kombinacje",2): "KRK-HKG/2027-02-20/KUL-KRK/2027-03-06",
+ ("kombinacje",3): "KRK-TPE/2027-02-20/HKG-KRK/2027-03-06",
+ ("kombinacje",4): "KRK-SIN/2027-02-20/DPS-KRK/2027-03-06",
+ ("kombinacje",5): "KRK-HKG/2027-02-20/MNL-KRK/2027-03-06",
+}
 def book_html(slug, i):
+    if (slug, i) in KAYAK:
+        k = "https://www.kayak.pl/flights/" + KAYAK[(slug, i)] + "/4adults/children-8-8-6?sort=price_a"
+        al = BOOK[(slug, i)][1]
+        return (f'<div class="book"><a class="gf" href="{k}" target="_blank" rel="noopener">Sprawdź i zarezerwuj (KAYAK, wiele miast) →</a>'
+                f'<a class="al" href="{AL[al]}" target="_blank" rel="noopener">Strona {al}</a></div>'
+                '<p class="note">Bilet długi; loty lokalne kupuje się osobno (AirAsia, HK Express, Scoot, Cebu Pacific).</p>')
     b = BOOK.get((slug, i))
     if not b: return ""
     q, al = b
     gf = "https://www.google.com/travel/flights?hl=pl&curr=PLN&q=" + quote(q)
     return (f'<div class="book"><a class="gf" href="{gf}" target="_blank" rel="noopener">Sprawdź i zarezerwuj (Google Flights) →</a>'
             f'<a class="al" href="{AL[al]}" target="_blank" rel="noopener">Strona {al}</a></div>'
-            '<p class="note">Link otwiera wyszukiwanie z naszymi lotniskami, datami i 7 pasażerami (wpisz potem wiek dzieci). Przewoźnicy nie pozwalają linkować prosto do wybranego lotu.</p>')
+            '<p class="note">Wyszukiwanie z naszymi lotniskami, datami i 7 pasażerami.</p>')
 
 # ---------- rendering ----------
 CSS = open(OUT / "style.css").read() if (OUT / "style.css").exists() else ""
@@ -659,7 +765,7 @@ def index(dests):
 INFO = open(OUT / "info_body.html").read() if (OUT / "info_body.html").exists() else ""
 
 if __name__ == "__main__":
-    order = [DEST[0], DEST[1], DEST[9], DEST[2], DEST[3], DEST[4], DEST[5], DEST[6], DEST[8]]  # Vietnam (DEST[7]) rejected: been there recently
+    order = [DEST[0], DEST[10], DEST[1], DEST[9], DEST[2], DEST[3], DEST[4], DEST[5], DEST[6], DEST[8]]  # Vietnam (DEST[7]) rejected: been there recently
     (OUT / "index.html").write_text(index(order))
     for d in DEST: (OUT / f'{d["slug"]}.html').write_text(detail(d))
     (OUT / "info.html").write_text(page("Bezpieczeństwo, rezygnacja, bagaż", INFO, back=True))
