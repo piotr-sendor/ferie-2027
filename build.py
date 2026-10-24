@@ -231,7 +231,7 @@ DEST = [
   options=[
    dict(title="Turkish Airlines z Krakowa do Kantonu, potem China Southern do Sanyi", tag="Najlepsza opcja", gulf=False,
     pp="ok. 5 500 zł", p7="ok. 38 500 zł", total_out="14 h 10 min do Kantonu", total_back="16 h 05 min",
-    why="Sam lot do Kantonu: 3 765 zł/os. (26 356 zł za 7). Lot Kanton–Sanya to aż ok. 866 zł/os. w jedną stronę.",
+    why="Sam lot do Kantonu: 3 765 zł/os. Lot Kanton–Sanya to aż ok. 866 zł/os. w jedną stronę.",
     out_title="Tam: sob 20.02 → nd 21.02", out=[
      dep("19:25","19:25","sob 20.02 · wylot z Krakowa, TK 1274"),
      stop("23:50","21:50","Stambuł","Przesiadka <b>1 h 45 min</b>"),
@@ -288,6 +288,64 @@ INDO_PENDING = dict(slug="indonezja", flag="🇮🇩", name="Indonezja (bez Bali
   summary="Research w toku – Bali odpada (tłok). Pojawi się tutaj pod tym samym linkiem.")
 
 
+
+# ---------- post-processing: Friday from Vienna is not realistic (can't get there after work) ----------
+def _d(slug): return next(d for d in DEST if d["slug"] == slug)
+_f = _d("filipiny"); _f["options"] = [o for o in _f["options"] if not o["title"].startswith("Korean Air")]
+_f["options"][0]["tag"] = "Najlepsza opcja"
+_f["options"][0]["why"] = "Prosto z Krakowa, jedna przesiadka w Stambule, powrót w niedzielę rano. Dalej Cebu Pacific na Palawan / Boracay / Bohol – ok. 150–170 zł/os. w jedną stronę (razem ok. 6 260 zł/os.)."
+_f["options"][0]["out"].append(night("🛏 Nocleg w Manili, w poniedziałek lot krajowy (np. Puerto Princesa 1 h 30, Caticlan/Boracay 1 h 10)"))
+_f.update(price="ok. 6 260 zł", price_note="Turkish z Krakowa w sobotę + lot krajowy",
+  summary="Najpiękniejsze plaże i najpewniejsza pogoda (pora sucha). Z Krakowa tylko Turkish w sobotę – wyraźnie drożej. Tańszy Korean Air lata z Wiednia w piątek wieczorem – nie do zdążenia po pracy.",
+  chips=[("ok","Bez Zatoki"),("ok","Najlepsze plaże"),("warn","Drogo"),("warn","Nocleg w Manili po drodze")],
+  extra="Tańsza opcja (Korean Air z Wiednia przez Seul, ok. 4 150 zł/os. z lotem krajowym) startuje w piątek o 19:30 z Wiednia – po pracy w Krakowie nierealne. Na Boracay w lutym czasem wieje i są fale po wschodniej stronie wyspy. Do El Nido z Puerto Princesa 5–6 h busem.")
+
+_t = _d("tajlandia"); _t["options"] = [o for o in _t["options"] if not o["title"].startswith("Condor")]
+_t["options"][0].update(tag="Najlepsza opcja", why="Prosto z Krakowa, jedna przesiadka w Stambule, powrót w niedzielę rano. Dalej na Phuket ok. 220 zł/os. w jedną stronę (razem ok. 4 790 zł/os.). EcoFly: 8 kg kabinowa + torba.")
+_t["options"][0]["out"].append(night("✈ Dalej lot krajowy Bangkok → Phuket (1 h 30) albo Krabi, najlepiej z zapasem"))
+_t.update(price="ok. 4 790 zł", price_note="Turkish z Krakowa w sobotę + lot na Phuket",
+  summary="Sprawdzony kierunek, najlepsza pora roku. Z Krakowa Turkish w sobotę przez Stambuł, powrót w niedzielę rano.",
+  chips=[("ok","Bez Zatoki"),("ok","Powrót w niedzielę"),("warn","Wylot w sobotę"),("warn","Osobny bilet na lot krajowy")],
+  extra="Najtańszy lot bez Zatoki (Condor z Wiednia, ok. 3 700 zł/os. z Phuketem) startuje w piątek o 17:10 z Wiednia – po pracy w Krakowie nierealne.")
+
+_l = _d("laos")
+_l["options"] = [dict(title="Turkish do Bangkoku + Bangkok Airways do Luang Prabang", gulf=False, pp="ok. 6 700 zł",
+    why="Lot Bangkok–Luang Prabang to ok. 1 175 zł/os. w jedną stronę.",
+    out_title="Tam: sob 20.02 → pn 22.02", out=[
+     dep("19:25","19:25","sob 20.02 · wylot z Krakowa (jak Tajlandia, przez Stambuł)"), arr("15:05","09:05","nd 21.02 · Bangkok"),
+     night("🛏 Nocleg w Bangkoku"), dep("10:55","04:55","pn 22.02 · Bangkok Airways"), arr("13:05","07:05","pn 22.02 · Luang Prabang")],
+    back_title="Powrót: przez Bangkok, Kraków nd 7.03 8:20", back=[])]
+_l.update(price="ok. 6 700 zł", price_note="przez Bangkok")
+_d("sri-lanka")["options"][2]["p7"] = "+ pociąg Kraków–Warszawa"
+
+# ---------- travel-time stats per option title: (total, in the air, transfers, extra note) ----------
+STATS = {
+ "Air Arabia z Krakowa, przez Szardżę": (("11 h 05 min","10 h 05 min","1 h",""),("13 h 10 min","11 h 05 min","2 h 05 min","")),
+ "Air Arabia z Krakowa, wylot w sobotę": (("11 h 50 min","10 h 05 min","1 h 45 min",""),("13 h 10 min","11 h 05 min","2 h 05 min","")),
+ "flydubai z Warszawy, przez Dubaj": (("15 h 20 min","10 h 40 min","4 h 40 min","+ ok. 2 h 30 min pociągiem Kraków–Warszawa"),("14 h 25 min","12 h","2 h 25 min","+ pociąg do Krakowa")),
+ "KLM + IndiGo z Krakowa, przez Amsterdam i Indie": (("22 h","","2 przesiadki",""),("17 h 55 min","","2 przesiadki","")),
+ "Lufthansa + Malaysia Airlines przez Frankfurt i Singapur, potem lot na Borneo": (("18 h 40 min do Kuala Lumpur","15 h 45 min","2 h 55 min","+ nocleg w KL i 2 h 40 min lotu na Borneo"),("16 h 40 min z Kuala Lumpur","14 h 40 min","2 h","+ wcześniej 2 h 40 min lotu z Borneo i czekanie w KL")),
+ "Austrian + Malaysia Airlines przez Wiedeń i Bangkok": (("19 h 50 min do Kuala Lumpur","13 h 25 min","6 h 25 min","+ nocleg w KL i lot na Borneo"),("16 h 40 min z Kuala Lumpur","14 h 40 min","2 h","")),
+ "Turkish Airlines z Krakowa, przez Stambuł": (("15 h 15 min","13 h 10 min","2 h 05 min","+ ok. 3–4 h koleją i autem na południe"),("17 h 20 min","15 h 10 min","2 h 10 min","")),
+ "Lufthansa + China Airlines z Krakowa do Kaohsiung (południe)": (("20 h 10 min","14 h 50 min","5 h 20 min",""),("22 h 35 min","16 h 45 min","5 h 50 min","")),
+ "Turkish Airlines z Krakowa, wylot w sobotę": (("15 h 45 min","13 h 50 min","1 h 55 min","+ nocleg w Manili i lot krajowy"),("17 h 45 min","15 h 30 min","2 h 15 min","")),
+ "Lufthansa + Malaysia Airlines do Kuala Lumpur, potem AirAsia do Siem Reap": (("18 h 40 min do Kuala Lumpur","15 h 45 min","2 h 55 min","+ nocleg w KL i 2 h 05 min lotu do Siem Reap"),("16 h 40 min z Kuala Lumpur","14 h 40 min","2 h","+ wcześniej lot z Siem Reap do KL")),
+ "Turkish Airlines z Krakowa do Kantonu, potem China Southern do Sanyi": (("14 h 10 min do Kantonu","12 h 25 min","1 h 45 min","+ 5 h 35 min czekania w Kantonie i 1 h 45 min lotu do Sanyi"),("16 h 05 min z Kantonu","14 h","2 h 05 min","+ wcześniej lot z Sanyi do Kantonu")),
+ "KLM + Vietnam Airlines z Krakowa, przez Amsterdam i Singapur": (("20 h 05 min","16 h 45 min","3 h 20 min","+ lot na Phu Quoc (1 h)"),("22 h 15 min","17 h 25 min","4 h 50 min","")),
+ "Turkish do Bangkoku + Bangkok Airways do Luang Prabang": (("13 h 40 min do Bangkoku","11 h 50 min","1 h 50 min","+ nocleg w Bangkoku i 2 h 10 min lotu"),None),
+}
+# Thailand Turkish has the same title as the Philippines one; stats keyed by (slug,title) override:
+STATS_BY_SLUG = {("tajlandia","Turkish Airlines z Krakowa, wylot w sobotę"): (("13 h 40 min do Bangkoku","11 h 50 min","1 h 50 min","+ lot krajowy na Phuket (1 h 30)"),None)}
+
+def stats_html(st):
+    if not st: return ""
+    total, air, tr, extra = st
+    cells = f'<div class="st tot"><span>Cała podróż</span><b>{total}</b></div>'
+    if air: cells += f'<div class="st"><span>✈ W samolocie</span><b>{air}</b></div>'
+    cells += f'<div class="st"><span>⏱ Przesiadki</span><b>{tr}</b></div>'
+    ex = f'<div class="stx">{extra}</div>' if extra else ''
+    return f'<div class="stats">{cells}</div>{ex}'
+
 # ---------- booking links: (slug, option index) -> (Google Flights query, airline name, airline URL) ----------
 P = "4 adults 3 children"
 AL = {
@@ -306,14 +364,12 @@ BOOK = {
  ("malezja-borneo",2): (f"Flights from KRK to KUL on 2027-02-19 return 2027-03-07 {P} Austrian", "Austrian"),
  ("tajwan",1): (f"Flights from KRK to TPE on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
  ("tajwan",2): (f"Flights from KRK to KHH on 2027-02-19 return 2027-03-07 {P} Lufthansa", "Lufthansa"),
- ("filipiny",1): (f"Flights from VIE to MNL on 2027-02-19 return 2027-03-07 {P} Korean Air", "Korean Air"),
- ("filipiny",2): (f"Flights from KRK to MNL on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
- ("tajlandia",1): (f"Flights from VIE to BKK on 2027-02-19 return 2027-03-07 {P} Condor", "Condor"),
- ("tajlandia",2): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
+ ("filipiny",1): (f"Flights from KRK to MNL on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
+ ("tajlandia",1): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
  ("kambodza",1): (f"Flights from KRK to KUL on 2027-02-19 return 2027-03-07 {P} Lufthansa", "Lufthansa"),
  ("chiny-hainan",1): (f"Flights from KRK to CAN on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
  ("wietnam",1): (f"Flights from KRK to SGN on 2027-02-19 return 2027-03-07 {P} KLM", "KLM"),
- ("laos",1): (f"Flights from VIE to BKK on 2027-02-19 return 2027-03-07 {P} Condor", "Condor"),
+ ("laos",1): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
 }
 from urllib.parse import quote
 def book_html(slug, i):
@@ -352,7 +408,7 @@ def tile(d):
     cls = "tile notrec" if d.get("notrec") else "tile"
     return f'''<a class="{cls}" href="{d["slug"]}.html"><div class="tflag">{d["flag"]}</div>
 <h2>{d["name"]}</h2><p class="place">{d["place"]}</p>
-<div class="tprice"><b>{d["price"]}</b><span>za osobę · {d["price7"]} za 7 · {d["price_note"]}</span></div>
+<div class="tprice"><b>{d["price"]}</b><span>za osobę, w obie strony · {d["price_note"]}</span></div>
 <p>{d["summary"]}</p>
 <div class="facts"><div>🌡 {d["weather"]}</div><div>🌊 Morze: {d["sea"]}</div><div>🛂 {d["entry"]}</div></div>
 <div class="flags">{chip_html(d["chips"])}</div>
@@ -377,14 +433,14 @@ def option(o, i, slug=''):
     badge = f'<span class="badge">{o["tag"]}</span> ' if o.get("tag") else f'<span class="badge num">Opcja {i}</span> '
     g = GULF if o["gulf"] else NOGULF
     parts = [f'<div class="card {"best" if i==1 else ""}">{badge}{g}<h3 class="otitle">{o["title"]}</h3>',
-             f'<div class="price"><div><b>{o["pp"]}</b><span>za osobę, w obie strony</span></div><div><b>{o["p7"]}</b><span>razem za 7 osób</span></div></div>',
+             f'<div class="price"><div><b>{o["pp"]}</b><span>za osobę, w obie strony{" · " + o["p7"] if str(o.get("p7","")).startswith("+") else ""}</span></div></div>',
              f'<p class="why">{o["why"]}</p>']
     if o.get("out"):
-        tot = f'<small>{o["total_out"]}</small>' if o.get("total_out") else ''
-        parts.append(f'<div class="leg-title"><h4>{o["out_title"]}</h4>{tot}</div>{tl(o["out"])}')
+        st = STATS_BY_SLUG.get((slug, o["title"])) or STATS.get(o["title"])
+        parts.append(f'<div class="leg-title"><h4>{o["out_title"]}</h4></div>{stats_html(st[0] if st else None)}{tl(o["out"])}')
         if o.get("out_bio"): parts.append(f'<div class="bio">🌙 <b>Dla organizmu:</b> {o["out_bio"]}</div>')
-    tot = f'<small>{o["total_back"]}</small>' if o.get("total_back") else ''
-    parts.append(f'<div class="leg-title"><h4>{o["back_title"]}</h4>{tot}</div>')
+    st = STATS_BY_SLUG.get((slug, o["title"])) or STATS.get(o["title"])
+    parts.append(f'<div class="leg-title"><h4>{o["back_title"]}</h4></div>{stats_html(st[1] if st and o.get("back") else None)}')
     if o.get("back"): parts.append(tl(o["back"]))
     if o.get("back_bio"): parts.append(f'<div class="bio">🌙 <b>Dla organizmu:</b> {o["back_bio"]}</div>')
     if o.get("note"): parts.append(f'<p class="note">{o["note"]}</p>')

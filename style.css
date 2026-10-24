@@ -101,3 +101,11 @@ a.tile:hover .btn{background:#095f5b}
 .book a.gf{background:var(--teal);color:#fff}
 .book a.al{background:#fff;color:var(--teal);border:2px solid var(--teal)}
 .callout a{color:var(--teal);font-weight:600}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 10px}
+.st{flex:1 1 92px;background:#f1f4f6;border-radius:12px;padding:8px 10px}
+.st span{display:block;font-size:12px;color:var(--muted)}
+.st b{font-size:17px}
+.st.tot{background:#0b7a75;color:#fff}
+.st.tot span{color:#d7efed}
+.st.tot b{font-size:20px}
+.stx{font-size:13px;color:#5b4ac7;margin:-4px 0 8px}
