@@ -118,3 +118,4 @@ a.tile:hover .btn{background:#095f5b}
 .pnote{display:block;font-size:12px;color:var(--muted);margin-top:2px}
 .badge.kind{background:#e8eef3;color:#33414b;text-transform:none}
 .badge.kind.hub{background:#efe9ff;color:#5b4ac7}
+.region{margin:26px 0 10px;font-size:24px}

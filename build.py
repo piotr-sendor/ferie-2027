@@ -357,7 +357,7 @@ DEST.append(dict(slug="indonezja", flag="🇮🇩", name="Indonezja – Lombok i
   ],
   extra="Na ten termin odradzamy: Yogyakartę jako jedyne miejsce (300–400 mm deszczu w lutym), Manado/Bunaken (wzburzone morze, a jedyny bilet z Krakowa idzie przez Dubaj), Belitung (rejsy często odwoływane), Raja Ampat (2 dni podróży w każdą stronę). Wszędzie w porze deszczowej: repelent z DEET (denga)."))
 
-TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)', 'kombinacje': '+7 h', 'huby': '+6 h (Bangkok) / +7 h / +8 h (Seul)'}
+TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)', 'kombinacje': '+7 h', 'huby': '+6 h (Bangkok) / +7 h / +8 h (Seul)', 'ekwador': '−6 h (Galápagos −7 h)'}
 INDO_PENDING = dict(slug="indonezja", flag="🇮🇩", name="Indonezja (bez Bali)", place="np. Lombok, Flores (Komodo), Jawa", pending=True,
   summary="Research w toku – Bali odpada (tłok). Pojawi się tutaj pod tym samym linkiem.")
 
@@ -670,6 +670,50 @@ ROUTE.update({
  "Seul + Cebu (LOT z Warszawy)": "Warszawa → Seul (bez przesiadki) · Cebu",
 })
 
+
+DEST.append(dict(slug="ekwador", region="americas", flag="🇪🇨", name="Ekwador (+ Galápagos)", place="Quito, Andy, Amazonia; opcjonalnie Galápagos", gulf=False,
+  price="", price7="", price_note="",
+  summary="Galápagos (żółwie, lwy morskie, snorkeling) albo sam kontynent (Andy + Amazonia). W lutym–marcu 2027 silne El Niño – decyzję o Galápagos podjąć w XII–I i rezerwować z darmową zmianą.",
+  weather="⚠️ silne El Niño: wybrzeże – deszcze i powodzie; Andy chłodno (Quito 2 850 m); Galápagos ciepło, więcej deszczu", sea="Galápagos 27–29°C (mniej ryb niż zwykle)",
+  entry="bez wizy 90 dni; ubezpieczenie, bilet powrotny i rezerwacja hotelu; eTA Kanady (7 CAD) przy przesiadce w Toronto",
+  chips=[("bad","Silne El Niño w lutym–marcu"),("warn","Stan wyjątkowy (m.in. Quito), wybrzeże odradzane"),("ok","Galápagos – ciepłe morze"),("warn","Galápagos +4–6 tys. zł/os.")],
+  options=[
+   dict(title="Lufthansa + Air Canada, Kraków ⇄ Quito", tag="Najtańsza", kind="direct", gulf=False, pp="ok. 3 700 zł",
+    why="3 704 zł w KAYAK (4 303 zł w Google), szukane dla 7 osób. Wylot w sobotę o 6:00 rano. Powrót w sobotę 6.03 kosztuje 5 000–5 800 zł – niedziela 7.03 oszczędza ok. 1 300–1 500 zł/os. Galápagos osobno: loty ok. 1 200–1 400 zł/os. w obie strony + opłata parku 200 USD (dziecko 100 USD) + 20 USD karta.",
+    out_title="Tam: sob 20.02 → nd 21.02", out=[
+     dep("06:00","06:00","sob 20.02 · Kraków, LH 1627"), stop("","","Monachium (Niemcy)","Przesiadka"),
+     stop("","","Toronto (Kanada), AC 837 → AC 960","Przesiadka · potrzebne eTA"),
+     arr("00:10","06:10","nd 21.02 · Quito · Polska − 6 h")],
+    back_title="Powrót: nd 7.03 → pn 8.03", back=[
+     dep("09:00","15:00","nd 7.03 · Quito, AC 961"), stop("","","Toronto, AC 840","Przesiadka"),
+     stop("","","Frankfurt, LH 1362","Przesiadka"), arr("09:35","09:35","pn 8.03 · Kraków")]),
+   dict(title="KLM: tam do Quito, z powrotem z Guayaquil (pod Galápagos)", kind="direct", gulf=False, pp="ok. 5 150 zł",
+    why="Najwygodniej: jedna przesiadka w Amsterdamie w każdą stronę, wylot w niedzielę. W sobotę ta sama trasa (Lufthansa + Avianca) kosztuje 5 616 zł. Przesiadka na lotnisku w Guayaquil jest OK (miasto odradzane).",
+    out_title="Tam: nd 21.02", out=[
+     dep("06:00","06:00","nd 21.02 · Kraków, KL 1322"), stop("","","Amsterdam, KL 755","Przesiadka"),
+     arr("16:20","22:20","nd 21.02 · Quito")],
+    back_title="Powrót: nd 7.03 → pn 8.03", back=[
+     dep("20:20","02:20","nd 7.03 · Guayaquil, KL 755 (bez przesiadki do Amsterdamu)"), stop("","","Amsterdam, KL 1327","Przesiadka"),
+     arr("17:00","17:00","pn 8.03 · Kraków")]),
+   dict(title="Turkish + Avianca przez Stambuł i Bogotę", kind="direct", gulf=False, pp="ok. 4 610 zł",
+    why="Tam do Quito, z powrotem z Guayaquil. Wylot w sobotę 19:25 z Krakowa, ale 28 h w jedną i 26 h w drugą stronę – bardzo męczące dla dzieci; możliwe, że to dwie osobne rezerwacje. Z Warszawy w piątek 19:10: 4 261 zł, 36 h.",
+    out_title="Tam: sob 20.02 → nd 21.02", out=[
+     dep("19:25","19:25","sob 20.02 · Kraków"), stop("","","Stambuł (Turcja), potem Bogota (Kolumbia)","2 przesiadki"),
+     arr("","","nd 21.02 · Quito")],
+    back_title="Powrót: z Guayaquil przez Bogotę i Stambuł (ok. 26 h)", back=[]),
+  ],
+  extra="Trasy: C – Quito 2 → Santa Cruz + Isabela 6 → Baños 2 → Amazonia (Napo) 2: ok. 5 950 zł/os. „twardych” kosztów (loty, opłaty, promy, bez hoteli). A – Quito → Mindo → 9 nocy na Galápagos (San Cristóbal, Santa Cruz, Isabela) → powrót z Guayaquil: ok. 7 500 zł/os. B – sam kontynent (Andy + Amazonia), bez plaży: ok. 3 700 zł/os. Rejs 8-dniowy z 6-latkiem – nie polecamy, lepiej wyspy z bazą na lądzie. Bezpiecznie: Galápagos, Andy (Otavalo, Cotopaxi, Baños), Amazonia Napo; unikać wybrzeża i Cuyabeno. Zdrowie: denga (repelent), żółta febra tylko zalecana w Amazonii. El Niño: NOAA (8.10.2026) – silne do bardzo silnego I–III 2027."))
+STATS.update({
+ "Lufthansa + Air Canada, Kraków ⇄ Quito": (("24 h 10 min","","2 przesiadki",""),("18 h 35 min","","2 przesiadki","")),
+ "KLM: tam do Quito, z powrotem z Guayaquil (pod Galápagos)": (("16 h 20 min","","1 przesiadka",""),("14 h 40 min","","1 przesiadka","")),
+ "Turkish + Avianca przez Stambuł i Bogotę": (("ok. 28 h","","2 przesiadki",""),None),
+})
+ROUTE.update({
+ "Lufthansa + Air Canada, Kraków ⇄ Quito": "Kraków → Monachium → Toronto → Quito",
+ "KLM: tam do Quito, z powrotem z Guayaquil (pod Galápagos)": "Kraków → Amsterdam → Quito · Guayaquil → Amsterdam → Kraków",
+ "Turkish + Avianca przez Stambuł i Bogotę": "Kraków → Stambuł → Bogota → Quito",
+})
+
 # ---------- Warsaw comparison (warszawa-dane.md, 24.10 evening) ----------
 WAW = {
  "sri-lanka": "Warszawa: 2 988 zł (sob 11:45, przez Szardżę)",
@@ -691,7 +735,7 @@ AL = {
  "KLM": "https://www.klm.pl/", "Lufthansa": "https://www.lufthansa.com/pl/pl/homepage",
  "Austrian": "https://www.austrian.com/pl/pl/homepage", "Turkish Airlines": "https://www.turkishairlines.com/pl-pl/",
  "Korean Air": "https://www.koreanair.com/", "Condor": "https://www.condor.com/pl/",
- "AirAsia": "https://www.airasia.com/", "LOT": "https://www.lot.com/pl/pl", "Finnair": "https://www.finnair.com/pl-pl", "Scoot": "https://www.flyscoot.com/pl", "China Airlines": "https://www.china-airlines.com/pl/pl",
+ "AirAsia": "https://www.airasia.com/", "Air Canada": "https://www.aircanada.com/pl/pl/aco/home.html", "LOT": "https://www.lot.com/pl/pl", "Finnair": "https://www.finnair.com/pl-pl", "Scoot": "https://www.flyscoot.com/pl", "China Airlines": "https://www.china-airlines.com/pl/pl",
 }
 BOOK = {
  ("sri-lanka",1): (f"Flights from KRK to CMB on 2027-02-19 return 2027-03-07 {P} Air Arabia", "Air Arabia"),
@@ -724,10 +768,13 @@ BOOK = {
  ("huby",3): (f"Flights from KRK to HKG on 2027-02-20 return 2027-03-06 {P} Lufthansa", "Lufthansa"),
  ("huby",4): (f"Flights from WAW to BKK on 2027-02-21 return 2027-03-07 {P} LOT", "LOT"),
  ("huby",5): (f"Flights from WAW to ICN on 2027-02-20 return 2027-03-06 {P} LOT", "LOT"),
+ ("ekwador",1): (f"Flights from KRK to UIO on 2027-02-20 return 2027-03-07 {P} Air Canada", "Air Canada"),
+ ("ekwador",3): (f"Flights from KRK to UIO on 2027-02-20 return 2027-03-07 {P} Turkish Airlines", "Turkish Airlines"),
  ("laos",1): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
 }
 from urllib.parse import quote
 KAYAK = {
+ ("ekwador",2): "KRK-UIO/2027-02-21/GYE-KRK/2027-03-07",
  ("kombinacje",1): "KRK-HKG/2027-02-20/SIN-KRK/2027-03-06",
  ("kombinacje",2): "KRK-HKG/2027-02-20/KUL-KRK/2027-03-06",
  ("kombinacje",3): "KRK-TPE/2027-02-20/HKG-KRK/2027-03-06",
@@ -737,7 +784,7 @@ KAYAK = {
 def book_html(o):
     if o.get("_kayak"):
         k = "https://www.kayak.pl/flights/" + o["_kayak"] + "/4adults/children-8-8-6?sort=price_a"
-        al = o["_book"][1]
+        al = (o["_book"] or (None, "KLM"))[1]
         return (f'<div class="book"><a class="gf" href="{k}" target="_blank" rel="noopener">Sprawdź i zarezerwuj (KAYAK, wiele miast) →</a>'
                 f'<a class="al" href="{AL[al]}" target="_blank" rel="noopener">Strona {al}</a></div>'
                 '<p class="note">Bilet długi; loty lokalne kupuje się osobno.</p>')
@@ -842,8 +889,10 @@ def detail(d):
     return page(f'{d["flag"]} {d["name"]}', ''.join(body), back=True)
 
 def index(dests):
-    tiles = ''.join(tile(d) for d in dests)
-    body = f'''<div class="tiles">{tiles}</div>
+    asia = ''.join(tile(d) for d in dests if d.get("region", "asia") == "asia")
+    amer = ''.join(tile(d) for d in dests if d.get("region") == "americas")
+    amer_html = f'<h2 class="region">Ameryka</h2><div class="tiles">{amer}</div>' if amer else ''
+    body = f'''<h2 class="region">Azja</h2><div class="tiles">{asia}</div>{amer_html}
 <div class="callout warn"><a href="info.html">Zatoka Perska, rezygnacja i ubezpieczenie, bagaż →</a></div>
 <h2>Kierunki, których nie bierzemy pod uwagę</h2>
 <div class="card rejected">
@@ -918,7 +967,8 @@ if __name__ == "__main__":
         for o in byslug[sl]["options"]: o.setdefault("kind", DIR)
     for sl in ("kambodza", "laos"):
         for o in byslug[sl]["options"]: o.setdefault("kind", HUB)
-    order = [byslug[x] for x in ("sri-lanka","malezja-borneo","indonezja","filipiny","tajwan","tajlandia","kambodza","chiny-hainan","laos")]
+    for o in byslug["ekwador"]["options"]: o.setdefault("kind", DIR)
+    order = [byslug[x] for x in ("sri-lanka","malezja-borneo","indonezja","filipiny","tajwan","tajlandia","kambodza","chiny-hainan","laos","ekwador")]
     DEST[:] = order
     (OUT / "index.html").write_text(index(order))
     for d in DEST: (OUT / f'{d["slug"]}.html').write_text(detail(d))
