@@ -760,6 +760,43 @@ ROUTE.update({
  "KLM: tam do Oaxaki, z powrotem z Huatulco": "Kraków → Amsterdam → Miasto Meksyk → Oaxaca · Huatulco → Kraków",
 })
 
+
+# ---------- Laos re-check (laos-weryfikacja.md, 25.10) ----------
+_l = _d("laos")
+_l.pop("notrec", None)
+_l["options"] = [
+ dict(title="LOT do Bangkoku (przez Warszawę) + Thai AirAsia do Luang Prabang", tag="Najlepsza opcja", kind="hub", gulf=False, pp="ok. 5 000 zł",
+  why="LOT Kraków → Warszawa → Bangkok w obie strony 3 739 zł (KAYAK) + Thai AirAsia Don Mueang ↔ Luang Prabang 440–665 zł w każdą stronę. Walizki w AirAsia dodatkowo ok. 100–150 zł/os. W Bangkoku zmiana lotniska (Suvarnabhumi → Don Mueang).",
+  out_title="Tam: sob 20.02 → nd 21.02", out=[
+   dep("12:00","12:00","sob 20.02 · Kraków → Warszawa (LOT)"),
+   stop("14:45","14:45","wylot z Warszawy, LO 65 (bez przesiadki)"), fly("lot ok. 10 h 20 min"),
+   arr("07:05","01:05","nd 21.02 · Bangkok (Suvarnabhumi) · Polska + 6 h"),
+   night("🚕 Zmiana lotniska na Don Mueang (ok. 1 h)"),
+   dep("14:05","08:05","nd 21.02 · Thai AirAsia"), arr("15:35","09:35","nd 21.02 · Luang Prabang (Laos) · Polska + 6 h")],
+  back_title="Powrót: sob 6.03 → nd 7.03", back=[
+   dep("16:05","10:05","sob 6.03 · Luang Prabang, Thai AirAsia"), arr("17:35","11:35","Bangkok (Don Mueang)"),
+   night("🛏 Nocleg w Bangkoku"),
+   dep("09:05","03:05","nd 7.03 · Bangkok, LO 66 (bez przesiadki)"), stop("15:00","15:00","Warszawa","Przesiadka"),
+   arr("17:30","17:30","nd 7.03 · Kraków")], back_bio="W domu w niedzielę wieczorem."),
+ dict(title="Jak wyżej, ale powrót pociągami: Luang Prabang → Wientian → Bangkok", kind="hub", gulf=False, pp="ok. 4 500 zł",
+  why="Szybka kolej laotańsko-chińska Luang Prabang → Wientian (ok. 2 h, ok. 65 zł) i pociąg sypialny Wientian → Bangkok (ok. 100 zł) – wyjazd dzień wcześniej, w piątek 5.03. Dla dzieci przygoda.",
+  out_title="Tam: jak opcja 1", out=[], back_title="Powrót: pt 5.03 pociągami do Bangkoku, nd 7.03 LOT do Polski", back=[]),
+ dict(title="Południowy Laos (Pakse, 4000 wysp) przez Ubon Ratchathani", kind="hub", gulf=False, pp="ok. 4 300 zł",
+  why="LOT do Bangkoku + Thai AirAsia Don Mueang ↔ Ubon Ratchathani (176–187 zł w każdą stronę) + ok. 3 h busem do Pakse. Powietrze wyraźnie czystsze niż na północy.",
+  out_title="Tam: jak opcja 1 do Bangkoku, potem lot do Ubon i bus", out=[], back_title="Powrót: przez Ubon i Bangkok", back=[]),
+]
+_l.update(price="ok. 5 000 zł", price_note="przez Bangkok",
+  place="Luang Prabang (świątynie, wodospad Kuang Si, Mekong) albo południe: Pakse i 4000 wysp",
+  summary="Spokojne, tanie, egzotyczne. Lot do Bangkoku i tania AirAsia dalej (albo pociągi). Bez morza.",
+  weather="☀️ 30–32°C / noc 14–17°C · powietrze: koniec lutego dobre, 1–7.03 zależnie od roku, smog od połowy marca",
+  sea="brak morza",
+  chips=[("ok","Bez Zatoki"),("ok","Tanio na miejscu"),("warn","Bez morza"),("warn","Zmiana lotniska w Bangkoku, osobne bilety")],
+  extra="Dlaczego wcześniej wyszło 6 700 zł: lot Bangkok ↔ Luang Prabang liczony liniami Bangkok Airways (1 175 zł w jedną stronę) zamiast Thai AirAsia (440–665 zł) i powrót w sobotę zamiast w niedzielę. Smog (dane Copernicus 2023–2026, raczej zaniżone w dolinie Luang Prabang): koniec lutego średnio 14–25 µg/m³ PM2.5 (jak zimą w Krakowie), 1–7 marca 20–52, od połowy marca 73–96 i dni powyżej 100. Pakse i 4000 wysp: 11–31, prawie bez złych dni. Przesunięcie dat o 1 dzień nie daje ≥400 zł oszczędności. Hanoi ok. 6 200 zł, Seul ok. 4 900 zł (nocne loty), jeden bilet do Luang Prabang ok. 9 600 zł.")
+STATS["LOT do Bangkoku (przez Warszawę) + Thai AirAsia do Luang Prabang"] = (("ok. 21 h 30 min","12 h 45 min","Warszawa + zmiana lotniska w Bangkoku",""),("ok. 25 h 25 min (z nocą w Bangkoku)","","noc w Bangkoku + Warszawa",""))
+ROUTE["LOT do Bangkoku (przez Warszawę) + Thai AirAsia do Luang Prabang"] = "Kraków → Warszawa → Bangkok → Luang Prabang"
+ROUTE["Jak wyżej, ale powrót pociągami: Luang Prabang → Wientian → Bangkok"] = "Kraków → Warszawa → Bangkok → Luang Prabang · pociągi do Bangkoku"
+ROUTE["Południowy Laos (Pakse, 4000 wysp) przez Ubon Ratchathani"] = "Kraków → Warszawa → Bangkok → Ubon Ratchathani → Pakse"
+
 # ---------- Warsaw comparison (warszawa-dane.md, 24.10 evening) ----------
 WAW = {
  "sri-lanka": "Warszawa: 2 988 zł (sob 11:45, przez Szardżę)",
@@ -818,7 +855,7 @@ BOOK = {
  ("ekwador",3): (f"Flights from KRK to UIO on 2027-02-20 return 2027-03-07 {P} Turkish Airlines", "Turkish Airlines"),
  ("meksyk",1): (f"Flights from KRK to MEX on 2027-02-20 return 2027-03-06 {P} Lufthansa", "Lufthansa"),
  ("meksyk",3): (f"Flights from KRK to OAX on 2027-02-20 return 2027-03-06 {P} KLM", "KLM"),
- ("laos",1): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
+ ("laos",1): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-07 {P} LOT", "LOT"),
 }
 from urllib.parse import quote
 KAYAK = {
@@ -961,7 +998,6 @@ def index(dests):
 <li><b>Chiny – Guilin / Yangshuo, Kanton</b> – w lutym 7–14°C (Kanton 17–22°C) i mżawki.</li>
 <li><b>Tajwan – północ (Tajpej)</b> – 17–20°C i deszcz; tylko na 2–3 dni miasta, na plażę południe.</li>
 <li><b>Malezja – wschodnie wybrzeże (Perhentian, Tioman)</b> – monsun do połowy marca, wyspy często zamknięte.</li>
-<li><b>🇱🇦 Laos</b> – od początku marca smog z wypalania pól, drogie loty (zostawiony na końcu kafelków dla porównania).</li>
 <li><b>Seul / Japonia</b> – w lutym mróz; Seul tylko jako przesiadka.</li>
 <li><b>Indonezja: Manado/Bunaken, Belitung, Raja Ampat</b> – wzburzone morze i odwoływane rejsy w lutym; Raja Ampat 2 dni podróży.</li>
 </ul>
