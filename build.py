@@ -357,7 +357,7 @@ DEST.append(dict(slug="indonezja", flag="🇮🇩", name="Indonezja – Lombok i
   ],
   extra="Na ten termin odradzamy: Yogyakartę jako jedyne miejsce (300–400 mm deszczu w lutym), Manado/Bunaken (wzburzone morze, a jedyny bilet z Krakowa idzie przez Dubaj), Belitung (rejsy często odwoływane), Raja Ampat (2 dni podróży w każdą stronę). Wszędzie w porze deszczowej: repelent z DEET (denga)."))
 
-TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)', 'kombinacje': '+7 h', 'huby': '+6 h (Bangkok) / +7 h / +8 h (Seul)', 'ekwador': '−6 h (Galápagos −7 h)', 'meksyk': '−7 h', 'hawaje': '−11 h', 'kolumbia': '−6 h'}
+TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)', 'kombinacje': '+7 h', 'huby': '+6 h (Bangkok) / +7 h / +8 h (Seul)', 'ekwador': '−6 h (Galápagos −7 h)', 'meksyk': '−7 h', 'hawaje': '−11 h', 'kolumbia': '−6 h', 'brazylia': '−4 h'}
 INDO_PENDING = dict(slug="indonezja", flag="🇮🇩", name="Indonezja (bez Bali)", place="np. Lombok, Flores (Komodo), Jawa", pending=True,
   summary="Research w toku – Bali odpada (tłok). Pojawi się tutaj pod tym samym linkiem.")
 
@@ -932,6 +932,45 @@ ROUTE.update({
  "Turkish Kraków ⇄ Bogota przez Stambuł": "Kraków → Stambuł → Bogota",
 })
 
+
+DEST.append(dict(slug="brazylia", region="americas", flag="🇧🇷", name="Brazylia – północny wschód", place="Salvador, Praia do Forte, Maragogi / Milagres, Maceió", gulf=False,
+  price="", price7="", price_note="",
+  summary="Salvador 2 noce → Praia do Forte 6 → São Miguel dos Milagres / Maragogi 5 (naturalne baseny w rafie) → Maceió 1. Najlepsza pogoda w tym terminie (deszcze od kwietnia), ok. 10 dni po karnawale – niski sezon.",
+  weather="☀️ 29–31°C, przed porą deszczową", sea="ok. 28°C",
+  entry="bez wizy 90 dni; dziecko lecące bez jednego z rodziców – zgoda notarialna + tłumaczenie na portugalski i akt urodzenia",
+  chips=[("ok","Najlepsza pora na północnym wschodzie"),("ok","Niski sezon po karnawale"),("warn","Drożej niż Azja"),("warn","Denga – szczyt w II–III")],
+  options=[
+   dict(title="Lufthansa + GOL + SWISS: tam do Salvadoru, z powrotem z Maceió", tag="Najlepsza trasa", kind="direct", gulf=False, pp="ok. 6 700 zł",
+    why="Jeden bilet 5 914 zł (KAYAK, dla 7 osób) + lot Salvador → Maceió 798 zł. Wylot w piątek po pracy. Bez walizek.",
+    out_title="Tam: pt 19.02 → sob 20.02", out=[
+     dep("19:05","19:05","pt 19.02 · Kraków, LH 1369"), stop("","","Frankfurt, LH 506","Przesiadka"),
+     arr("12:20","16:20","sob 20.02 · Salvador (przez São Paulo) · Polska − 4 h")],
+    out_bio="Lot nocny w polską noc, przylot w sobotę w południe czasu brazylijskiego – różnica tylko 4 h, jetlag łagodny.",
+    back_title="Powrót: sob 6.03 → nd 7.03", back=[
+     dep("12:35","16:35","sob 6.03 · Maceió"), stop("","","São Paulo, LX 93","Przesiadka"),
+     stop("","","Zurych, LX 1370","Przesiadka"), arr("13:55","13:55","nd 7.03 · Kraków")], back_bio="W domu w niedzielę po południu."),
+   dict(title="Lufthansa + Azul Kraków ⇄ Recife (Porto de Galinhas, Maragogi)", tag="Najtaniej w terminie", kind="direct", gulf=False, pp="ok. 5 670 zł",
+    why="5 672 zł z 1 walizką w cenie. Prosta trasa w obie strony: Porto de Galinhas i Maragogi (naturalne baseny) blisko Recife.",
+    out_title="Tam: pt 19.02 → sob 20.02", out=[dep("19:05","19:05","pt 19.02 · Kraków (Lufthansa + Azul)"), arr("11:25","15:25","sob 20.02 · Recife")],
+    back_title="Powrót: sob 6.03 → nd 7.03", back=[dep("12:35","16:35","sob 6.03 · Recife"), arr("13:55","13:55","nd 7.03 · Kraków")]),
+   dict(title="Lufthansa do São Paulo + osobne loty krajowe (trasa jak opcja 1)", kind="hub", gulf=False, pp="ok. 6 275 zł",
+    why="Kraków ⇄ São Paulo 4 537 zł + GOL do Salvadoru 329 zł + LATAM z Maceió 611 zł. Ok. 440 zł taniej niż opcja 1, ale 8–10 h czekania w São Paulo w każdą stronę, a spóźniona Lufthansa = przepadnięty bilet krajowy. Powrót w niedzielę 7.03 (w domu pn 8.03) – kolejne ok. 450 zł mniej.",
+    out_title="Tam: pt 19.02 (jak opcja 1, przez São Paulo)", out=[], back_title="Powrót: przez São Paulo i Zurych, Kraków nd 7.03", back=[]),
+   dict(title="TAP z Wiednia do Recife przez Lizbonę, niedziela → niedziela", tag="Najtaniej – inne daty", kind="direct", gulf=False, pp="ok. 3 650 zł",
+    why="3 615–3 669 zł, ale wylot z Wiednia (5 h dojazdu), nocne przesiadki w Lizbonie, w domu w poniedziałek wieczorem i 2 dni krócej w Brazylii.",
+    out_title="Tam: nd 21.02 z Wiednia przez Lizbonę", out=[], back_title="Powrót: nd 7.03 → pn 8.03 do Wiednia", back=[]),
+  ],
+  extra="Inne trasy w danych: Iguaçu + Bonito + plaża (ok. 7 100 zł/os.; szczepienie na żółtą febrę zalecane), Recife w obie strony. W tym terminie odradzamy: Lençóis Maranhenses (laguny dopiero się napełniają, ulewy), Pantanal i Amazonię (pora deszczowa), Fernando de Noronha dla 7 osób (bardzo drogo). Żółta febra: niezalecana w Alagoas, Pernambuco i Ceará, w Bahii zależnie od miejsca. Bezpieczeństwo: MSZ poziom 2 (szczególna ostrożność), poziom 3 – fawele i pogranicze. Osobne bilety przez Lizbonę (Ryanair + TAP) ok. 4 900–5 000 zł z walizkami i noclegiem – niewiele taniej. Warszawa nie taniej niż Kraków. Ceny skakały o 5–10% między wyszukiwaniami."))
+STATS.update({
+ "Lufthansa + GOL + SWISS: tam do Salvadoru, z powrotem z Maceió": (("ok. 21 h","","2 przesiadki",""),("ok. 21 h 20 min","","2 przesiadki","")),
+})
+ROUTE.update({
+ "Lufthansa + GOL + SWISS: tam do Salvadoru, z powrotem z Maceió": "Kraków → Frankfurt → São Paulo → Salvador · Praia do Forte · Maragogi · Maceió → São Paulo → Zurych → Kraków",
+ "Lufthansa + Azul Kraków ⇄ Recife (Porto de Galinhas, Maragogi)": "Kraków → Frankfurt → Recife",
+ "Lufthansa do São Paulo + osobne loty krajowe (trasa jak opcja 1)": "Kraków → Frankfurt → São Paulo → Salvador",
+ "TAP z Wiednia do Recife przez Lizbonę, niedziela → niedziela": "Wiedeń → Lizbona → Recife",
+})
+
 # ---------- Warsaw comparison (warszawa-dane.md, 24.10 evening) ----------
 WAW = {
  "sri-lanka": "Warszawa: 2 988 zł (sob 11:45, przez Szardżę)",
@@ -952,7 +991,7 @@ AL = {
  "KLM": "https://www.klm.pl/", "Lufthansa": "https://www.lufthansa.com/pl/pl/homepage",
  "Austrian": "https://www.austrian.com/pl/pl/homepage", "Turkish Airlines": "https://www.turkishairlines.com/pl-pl/",
  "Korean Air": "https://www.koreanair.com/", "Condor": "https://www.condor.com/pl/",
- "AirAsia": "https://www.airasia.com/", "United": "https://www.united.com/pl/pl", "Air Canada": "https://www.aircanada.com/pl/pl/aco/home.html", "LOT": "https://www.lot.com/pl/pl", "Finnair": "https://www.finnair.com/pl-pl", "Scoot": "https://www.flyscoot.com/pl", "China Airlines": "https://www.china-airlines.com/pl/pl",
+ "AirAsia": "https://www.airasia.com/", "TAP": "https://www.flytap.com/pl-pl/", "United": "https://www.united.com/pl/pl", "Air Canada": "https://www.aircanada.com/pl/pl/aco/home.html", "LOT": "https://www.lot.com/pl/pl", "Finnair": "https://www.finnair.com/pl-pl", "Scoot": "https://www.flyscoot.com/pl", "China Airlines": "https://www.china-airlines.com/pl/pl",
 }
 BOOK = {
  ("sri-lanka",1): (f"Flights from KRK to CMB on 2027-02-19 return 2027-03-07 {P} Air Arabia", "Air Arabia"),
@@ -997,10 +1036,14 @@ BOOK = {
  ("hawaje",4): (f"Flights from KRK to HNL on 2027-02-20 return 2027-03-06 {P} LOT", "LOT"),
  ("kolumbia",2): (f"Flights from KRK to BOG on 2027-02-21 return 2027-03-07 {P} Lufthansa", "Lufthansa"),
  ("kolumbia",3): (f"Flights from KRK to BOG on 2027-02-20 return 2027-03-07 {P} Turkish Airlines", "Turkish Airlines"),
+ ("brazylia",2): (f"Flights from KRK to REC on 2027-02-19 return 2027-03-06 {P} Lufthansa", "Lufthansa"),
+ ("brazylia",3): (f"Flights from KRK to GRU on 2027-02-19 return 2027-03-06 {P} Lufthansa", "Lufthansa"),
+ ("brazylia",4): (f"Flights from VIE to REC on 2027-02-21 return 2027-03-07 {P} TAP", "TAP"),
  ("laos",1): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-07 {P} LOT", "LOT"),
 }
 from urllib.parse import quote
 KAYAK = {
+ ("brazylia",1): "KRK-SSA/2027-02-19/MCZ-KRK/2027-03-06",
  ("kolumbia",1): "KRK-BOG/2027-02-20/CTG-KRK/2027-03-06",
  ("hawaje",1): "KRK-HNL/2027-02-20/KOA-KRK/2027-03-05",
  ("meksyk",2): "KRK-MEX/2027-02-20/PXM-KRK/2027-03-06",
@@ -1205,9 +1248,9 @@ if __name__ == "__main__":
         for o in byslug[sl]["options"]: o.setdefault("kind", DIR)
     for sl in ("kambodza", "laos"):
         for o in byslug[sl]["options"]: o.setdefault("kind", HUB)
-    for sl in ("ekwador","meksyk","hawaje","kolumbia"):
+    for sl in ("ekwador","meksyk","hawaje","kolumbia","brazylia"):
         for o in byslug[sl]["options"]: o.setdefault("kind", DIR)
-    order = [byslug[x] for x in ("sri-lanka","malezja-borneo","indonezja","filipiny","tajwan","tajlandia","kambodza","chiny-hainan","laos","meksyk","kolumbia","ekwador","hawaje")]
+    order = [byslug[x] for x in ("sri-lanka","malezja-borneo","indonezja","filipiny","tajwan","tajlandia","kambodza","chiny-hainan","laos","meksyk","kolumbia","brazylia","ekwador","hawaje")]
     DEST[:] = order
     (OUT / "index.html").write_text(index(order))
     for d in DEST: (OUT / f'{d["slug"]}.html').write_text(detail(d))
