@@ -357,7 +357,7 @@ DEST.append(dict(slug="indonezja", flag="🇮🇩", name="Indonezja – Lombok i
   ],
   extra="Na ten termin odradzamy: Yogyakartę jako jedyne miejsce (300–400 mm deszczu w lutym), Manado/Bunaken (wzburzone morze, a jedyny bilet z Krakowa idzie przez Dubaj), Belitung (rejsy często odwoływane), Raja Ampat (2 dni podróży w każdą stronę). Wszędzie w porze deszczowej: repelent z DEET (denga)."))
 
-TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)', 'kombinacje': '+7 h', 'huby': '+6 h (Bangkok) / +7 h / +8 h (Seul)', 'ekwador': '−6 h (Galápagos −7 h)', 'meksyk': '−7 h'}
+TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)', 'kombinacje': '+7 h', 'huby': '+6 h (Bangkok) / +7 h / +8 h (Seul)', 'ekwador': '−6 h (Galápagos −7 h)', 'meksyk': '−7 h', 'hawaje': '−11 h'}
 INDO_PENDING = dict(slug="indonezja", flag="🇮🇩", name="Indonezja (bez Bali)", place="np. Lombok, Flores (Komodo), Jawa", pending=True,
   summary="Research w toku – Bali odpada (tłok). Pojawi się tutaj pod tym samym linkiem.")
 
@@ -845,6 +845,52 @@ ROUTE["Turkish do Hongkongu + HK Express do Sanyi"] = "Kraków → Stambuł → 
 ROUTE["Lufthansa do Hongkongu + HK Express do Sanyi"] = "Kraków → Frankfurt → Hongkong (nocleg) → Sanya"
 ROUTE["Finnair do Hongkongu w niedzielę (powrót we wtorek) + loty do Sanyi"] = "Kraków → Helsinki → Hongkong → Sanya"
 
+
+DEST.append(dict(slug="hawaje", region="americas", flag="🌺", name="Hawaje", place="Oahu 3 noce + Maui 6 + Big Island 4", gulf=False,
+  price="", price7="", price_note="",
+  summary="Wieloryby (szczyt sezonu), wulkany, snorkeling. Loty w cenie podobnej do Azji, ale na miejscu bardzo drogo – cały wyjazd ok. 13–17,5 tys. zł/os. (1,5–2× Azja).",
+  weather="🌤 ok. 26–27°C; zimą wysokie fale na północnych brzegach (kąpiel na południowych i zachodnich)", sea="24–25°C",
+  entry="ESTA 40,62 USD/os. (także dzieci), także na samą przesiadkę w USA; wysokie ubezpieczenie medyczne",
+  chips=[("ok","Wieloryby – szczyt sezonu"),("warn","Jetlag −11 h, ok. 26 h podróży"),("bad","Bardzo drogo na miejscu"),("warn","Pełna kontrola USA przy przesiadce")],
+  options=[
+   dict(title="Lufthansa + United: tam do Honolulu, z powrotem z Kony (Big Island)", tag="Najlepsza opcja", kind="direct", gulf=False, pp="ok. 4 270 zł",
+    why="4 267 zł (KAYAK, dla 7 osób), Economy Light bez walizki – walizka 23 kg na dwie osoby ok. +250–400 zł/os. Do tego loty między wyspami ok. 271 zł/os. za odcinek (Oahu → Maui, Maui → Big Island). Powrót z innej wyspy nic nie kosztuje dodatkowo. Zmiana dat nic nie daje (różnice do 200 zł).",
+    out_title="Tam: sob 20.02", out=[
+     dep("06:20","06:20","sob 20.02 · Kraków, LH 1371"), stop("","","Frankfurt, LH 456","Przesiadka <b>2 h 25 min</b>"),
+     stop("","","Los Angeles (USA), UA 1170","Przesiadka <b>4 h 05 min</b> · pełna kontrola wjazdowa USA"),
+     arr("21:08","nd 08:08","sob 20.02 · Honolulu (Oahu) · Polska − 11 h")],
+    out_bio="Cały dzień w samolotach, przylot wieczorem czasu hawajskiego, gdy w Polsce jest już niedzielny poranek. W tę stronę jetlag łatwiejszy (wcześnie się budzimy).",
+    back_title="Powrót: pt 5.03 → nd 7.03", back=[
+     dep("23:51","sob 10:51","pt 5.03 · Kona (Big Island), UA 1724"), stop("","","San Francisco, UA 194","Przesiadka <b>6 h 36 min</b>"),
+     stop("","","Monachium, LH 1622","Przesiadka <b>1 h 25 min</b>"), arr("12:50","12:50","nd 7.03 · Kraków")],
+    back_bio="Dwie noce z rzędu w samolotach – powrót to trudniejszy kierunek dla organizmu."),
+   dict(title="KLM w piątek po pracy (noc w Amsterdamie)", kind="direct", gulf=False, pp="ok. 4 270 zł",
+    why="Jedyny wylot z Krakowa w piątek po 16:00. Postój w Amsterdamie 14 h 40 min – trzeba nocleg. Przesiadka w Seattle tylko 1 h 12 min z kontrolą USA – ryzykownie.",
+    out_title="Tam: pt 19.02 → sob 20.02", out=[
+     dep("17:35","17:35","pt 19.02 · Kraków, KLM"), night("🛏 Noc w Amsterdamie (14 h 40 min)"),
+     stop("","","Seattle (USA)","Przesiadka <b>1 h 12 min</b>"), arr("17:31","nd 04:31","sob 20.02 · Honolulu")],
+    back_title="Powrót: jak opcja 1", back=[]),
+   dict(title="Lufthansa + United Kraków ⇄ Honolulu, powrót w sobotę", kind="direct", gulf=False, pp="ok. 4 330 zł",
+    why="Wylot z Honolulu w piątek 5.03 rano, w Krakowie w sobotę 6.03 – dzień zapasu przed szkołą.",
+    out_title="Tam: jak opcja 1", out=[], back_title="Powrót: pt 5.03 Honolulu 8:00 → sob 6.03 Kraków 16:55", back=[]),
+   dict(title="LOT + Hawaiian przez Los Angeles (z nocą w LA)", kind="direct", gulf=False, pp="ok. 4 570 zł",
+    why="Wylot z Krakowa w sobotę o 15:00 (bez pobudki o 3:30), noc w Los Angeles w drodze tam i dzień w LA w drodze powrotnej – podróż rozłożona na dwa dni. LOT zwykle z walizką. + hotel w LA.",
+    out_title="Tam: sob 20.02 → nd 21.02", out=[
+     dep("15:00","15:00","sob 20.02 · Kraków, LOT"), night("🛏 Noc w Los Angeles"), arr("","","nd 21.02 · Honolulu (Hawaiian)")],
+    back_title="Powrót: przez Los Angeles (dzień w LA)", back=[]),
+  ],
+  extra="Koszt całości (szacunek): noclegi ok. 1 200–1 800 zł za rodzinę za noc z 14% podatkiem, 2 samochody, drogie jedzenie – razem ok. 13 000–17 500 zł/os. (90–120 tys. zł dla 7), wobec ok. 7 000–9 500 zł/os. za Sri Lankę. Przez Azję (LOT do Seulu/Tokio + dalej) ok. 6 400 zł/os. – drożej. Osobne bilety LOT do LA + lot na Hawaje ok. 4 900 zł/os. + 2 noclegi. Hanauma Bay – rezerwacje online, możliwe zamknięcie na początku 2027. Lahaina (Maui) po pożarze 2023 – częściowo otwarta."))
+STATS.update({
+ "Lufthansa + United: tam do Honolulu, z powrotem z Kony (Big Island)": (("25 h 48 min","19 h 20 min","6 h 30 min",""),("25 h 59 min","","8 h 01 min","")),
+ "KLM w piątek po pracy (noc w Amsterdamie)": (("ok. 34 h z nocą w Amsterdamie","","noc w Amsterdamie + 1 h 12 min",""),None),
+})
+ROUTE.update({
+ "Lufthansa + United: tam do Honolulu, z powrotem z Kony (Big Island)": "Kraków → Frankfurt → Los Angeles → Honolulu · Maui · Kona → San Francisco → Monachium → Kraków",
+ "KLM w piątek po pracy (noc w Amsterdamie)": "Kraków → Amsterdam (nocleg) → Seattle → Honolulu",
+ "Lufthansa + United Kraków ⇄ Honolulu, powrót w sobotę": "Kraków → Frankfurt → Los Angeles → Honolulu",
+ "LOT + Hawaiian przez Los Angeles (z nocą w LA)": "Kraków → Warszawa → Los Angeles (nocleg) → Honolulu",
+})
+
 # ---------- Warsaw comparison (warszawa-dane.md, 24.10 evening) ----------
 WAW = {
  "sri-lanka": "Warszawa: 2 988 zł (sob 11:45, przez Szardżę)",
@@ -865,7 +911,7 @@ AL = {
  "KLM": "https://www.klm.pl/", "Lufthansa": "https://www.lufthansa.com/pl/pl/homepage",
  "Austrian": "https://www.austrian.com/pl/pl/homepage", "Turkish Airlines": "https://www.turkishairlines.com/pl-pl/",
  "Korean Air": "https://www.koreanair.com/", "Condor": "https://www.condor.com/pl/",
- "AirAsia": "https://www.airasia.com/", "Air Canada": "https://www.aircanada.com/pl/pl/aco/home.html", "LOT": "https://www.lot.com/pl/pl", "Finnair": "https://www.finnair.com/pl-pl", "Scoot": "https://www.flyscoot.com/pl", "China Airlines": "https://www.china-airlines.com/pl/pl",
+ "AirAsia": "https://www.airasia.com/", "United": "https://www.united.com/pl/pl", "Air Canada": "https://www.aircanada.com/pl/pl/aco/home.html", "LOT": "https://www.lot.com/pl/pl", "Finnair": "https://www.finnair.com/pl-pl", "Scoot": "https://www.flyscoot.com/pl", "China Airlines": "https://www.china-airlines.com/pl/pl",
 }
 BOOK = {
  ("sri-lanka",1): (f"Flights from KRK to CMB on 2027-02-19 return 2027-03-07 {P} Air Arabia", "Air Arabia"),
@@ -905,10 +951,14 @@ BOOK = {
  ("ekwador",3): (f"Flights from KRK to UIO on 2027-02-20 return 2027-03-07 {P} Turkish Airlines", "Turkish Airlines"),
  ("meksyk",1): (f"Flights from KRK to MEX on 2027-02-20 return 2027-03-06 {P} Lufthansa", "Lufthansa"),
  ("meksyk",3): (f"Flights from KRK to OAX on 2027-02-20 return 2027-03-06 {P} KLM", "KLM"),
+ ("hawaje",2): (f"Flights from KRK to HNL on 2027-02-19 return 2027-03-07 {P} KLM", "KLM"),
+ ("hawaje",3): (f"Flights from KRK to HNL on 2027-02-20 return 2027-03-05 {P} United", "United"),
+ ("hawaje",4): (f"Flights from KRK to HNL on 2027-02-20 return 2027-03-06 {P} LOT", "LOT"),
  ("laos",1): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-07 {P} LOT", "LOT"),
 }
 from urllib.parse import quote
 KAYAK = {
+ ("hawaje",1): "KRK-HNL/2027-02-20/KOA-KRK/2027-03-05",
  ("meksyk",2): "KRK-MEX/2027-02-20/PXM-KRK/2027-03-06",
  ("meksyk",4): "KRK-OAX/2027-02-20/HUX-KRK/2027-03-06",
  ("ekwador",2): "KRK-UIO/2027-02-21/GYE-KRK/2027-03-07",
@@ -1103,9 +1153,9 @@ if __name__ == "__main__":
         for o in byslug[sl]["options"]: o.setdefault("kind", DIR)
     for sl in ("kambodza", "laos"):
         for o in byslug[sl]["options"]: o.setdefault("kind", HUB)
-    for sl in ("ekwador","meksyk"):
+    for sl in ("ekwador","meksyk","hawaje"):
         for o in byslug[sl]["options"]: o.setdefault("kind", DIR)
-    order = [byslug[x] for x in ("sri-lanka","malezja-borneo","indonezja","filipiny","tajwan","tajlandia","kambodza","chiny-hainan","laos","meksyk","ekwador")]
+    order = [byslug[x] for x in ("sri-lanka","malezja-borneo","indonezja","filipiny","tajwan","tajlandia","kambodza","chiny-hainan","laos","meksyk","ekwador","hawaje")]
     DEST[:] = order
     (OUT / "index.html").write_text(index(order))
     for d in DEST: (OUT / f'{d["slug"]}.html').write_text(detail(d))
