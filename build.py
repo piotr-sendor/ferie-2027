@@ -996,7 +996,7 @@ def page(title, body, back=False):
     return f'''<!doctype html><html lang="pl"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Cache-Control" content="no-cache"><title>{html.escape(title)}</title>
-<link rel="stylesheet" href="style.css?v=e"></head><body>
+<link rel="stylesheet" href="style.css?v=f"></head><body>
 <header><div class="wrap">{nav}<h1>{title}</h1>
 <div class="chips"><span class="chip">19.02 – 7.03.2027</span><span class="chip">ceny z {UPDATED}, za osobę</span></div>
 </div></header><div class="wrap">{body}
@@ -1006,6 +1006,14 @@ def page(title, body, back=False):
 
 def chip_html(chips):
     return ''.join(f'<span class="flag {k}">{"✓" if k=="ok" else "!" if k=="warn" else "✕"} {html.escape(t)}</span>' for k, t in chips)
+
+def gulf_tag(d):
+    ops = d["options"]
+    if ops and ops[0].get("gulf"):
+        alt = [o for o in ops if not o.get("gulf")]
+        extra = f' <small>bez Zatoki: od {_num(min(alt, key=lambda o: _num(o["pp"]))["pp"]):,} zł</small>'.replace(",", " ") if alt else ""
+        return f'<span class="gtag gulf">Przesiadka w Zatoce Perskiej{extra}</span>'
+    return '<span class="gtag ok">Bez Zatoki Perskiej</span>'
 
 def teaser(d):
     rows = []
@@ -1022,13 +1030,13 @@ def tile(d):
         return f'''<div class="tile pending"><div class="tflag">{d["flag"]}</div><h2>{d["name"]}</h2><p class="place">{d["place"]}</p>
 <p>{d["summary"]}</p><span class="btn disabled">W przygotowaniu</span></div>'''
     cls = "tile notrec" if d.get("notrec") else "tile"
-    return f'''<a class="{cls}" href="{d["slug"]}.html"><div class="tflag">{d["flag"]}</div>
+    return f'''<a class="{cls}" href="{d["slug"]}.html"><div class="ttop"><div class="tflag">{d["flag"]}</div>{gulf_tag(d)}</div>
 <h2>{d["name"]}</h2><p class="place">{d["place"]}</p>
 <p class="route">✈ {d["options"][0]["_route"]}</p>
 {teaser(d)}
 <p>{d["summary"]}</p>
 <div class="facts"><div>🕐 Różnica czasu: <b>{TZ[d["slug"]]}</b></div><div>🌡 {d["weather"]}</div><div>🌊 Morze: {d["sea"]}</div><div>🛂 {d["entry"]}</div></div>
-<div class="flags">{chip_html(d["chips"])}</div>
+<div class="flags">{chip_html([c for c in d["chips"] if "Zatok" not in c[1]])}</div>
 <span class="btn">Zobacz loty i szczegóły →</span></a>'''
 
 def tl(items):
@@ -1066,7 +1074,7 @@ def option(o, i, slug=''):
     return ''.join(parts)
 
 def detail(d):
-    body = [f'<div class="card intro"><div class="flags">{chip_html(d["chips"])}</div>',
+    body = [f'<div class="card intro"><div class="ttop">{gulf_tag(d)}</div><div class="flags">{chip_html([c for c in d["chips"] if "Zatok" not in c[1]])}</div>',
             f'<p class="place big">{d["place"]}</p><p>{d["summary"]}</p>',
             f'<div class="facts row3"><div><b>Różnica czasu</b><br>{TZ[d["slug"]]} względem Polski</div><div><b>Pogoda 20.02–7.03</b><br>{d["weather"]}</div><div><b>Morze</b><br>{d["sea"]}</div><div><b>Wjazd dla Polaków</b><br>{d["entry"]}</div></div></div>',
             '<h2>Loty – od najlepszego</h2><p class="note">Godziny lokalne; na szaro czas polski.</p>']

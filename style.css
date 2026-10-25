@@ -119,3 +119,8 @@ a.tile:hover .btn{background:#095f5b}
 .badge.kind{background:#e8eef3;color:#33414b;text-transform:none}
 .badge.kind.hub{background:#efe9ff;color:#5b4ac7}
 .region{margin:26px 0 10px;font-size:24px}
+.ttop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:4px}
+.gtag{font-size:13px;font-weight:700;padding:5px 11px;border-radius:99px;text-align:right}
+.gtag small{display:block;font-weight:600;opacity:.85;font-size:12px}
+.gtag.gulf{background:#fde7cf;color:#a14d00;border:1px solid #f5c48f}
+.gtag.ok{background:var(--green2);color:var(--green);border:1px solid #bfe3c8}
