@@ -357,7 +357,7 @@ DEST.append(dict(slug="indonezja", flag="🇮🇩", name="Indonezja – Lombok i
   ],
   extra="Na ten termin odradzamy: Yogyakartę jako jedyne miejsce (300–400 mm deszczu w lutym), Manado/Bunaken (wzburzone morze, a jedyny bilet z Krakowa idzie przez Dubaj), Belitung (rejsy często odwoływane), Raja Ampat (2 dni podróży w każdą stronę). Wszędzie w porze deszczowej: repelent z DEET (denga)."))
 
-TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)', 'kombinacje': '+7 h', 'huby': '+6 h (Bangkok) / +7 h / +8 h (Seul)', 'ekwador': '−6 h (Galápagos −7 h)', 'meksyk': '−7 h', 'hawaje': '−11 h'}
+TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)', 'kombinacje': '+7 h', 'huby': '+6 h (Bangkok) / +7 h / +8 h (Seul)', 'ekwador': '−6 h (Galápagos −7 h)', 'meksyk': '−7 h', 'hawaje': '−11 h', 'kolumbia': '−6 h'}
 INDO_PENDING = dict(slug="indonezja", flag="🇮🇩", name="Indonezja (bez Bali)", place="np. Lombok, Flores (Komodo), Jawa", pending=True,
   summary="Research w toku – Bali odpada (tłok). Pojawi się tutaj pod tym samym linkiem.")
 
@@ -891,6 +891,47 @@ ROUTE.update({
  "LOT + Hawaiian przez Los Angeles (z nocą w LA)": "Kraków → Warszawa → Los Angeles (nocleg) → Honolulu",
 })
 
+
+DEST.append(dict(slug="kolumbia", region="americas", flag="🇨🇴", name="Kolumbia", place="Region kawy + Cartagena + wyspy Rosario", gulf=False,
+  price="", price7="", price_note="",
+  summary="Bogota → 5 nocy na farmie kawy (dolina Cocora, Salento, Parque del Café) → Cartagena 3 noce → wyspy Rosario / Barú 5 nocy (spokojne morze, pora sucha) → powrót z Cartageny.",
+  weather="☀️ Karaiby: pora sucha, 31–32°C · region kawy 22–25°C, przelotne deszcze", sea="27–28°C",
+  entry="bez wizy 90 dni; formularz Check-MIG online (72 h przed lotem, w obie strony)",
+  chips=[("ok","Pora sucha na Karaibach"),("ok","Kawa + Karaiby"),("warn","MSZ poziom 2: kradzieże, skopolamina"),("warn","Szczepienia: denga (1. dawka do ok. 19.11)")],
+  options=[
+   dict(title="KLM: tam do Bogoty, z powrotem z Cartageny", tag="Najlepsza opcja", kind="direct", gulf=False, pp="ok. 5 020 zł",
+    why="KLM 4 520 zł (KAYAK, dla 4 dorosłych + 3 dzieci) + loty krajowe ok. 500 zł (np. Pereira → Cartagena bez przesiadki 319 zł). Bez walizek. W piątek: KLM 17:35 z noclegiem w Amsterdamie – podobna cena + hotel. Daty 20/21/22.02 i powrót 6/7.03 – ta sama cena.",
+    out_title="Tam: sob 20.02", out=[
+     dep("06:00","06:00","sob 20.02 · Kraków, KL 1322"), stop("","","Amsterdam, KL 741/749","Przesiadka <b>1 h 15 min</b>"),
+     arr("14:30","20:30","sob 20.02 · Bogota · Polska − 6 h"),
+     night("🛏 Noc przy lotnisku albo od razu lot do Armenii (region kawy)")],
+    out_bio="Lot w dzień, przylot po południu czasu kolumbijskiego – wieczorem dzieci padają, jetlag w tę stronę łagodny.",
+    back_title="Powrót: sob 6.03 → nd 7.03", back=[
+     dep("18:55","nd 00:55","sob 6.03 · Cartagena, KL 749 (nocny, bez przesiadki do Amsterdamu)"),
+     stop("","","Amsterdam, KL 1325","Przesiadka <b>1 h 10 min</b>"), arr("13:45","13:45","nd 7.03 · Kraków")],
+    back_bio="W domu w niedzielę po południu."),
+   dict(title="Lufthansa Kraków ⇄ Bogota, niedziela → niedziela", tag="Taniej – inne daty", kind="direct", gulf=False, pp="ok. 4 540 zł",
+    why="3 830 zł (sobota–sobota: 4 230 zł) + lot Cartagena → Bogota na koniec. Wylot w niedzielę, w domu w poniedziałek 8.03 o 23:05.",
+    out_title="Tam: nd 21.02", out=[
+     dep("","","nd 21.02 · Kraków, LH 1363"), stop("","","Frankfurt, LH 542","Przesiadka <b>2 h 05 min</b>"), arr("","","nd 21.02 · Bogota")],
+    back_title="Powrót: nd 7.03 → pn 8.03", back=[
+     dep("","","nd 7.03 · Bogota, LH 543"), stop("","","Frankfurt, LH 1370","Przesiadka <b>5 h 35 min</b>"), arr("23:05","23:05","pn 8.03 · Kraków")]),
+   dict(title="Turkish Kraków ⇄ Bogota przez Stambuł", kind="direct", gulf=False, pp="ok. 4 010 zł",
+    why="Walizka zwykle w cenie. Minus: 8 h 15 min nocnej przesiadki w Stambule w drodze tam i powrót do domu w poniedziałek 18:30. + loty krajowe.",
+    out_title="Tam: sob 20.02", out=[dep("","","sob 20.02 · Kraków"), stop("","","Stambuł (Turcja)","Przesiadka <b>8 h 15 min</b> (w nocy)"), arr("","","Bogota")],
+    back_title="Powrót: nd 7.03 → pn 8.03 (Kraków 18:30)", back=[]),
+  ],
+  extra="Trasy: B – z 3 nocami w Medellín; C – San Andrés / Providencia zamiast Rosario (karta turystyczna 153 000 COP/os., także dzieci 8 lat); D – Santa Marta / Tayrona tylko z planem B: park Tayrona był zamknięty 16.02–5.03.2026 (dokładnie nasz termin) z powodu grup zbrojnych, w VI 2026 blokady dróg. Bezpieczeństwo: MSZ poziom 2, żadne z proponowanych miejsc nie jest w strefach 3/4; tylko taksówki z aplikacji. Zdrowie: Qdenga (denga) – 2 dawki co 3 miesiące, pierwsza do ok. 19.11.2026; żółta febra – praktycznie wymagana na Santa Marta/Tayrona, przy trasie A decyzja lekarza. Przez Madryt na osobnych biletach (Ryanair + Avianca) ok. 3 700 zł z hotelem, ale z walizkami i ryzykiem – bez zysku. Wiedeń (sob/nd) 3 380–3 668 zł + dojazd."))
+STATS.update({
+ "KLM: tam do Bogoty, z powrotem z Cartageny": (("14 h 30 min","13 h 15 min","1 h 15 min",""),("12 h 50 min","11 h 40 min","1 h 10 min","")),
+ "Lufthansa Kraków ⇄ Bogota, niedziela → niedziela": (("15 h 15 min","13 h 10 min","2 h 05 min",""),("17 h 50 min","12 h 15 min","5 h 35 min","")),
+})
+ROUTE.update({
+ "KLM: tam do Bogoty, z powrotem z Cartageny": "Kraków → Amsterdam → Bogota · region kawy · Cartagena → Amsterdam → Kraków",
+ "Lufthansa Kraków ⇄ Bogota, niedziela → niedziela": "Kraków → Frankfurt → Bogota",
+ "Turkish Kraków ⇄ Bogota przez Stambuł": "Kraków → Stambuł → Bogota",
+})
+
 # ---------- Warsaw comparison (warszawa-dane.md, 24.10 evening) ----------
 WAW = {
  "sri-lanka": "Warszawa: 2 988 zł (sob 11:45, przez Szardżę)",
@@ -954,10 +995,13 @@ BOOK = {
  ("hawaje",2): (f"Flights from KRK to HNL on 2027-02-19 return 2027-03-07 {P} KLM", "KLM"),
  ("hawaje",3): (f"Flights from KRK to HNL on 2027-02-20 return 2027-03-05 {P} United", "United"),
  ("hawaje",4): (f"Flights from KRK to HNL on 2027-02-20 return 2027-03-06 {P} LOT", "LOT"),
+ ("kolumbia",2): (f"Flights from KRK to BOG on 2027-02-21 return 2027-03-07 {P} Lufthansa", "Lufthansa"),
+ ("kolumbia",3): (f"Flights from KRK to BOG on 2027-02-20 return 2027-03-07 {P} Turkish Airlines", "Turkish Airlines"),
  ("laos",1): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-07 {P} LOT", "LOT"),
 }
 from urllib.parse import quote
 KAYAK = {
+ ("kolumbia",1): "KRK-BOG/2027-02-20/CTG-KRK/2027-03-06",
  ("hawaje",1): "KRK-HNL/2027-02-20/KOA-KRK/2027-03-05",
  ("meksyk",2): "KRK-MEX/2027-02-20/PXM-KRK/2027-03-06",
  ("meksyk",4): "KRK-OAX/2027-02-20/HUX-KRK/2027-03-06",
@@ -1161,9 +1205,9 @@ if __name__ == "__main__":
         for o in byslug[sl]["options"]: o.setdefault("kind", DIR)
     for sl in ("kambodza", "laos"):
         for o in byslug[sl]["options"]: o.setdefault("kind", HUB)
-    for sl in ("ekwador","meksyk","hawaje"):
+    for sl in ("ekwador","meksyk","hawaje","kolumbia"):
         for o in byslug[sl]["options"]: o.setdefault("kind", DIR)
-    order = [byslug[x] for x in ("sri-lanka","malezja-borneo","indonezja","filipiny","tajwan","tajlandia","kambodza","chiny-hainan","laos","meksyk","ekwador","hawaje")]
+    order = [byslug[x] for x in ("sri-lanka","malezja-borneo","indonezja","filipiny","tajwan","tajlandia","kambodza","chiny-hainan","laos","meksyk","kolumbia","ekwador","hawaje")]
     DEST[:] = order
     (OUT / "index.html").write_text(index(order))
     for d in DEST: (OUT / f'{d["slug"]}.html').write_text(detail(d))
