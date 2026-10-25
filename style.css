@@ -112,3 +112,9 @@ a.tile:hover .btn{background:#095f5b}
 .rejected h3{margin-top:4px}.rejected li{margin:6px 0}
 .route{font-size:13px;color:#0e5f8a;font-weight:600;margin:6px 0 0}
 .alt{display:block;margin-top:4px;font-size:13px;font-weight:600;color:#0e5f8a}
+.trow{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:3px 0}
+.trow span{font-size:14px;color:#33414b}
+.trow b{font-size:20px;color:var(--teal);white-space:nowrap}
+.pnote{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.badge.kind{background:#e8eef3;color:#33414b;text-transform:none}
+.badge.kind.hub{background:#efe9ff;color:#5b4ac7}

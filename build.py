@@ -734,20 +734,25 @@ KAYAK = {
  ("kombinacje",4): "KRK-SIN/2027-02-20/DPS-KRK/2027-03-06",
  ("kombinacje",5): "KRK-HKG/2027-02-20/MNL-KRK/2027-03-06",
 }
-def book_html(slug, i):
-    if (slug, i) in KAYAK:
-        k = "https://www.kayak.pl/flights/" + KAYAK[(slug, i)] + "/4adults/children-8-8-6?sort=price_a"
-        al = BOOK[(slug, i)][1]
+def book_html(o):
+    if o.get("_kayak"):
+        k = "https://www.kayak.pl/flights/" + o["_kayak"] + "/4adults/children-8-8-6?sort=price_a"
+        al = o["_book"][1]
         return (f'<div class="book"><a class="gf" href="{k}" target="_blank" rel="noopener">Sprawdź i zarezerwuj (KAYAK, wiele miast) →</a>'
                 f'<a class="al" href="{AL[al]}" target="_blank" rel="noopener">Strona {al}</a></div>'
-                '<p class="note">Bilet długi; loty lokalne kupuje się osobno (AirAsia, HK Express, Scoot, Cebu Pacific).</p>')
-    b = BOOK.get((slug, i))
+                '<p class="note">Bilet długi; loty lokalne kupuje się osobno.</p>')
+    b = o.get("_book")
     if not b: return ""
     q, al = b
     gf = "https://www.google.com/travel/flights?hl=pl&curr=PLN&q=" + quote(q)
     return (f'<div class="book"><a class="gf" href="{gf}" target="_blank" rel="noopener">Sprawdź i zarezerwuj (Google Flights) →</a>'
-            f'<a class="al" href="{AL[al]}" target="_blank" rel="noopener">Strona {al}</a></div>'
-            '<p class="note">Wyszukiwanie z naszymi lotniskami, datami i 7 pasażerami.</p>')
+            f'<a class="al" href="{AL[al]}" target="_blank" rel="noopener">Strona {al}</a></div>')
+
+import re as _re
+def _num(pp):
+    m = _re.search(r"(\d[\d ]{2,})", pp.replace("\u00a0"," "))
+    return int(m.group(1).replace(" ","")) if m else 10**9
+KIND_LABEL = {"direct": '<span class="badge kind">Jednym biletem</span>', "hub": '<span class="badge kind hub">Przez hub · osobne bilety</span>'}
 
 # ---------- rendering ----------
 CSS = open(OUT / "style.css").read() if (OUT / "style.css").exists() else ""
@@ -757,7 +762,7 @@ def page(title, body, back=False):
     return f'''<!doctype html><html lang="pl"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Cache-Control" content="no-cache"><title>{html.escape(title)}</title>
-<link rel="stylesheet" href="style.css?v=d"></head><body>
+<link rel="stylesheet" href="style.css?v=e"></head><body>
 <header><div class="wrap">{nav}<h1>{title}</h1>
 <div class="chips"><span class="chip">19.02 – 7.03.2027</span><span class="chip">ceny z {UPDATED}, za osobę</span></div>
 </div></header><div class="wrap">{body}
@@ -768,6 +773,16 @@ def page(title, body, back=False):
 def chip_html(chips):
     return ''.join(f'<span class="flag {k}">{"✓" if k=="ok" else "!" if k=="warn" else "✕"} {html.escape(t)}</span>' for k, t in chips)
 
+def teaser(d):
+    rows = []
+    for kind, label in (("direct","✈ Jednym biletem"),("hub","🏙 Przez hub z noclegiem")):
+        ops = [o for o in d["options"] if o.get("kind") == kind]
+        if not ops: continue
+        best = min(ops, key=lambda o: _num(o["pp"]))
+        rows.append(f'<div class="trow"><span>{label}</span><b>od {_num(best["pp"]):,} zł</b></div>'.replace(",", " "))
+    alt = f'<span class="alt">{d["alt"]}</span>' if d.get("alt") else ''
+    return f'<div class="tprice">{"".join(rows)}<span class="pnote">za osobę, w obie strony, z lotami lokalnymi</span>{alt}</div>'
+
 def tile(d):
     if d.get("pending"):
         return f'''<div class="tile pending"><div class="tflag">{d["flag"]}</div><h2>{d["name"]}</h2><p class="place">{d["place"]}</p>
@@ -775,8 +790,8 @@ def tile(d):
     cls = "tile notrec" if d.get("notrec") else "tile"
     return f'''<a class="{cls}" href="{d["slug"]}.html"><div class="tflag">{d["flag"]}</div>
 <h2>{d["name"]}</h2><p class="place">{d["place"]}</p>
-<p class="route">✈ {route_of(d["slug"], d["options"][0])}</p>
-<div class="tprice"><b>{d["price"]}</b><span>za osobę, w obie strony · {d["price_note"]}</span>{('<span class="alt">' + d["alt"] + '</span>') if d.get("alt") else ''}</div>
+<p class="route">✈ {d["options"][0]["_route"]}</p>
+{teaser(d)}
 <p>{d["summary"]}</p>
 <div class="facts"><div>🕐 Różnica czasu: <b>{TZ[d["slug"]]}</b></div><div>🌡 {d["weather"]}</div><div>🌊 Morze: {d["sea"]}</div><div>🛂 {d["entry"]}</div></div>
 <div class="flags">{chip_html(d["chips"])}</div>
@@ -800,19 +815,19 @@ def tl(items):
 def option(o, i, slug=''):
     badge = f'<span class="badge">{o["tag"]}</span> ' if o.get("tag") else f'<span class="badge num">Opcja {i}</span> '
     g = GULF if o["gulf"] else NOGULF
-    parts = [f'<div class="card {"best" if i==1 else ""}">{badge}{g}<h3 class="otitle">{o["title"]}</h3><p class="route">✈ {route_of(slug, o)}</p>',
+    parts = [f'<div class="card {"best" if i==1 else ""}">{badge}{KIND_LABEL.get(o.get("kind"),"")}{g}<h3 class="otitle">{o["title"]}</h3><p class="route">✈ {o["_route"]}</p>',
              f'<div class="price"><div><b>{o["pp"]}</b><span>za osobę, w obie strony{" · " + o["p7"] if str(o.get("p7","")).startswith("+") else ""}</span>{('<span class="alt">' + o["alt"] + '</span>') if o.get("alt") else ''}</div></div>',
              f'<p class="why">{o["why"]}</p>']
     if o.get("out"):
-        st = STATS_BY_SLUG.get((slug, o["title"])) or STATS.get(o["title"])
+        st = o.get("_stats")
         parts.append(f'<div class="leg-title"><h4>{o["out_title"]}</h4></div>{stats_html(st[0] if st else None)}{tl(o["out"])}')
         if o.get("out_bio"): parts.append(f'<div class="bio">🌙 <b>Dla organizmu:</b> {o["out_bio"]}</div>')
-    st = STATS_BY_SLUG.get((slug, o["title"])) or STATS.get(o["title"])
+    st = o.get("_stats")
     parts.append(f'<div class="leg-title"><h4>{o["back_title"]}</h4></div>{stats_html(st[1] if st and o.get("back") else None)}')
     if o.get("back"): parts.append(tl(o["back"]))
     if o.get("back_bio"): parts.append(f'<div class="bio">🌙 <b>Dla organizmu:</b> {o["back_bio"]}</div>')
     if o.get("note"): parts.append(f'<p class="note">{o["note"]}</p>')
-    parts.append(book_html(slug, i))
+    parts.append(book_html(o))
     parts.append('</div>')
     return ''.join(parts)
 
@@ -837,7 +852,7 @@ def index(dests):
 <li><b>🇮🇳 Indie</b> – niedawno byliśmy.</li>
 <li><b>🇻🇳 Wietnam</b> – niedawno byliśmy.</li>
 <li><b>🇮🇩 Bali</b> – obie rodziny już były; tłok i bardzo dużo turystów.</li>
-<li><b>🇲🇾 Langkawi</b> – niedawno byliśmy (Malezja zostaje, ale Borneo).</li>
+<li><b>🇲🇾 Langkawi</b> – niedawno byliśmy (Malezja zostaje: Borneo albo Penang).</li>
 <li><b>🇲🇲 Birma (Mjanma)</b> – trwa wojna.</li>
 <li><b>Przesiadki w Zatoce Perskiej</b> (Dubaj, Szardża, Abu Zabi, Doha) – tylko tam, gdzie nie ma sensownej alternatywy (Sri Lanka), zawsze z oznaczeniem.</li>
 <li><b>Wyloty z Wiednia w piątek</b> – po pracy w Krakowie nie da się zdążyć.</li>
@@ -857,7 +872,54 @@ def index(dests):
 INFO = open(OUT / "info_body.html").read() if (OUT / "info_body.html").exists() else ""
 
 if __name__ == "__main__":
-    order = [DEST[0], DEST[10], DEST[11], DEST[1], DEST[9], DEST[2], DEST[3], DEST[4], DEST[5], DEST[6], DEST[8]]  # Vietnam (DEST[7]) rejected: been there recently
+    # precompute per-option data while options still sit at their original (slug, index)
+    for d in DEST:
+        for i, o in enumerate(d["options"], 1):
+            o["_book"] = BOOK.get((d["slug"], i)); o["_kayak"] = KAYAK.get((d["slug"], i))
+            o["_route"] = route_of(d["slug"], o)
+            o["_stats"] = STATS_BY_SLUG.get((d["slug"], o["title"])) or STATS.get(o["title"])
+    byslug = {d["slug"]: d for d in DEST}
+    pool = {o["title"]: o for sl in ("kombinacje", "huby") for o in byslug[sl]["options"]}
+    for o in pool.values(): o.pop("tag", None)
+    def opt(slug, title): return next(o for o in byslug[slug]["options"] if o["title"] == title)
+    HUB = "hub"; DIR = "direct"
+    def setk(o, k): o["kind"] = k; return o
+    m = byslug["malezja-borneo"]
+    m["options"] = [setk(pool["Hongkong → Borneo (Kota Kinabalu) → Singapur"], HUB),
+                    setk(opt("malezja-borneo","Lufthansa + Malaysia Airlines przez Frankfurt i Singapur, potem lot na Borneo"), DIR),
+                    setk(pool["Singapur + Penang"], HUB),
+                    setk(opt("malezja-borneo","Turkish Airlines przez Stambuł, sobota → sobota"), DIR),
+                    setk(pool["Hongkong → Borneo → Kuala Lumpur (dwa osobne bilety)"], HUB),
+                    setk(pool["Kuala Lumpur + Penang albo Borneo"], DIR),
+                    setk(opt("malezja-borneo","Finnair do Singapuru w niedzielę + AirAsia na Borneo, powrót Lufthansą"), HUB)]
+    m["options"][0]["tag"] = "Najlepszy plan"
+    m.update(name="Malezja", place="Borneo (orangutany, wyspy) albo Penang",
+      summary="Borneo: Sepilok i wyspy przy Kota Kinabalu, pora sucha. Albo Penang (George Town, plaże). Jednym biletem do Kuala Lumpur albo przez Hongkong / Singapur z noclegiem.")
+    i_ = byslug["indonezja"]
+    io = i_["options"]
+    for o in io: o["kind"] = HUB
+    io[-1]["kind"] = DIR   # KLM to Bali (one ticket to Indonesia)
+    i_["options"] = [io[0], setk(pool["Singapur → Lombok/Gili → Bali (tylko lotnisko)"], HUB)] + io[1:]
+    t = byslug["tajwan"]
+    for o in t["options"]: o["kind"] = DIR
+    t["options"].insert(1, setk(pool["Tajwan (Tajpej + Kenting) → Hongkong"], HUB))
+    f = byslug["filipiny"]
+    tk = setk(f["options"][0], DIR); tk.pop("tag", None); tk["pp"] = "ok. 6 260 zł"
+    f["options"] = [setk(pool["Hongkong → Palawan (El Nido) → Manila"], HUB), setk(pool["Hongkong + Cebu albo Bohol (Filipiny)"], HUB), tk,
+                    setk(pool["Seul + Cebu (LOT z Warszawy)"], HUB)]
+    f["options"][0]["tag"] = "Najlepszy plan"
+    f.update(summary="Najpiękniejsze plaże, pora sucha. Jednym biletem tylko Turkish w sobotę (drogo); taniej przez Hongkong z 2 nocami i tanim lotem dalej.",
+      chips=[("ok","Bez Zatoki"),("ok","Najlepsze plaże"),("warn","Dużo przesiadek"),("warn","Loty lokalne – osobne bilety")])
+    th = byslug["tajlandia"]
+    for o in th["options"]: o["kind"] = DIR
+    th["options"][0]["pp"] = "ok. 4 790 zł"
+    th["options"].append(setk(pool["Bangkok + Krabi albo Phuket (LOT z Warszawy bez przesiadki)"], DIR))
+    for sl in ("sri-lanka", "chiny-hainan"):
+        for o in byslug[sl]["options"]: o.setdefault("kind", DIR)
+    for sl in ("kambodza", "laos"):
+        for o in byslug[sl]["options"]: o.setdefault("kind", HUB)
+    order = [byslug[x] for x in ("sri-lanka","malezja-borneo","indonezja","filipiny","tajwan","tajlandia","kambodza","chiny-hainan","laos")]
+    DEST[:] = order
     (OUT / "index.html").write_text(index(order))
     for d in DEST: (OUT / f'{d["slug"]}.html').write_text(detail(d))
     (OUT / "info.html").write_text(page("Bezpieczeństwo, rezygnacja, bagaż", INFO, back=True))
