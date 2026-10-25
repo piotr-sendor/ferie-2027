@@ -797,6 +797,54 @@ ROUTE["LOT do Bangkoku (przez Warszawę) + Thai AirAsia do Luang Prabang"] = "Kr
 ROUTE["Jak wyżej, ale powrót pociągami: Luang Prabang → Wientian → Bangkok"] = "Kraków → Warszawa → Bangkok → Luang Prabang · pociągi do Bangkoku"
 ROUTE["Południowy Laos (Pakse, 4000 wysp) przez Ubon Ratchathani"] = "Kraków → Warszawa → Bangkok → Ubon Ratchathani → Pakse"
 
+
+# ---------- China re-check (chiny-weryfikacja.md, 25.10) ----------
+_c = _d("chiny-hainan")
+_old = _c["options"][0]; _old.pop("tag", None); _old["kind"] = "direct"
+_c["options"] = [
+ dict(title="Turkish do Hongkongu + HK Express do Sanyi", tag="Najlepsza opcja", kind="hub", gulf=False, pp="ok. 4 010 zł",
+  why="Turkish Kraków ↔ Hongkong (walizka 23 kg w cenie) + HK Express Hongkong → Sanya 327 zł, z powrotem 219–233 zł. Z walizkami w HK Express ok. 4 150 zł. Wjazd na Hainan lotem międzynarodowym z Hongkongu = 30 dni bez wizy (program Hainanu), nawet jeśli ogólny ruch bezwizowy nie zostanie przedłużony.",
+  out_title="Tam: sob 20.02 → pn 22.02", out=[
+   dep("19:25","19:25","sob 20.02 · Kraków, TK 1274"), stop("23:50","21:50","Stambuł (Turcja)","Przesiadka <b>1 h 55 min</b>"),
+   stop("01:45","23:45","wylot, TK 70 (nocny)"), arr("17:05","10:05","nd 21.02 · Hongkong · Polska + 7 h"),
+   night("🛏 Nocleg w Hongkongu"), dep("08:45","01:45","pn 22.02 · HK Express UO 250"), arr("10:30","03:30","pn 22.02 · Sanya (Hainan)")],
+  back_title="Powrót: sob 6.03 → nd 7.03", back=[
+   dep("11:30","04:30","sob 6.03 · Sanya, HK Express"), stop("13:05","06:05","Hongkong","<b>ok. 10 h</b> – pół dnia w mieście"),
+   stop("23:15","16:15","wylot, TK 71 (nocny)"), stop("06:10","04:10","nd 7.03 · Stambuł","Przesiadka <b>1 h 50 min</b>"),
+   arr("08:20","08:20","nd 7.03 · Kraków")], back_bio="W domu w niedzielę rano."),
+ dict(title="Lufthansa do Hongkongu + HK Express do Sanyi", kind="hub", gulf=False, pp="ok. 3 820 zł",
+  why="Lufthansa Kraków → Hongkong, powrót SWISS przez Zurych, + HK Express. Bez walizek (Economy Light). W piątek ten sam lot: +309 zł/os.",
+  out_title="Tam: sob 20.02 → pn 22.02", out=[
+   dep("19:05","19:05","sob 20.02 · Kraków, LH 1369"), stop("20:45","20:45","Frankfurt","Przesiadka <b>1 h 05 min</b>"),
+   arr("16:30","09:30","nd 21.02 · Hongkong"), night("🛏 Nocleg w Hongkongu, w poniedziałek HK Express do Sanyi")],
+  back_title="Powrót: sob 6.03 → nd 7.03", back=[
+   dep("23:30","16:30","sob 6.03 · Hongkong, SWISS (nocny)"), stop("","","Zurych","Przesiadka <b>ok. 6 h</b>"),
+   arr("13:55","13:55","nd 7.03 · Kraków")]),
+ dict(title="Finnair do Hongkongu w niedzielę (powrót we wtorek) + loty do Sanyi", tag="Najtaniej – inne daty", kind="hub", gulf=False, pp="ok. 3 075 zł",
+  why="O 700–900 zł/os. taniej niż opcja 1 (5–6 tys. zł dla 7 osób), ale wylot w niedzielę i powrót we wtorek 9.03 rano – dzień po terminie. Z walizkami 3 150–3 610 zł.",
+  out_title="Tam: nd 21.02 → wt 23.02", out=[
+   dep("18:55","18:55","nd 21.02 · Kraków, AY 1166"), stop("","","Helsinki (Finlandia), AY 99","Przesiadka <b>2 h 50 min</b>"),
+   arr("19:05","12:05","pn 22.02 · Hongkong"), night("🏙 Dzień w Hongkongu"),
+   dep("19:20","12:20","wt 23.02 · Hong Kong Airlines"), arr("21:10","14:10","wt 23.02 · Sanya")],
+  back_title="Powrót: pn 8.03 → wt 9.03", back=[
+   dep("11:30","04:30","pn 8.03 · Sanya → Hongkong 13:05"), stop("21:45","14:45","Hongkong, AY 100 (nocny)"),
+   stop("","","Helsinki","Przesiadka"), arr("08:30","08:30","wt 9.03 · Kraków")]),
+ _old,
+]
+_old["pp"] = "ok. 5 500 zł"
+_old["why"] = "Turkish do Kantonu 3 765 zł + China Southern Kanton ↔ Sanya ok. 1 100 zł za dorosłego w każdą stronę – w lutym na Hainanie szczyt sezonu i chińskie linie sprzedają po pełnej cenie. Wjazd przez Kanton zależy od przedłużenia ruchu bezwizowego na 2027."
+_c.update(place="Sanya (plaże) – przez Hongkong",
+  summary="Jedyne naprawdę ciepłe miejsce w Chinach w lutym. Najtaniej: lot do Hongkongu, noc w mieście i 1 h 45 min tanią linią do Sanyi.",
+  entry="Hongkong → Sanya: 30 dni bez wizy (program Hainanu); przez Kanton/Pekin – zależy od przedłużenia na 2027",
+  chips=[("ok","Bez Zatoki"),("ok","Hongkong po drodze"),("warn","Morze tylko 23–24°C"),("warn","Loty lokalne – osobne bilety")],
+  extra="Samo dolecenie do Chin nie jest drogie: Hongkong 3 259 zł (Lufthansa, sob) albo 2 348 zł (Finnair nd → pn 8.03), Pekin 3 354 zł, Szanghaj 3 613 zł, Air China z Warszawy bez przesiadki do Pekinu 3 395 zł (nad Rosją). Drogi jest tylko chiński lot krajowy na Hainan w lutym (Kanton → Sanya ok. 1 100 zł, Pekin → Sanya 2 250–2 700 zł za dorosłego). Pogoda: Sanya 26–28°C i sucho; Guilin/Yangshuo 7–14°C i deszcz, Kanton 17–22°C i mżawki. LOT w zimie 2026/27 nie lata do Chin.")
+STATS["Turkish do Hongkongu + HK Express do Sanyi"] = (("14 h 40 min do Hongkongu","12 h 45 min","1 h 55 min","+ noc w HK i 1 h 45 min lotu do Sanyi"),("16 h 05 min z Hongkongu","13 h 55 min","1 h 50 min","+ wcześniej lot z Sanyi i ok. 10 h w HK"))
+STATS["Lufthansa do Hongkongu + HK Express do Sanyi"] = (("14 h 25 min do Hongkongu","13 h 20 min","1 h 05 min","+ noc w HK i lot do Sanyi"),None)
+STATS["Finnair do Hongkongu w niedzielę (powrót we wtorek) + loty do Sanyi"] = (("17 h 10 min do Hongkongu","","2 h 50 min w Helsinkach","+ dzień w HK i lot do Sanyi"),None)
+ROUTE["Turkish do Hongkongu + HK Express do Sanyi"] = "Kraków → Stambuł → Hongkong (nocleg) → Sanya"
+ROUTE["Lufthansa do Hongkongu + HK Express do Sanyi"] = "Kraków → Frankfurt → Hongkong (nocleg) → Sanya"
+ROUTE["Finnair do Hongkongu w niedzielę (powrót we wtorek) + loty do Sanyi"] = "Kraków → Helsinki → Hongkong → Sanya"
+
 # ---------- Warsaw comparison (warszawa-dane.md, 24.10 evening) ----------
 WAW = {
  "sri-lanka": "Warszawa: 2 988 zł (sob 11:45, przez Szardżę)",
@@ -806,7 +854,6 @@ WAW = {
  "filipiny": "Warszawa: ok. 5 260 zł (Turkish pt 18:40) – o 1 000 zł taniej",
  "tajlandia": "Warszawa: ok. 4 240 zł (LOT bez przesiadki do Bangkoku, nd 14:45)",
  "kambodza": "Warszawa: ok. 4 700 zł",
- "chiny-hainan": "Warszawa: ok. 5 600 zł",
 }
 for _x in DEST:
     if _x["slug"] in WAW: _x["alt"] = WAW[_x["slug"]]
@@ -834,7 +881,10 @@ BOOK = {
  ("filipiny",1): (f"Flights from KRK to MNL on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
  ("tajlandia",1): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
  ("kambodza",1): (f"Flights from KRK to KUL on 2027-02-19 return 2027-03-07 {P} Lufthansa", "Lufthansa"),
- ("chiny-hainan",1): (f"Flights from KRK to CAN on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
+ ("chiny-hainan",1): (f"Flights from KRK to HKG on 2027-02-20 return 2027-03-07 {P} Turkish Airlines", "Turkish Airlines"),
+ ("chiny-hainan",2): (f"Flights from KRK to HKG on 2027-02-20 return 2027-03-07 {P} Lufthansa", "Lufthansa"),
+ ("chiny-hainan",3): (f"Flights from KRK to HKG on 2027-02-21 return 2027-03-08 {P} Finnair", "Finnair"),
+ ("chiny-hainan",4): (f"Flights from KRK to CAN on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
  ("wietnam",1): (f"Flights from KRK to SGN on 2027-02-19 return 2027-03-07 {P} KLM", "KLM"),
  ("indonezja",1): (f"Flights from KRK to SIN on 2027-02-19 return 2027-03-07 {P} Lufthansa", "Lufthansa"),
  ("indonezja",2): (f"Flights from KRK to SIN on 2027-02-19 return 2027-03-07 {P} Lufthansa", "Scoot"),
@@ -1049,7 +1099,7 @@ if __name__ == "__main__":
     for o in th["options"]: o["kind"] = DIR
     th["options"][0]["pp"] = "ok. 4 790 zł"
     th["options"].append(setk(pool["Bangkok + Krabi albo Phuket (LOT z Warszawy bez przesiadki)"], DIR))
-    for sl in ("sri-lanka", "chiny-hainan"):
+    for sl in ("sri-lanka",):
         for o in byslug[sl]["options"]: o.setdefault("kind", DIR)
     for sl in ("kambodza", "laos"):
         for o in byslug[sl]["options"]: o.setdefault("kind", HUB)
