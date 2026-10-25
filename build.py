@@ -357,7 +357,7 @@ DEST.append(dict(slug="indonezja", flag="🇮🇩", name="Indonezja – Lombok i
   ],
   extra="Na ten termin odradzamy: Yogyakartę jako jedyne miejsce (300–400 mm deszczu w lutym), Manado/Bunaken (wzburzone morze, a jedyny bilet z Krakowa idzie przez Dubaj), Belitung (rejsy często odwoływane), Raja Ampat (2 dni podróży w każdą stronę). Wszędzie w porze deszczowej: repelent z DEET (denga)."))
 
-TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)', 'kombinacje': '+7 h', 'huby': '+6 h (Bangkok) / +7 h / +8 h (Seul)', 'ekwador': '−6 h (Galápagos −7 h)'}
+TZ = {'sri-lanka': '+4 h 30 min', 'malezja-borneo': '+7 h', 'tajwan': '+7 h', 'filipiny': '+7 h', 'tajlandia': '+6 h', 'kambodza': '+6 h', 'chiny-hainan': '+7 h', 'wietnam': '+6 h', 'laos': '+6 h', 'indonezja': '+7 h (Jawa +6 h)', 'kombinacje': '+7 h', 'huby': '+6 h (Bangkok) / +7 h / +8 h (Seul)', 'ekwador': '−6 h (Galápagos −7 h)', 'meksyk': '−7 h'}
 INDO_PENDING = dict(slug="indonezja", flag="🇮🇩", name="Indonezja (bez Bali)", place="np. Lombok, Flores (Komodo), Jawa", pending=True,
   summary="Research w toku – Bali odpada (tłok). Pojawi się tutaj pod tym samym linkiem.")
 
@@ -714,6 +714,52 @@ ROUTE.update({
  "Turkish + Avianca przez Stambuł i Bogotę": "Kraków → Stambuł → Bogota → Quito",
 })
 
+
+DEST.append(dict(slug="meksyk", region="americas", flag="🇲🇽", name="Meksyk – wybrzeże Oaxaki", place="Huatulco, Mazunte, Puerto Escondido + miasto Oaxaca", gulf=False,
+  price="", price7="", price_note="",
+  summary="Miasto Meksyk 2 noce → Oaxaca 3 (kultura, jedzenie, Monte Albán) → Huatulco 5 (najspokojniejsze zatoczki dla dzieci) → Mazunte 2–3. Pora sucha, wieloryby do marca.",
+  weather="☀️ pora sucha: 31–32°C, bez deszczu", sea="27–28°C",
+  entry="bez wizy 180 dni; jeśli dziecko leci bez jednego z rodziców – pisemna zgoda drugiego",
+  chips=[("ok","Pora sucha"),("ok","Huatulco – spokojne zatoczki"),("warn","Silne prądy na wielu plażach"),("warn","Górskie drogi – lepiej lot"),("warn","MSZ: szczególna ostrożność")],
+  options=[
+   dict(title="Lufthansa Kraków ⇄ Miasto Meksyk + VivaAerobus na wybrzeże", tag="Najlepsza opcja", kind="direct", gulf=False, pp="ok. 4 800 zł",
+    why="Lufthansa 4 156–4 207 zł + Viva Meksyk → Oaxaca 251 zł i Huatulco → Meksyk 330 zł (Puerto Escondido ok. 230–260 zł). Loty krajowe to osobne bilety – nocleg w Mieście Meksyk na początku i na końcu. Ceny płaskie we wszystkich datach 19–22.02 / 6–8.03.",
+    out_title="Tam: sob 20.02", out=[
+     dep("06:00","06:00","sob 20.02 · Kraków, LH 1627"), stop("","","Monachium (Niemcy), LH 520","Przesiadka <b>ok. 5 h</b>"),
+     arr("18:05","nd 01:05","sob 20.02 · Miasto Meksyk · Polska − 7 h"),
+     night("🛏 2 noce w Mieście Meksyk, potem Viva do Oaxaki")],
+    out_bio="Wylot bardzo wcześnie, przylot wieczorem czasu meksykańskiego (u nas już noc) – dzieci zasną od razu, jetlag w tę stronę łatwiejszy.",
+    back_title="Powrót: sob 6.03 → nd 7.03", back=[
+     dep("","","sob 6.03 · Viva z Huatulco do Miasta Meksyk (nocleg albo zapas)"),
+     dep("19:45","nd 02:45","sob 6.03 · Miasto Meksyk, Lufthansa (nocny)"), stop("","","Monachium","Przesiadka"),
+     arr("16:55","16:55","nd 7.03 · Kraków")], back_bio="W domu w niedzielę po południu."),
+   dict(title="Lufthansa + Aeroméxico: tam do Miasta Meksyk, z powrotem z Puerto Escondido", kind="direct", gulf=False, pp="ok. 5 320 zł",
+    why="5 073 zł na jednym bilecie + lot do Oaxaki ok. 250 zł. Powrót z wybrzeża na jednym bilecie – spóźniony lot krajowy to problem linii, nie nasz.",
+    out_title="Tam: sob 20.02 (jak opcja 1)", out=[
+     dep("06:00","06:00","sob 20.02 · Kraków → Monachium → Miasto Meksyk"), arr("18:05","nd 01:05","sob 20.02 · Miasto Meksyk")],
+    back_title="Powrót: z Puerto Escondido przez Miasto Meksyk do Krakowa", back=[]),
+   dict(title="KLM + Aeroméxico Kraków ⇄ Oaxaca (wylot w sobotę wieczorem)", kind="direct", gulf=False, pp="ok. 5 400 zł",
+    why="Jedyny wygodny wylot wieczorem. W piątek 19.02 KLM 17:35: ok. 5 450 zł. Na koniec trzeba wrócić z wybrzeża do Oaxaki (samolot albo nowa autostrada ok. 3–3,5 h).",
+    out_title="Tam: sob 20.02 → nd 21.02", out=[
+     dep("17:35","17:35","sob 20.02 · Kraków, KL 1328"), stop("","","Amsterdam, AM 26","Przesiadka"),
+     stop("","","Miasto Meksyk, AM 1044","Przesiadka"), arr("08:19","15:19","nd 21.02 · Oaxaca")],
+    back_title="Powrót: z Oaxaki tą samą drogą", back=[]),
+   dict(title="KLM: tam do Oaxaki, z powrotem z Huatulco", kind="direct", gulf=False, pp="ok. 6 700 zł",
+    why="Najwygodniej (bez wracania przez góry), ale najdrożej.", out_title="Tam: jak opcja 3", out=[], back_title="Powrót: z Huatulco przez Miasto Meksyk i Amsterdam", back=[]),
+  ],
+  extra="Kąpiel: NIE pływać na Zicateli, Bacocho, Zipolite (też plaża naturystów) i Mermejicie – silne prądy wsteczne. Bezpieczne dla dzieci: Huatulco (La Entrega, Santa Cruz, Maguey, Órgano), Puerto Escondido (Carrizalillo, Puerto Angelito, Manzanillo), Mazunte (Rinconcito); zawsze pod okiem dorosłego. Drogi: stara górska droga Oaxaca–wybrzeże 6–7 h – odradzamy; nowa autostrada do Puerto Escondido ok. 3–3,5 h (sprawdzić stan); nie jeździć po zmroku, bywają blokady. MSZ (9.10.2026): cały Meksyk – szczególna ostrożność; Oaxaca nie jest na liście „odradzamy”. Karaiby (Riviera Maya): na 2027 prognozowany rekordowy sezon glonów – ryzykownie. Walizki w najtańszych taryfach płatne: realnie +200–400 zł/os. Wiedeń w sobotę (Iberia) ok. 420 zł taniej."))
+STATS.update({
+ "Lufthansa Kraków ⇄ Miasto Meksyk + VivaAerobus na wybrzeże": (("19 h 05 min do Miasta Meksyk","","przesiadka ok. 5 h w Monachium","+ 2 noce w Meksyku i lot do Oaxaki"),("ok. 14 h z Miasta Meksyk","","1 przesiadka","+ dzień wcześniej lot z Huatulco")),
+ "Lufthansa + Aeroméxico: tam do Miasta Meksyk, z powrotem z Puerto Escondido": (("19 h 05 min","","1 przesiadka",""),None),
+ "KLM + Aeroméxico Kraków ⇄ Oaxaca (wylot w sobotę wieczorem)": (("ok. 21 h 45 min","","2 przesiadki",""),None),
+})
+ROUTE.update({
+ "Lufthansa Kraków ⇄ Miasto Meksyk + VivaAerobus na wybrzeże": "Kraków → Monachium → Miasto Meksyk · Oaxaca · Huatulco",
+ "Lufthansa + Aeroméxico: tam do Miasta Meksyk, z powrotem z Puerto Escondido": "Kraków → Monachium → Miasto Meksyk · … · Puerto Escondido → Kraków",
+ "KLM + Aeroméxico Kraków ⇄ Oaxaca (wylot w sobotę wieczorem)": "Kraków → Amsterdam → Miasto Meksyk → Oaxaca",
+ "KLM: tam do Oaxaki, z powrotem z Huatulco": "Kraków → Amsterdam → Miasto Meksyk → Oaxaca · Huatulco → Kraków",
+})
+
 # ---------- Warsaw comparison (warszawa-dane.md, 24.10 evening) ----------
 WAW = {
  "sri-lanka": "Warszawa: 2 988 zł (sob 11:45, przez Szardżę)",
@@ -770,10 +816,14 @@ BOOK = {
  ("huby",5): (f"Flights from WAW to ICN on 2027-02-20 return 2027-03-06 {P} LOT", "LOT"),
  ("ekwador",1): (f"Flights from KRK to UIO on 2027-02-20 return 2027-03-07 {P} Air Canada", "Air Canada"),
  ("ekwador",3): (f"Flights from KRK to UIO on 2027-02-20 return 2027-03-07 {P} Turkish Airlines", "Turkish Airlines"),
+ ("meksyk",1): (f"Flights from KRK to MEX on 2027-02-20 return 2027-03-06 {P} Lufthansa", "Lufthansa"),
+ ("meksyk",3): (f"Flights from KRK to OAX on 2027-02-20 return 2027-03-06 {P} KLM", "KLM"),
  ("laos",1): (f"Flights from KRK to BKK on 2027-02-20 return 2027-03-06 {P} Turkish Airlines", "Turkish Airlines"),
 }
 from urllib.parse import quote
 KAYAK = {
+ ("meksyk",2): "KRK-MEX/2027-02-20/PXM-KRK/2027-03-06",
+ ("meksyk",4): "KRK-OAX/2027-02-20/HUX-KRK/2027-03-06",
  ("ekwador",2): "KRK-UIO/2027-02-21/GYE-KRK/2027-03-07",
  ("kombinacje",1): "KRK-HKG/2027-02-20/SIN-KRK/2027-03-06",
  ("kombinacje",2): "KRK-HKG/2027-02-20/KUL-KRK/2027-03-06",
@@ -784,7 +834,7 @@ KAYAK = {
 def book_html(o):
     if o.get("_kayak"):
         k = "https://www.kayak.pl/flights/" + o["_kayak"] + "/4adults/children-8-8-6?sort=price_a"
-        al = (o["_book"] or (None, "KLM"))[1]
+        al = (o["_book"] or (None, "Lufthansa" if "Lufthansa" in o["title"] else "KLM"))[1]
         return (f'<div class="book"><a class="gf" href="{k}" target="_blank" rel="noopener">Sprawdź i zarezerwuj (KAYAK, wiele miast) →</a>'
                 f'<a class="al" href="{AL[al]}" target="_blank" rel="noopener">Strona {al}</a></div>'
                 '<p class="note">Bilet długi; loty lokalne kupuje się osobno.</p>')
@@ -967,8 +1017,9 @@ if __name__ == "__main__":
         for o in byslug[sl]["options"]: o.setdefault("kind", DIR)
     for sl in ("kambodza", "laos"):
         for o in byslug[sl]["options"]: o.setdefault("kind", HUB)
-    for o in byslug["ekwador"]["options"]: o.setdefault("kind", DIR)
-    order = [byslug[x] for x in ("sri-lanka","malezja-borneo","indonezja","filipiny","tajwan","tajlandia","kambodza","chiny-hainan","laos","ekwador")]
+    for sl in ("ekwador","meksyk"):
+        for o in byslug[sl]["options"]: o.setdefault("kind", DIR)
+    order = [byslug[x] for x in ("sri-lanka","malezja-borneo","indonezja","filipiny","tajwan","tajlandia","kambodza","chiny-hainan","laos","meksyk","ekwador")]
     DEST[:] = order
     (OUT / "index.html").write_text(index(order))
     for d in DEST: (OUT / f'{d["slug"]}.html').write_text(detail(d))
