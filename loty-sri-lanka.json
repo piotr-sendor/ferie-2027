@@ -1047,6 +1047,97 @@
  "others_note": "Kierunki z podobną różnicą czasu, sprawdzone 14.11.2026 (KAYAK, Google Flights). Ceny za osobę przy 7 osobach. Wyloty w piątek rano są oznaczone – do ustalenia, czy wszyscy dadzą radę.",
  "others": [
   {
+   "group": "south",
+   "title": "Turkish z Krakowa do Mumbaju przez Stambuł – jeden bilet",
+   "status": "ok",
+   "gulf": false,
+   "pp": "ok. 3 100 zł",
+   "price_date": "14.11, KAYAK + szacunek lotów w Indiach",
+   "route": "Kraków → Stambuł → Mumbaj → Kerala / Tamil Nadu",
+   "why": "Jeden bilet Turkish z Krakowa do Mumbaju i z powrotem: <b>2 701 zł</b>, bez Zatoki. Lot ze Stambułu do Mumbaju jest nocny – śpimy w samolocie, w Mumbaju o świcie. Dalej Mumbaj ⇄ Kerala osobno (szacunek ok. 400 zł w obie strony). Razem ok. <b>3 100 zł/os.</b> Minus: ok. 6 h 30 min czekania w Stambule w każdą stronę.",
+   "comfort": "Stambuł ⇄ Mumbaj: Turkish, <b>duży samolot</b>, ok. 6 h, nocą. Kraków ⇄ Stambuł: 2 h 35 min.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "Jeden bilet"
+    ],
+    [
+     "ok",
+     "Nocny lot do Indii"
+    ],
+    [
+     "warn",
+     "6 h 30 min w Stambule"
+    ],
+    [
+     "warn",
+     "Wylot pt 9:15"
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "09:15",
+     "09:15",
+     "pt 19.02 · Kraków, Turkish"
+    ],
+    [
+     "stop",
+     "13:50",
+     "11:50",
+     "Stambuł (IST) · Polska + 2 h",
+     "Czekanie <b>6 h 40 min</b>"
+    ],
+    [
+     "dep",
+     "20:35",
+     "18:35",
+     "Stambuł → Mumbaj, lot nocny"
+    ],
+    [
+     "arr",
+     "05:20",
+     "00:50",
+     "sob 20.02 · Mumbaj · Polska + 4 h 30 min – dalej lot do Kerali"
+    ]
+   ],
+   "back_title": "Powrót: sob 6.03",
+   "back": [
+    [
+     "dep",
+     "06:50",
+     "02:20",
+     "sob 6.03 · Mumbaj (dzień wcześniej lot z Kerali)"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Stambuł",
+     "Czekanie <b>6 h 30 min</b>"
+    ],
+    [
+     "arr",
+     "18:30",
+     "18:30",
+     "sob 6.03 · Kraków"
+    ]
+   ],
+   "note": "Można też zamienić czekanie w Stambule na nocleg (postój ponad 20 h, hotel od Turkish), ale bilet kosztuje wtedy 3 071 zł – ok. 370 zł/os. więcej, więc się nie opłaca. Sprawdzamy jeszcze, czy osobny dolot do Stambułu skróci czekanie do ok. 3 h.",
+   "kayak": "KRK-BOM/2027-02-19/2027-03-06",
+   "local_flights": true,
+   "book": [
+    "",
+    "Turkish Airlines"
+   ],
+   "tag": "Najtaniej"
+  },
+  {
    "title": "Lufthansa z Krakowa do Chennai – start w Tamil Nadu",
    "tag": "Najtaniej z wygodą",
    "status": "ok",
@@ -1250,91 +1341,6 @@
    "book": [
     "",
     "KLM"
-   ]
-  },
-  {
-   "group": "south",
-   "title": "Turkish do Mumbaju z nocą w Stambule – darmowy hotel",
-   "status": "ok",
-   "gulf": false,
-   "pp": "ok. 3 470 zł",
-   "price_date": "14.11, KAYAK + szacunek lotów w Indiach",
-   "route": "Kraków → Stambuł (noc) → Mumbaj → Kochi / Chennai",
-   "why": "Jeden bilet Turkish z Krakowa do Mumbaju i z powrotem (<b>3 071 zł</b>) z ponad 20-godzinnym postojem w Stambule: Turkish daje wtedy darmowy hotel 4* (program Stopover) – popołudnie i wieczór w Stambule. Dalej Mumbaj ⇄ Kerala osobno (ok. 400 zł w obie strony).",
-   "comfort": "Stambuł ⇄ Mumbaj: Turkish, <b>duży samolot</b>, ok. 6 h. Kraków ⇄ Stambuł: 2 h 35 min.",
-   "chips": [
-    [
-     "ok",
-     "Bez Zatoki"
-    ],
-    [
-     "ok",
-     "Noc w Stambule"
-    ],
-    [
-     "warn",
-     "Wylot pt 9:15"
-    ],
-    [
-     "warn",
-     "Powrót z 6 h 30 min w Stambule"
-    ]
-   ],
-   "out_title": "Tam: pt 19.02 → nd 21.02",
-   "out": [
-    [
-     "dep",
-     "09:15",
-     "09:15",
-     "pt 19.02 · Kraków, Turkish"
-    ],
-    [
-     "arr",
-     "13:50",
-     "11:50",
-     "pt 19.02 · Stambuł – hotel od Turkish, zwiedzanie · Polska + 2 h"
-    ],
-    [
-     "dep",
-     "20:35",
-     "18:35",
-     "sob 20.02 · Stambuł → Mumbaj"
-    ],
-    [
-     "arr",
-     "05:20",
-     "00:50",
-     "nd 21.02 · Mumbaj · Polska + 4 h 30 min – dalej lot do Kerali"
-    ]
-   ],
-   "back_title": "Powrót: sob 6.03",
-   "back": [
-    [
-     "dep",
-     "06:50",
-     "02:20",
-     "sob 6.03 · Mumbaj (dzień wcześniej lot z Kerali)"
-    ],
-    [
-     "stop",
-     "",
-     "",
-     "Stambuł",
-     "Przesiadka <b>6 h 30 min</b>"
-    ],
-    [
-     "arr",
-     "18:30",
-     "18:30",
-     "sob 6.03 · Kraków"
-    ]
-   ],
-   "note": "Hotel: tylko loty Turkish, nie dla najtańszych taryf N i R, zgłosić min. 72 h przed lotem; hotel przydziela linia (na stronie Turkish: 2 noce w ekonomicznej, inne źródła mówią o 1). Bez nocy w Stambule ten sam lot: 2 701 zł, ale z dwoma postojami po ok. 6 h 30 min.",
-   "kayak": "KRK-IST/2027-02-19/IST-BOM/2027-02-20/BOM-KRK/2027-03-06",
-   "local_flights": true,
-   "book": [
-    "",
-    "Turkish Airlines"
    ]
   },
   {
@@ -1668,8 +1674,8 @@
     ]
    ],
    "summary_name": "🇮🇳 Południowe Indie · Kerala i Tamil Nadu",
-   "summary_pp": "od ok. 3 470 zł",
-   "summary": "4 warianty dolotu: Lufthansa do Chennai, KLM do Kochi, Turkish z nocą w Stambule, LOT przez Delhi"
+   "summary_pp": "od ok. 3 100 zł",
+   "summary": "4 warianty dolotu: Turkish przez Stambuł (najtaniej), Lufthansa do Chennai, KLM do Kochi, LOT przez Delhi"
   },
   "andaman": {
    "title": "🏝 Andamany + południowe Indie (przez Chennai)",
