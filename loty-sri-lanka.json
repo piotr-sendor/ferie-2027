@@ -1087,5 +1087,255 @@
     ]
    ]
   }
- ]
+ ],
+ "others_note": "Kierunki z podobną różnicą czasu (4–5 h), sprawdzone 14.11.2026 (KAYAK, Google Flights). Ceny za osobę przy 7 osobach. Wyloty w piątek rano są oznaczone – do ustalenia, czy wszyscy dadzą radę.",
+ "others": [
+  {
+   "title": "🇮🇳 Kerala – KLM z Krakowa przez Amsterdam",
+   "tag": "Najtaniej z wygodnym samolotem",
+   "status": "ok",
+   "gulf": false,
+   "pp": "3 756 zł",
+   "price_date": "14.11, KAYAK",
+   "route": "Kraków → Amsterdam → Delhi / Mumbaj / Bengaluru → Kochi",
+   "why": "Jeden bilet z Krakowa, bez Zatoki. Kerala: Fort Kochi, targ przypraw, plantacje herbaty w Munnar, ogrody przypraw w Thekkady, noc na łodzi na rozlewiskach, lokalne pociągi, plaże w Varkali. Po Kerali poruszamy się sami. Pogoda: sucho i gorąco (Kochi ok. 34°C, Munnar ok. 24°C). Wjazd: e-wiza, 25 USD od osoby (także dzieci). Uwaga: park Eravikulam w Munnar jest w lutym i marcu zamknięty.",
+   "comfort": "Amsterdam ⇄ Indie: KLM, <b>duże samoloty</b> (777 / 787). Odcinki w Indiach: wąskie, krótkie. Po dwie przesiadki w każdą stronę.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "Bilet z Krakowa"
+    ],
+    [
+     "warn",
+     "Wylot pt rano"
+    ],
+    [
+     "warn",
+     "2 przesiadki"
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "06:00",
+     "06:00",
+     "pt 19.02 · Kraków (KRK), KLM – albo 11:55"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Amsterdam, potem Delhi, Mumbaj albo Bengaluru",
+     "2 przesiadki"
+    ],
+    [
+     "arr",
+     "ok. 07:00–13:00",
+     "ok. 02:30–08:30",
+     "sob 20.02 · Kochi (COK) · czas lokalny = Polska + 4 h 30 min"
+    ]
+   ],
+   "back_title": "Powrót: sob 6.03 → nd 7.03",
+   "back": [
+    [
+     "dep",
+     "21:30",
+     "17:00",
+     "sob 6.03 · Kochi"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Bengaluru, potem Amsterdam",
+     "2 przesiadki"
+    ],
+    [
+     "arr",
+     "13:30",
+     "13:30",
+     "nd 7.03 · Kraków"
+    ]
+   ],
+   "kayak": "KRK-COK/2027-02-19/2027-03-06",
+   "book": [
+    "",
+    "KLM"
+   ]
+  },
+  {
+   "title": "🇮🇳 Andamany + Kerala – KLM z Krakowa, tam do Chennai, z powrotem z Kochi",
+   "tag": "Dwa światy: plaże i Kerala",
+   "status": "ok",
+   "gulf": false,
+   "pp": "ok. 5 500 zł",
+   "price_date": "14.11, KAYAK + Google Flights",
+   "route": "Kraków → Amsterdam → Indie → Chennai → Port Blair … Kochi → Kraków",
+   "why": "Najpierw Andamany (odpoczynek na plażach: Havelock, Neil), potem Kerala (Fort Kochi, Munnar, Thekkady, rozlewiska, pociąg). Bilet KLM 4 552 zł + loty w Indiach: Chennai → Port Blair 386 zł, Port Blair → Kochi 563 zł (przez Bengaluru). Andamany: pora sucha, 23–31°C, morze 28–29°C; pozwolenie dla cudzoziemców zniesione w marcu 2026. Promy na wyspy rezerwować ok. 2 miesiące wcześniej. Ok. 6 z 16 dni to podróże.",
+   "comfort": "Amsterdam ⇄ Indie: KLM, <b>duże samoloty</b>. Loty w Indiach i promy: krótkie, wąskie samoloty IndiGo / Air India.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "warn",
+     "Wylot pt rano"
+    ],
+    [
+     "warn",
+     "Loty krajowe + promy"
+    ],
+    [
+     "ok",
+     "Plaże + prawdziwe życie"
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → nd 21.02",
+   "out": [
+    [
+     "dep",
+     "06:00",
+     "06:00",
+     "pt 19.02 · Kraków, KLM – albo 11:55"
+    ],
+    [
+     "arr",
+     "ok. 06:15–11:20",
+     "",
+     "sob 20.02 · Chennai – noc w Chennai"
+    ],
+    [
+     "dep",
+     "10:15",
+     "05:45",
+     "nd 21.02 · Chennai → Port Blair, IndiGo bez przesiadki"
+    ],
+    [
+     "arr",
+     "12:25",
+     "07:55",
+     "nd 21.02 · Port Blair (Andamany)"
+    ],
+    [
+     "night",
+     "🏝 ok. 6 nocy: Havelock, Neil · potem Port Blair → Kochi (przez Bengaluru) · ok. 7 nocy w Kerali"
+    ]
+   ],
+   "back_title": "Powrót: sob 6.03 → nd 7.03",
+   "back": [
+    [
+     "dep",
+     "21:30",
+     "17:00",
+     "sob 6.03 · Kochi, KLM"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Bengaluru, potem Amsterdam",
+     "2 przesiadki"
+    ],
+    [
+     "arr",
+     "13:45",
+     "13:45",
+     "nd 7.03 · Kraków"
+    ]
+   ],
+   "note": "Inny wariant: LOT Warszawa → Delhi Dreamlinerem w sobotę 20.02 (17:20 → 5:10), powrót sob 6.03 Delhi 7:20 → Warszawa 11:05: 2 913 zł + Delhi → Port Blair 934 + Port Blair → Kochi 563 + Kochi → Delhi 480 = ok. 4 890 zł, do tego pociąg do Warszawy i noc w Delhi. Osobne bilety, ciasna przesiadka w Delhi (2 h 10 min).",
+   "kayak": "KRK-MAA/2027-02-19/COK-KRK/2027-03-06",
+   "local_flights": true,
+   "book": [
+    "",
+    "KLM"
+   ]
+  },
+  {
+   "title": "🇧🇧 Barbados – KLM z Krakowa przez Amsterdam",
+   "tag": "Fajne znalezisko",
+   "status": "ok",
+   "gulf": false,
+   "pp": "3 375 zł",
+   "price_date": "14.11, KAYAK",
+   "route": "Kraków → Amsterdam → Bridgetown (Barbados)",
+   "why": "Najtańszy wygodny lot ze wszystkich kierunków: jeden bilet, jedna przesiadka, bez Zatoki. Czas: Polska − 5 h. Pogoda: pora sucha, 29–30°C, morze 26–27°C, poza pasem huraganów. Prawdziwe życie: piątkowy fish fry w Oistins, rum shopy, targ w Bridgetown, lokalne autobusy i busiki ZR, dzikie wschodnie wybrzeże (Bathsheba), jaskinia Harrison's Cave, plantacje rumu (St Nicholas Abbey z kolejką parową), żółwie w Carlisle Bay. W lutym Holetown Festival (2027: 400-lecie osadnictwa – do sprawdzenia). Minusy: mała wyspa, drogo na miejscu, ruch lewostronny. KLM lata tam 3 razy w tygodniu – miejsca mogą szybko zniknąć.",
+   "comfort": "Amsterdam ⇄ Barbados: KLM <b>Boeing 787-9</b> (szeroki; tak było w sezonie 2025/26 – do potwierdzenia na 2027). Kraków ⇄ Amsterdam: mały samolot.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "1 przesiadka"
+    ],
+    [
+     "ok",
+     "Najtaniej"
+    ],
+    [
+     "warn",
+     "Wylot sob 6:00"
+    ]
+   ],
+   "out_title": "Tam: sob 20.02",
+   "out": [
+    [
+     "dep",
+     "06:00",
+     "06:00",
+     "sob 20.02 · Kraków, KLM"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Amsterdam (AMS)",
+     "Przesiadka"
+    ],
+    [
+     "arr",
+     "17:30",
+     "22:30",
+     "sob 20.02 · Bridgetown (BGI) · czas lokalny = Polska − 5 h"
+    ]
+   ],
+   "back_title": "Powrót: sob 6.03 → nd 7.03",
+   "back": [
+    [
+     "dep",
+     "19:00",
+     "00:00",
+     "sob 6.03 · Bridgetown, KLM (lot nocny)"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Amsterdam",
+     "Przesiadka ok. 1 h"
+    ],
+    [
+     "arr",
+     "11:15",
+     "11:15",
+     "nd 7.03 · Kraków"
+    ]
+   ],
+   "back_bio": "Lot nocny na wschód – dzieci śpią, w domu w niedzielę przed obiadem.",
+   "kayak": "KRK-BGI/2027-02-20/2027-03-06",
+   "book": [
+    "",
+    "KLM"
+   ]
+  }
+ ],
+ "show": 8
 }
