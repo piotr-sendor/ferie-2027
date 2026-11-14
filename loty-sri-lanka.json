@@ -1044,17 +1044,17 @@
    ]
   }
  ],
- "others_note": "Kierunki z podobną różnicą czasu (4–5 h), sprawdzone 14.11.2026 (KAYAK, Google Flights). Ceny za osobę przy 7 osobach. Wyloty w piątek rano są oznaczone – do ustalenia, czy wszyscy dadzą radę.",
+ "others_note": "Kierunki z podobną różnicą czasu, sprawdzone 14.11.2026 (KAYAK, Google Flights). Ceny za osobę przy 7 osobach. Wyloty w piątek rano są oznaczone – do ustalenia, czy wszyscy dadzą radę.",
  "others": [
   {
-   "title": "🇮🇳 Kerala – Lufthansa z Krakowa do Chennai, dalej krótki lot do Kochi",
-   "tag": "Bez Delhi, jeden bilet z Krakowa",
+   "title": "Lufthansa z Krakowa do Chennai – start w Tamil Nadu",
+   "tag": "Najtaniej z wygodą",
    "status": "ok",
    "gulf": false,
    "pp": "ok. 3 650 zł",
-   "price_date": "14.11, KAYAK (lot długi) + szacunek lotów w Indiach",
-   "route": "Kraków → Frankfurt → Chennai → Kochi · z powrotem Kochi → Chennai → Frankfurt → Kraków",
-   "why": "Jeden bilet Lufthansy z Krakowa do Chennai i z powrotem (<b>3 249 zł</b>), bez Zatoki i bez Delhi. Chennai ⇄ Kochi to lot ok. 1 h – kupujemy później osobno (szacunek ok. 200 zł w każdą stronę, lotów jest bardzo dużo). Razem ok. <b>3 650 zł/os.</b>",
+   "price_date": "14.11, KAYAK + szacunek lotów w Indiach",
+   "route": "Kraków → Frankfurt → Chennai · Tamil Nadu → Kerala · Kochi → Chennai → Kraków",
+   "why": "Jeden bilet Lufthansy z Krakowa do Chennai i z powrotem (<b>3 249 zł</b>), bez Zatoki i bez Delhi. Zaczynamy w Tamil Nadu, kończymy w Kerali i wracamy krótkim lotem Kochi → Chennai (ok. 200 zł). Razem ok. <b>3 650 zł/os.</b>",
    "comfort": "Frankfurt ⇄ Chennai: Lufthansa, <b>duży samolot</b> (szeroki kadłub). Kraków ⇄ Frankfurt / Monachium: mały samolot. Chennai ⇄ Kochi: A320, ok. 1 h.",
    "chips": [
     [
@@ -1063,15 +1063,11 @@
     ],
     [
      "ok",
-     "Bez Delhi"
-    ],
-    [
-     "ok",
      "Bilet z Krakowa"
     ],
     [
      "warn",
-     "Wylot pt rano"
+     "Wylot pt 6:20"
     ],
     [
      "warn",
@@ -1098,21 +1094,21 @@
      "00:05",
      "19:35",
      "sob 20.02 (w nocy) · Chennai (MAA) · Polska + 4 h 30 min – krótka noc w hotelu przy lotnisku"
-    ],
-    [
-     "dep",
-     "",
-     "",
-     "sob 20.02 · Chennai → Kochi, ok. 1 h (osobny bilet, rano / w południe)"
     ]
    ],
    "back_title": "Powrót: pt 5.03 → sob 6.03",
    "back": [
     [
      "dep",
+     "",
+     "",
+     "pt 5.03 wieczorem · Kochi → Chennai, ok. 1 h (osobny bilet)"
+    ],
+    [
+     "dep",
      "01:45",
      "pt 21:15",
-     "sob 6.03 (w nocy) · Chennai, Lufthansa – dzień wcześniej wieczorem lot z Kochi do Chennai (ok. 1 h)"
+     "sob 6.03 (w nocy) · Chennai, Lufthansa"
     ],
     [
      "stop",
@@ -1147,10 +1143,8 @@
      ""
     ]
    ],
-   "note": "* z lotami w Indiach (szacunek ok. 200 zł w jedną stronę albo cena z Google Flights 14.11). Turkish: darmowy hotel w Stambule przy postoju ponad 20 h, nie dla taryf N i R, zgłosić min. 72 h przed lotem.",
+   "note": "Plus: najtaniej, jedna przesiadka tam, w domu w sobotę. Minus: wylot o świcie i przylot do Chennai w nocy.",
    "local_flights": true,
-   "summary_name": "🇮🇳 Kerala · Lufthansa do Chennai",
-   "summary": "Najtaniej z wygodą; pt 6:20, powrót sob 16:55 w Krakowie; lot do Kochi osobno",
    "points": [
     [
      "Na miejscu",
@@ -1173,51 +1167,282 @@
      "park Eravikulam w Munnar jest w lutym i marcu zamknięty"
     ]
    ],
-   "variants": {
-    "head": [
-     "Inne warianty",
-     "Tam",
-     "Z powrotem",
-     "Za osobę"
-    ],
-    "rows": [
-     [
-      "<b>KLM prosto do Kochi</b>, jeden bilet",
-      "pt 6:00, 2 przesiadki",
-      "sob 21:30 → Kraków nd 13:30",
-      "3 756 zł"
-     ],
-     [
-      "<b>Turkish do Mumbaju</b> z nocą w Stambule (darmowy hotel)",
-      "pt 9:15, nd 5:20 w Mumbaju",
-      "sob 6:50 → Kraków 18:30",
-      "ok. 3 470 zł*"
-     ],
-     [
-      "<b>LOT przez Warszawę do Delhi</b>",
-      "sob 13:30, Dreamliner",
-      "pt z Kochi, noc w Delhi, sob 7:20",
-      "ok. 4 265 zł* + hotel"
-     ],
-     [
-      "Lufthansa do Mumbaju",
-      "pt 6:00 przez Monachium",
-      "Mumbaj 1:35 → Kraków 12:50",
-      "ok. 4 000 zł*"
-     ]
-    ]
-   },
-   "summary_pp": "ok. 3 650 zł"
+   "group": "south"
   },
   {
-   "title": "🇮🇳 Chennai: Andamany + Tamil Nadu + Kerala – Lufthansa z Krakowa do Chennai",
+   "group": "south",
+   "title": "KLM z Krakowa prosto do Kochi – jeden bilet",
+   "status": "ok",
+   "gulf": false,
+   "pp": "3 756 zł",
+   "price_date": "14.11, KAYAK",
+   "route": "Kraków → Amsterdam → Delhi / Mumbaj / Bengaluru → Kochi",
+   "why": "Jeden bilet aż do Kochi i z powrotem – spóźniony lot nie psuje przesiadki, nic nie trzeba dokupować. Zaczynamy w Kerali, Tamil Nadu pociągiem (np. do Madurai). W Kerali zostajemy do soboty wieczorem.",
+   "comfort": "Amsterdam ⇄ Indie: KLM, <b>duże samoloty</b> (777 / 787); odcinki w Indiach krótkie, wąskie. Po dwie przesiadki w każdą stronę.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "Jeden bilet"
+    ],
+    [
+     "warn",
+     "Wylot pt 6:00"
+    ],
+    [
+     "warn",
+     "2 przesiadki"
+    ],
+    [
+     "warn",
+     "Powrót w niedzielę"
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "06:00",
+     "06:00",
+     "pt 19.02 · Kraków, KLM – albo 11:55"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Amsterdam, potem Delhi, Mumbaj albo Bengaluru",
+     "2 przesiadki"
+    ],
+    [
+     "arr",
+     "ok. 07:00–13:00",
+     "",
+     "sob 20.02 · Kochi (COK)"
+    ]
+   ],
+   "back_title": "Powrót: sob 6.03 → nd 7.03",
+   "back": [
+    [
+     "dep",
+     "21:30",
+     "17:00",
+     "sob 6.03 · Kochi"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Bengaluru, potem Amsterdam",
+     "2 przesiadki"
+    ],
+    [
+     "arr",
+     "13:30",
+     "13:30",
+     "nd 7.03 · Kraków"
+    ]
+   ],
+   "note": "Plus: wszystko na jednym bilecie, dłużej na miejscu. Minus: dwie przesiadki w każdą stronę, w domu dopiero w niedzielę po południu.",
+   "kayak": "KRK-COK/2027-02-19/2027-03-06",
+   "book": [
+    "",
+    "KLM"
+   ]
+  },
+  {
+   "group": "south",
+   "title": "Turkish do Mumbaju z nocą w Stambule – darmowy hotel",
+   "status": "ok",
+   "gulf": false,
+   "pp": "ok. 3 470 zł",
+   "price_date": "14.11, KAYAK + szacunek lotów w Indiach",
+   "route": "Kraków → Stambuł (noc) → Mumbaj → Kochi / Chennai",
+   "why": "Jeden bilet Turkish z Krakowa do Mumbaju i z powrotem (<b>3 071 zł</b>) z ponad 20-godzinnym postojem w Stambule: Turkish daje wtedy darmowy hotel 4* (program Stopover) – popołudnie i wieczór w Stambule. Dalej Mumbaj ⇄ Kerala osobno (ok. 400 zł w obie strony).",
+   "comfort": "Stambuł ⇄ Mumbaj: Turkish, <b>duży samolot</b>, ok. 6 h. Kraków ⇄ Stambuł: 2 h 35 min.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "Noc w Stambule"
+    ],
+    [
+     "warn",
+     "Wylot pt 9:15"
+    ],
+    [
+     "warn",
+     "Powrót z 6 h 30 min w Stambule"
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → nd 21.02",
+   "out": [
+    [
+     "dep",
+     "09:15",
+     "09:15",
+     "pt 19.02 · Kraków, Turkish"
+    ],
+    [
+     "arr",
+     "13:50",
+     "11:50",
+     "pt 19.02 · Stambuł – hotel od Turkish, zwiedzanie · Polska + 2 h"
+    ],
+    [
+     "dep",
+     "20:35",
+     "18:35",
+     "sob 20.02 · Stambuł → Mumbaj"
+    ],
+    [
+     "arr",
+     "05:20",
+     "00:50",
+     "nd 21.02 · Mumbaj · Polska + 4 h 30 min – dalej lot do Kerali"
+    ]
+   ],
+   "back_title": "Powrót: sob 6.03",
+   "back": [
+    [
+     "dep",
+     "06:50",
+     "02:20",
+     "sob 6.03 · Mumbaj (dzień wcześniej lot z Kerali)"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Stambuł",
+     "Przesiadka <b>6 h 30 min</b>"
+    ],
+    [
+     "arr",
+     "18:30",
+     "18:30",
+     "sob 6.03 · Kraków"
+    ]
+   ],
+   "note": "Hotel: tylko loty Turkish, nie dla najtańszych taryf N i R, zgłosić min. 72 h przed lotem; hotel przydziela linia (na stronie Turkish: 2 noce w ekonomicznej, inne źródła mówią o 1). Bez nocy w Stambule ten sam lot: 2 701 zł, ale z dwoma postojami po ok. 6 h 30 min.",
+   "kayak": "KRK-IST/2027-02-19/IST-BOM/2027-02-20/BOM-KRK/2027-03-06",
+   "local_flights": true,
+   "book": [
+    "",
+    "Turkish Airlines"
+   ]
+  },
+  {
+   "group": "south",
+   "title": "LOT przez Warszawę do Delhi – wylot w sobotę",
+   "status": "ok",
+   "gulf": false,
+   "pp": "ok. 4 265 zł + hotel",
+   "price_date": "14.11, Google Flights",
+   "route": "Kraków → Warszawa → Delhi → Kochi · z powrotem przez Delhi (noc)",
+   "why": "Jedyny wariant z wylotem w sobotę po południu i jednym długim lotem bez przesiadki (Dreamliner). Bilet LOT 3 258 zł + Delhi → Kochi (527 zł) + Kochi → Delhi (480 zł). Delhi tylko z lotniska.",
+   "comfort": "Warszawa ⇄ Delhi: LOT <b>Boeing 787 Dreamliner</b>, 7 h 20 min. Delhi ⇄ Kochi: A320, 3 h.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "Wylot w sobotę"
+    ],
+    [
+     "warn",
+     "Najdrożej"
+    ],
+    [
+     "warn",
+     "Noc w Delhi"
+    ]
+   ],
+   "out_title": "Tam: sob 20.02 → nd 21.02",
+   "out": [
+    [
+     "dep",
+     "13:30",
+     "13:30",
+     "sob 20.02 · Kraków, LOT"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Warszawa",
+     "Przesiadka <b>3 h</b>"
+    ],
+    [
+     "arr",
+     "05:10",
+     "00:40",
+     "nd 21.02 · Delhi"
+    ],
+    [
+     "dep",
+     "09:40",
+     "05:10",
+     "Delhi → Kochi, IndiGo bez przesiadki (osobny bilet)"
+    ],
+    [
+     "arr",
+     "12:50",
+     "08:20",
+     "nd 21.02 · Kochi"
+    ]
+   ],
+   "back_title": "Powrót: pt 5.03 → sob 6.03",
+   "back": [
+    [
+     "dep",
+     "16:00",
+     "11:30",
+     "pt 5.03 · Kochi → Delhi"
+    ],
+    [
+     "arr",
+     "19:00",
+     "14:30",
+     "Delhi – noc w hotelu przy lotnisku"
+    ],
+    [
+     "dep",
+     "07:20",
+     "02:50",
+     "sob 6.03 · Delhi → Warszawa, Dreamliner"
+    ],
+    [
+     "arr",
+     "11:05",
+     "11:05",
+     "Warszawa, dalej do Krakowa"
+    ]
+   ],
+   "note": "Plus: sobota, jeden długi lot. Minus: ok. 600 zł/os. drożej, noc w Delhi, z Kerali wyjeżdżamy już w piątek.",
+   "kayak": "KRK-DEL/2027-02-20/2027-03-06",
+   "local_flights": true,
+   "book": [
+    "Flights from KRK to DEL on 2027-02-20 return 2027-03-06 4 adults 3 children LOT",
+    "LOT"
+   ]
+  },
+  {
+   "title": "Lufthansa do Chennai → Andamany → Tamil Nadu → Kerala",
    "tag": "Dwa światy i coś nowego: Tamil Nadu",
    "status": "ok",
    "gulf": false,
    "pp": "ok. 4 240 zł",
    "price_date": "14.11, KAYAK + Google Flights + szacunek",
    "route": "Kraków → Frankfurt → Chennai → Port Blair → Chennai … Tamil Nadu … Kerala → Chennai → Kraków",
-   "why": "Chennai to najlepsza brama: stąd bez przesiadki na Andamany (ok. 2 h), a Tamil Nadu – część Indii, której jeszcze nie znamy – jest na miejscu. Bilet Lufthansy z Krakowa do Chennai i z powrotem <b>3 249 zł</b>; w Indiach osobno: Chennai ⇄ Port Blair (ok. 390 + 400 zł) i Kochi → Chennai (ok. 200 zł). Razem ok. <b>4 240 zł/os.</b>",
+   "why": "Bilet Lufthansy z Krakowa do Chennai i z powrotem <b>3 249 zł</b>; w Indiach osobno: Chennai ⇄ Port Blair (ok. 390 + 400 zł) i Kochi → Chennai (ok. 200 zł). Razem ok. <b>4 240 zł/os.</b> Plan: 4 noce Andamany → ok. 6 nocy Tamil Nadu → ok. 4 noce Kerala.",
    "comfort": "Frankfurt ⇄ Chennai: Lufthansa, <b>duży samolot</b>. Loty w Indiach: wąskie A320/A321, 1–2 h, bagaż 15 kg.",
    "chips": [
     [
@@ -1301,7 +1526,7 @@
      "sob 6.03 · Kraków"
     ]
    ],
-   "note": "Lot Chennai → Port Blair: godziny i cena z niedzieli 21.02 (10:15 → 12:25, 386 zł); na sobotę do sprawdzenia. Loty w Indiach kupujemy później, jest ich dużo. Przez Bangkok / Kuala Lumpur nie warto: z Andamanów nie ma lotów zagranicznych (AirAsia z Kuala Lumpur zawieszona w kwietniu 2025), wyszłoby ok. 1 900 zł/os. drożej.",
+   "note": "Lot Chennai → Port Blair: godziny i cena z niedzieli 21.02 (10:15 → 12:25, 386 zł); na sobotę do sprawdzenia. Loty w Indiach kupujemy później, jest ich dużo.",
    "kayak": "KRK-MAA/2027-02-19/2027-03-06",
    "local_flights": true,
    "book": [
@@ -1323,30 +1548,9 @@
     ]
    ],
    "back_bio": "Powrót w sobotę – niedziela na odpoczynek przed szkołą.",
-   "summary_name": "🇮🇳 Chennai: Andamany + Tamil Nadu + Kerala",
-   "summary": "Dwa światy: plaże na wyspach i prawdziwe Indie; pt 6:20, loty w Indiach osobno",
-   "points": [
-    [
-     "Andamany, 4 noce",
-     "Port Blair i Havelock: plaże, snorkeling, skutery; pora sucha, morze 28–29°C; pozwolenie dla cudzoziemców zniesione w marcu 2026; promy rezerwować ok. 2 miesiące wcześniej"
-    ],
-    [
-     "Tamil Nadu, ok. 6 nocy",
-     "Mahabalipuram (świątynie nad morzem, rzeźbiarze), Puducherry (francuska dzielnica, rowery, Auroville), pociąg sypialny do Madurai (świątynia Meenakshi)"
-    ],
-    [
-     "Kerala, ok. 4 noce",
-     "z Madurai blisko do Thekkady (przyprawy), potem Munnar (herbata) i rozlewiska; powrót z Kochi przez Chennai"
-    ],
-    [
-     "Czas",
-     "Polska + 4 h 30 min; na Andamanach słońce wschodzi ok. 5:40, zachodzi ok. 17:30"
-    ],
-    [
-     "Wjazd",
-     "e-wiza, 25 USD od osoby"
-    ]
-   ],
+   "group": "andaman",
+   "summary_name": "🏝 Andamany + Tamil Nadu + Kerala",
+   "summary": "Najpierw 4 noce na wyspach, potem południowe Indie; Lufthansa do Chennai, pt 6:20",
    "summary_pp": "ok. 4 240 zł"
   },
   {
@@ -1427,8 +1631,67 @@
     "",
     "KLM"
    ],
+   "group": "bb",
    "summary_name": "🇧🇧 Barbados · KLM przez Amsterdam",
-   "summary": "Najtańszy wygodny lot (787), jedna przesiadka; sob 6:00, powrót nd rano",
+   "summary": "Najtańszy wygodny lot (787), jedna przesiadka; sob 6:00, powrót nd rano"
+  }
+ ],
+ "show": 5,
+ "groups": {
+  "south": {
+   "title": "🇮🇳 Południowe Indie: Kerala i Tamil Nadu",
+   "lead": "Jedna wycieczka, kilka sposobów dolotu – każdy ma plusy i minusy (karty poniżej). Loty po Indiach kupujemy później osobno: lata ich bardzo dużo, szacunek ok. 200 zł w jedną stronę. Po Indiach poruszamy się sami.",
+   "points": [
+    [
+     "Kerala",
+     "Fort Kochi, targ przypraw, plantacje herbaty w Munnar, ogrody przypraw w Thekkady, noc na łodzi na rozlewiskach, lokalne pociągi, plaże w Varkali"
+    ],
+    [
+     "Tamil Nadu",
+     "Chennai, Mahabalipuram (świątynie nad morzem, rzeźbiarze w kamieniu), Puducherry (francuska dzielnica, rowery, Auroville), pociąg sypialny do Madurai (świątynia Meenakshi, targ kwiatów); z Madurai blisko do Thekkady w Kerali"
+    ],
+    [
+     "Pogoda",
+     "sucho i gorąco: wybrzeże 32–35°C, w górach (Munnar) ok. 24°C"
+    ],
+    [
+     "Czas",
+     "Polska + 4 h 30 min"
+    ],
+    [
+     "Wjazd",
+     "e-wiza, 25 USD od osoby (także dzieci)"
+    ],
+    [
+     "Uwaga",
+     "park Eravikulam w Munnar jest w lutym i marcu zamknięty; unikamy Delhi"
+    ]
+   ],
+   "summary_name": "🇮🇳 Południowe Indie · Kerala i Tamil Nadu",
+   "summary_pp": "od ok. 3 470 zł",
+   "summary": "4 warianty dolotu: Lufthansa do Chennai, KLM do Kochi, Turkish z nocą w Stambule, LOT przez Delhi"
+  },
+  "andaman": {
+   "title": "🏝 Andamany + południowe Indie (przez Chennai)",
+   "lead": "Ta sama wycieczka po południowych Indiach, z 4 nocami na Andamanach na początek. Chennai to najlepsza brama: stąd bez przesiadki na wyspy (ok. 2 h).",
+   "points": [
+    [
+     "Andamany",
+     "Port Blair i Havelock: plaże, snorkeling, skutery; pora sucha, morze 28–29°C; słońce wschodzi ok. 5:40, zachodzi ok. 17:30"
+    ],
+    [
+     "Formalności",
+     "pozwolenie dla cudzoziemców zniesione w marcu 2026; promy rezerwować ok. 2 miesiące wcześniej"
+    ],
+    [
+     "Dlaczego nie przez Bangkok",
+     "z Andamanów nie ma lotów zagranicznych (AirAsia z Kuala Lumpur zawieszona w kwietniu 2025) – wyszłoby ok. 1 900 zł/os. drożej"
+    ]
+   ]
+  },
+  "bb": {
+   "title": "🇧🇧 Barbados",
+   "lead": "Karaiby po angielsku: żywa wyspa z lokalnym życiem, najtańszy wygodny lot ze wszystkich.",
    "points": [
     [
      "Na miejscu",
@@ -1456,6 +1719,5 @@
     ]
    ]
   }
- ],
- "show": 5
+ }
 }
