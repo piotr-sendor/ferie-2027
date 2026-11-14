@@ -1036,15 +1036,15 @@
  "others_note": "Kierunki z podobną różnicą czasu (4–5 h), sprawdzone 14.11.2026 (KAYAK, Google Flights). Ceny za osobę przy 7 osobach. Wyloty w piątek rano są oznaczone – do ustalenia, czy wszyscy dadzą radę.",
  "others": [
   {
-   "title": "🇮🇳 Kerala – KLM z Krakowa przez Amsterdam",
-   "tag": "Najtaniej z wygodnym samolotem",
+   "title": "🇮🇳 Kerala – LOT z Krakowa przez Warszawę do Delhi, dalej bez przesiadki do Kochi",
+   "tag": "Wygodnie: Dreamliner + krótki lot",
    "status": "ok",
    "gulf": false,
-   "pp": "3 756 zł",
-   "price_date": "14.11, KAYAK",
-   "route": "Kraków → Amsterdam → Delhi / Mumbaj / Bengaluru → Kochi",
-   "why": "Jeden bilet z Krakowa, bez Zatoki. Kerala: Fort Kochi, targ przypraw, plantacje herbaty w Munnar, ogrody przypraw w Thekkady, noc na łodzi na rozlewiskach, lokalne pociągi, plaże w Varkali. Po Kerali poruszamy się sami. Pogoda: sucho i gorąco (Kochi ok. 34°C, Munnar ok. 24°C). Wjazd: e-wiza, 25 USD od osoby (także dzieci). Uwaga: park Eravikulam w Munnar jest w lutym i marcu zamknięty.",
-   "comfort": "Amsterdam ⇄ Indie: KLM, <b>duże samoloty</b> (777 / 787). Odcinki w Indiach: wąskie, krótkie. Po dwie przesiadki w każdą stronę.",
+   "pp": "ok. 4 265 zł",
+   "price_date": "14.11, Google Flights, wylot w sobotę",
+   "route": "Kraków → Warszawa → Delhi → Kochi · z powrotem Kochi → Delhi (noc) → Warszawa → Kraków",
+   "why": "Jeden bilet LOT z Krakowa do Delhi i z powrotem (3 258 zł), bez Zatoki, długi lot Dreamlinerem bez przesiadki. Dalej osobno: Delhi → Kochi IndiGo bez przesiadki (527 zł), z powrotem Kochi → Delhi Air India (480 zł) i noc w hotelu przy lotnisku. Razem ok. <b>4 265 zł/os.</b> + hotel. Kerala: Fort Kochi, targ przypraw, plantacje herbaty w Munnar, ogrody przypraw w Thekkady, noc na łodzi na rozlewiskach, lokalne pociągi, plaże w Varkali – po Kerali poruszamy się sami. Pogoda: sucho i gorąco (Kochi ok. 34°C, Munnar ok. 24°C). Wjazd: e-wiza, 25 USD od osoby (także dzieci). Park Eravikulam w Munnar jest w lutym i marcu zamknięty.",
+   "comfort": "Warszawa ⇄ Delhi: LOT <b>Boeing 787 Dreamliner</b>, 7 h 20 min. Delhi ⇄ Kochi: A320/A321, 3 h 10 min. W drodze powrotnej noc w łóżku w Delhi.",
    "chips": [
     [
      "ok",
@@ -1055,63 +1055,101 @@
      "Bilet z Krakowa"
     ],
     [
-     "warn",
-     "Wylot pt rano"
+     "ok",
+     "Dreamliner"
     ],
     [
      "warn",
-     "2 przesiadki"
+     "Osobne bilety w Indiach"
+    ],
+    [
+     "ok",
+     "Powrót w sobotę"
     ]
    ],
-   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out_title": "Tam: sob 20.02 → nd 21.02",
    "out": [
     [
      "dep",
-     "06:00",
-     "06:00",
-     "pt 19.02 · Kraków (KRK), KLM – albo 11:55"
+     "13:30",
+     "13:30",
+     "sob 20.02 · Kraków (KRK), LOT"
     ],
     [
      "stop",
      "",
      "",
-     "Amsterdam, potem Delhi, Mumbaj albo Bengaluru",
-     "2 przesiadki"
+     "Warszawa",
+     "Przesiadka <b>3 h</b>"
+    ],
+    [
+     "dep",
+     "17:20",
+     "17:20",
+     "Warszawa → Delhi, Dreamliner"
     ],
     [
      "arr",
-     "ok. 07:00–13:00",
-     "ok. 02:30–08:30",
-     "sob 20.02 · Kochi (COK) · czas lokalny = Polska + 4 h 30 min"
+     "05:10",
+     "00:40",
+     "nd 21.02 · Delhi · Polska + 4 h 30 min"
+    ],
+    [
+     "dep",
+     "09:40",
+     "05:10",
+     "Delhi → Kochi bez przesiadki, IndiGo (osobny bilet, 4 h 30 min zapasu)"
+    ],
+    [
+     "arr",
+     "12:50",
+     "08:20",
+     "nd 21.02 · Kochi"
     ]
    ],
-   "back_title": "Powrót: sob 6.03 → nd 7.03",
+   "back_title": "Powrót: pt 5.03 → sob 6.03",
    "back": [
     [
      "dep",
-     "21:30",
-     "17:00",
-     "sob 6.03 · Kochi"
-    ],
-    [
-     "stop",
-     "",
-     "",
-     "Bengaluru, potem Amsterdam",
-     "2 przesiadki"
+     "16:00",
+     "11:30",
+     "pt 5.03 · Kochi → Delhi, Air India bez przesiadki"
     ],
     [
      "arr",
-     "13:30",
-     "13:30",
-     "nd 7.03 · Kraków"
+     "19:00",
+     "14:30",
+     "Delhi – noc w hotelu przy lotnisku"
+    ],
+    [
+     "dep",
+     "07:20",
+     "02:50",
+     "sob 6.03 · Delhi → Warszawa, LOT Dreamliner"
+    ],
+    [
+     "arr",
+     "11:05",
+     "11:05",
+     "Warszawa, przesiadka do Krakowa – w domu w sobotę po południu"
     ]
    ],
-   "kayak": "KRK-COK/2027-02-19/2027-03-06",
+   "kayak": "KRK-DEL/2027-02-20/2027-03-06",
    "book": [
-    "",
-    "KLM"
-   ]
+    "Flights from KRK to DEL on 2027-02-20 return 2027-03-06 4 adults 3 children LOT",
+    "LOT"
+   ],
+   "stats": [
+    [
+     "ok. 19 h 30 min",
+     "ok. 11 h 30 min",
+     "Warszawa 3 h + Delhi 4 h 30 min",
+     ""
+    ],
+    null
+   ],
+   "note": "Taniej, ale dłużej w samolotach: KLM z Krakowa przez Amsterdam i drugie miasto w Indiach, wylot pt 6:00 albo 11:55, powrót z Kochi sob 6.03 21:30 → Kraków nd 13:30 – 3 756 zł, jeden bilet, po dwie przesiadki w każdą stronę (KAYAK 14.11). Do sprawdzenia: powrót LOT-em w niedzielę 7.03 (Kochi sob 21:25 → Delhi 0:30, LOT 7:20) – sobota zostałaby w Kerali.",
+   "local_flights": true
   },
   {
    "title": "🇮🇳 Andamany + Kerala – LOT z Krakowa przez Warszawę do Delhi, potem samoloty po Indiach",
