@@ -371,6 +371,79 @@
    ]
   },
   {
+   "title": "Bilety w jedną stronę, łączone: tam bez Zatoki, z powrotem w niedzielę do Krakowa",
+   "status": "ok",
+   "gulf": true,
+   "pp": "ok. 5 000 zł",
+   "price_date": "14.11, KAYAK, 7 os.",
+   "route": "Tam: Kraków → Zurych → Kolombo · Z powrotem: Kolombo → Doha → Monachium → Kraków",
+   "why": "Dwa osobne bilety w jedną stronę: tam SWISS + Edelweiss pt 19.02 14:40 → sob 9:40 (<b>2 848 zł</b>), z powrotem Qatar + Lufthansa nd 7.03 4:15 → Kraków 16:55 (<b>2 148 zł</b>). Razem ok. 4 996 zł/os. To o ok. 150 zł/os. więcej niż Edelweiss w obie strony (4 845 zł z powrotem w sobotę), ale w zamian wracamy w niedzielę do domu. Zatoka tylko w drodze powrotnej, dużym samolotem.",
+   "comfort": "Tam: Edelweiss A350 bez przesiadki z Zurychu. Z powrotem: Qatar – wybrać lot na Boeingu 777 z Kolombo, potem A350/787 do Monachium.",
+   "chips": [
+    [
+     "ok",
+     "Tam bez Zatoki"
+    ],
+    [
+     "warn",
+     "Z powrotem przez Dohę"
+    ],
+    [
+     "ok",
+     "Powrót w niedzielę do Krakowa"
+    ],
+    [
+     "warn",
+     "2 bilety"
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "14:40",
+     "14:40",
+     "pt 19.02 · Kraków, SWISS"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Zurych",
+     "Przesiadka <b>3 h 20 min</b>"
+    ],
+    [
+     "arr",
+     "09:40",
+     "05:10",
+     "sob 20.02 · Kolombo"
+    ]
+   ],
+   "back_title": "Powrót: nd 7.03",
+   "back": [
+    [
+     "dep",
+     "04:15",
+     "23:45",
+     "nd 7.03 · Kolombo, Qatar Airways"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Doha, potem Monachium",
+     "2 przesiadki"
+    ],
+    [
+     "arr",
+     "16:55",
+     "16:55",
+     "nd 7.03 · Kraków"
+    ]
+   ],
+   "note": "Inne powroty w jedną stronę (7 os., nd 7.03): Air Caraïbes / French Bee do Paryża bez przesiadki 2 231 zł (+ lot do Krakowa w pn); Air India przez Delhi do Paryża 2 084 zł (bez Zatoki, Kolombo 5:10 → CDG 19:05). W sobotę 6.03: Turkish przez Stambuł 7:25 → Kraków 18:30, 3 212 zł (bez Zatoki). Tam w jedną stronę także Turkish z Krakowa pt 9:15 → sob 5:50, 2 863 zł. Źródło: <a href=\"https://www.kayak.pl/flights/CMB-KRK/2027-03-07/4adults/children-8-8-6?sort=price_a\">KAYAK 14.11</a>."
+  },
+  {
    "title": "Emirates z Warszawy przez Dubaj (duże samoloty na obu lotach)",
    "tag": "Wyjątek: Zatoka, ale duże samoloty",
    "status": "ok",
@@ -784,13 +857,13 @@
    ]
   },
   {
-   "title": "Turkish Airlines przez Stambuł (z Warszawy)",
+   "title": "Turkish Airlines przez Stambuł z Krakowa",
    "status": "lead",
    "gulf": false,
-   "pp": "ok. 4 700–5 300 zł",
-   "price_date": "09.11",
-   "route": "Warszawa → Stambuł → Kolombo",
-   "why": "Bez Zatoki, jedna przesiadka w Stambule. Ceny sprzed tygodnia i tylko z Warszawy (dojazd pociągiem). Do sprawdzenia z Krakowa i Katowic.",
+   "pp": "2 863 zł tam (w jedną stronę)",
+   "price_date": "14.11, KAYAK",
+   "route": "Kraków → Stambuł → Kolombo",
+   "why": "Turkish lata też z Krakowa: pt 19.02 9:15 → Stambuł (5 h 25 min przesiadki) → Kolombo sob 5:50, 2 863 zł/os. w jedną stronę. Powrót sob 6.03 7:25 → Kraków 18:30, 3 212 zł. Bez Zatoki, ale wylot w piątek rano, a drugą rodzinę ogranicza piątek po 14:00. Cena w obie strony do sprawdzenia.",
    "comfort": "Stambuł → Kolombo: Turkish, duży samolot (typ do potwierdzenia).",
    "chips": [
     [
@@ -799,11 +872,11 @@
     ],
     [
      "warn",
-     "Z Warszawy"
+     "Wylot pt 9:15"
     ],
     [
      "warn",
-     "Stara cena"
+     "Drogo w jedną stronę"
     ]
    ]
   },
@@ -836,13 +909,62 @@
    ]
   },
   {
+   "title": "Czarter Enter Air (Rainbow) w jedną stronę – nasza trójka w czwartek 18.02",
+   "status": "ok",
+   "gulf": true,
+   "pp": "2 131 zł w jedną stronę + powrót",
+   "price_date": "14.11, r.pl",
+   "route": "Katowice → (tankowanie) → Kolombo · powrót z drugą rodziną",
+   "why": "Tylko bilet w jedną stronę (w obie strony czarter jest drogi i wraca już 1.03). Czw 18.02 Katowice 15:15 → Kolombo pt 7:40, 2 131 zł/os.; 16 kg bagażu + 5 kg podręcznego w cenie. Z powrotem razem z drugą rodziną dowolnym biletem w jedną stronę, np. Qatar + Lufthansa do Krakowa w niedzielę (2 148 zł) – razem ok. 4 280 zł/os. Pierwszy dzień na wyspie dzień wcześniej niż druga rodzina.",
+   "comfort": "<b>Boeing 737 Enter Air – wąski</b>, ok. 12 h w jednym samolocie z lądowaniem na tankowanie (w ubiegłym sezonie Ras al-Chajma w ZEA). Wygoda jak Air Arabia albo gorzej.",
+   "chips": [
+    [
+     "bad",
+     "Wąski samolot 12 h"
+    ],
+    [
+     "warn",
+     "Tankowanie w Zatoce"
+    ],
+    [
+     "ok",
+     "Bagaż w cenie"
+    ],
+    [
+     "warn",
+     "Tylko nasza rodzina"
+    ]
+   ],
+   "out_title": "Tam: czw 18.02 → pt 19.02",
+   "out": [
+    [
+     "dep",
+     "15:15",
+     "15:15",
+     "czw 18.02 · Katowice (KTW), Enter Air"
+    ],
+    [
+     "fly",
+     "ok. 12 h z międzylądowaniem"
+    ],
+    [
+     "arr",
+     "07:40",
+     "03:10",
+     "pt 19.02 · Kolombo"
+    ]
+   ],
+   "back_title": "Powrót: biletem w jedną stronę (patrz opcja wyżej)",
+   "note": "Też z Warszawy 17:25 (2 110 zł) i z Poznania 15:45 (2 125 zł). Źródło: <a href=\"https://r.pl/bilety-czarterowe/sri-lanka/colombo\">r.pl, Rainbow – lot w jedną stronę</a>."
+  },
+  {
    "title": "Czartery z Polski (Rainbow / Enter Air, Itaka / Smartwings)",
    "status": "no",
    "gulf": true,
    "pp": "ok. 5 275 zł",
    "price_date": "14.11, Rainbow",
    "route": "Katowice / Warszawa → (tankowanie w Zatoce) → Kolombo",
-   "why": "Czartery na Sri Lankę są, ale nie pasują: <b>Rainbow</b> czw 18.02 Katowice 15:15 → Kolombo pt 7:40, powrót tylko pn 1.03 (do Warszawy) – 5 275 zł/os., tylko 11 dni. Kolejne wyloty 28.02 i 11.03. <b>Itaka / Smartwings</b> z Warszawy we wtorki (16.02, 23.02, 2.03). <b>Enter Air</b> z Katowic 28.02. W naszym oknie 19–21.02 → 6–7.03 nie ma żadnego czarteru.",
+   "why": "Czartery na Sri Lankę są, ale nie pasują: <b>Rainbow</b> czw 18.02 Katowice 15:15 → Kolombo pt 7:40, powrót tylko pn 1.03 (do Warszawy) – 5 275 zł/os., tylko 11 dni. Kolejne wyloty 28.02 i 11.03. <b>Itaka / Smartwings</b> z Warszawy we wtorki (16.02, 23.02, 2.03). <b>Enter Air</b> z Katowic 28.02. W naszym oknie 19–21.02 → 6–7.03 nie ma żadnego czarteru w obie strony; w jedną stronę patrz opcja wyżej (czw 18.02).",
    "comfort": "<b>Boeing 737-800 / 737 MAX – wąski</b>, ok. 13 h w jednym samolocie z międzylądowaniem na tankowanie w Zatoce (Ras al-Chajma albo Maskat). Pod względem wygody gorzej niż Air Arabia.",
    "chips": [
     [
