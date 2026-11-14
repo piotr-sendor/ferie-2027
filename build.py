@@ -62,7 +62,7 @@ DEST = [
      dep("21:50","17:20","nd 7.03 · wylot z Kolombo"), stop("","","Bangalore (Indie), potem Amsterdam","2 przesiadki"),
      arr("11:15","11:15","pn 8.03 · Kraków")]),
   ],
-  extra="Sprawdzone też: Lufthansa + Qatar przez Monachium i Dohę (sob 6:00, 3 918 zł/os.), flydubai/Emirates z Krakowa w sobotę 23:10 (4 059 zł/os.), Wiedeń (Air Arabia ok. 3 330 zł/os.), Wrocław (tylko rano, od ok. 4 000 zł/os.). Katowice: Air Arabia ma latać do Szardży od 17.12.2026."),
+  extra="<b><a href=\"loty-sri-lanka.html\">✈ Aktualna lista wszystkich lotów na Sri Lankę (aktualizowana we wtorki i piątki) →</a></b><br><br>Sprawdzone też: Lufthansa + Qatar przez Monachium i Dohę (sob 6:00, 3 918 zł/os.), flydubai/Emirates z Krakowa w sobotę 23:10 (4 059 zł/os.), Wiedeń (Air Arabia ok. 3 330 zł/os.), Wrocław (tylko rano, od ok. 4 000 zł/os.). Katowice: Air Arabia ma latać do Szardży od 17.12.2026."),
 
  dict(slug="malezja-borneo", flag="🇲🇾", name="Malezja – Borneo", place="Kota Kinabalu (Sabah): wyspy, orangutany", gulf=False,
   price="ok. 4 920 zł", price7="ok. 34 400 zł", price_note="z lotem krajowym na Borneo",
@@ -1175,6 +1175,7 @@ def index(dests):
     amer = ''.join(tile(d) for d in dests if d.get("region") == "americas")
     amer_html = f'<h2 class="region">Ameryka</h2><div class="tiles">{amer}</div>' if amer else ''
     body = f'''<h2 class="region">Azja</h2><div class="tiles">{asia}</div>{amer_html}
+<div class="callout ok"><a href="loty-sri-lanka.html"><b>✈ Sri Lanka: wszystkie loty, stan na bieżąco →</b></a></div>
 <div class="callout warn"><a href="info.html">Zatoka Perska, rezygnacja i ubezpieczenie, bagaż →</a></div>
 <h2>Kierunki, których nie bierzemy pod uwagę</h2>
 <div class="card rejected">

@@ -1,0 +1,834 @@
+{
+ "updated": "14.11.2026",
+ "intro": "<p><b>Kto:</b> dwie rodziny, 4 dorosłych + 3 dzieci (8, 8 i 6 lat). <b>Kiedy:</b> wylot pt 19.02 po 14:00 albo sob 20.02, powrót najpóźniej nd 7.03.2027; nasza trójka może wylecieć wcześniej (pn–czw 15–18.02). <b>Skąd:</b> Kraków, ewentualnie Katowice, Warszawa.</p><p><b>Zasady:</b> komfort dla dzieci jest ważniejszy niż cena. Wąskie samoloty taniej linii (Air Arabia, flydubai) odpadają. Najchętniej bez przesiadki w Zatoce Perskiej. Przesiadkę w Zatoce bierzemy pod uwagę tylko wtedy, gdy podróż jest wyraźnie wygodniejsza, np. Qatar Airways dużymi samolotami.</p><p>Tę stronę uzupełnia automatyczny zwiad na serwerze we wtorki i piątki rano. Ceny z Google Flights z dnia podanego przy opcji.</p>",
+ "comfort": "💺 <b>Jak czytać „komfort”:</b> <b>szeroki kadłub</b> (A350, 777, 787) = dwa przejścia, więcej miejsca, ekrany, posiłki, lepsze powietrze i ciszej – na nocnym locie z dziećmi robi różnicę. <b>Wąski</b> (A320/A321, 737) = jedno przejście, rząd 3-3, jak Ryanair. Ranking: najpierw wygoda i brak Zatoki, potem godziny i liczba przesiadek, na końcu cena.",
+ "options": [
+  {
+   "title": "Edelweiss z Zurychu bez przesiadki (A350)",
+   "tag": "Najwygodniej",
+   "status": "ok",
+   "gulf": false,
+   "pp": "4 845 zł",
+   "price_date": "14.11",
+   "route": "Kraków → Zurych → Kolombo (bez przesiadki)",
+   "why": "Jedyny bezpośredni lot dużym samolotem do Kolombo w naszym oknie. Krótki dolot do Zurychu, potem jedna noc w samolocie. Wada: powrót tylko w sobotę 6.03 i cena rośnie (10.11: 4 304 zł).",
+   "comfort": "Zurych → Kolombo: <b>Airbus A350</b>, szeroki kadłub (dwa przejścia, rząd 3-3-3), ok. 10 h nocą. Kraków → Zurych: SWISS, mały samolot, ok. 1 h 50 min.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "1 przesiadka"
+    ],
+    [
+     "warn",
+     "Powrót w sobotę"
+    ]
+   ],
+   "stats": [
+    [
+     "14 h 30 min",
+     "ok. 11 h",
+     "3 h 20 min",
+     ""
+    ],
+    null
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "14:40",
+     "14:40",
+     "pt 19.02 · Kraków (KRK), SWISS"
+    ],
+    [
+     "fly",
+     "lot ok. 1 h 50 min"
+    ],
+    [
+     "stop",
+     "ok. 16:30",
+     "ok. 16:30",
+     "Zurych (ZRH), Szwajcaria",
+     "Przesiadka <b>3 h 20 min</b>"
+    ],
+    [
+     "dep",
+     "ok. 19:50",
+     "ok. 19:50",
+     "wylot Edelweiss do Kolombo"
+    ],
+    [
+     "fly",
+     "lot ok. 10 h (noc)"
+    ],
+    [
+     "arr",
+     "09:40",
+     "05:10",
+     "sob 20.02 · Kolombo (CMB) · czas lokalny = Polska + 4 h 30 min"
+    ]
+   ],
+   "out_bio": "Wylot po wczesnym obiedzie, dzieci śpią w dużym samolocie, na miejscu rano.",
+   "back_title": "Powrót: sob 6.03",
+   "back": [
+    [
+     "arr",
+     "23:40",
+     "23:40",
+     "sob 6.03 · Kraków (przez Zurych i Monachium) – godziny wylotu do sprawdzenia"
+    ]
+   ],
+   "note": "Godziny przesiadki w Zurychu wyliczone z czasu całej podróży (± 15 min).",
+   "book": [
+    "Flights from KRK to CMB on 2027-02-19 return 2027-03-06 4 adults 3 children Edelweiss",
+    "Edelweiss"
+   ]
+  },
+  {
+   "title": "Austrian + SriLankan przez Wiedeń i Malediwy",
+   "tag": "Najlepsza cena bez Zatoki",
+   "status": "ok",
+   "gulf": false,
+   "pp": "4 175 zł",
+   "price_date": "14.11",
+   "route": "Kraków → Wiedeń → Malé (Malediwy) → Kolombo",
+   "why": "Jeden bilet, ok. 670 zł/os. taniej niż Edelweiss. Dłużej o ok. 8 h, bo jest postój na Malediwach, a do Kolombo dolatujemy po południu. Powrót w sobotę 6.03.",
+   "comfort": "Wiedeń → Malé: Austrian, <b>duży samolot</b> (szeroki kadłub, typ do potwierdzenia), lot nocny. Malé → Kolombo: SriLankan, 1 h 25 min. Kraków → Wiedeń: mały samolot, 1 h.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "warn",
+     "2 przesiadki"
+    ],
+    [
+     "warn",
+     "Powrót w sobotę"
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "14:45",
+     "14:45",
+     "pt 19.02 · Kraków (KRK), Austrian"
+    ],
+    [
+     "stop",
+     "ok. 15:45",
+     "ok. 15:45",
+     "Wiedeń (VIE), Austria",
+     "Przesiadka"
+    ],
+    [
+     "fly",
+     "lot nocny do Malé"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "sob 20.02 · Malé (MLE), Malediwy",
+     "Przesiadka na SriLankan"
+    ],
+    [
+     "arr",
+     "17:30",
+     "13:00",
+     "sob 20.02 · Kolombo (CMB)"
+    ]
+   ],
+   "back_title": "Powrót: sob 6.03 (godziny do sprawdzenia)",
+   "book": [
+    "Flights from KRK to CMB on 2027-02-19 return 2027-03-06 4 adults 3 children Austrian",
+    "Austrian"
+   ]
+  },
+  {
+   "title": "SWISS + Edelweiss + SriLankan przez Zurych i Malediwy, powrót w niedzielę",
+   "status": "lead",
+   "gulf": false,
+   "pp": "3 961 zł",
+   "price_date": "14.11",
+   "route": "Kraków → Zurych → Malé → Kolombo",
+   "why": "Najtańsza znaleziona trasa bez Zatoki i jedyna z powrotem w niedzielę 7.03. <b>Lotu powrotnego nie udało się jeszcze zobaczyć</b> – może wracać przez Zatokę albo z przylotem w poniedziałek. Rutyna sprawdzi to we wtorek.",
+   "comfort": "Zurych → Malé: Edelweiss, <b>duży samolot</b> (A340/A350), nocą. Malé → Kolombo: 1 h 25 min.",
+   "chips": [
+    [
+     "ok",
+     "Tam bez Zatoki"
+    ],
+    [
+     "warn",
+     "Powrót niepotwierdzony"
+    ],
+    [
+     "warn",
+     "2 przesiadki"
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "14:40",
+     "14:40",
+     "pt 19.02 · Kraków (KRK), SWISS"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Zurych (ZRH)",
+     "Przesiadka na Edelweiss"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "sob 20.02 · Malé (MLE), Malediwy",
+     "Przesiadka na SriLankan"
+    ],
+    [
+     "arr",
+     "17:30",
+     "13:00",
+     "sob 20.02 · Kolombo"
+    ]
+   ],
+   "back_title": "Powrót: nd 7.03 (szczegóły niepotwierdzone)",
+   "book": [
+    "Flights from KRK to CMB on 2027-02-19 return 2027-03-07 4 adults 3 children Edelweiss",
+    "Edelweiss"
+   ]
+  },
+  {
+   "title": "Emirates z Warszawy przez Dubaj (duże samoloty na obu lotach)",
+   "tag": "Wyjątek: Zatoka, ale duże samoloty",
+   "status": "ok",
+   "gulf": true,
+   "pp": "4 559 zł",
+   "p7": "+ pociąg Kraków–Warszawa",
+   "price_date": "14.11",
+   "route": "(Kraków pociągiem →) Warszawa → Dubaj → Kolombo",
+   "why": "Przesiadka w Zatoce (Dubaj), ale oba loty to Emirates na dużych samolotach. Jedna przesiadka (ok. 4 h), wylot w piątek w południe, w Kolombo w sobotę rano. Z Krakowa do Warszawy rano pociągiem.",
+   "comfort": "Warszawa → Dubaj: Emirates <b>Boeing 777-300ER</b> (szeroki). Dubaj → Kolombo: Emirates <b>A350 albo 777</b>. Uwaga: z Krakowa lot „Emirates” do Dubaju to w praktyce flydubai, wąski 737.",
+   "chips": [
+    [
+     "warn",
+     "Przesiadka w Dubaju"
+    ],
+    [
+     "ok",
+     "Duże samoloty"
+    ],
+    [
+     "ok",
+     "1 przesiadka"
+    ],
+    [
+     "warn",
+     "Z Warszawy"
+    ]
+   ],
+   "stats": [
+    [
+     "14 h 10 min",
+     "ok. 10 h",
+     "4 h 10 min",
+     "+ pociąg Kraków–Warszawa ok. 2 h 30 min"
+    ],
+    null
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "13:40",
+     "13:40",
+     "pt 19.02 · Warszawa (WAW), Emirates"
+    ],
+    [
+     "fly",
+     "lot ok. 6 h"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Dubaj (DXB), ZEA",
+     "Przesiadka <b>4 h 10 min</b> · Polska + 3 h"
+    ],
+    [
+     "fly",
+     "lot ok. 4 h 10 min"
+    ],
+    [
+     "arr",
+     "08:20",
+     "03:50",
+     "sob 20.02 · Kolombo"
+    ]
+   ],
+   "back_title": "Powrót: nd 7.03 (godziny do sprawdzenia)",
+   "book": [
+    "Flights from WAW to CMB on 2027-02-19 return 2027-03-07 4 adults 3 children Emirates",
+    "Emirates"
+   ]
+  },
+  {
+   "title": "Lufthansa + Qatar Airways przez Monachium i Dohę",
+   "tag": "Wyjątek: Zatoka, ale duże samoloty",
+   "status": "ok",
+   "gulf": true,
+   "pp": "4 321 zł",
+   "price_date": "14.11",
+   "route": "Kraków → Monachium → Doha → Kolombo",
+   "why": "Przesiadka w Zatoce (Katar), ale oba długie loty Qatar Airways to duże samoloty, a nie wąskie jak Air Arabia. Wady: wylot w piątek o 6:00 i przylot w nocy. Powrót w niedzielę 7.03 rano z Kolombo, w Krakowie o 16:55.",
+   "comfort": "Monachium → Doha: Qatar, <b>szeroki kadłub</b> (A350/787). Doha → Kolombo: najczęściej <b>Boeing 777-300ER</b>, część lotów A321neo (wąski) – przy rezerwacji wybrać lot na 777. Kraków → Monachium: mały samolot Lufthansy.",
+   "chips": [
+    [
+     "warn",
+     "Przesiadka w Katarze"
+    ],
+    [
+     "ok",
+     "Duże samoloty"
+    ],
+    [
+     "ok",
+     "Powrót w niedzielę"
+    ],
+    [
+     "bad",
+     "Wylot 6:00"
+    ]
+   ],
+   "stats": [
+    [
+     "15 h 25 min",
+     "",
+     "2 przesiadki",
+     ""
+    ],
+    [
+     "17 h 10 min",
+     "",
+     "2 przesiadki",
+     ""
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "06:00",
+     "06:00",
+     "pt 19.02 · Kraków (KRK), Lufthansa"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Monachium (MUC)",
+     "Przesiadka"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Doha (DOH), Katar",
+     "Przesiadka · Polska + 2 h"
+    ],
+    [
+     "arr",
+     "01:55",
+     "21:25",
+     "sob 20.02 · Kolombo (w nocy)"
+    ]
+   ],
+   "back_title": "Powrót: nd 7.03",
+   "back": [
+    [
+     "dep",
+     "04:15",
+     "23:45",
+     "nd 7.03 · Kolombo (na lotnisku ok. 1:30 w nocy)"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Doha, potem Monachium",
+     "2 przesiadki"
+    ],
+    [
+     "arr",
+     "16:55",
+     "16:55",
+     "nd 7.03 · Kraków"
+    ]
+   ],
+   "back_bio": "Powrót w nocy z soboty na niedzielę, w domu w niedzielę po południu.",
+   "note": "Powrót z wyszukiwania Google 13.11 (lot w jedną stronę); cena dla 7 to bilet w obie strony.",
+   "book": [
+    "Flights from KRK to CMB on 2027-02-19 return 2027-03-07 4 adults 3 children Qatar Airways",
+    "Qatar Airways"
+   ]
+  },
+  {
+   "title": "Lufthansa + SriLankan przez Frankfurt i Bengaluru (Indie)",
+   "status": "ok",
+   "gulf": false,
+   "pp": "4 222 zł",
+   "price_date": "14.11",
+   "route": "Kraków → Frankfurt → Bengaluru → Kolombo",
+   "why": "Bez Zatoki, jeden bilet, powrót w niedzielę. Ale wylot o 6:20 i dwie przesiadki, druga w Indiach. Przylot w sobotę o 5:05 rano.",
+   "comfort": "Frankfurt → Bengaluru: Lufthansa, <b>duży samolot</b>. Bengaluru → Kolombo: SriLankan, wąski (ok. 1 h 30 min).",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "warn",
+     "2 przesiadki (Indie)"
+    ],
+    [
+     "bad",
+     "Wylot 6:20"
+    ]
+   ],
+   "stats": [
+    [
+     "18 h 15 min",
+     "",
+     "2 przesiadki",
+     ""
+    ],
+    null
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "06:20",
+     "06:20",
+     "pt 19.02 · Kraków (KRK), Lufthansa"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Frankfurt (FRA)",
+     "Przesiadka"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Bengaluru (BLR), Indie",
+     "Przesiadka na SriLankan"
+    ],
+    [
+     "arr",
+     "05:05",
+     "00:35",
+     "sob 20.02 · Kolombo"
+    ]
+   ],
+   "back_title": "Powrót: nd 7.03 (godziny do sprawdzenia)",
+   "book": [
+    "Flights from KRK to CMB on 2027-02-19 return 2027-03-07 4 adults 3 children Lufthansa",
+    "Lufthansa"
+   ]
+  },
+  {
+   "title": "KLM + IndiGo przez Amsterdam i Delhi",
+   "status": "ok",
+   "gulf": false,
+   "pp": "4 440 zł",
+   "price_date": "14.11",
+   "route": "Kraków → Amsterdam → Delhi → Kolombo",
+   "why": "Bez Zatoki, wylot w piątek przed południem, ale 26 h podróży i przylot w sobotę wieczorem.",
+   "comfort": "Amsterdam → Delhi: <b>duży samolot</b>. Delhi → Kolombo: IndiGo, wąski, tani przewoźnik.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "warn",
+     "26 h w podróży"
+    ]
+   ],
+   "stats": [
+    [
+     "26 h 05 min",
+     "",
+     "2 przesiadki",
+     ""
+    ],
+    null
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "11:55",
+     "11:55",
+     "pt 19.02 · Kraków (KRK), KLM"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Amsterdam (AMS), potem Delhi (DEL)",
+     "2 przesiadki"
+    ],
+    [
+     "arr",
+     "18:30",
+     "14:00",
+     "sob 20.02 · Kolombo"
+    ]
+   ],
+   "back_title": "Powrót: nd 7.03 (godziny do sprawdzenia)",
+   "book": [
+    "Flights from KRK to CMB on 2027-02-19 return 2027-03-07 4 adults 3 children KLM",
+    "KLM"
+   ]
+  },
+  {
+   "title": "flydubai + Emirates przez Dubaj",
+   "status": "ok",
+   "gulf": true,
+   "pp": "3 807 zł",
+   "price_date": "14.11",
+   "route": "Kraków → Dubaj → Kolombo",
+   "why": "Tanio i jedna przesiadka, ale w Zatoce (Dubaj). Pierwszy lot (5 h 30 min) to flydubai, wąski samolot jak Air Arabia. Tylko drugi lot, Emirates, jest duży.",
+   "comfort": "Kraków → Dubaj: flydubai, <b>Boeing 737 MAX – wąski</b> (3-3). Dubaj → Kolombo: Emirates, <b>A350 albo 777</b> (szeroki).",
+   "chips": [
+    [
+     "warn",
+     "Przesiadka w Dubaju"
+    ],
+    [
+     "warn",
+     "Pierwszy lot wąski"
+    ],
+    [
+     "ok",
+     "1 przesiadka"
+    ]
+   ],
+   "stats": [
+    [
+     "15 h 35 min",
+     "",
+     "5 h 15 min",
+     ""
+    ],
+    null
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "12:10",
+     "12:10",
+     "pt 19.02 · Kraków (KRK), flydubai"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Dubaj (DXB), ZEA",
+     "Przesiadka <b>5 h 15 min</b>"
+    ],
+    [
+     "arr",
+     "08:15",
+     "03:45",
+     "sob 20.02 · Kolombo"
+    ]
+   ],
+   "back_title": "Powrót: nd 7.03 (godziny do sprawdzenia)",
+   "book": [
+    "Flights from KRK to CMB on 2027-02-19 return 2027-03-07 4 adults 3 children Emirates",
+    "Emirates"
+   ]
+  },
+  {
+   "title": "French Bee z Paryża Orly bez przesiadki (A350) – dla nas wcześniej",
+   "status": "lead",
+   "gulf": false,
+   "pp": "ok. 3 535 zł + dolot do Paryża",
+   "price_date": "09.11, 1 osoba",
+   "route": "Kraków → Paryż (LOT, osobny bilet) → Kolombo",
+   "why": "Nowa trasa od grudnia 2026. Bez przesiadki w poniedziałki (np. 15.02 18:45 → wt 09:10) – pasuje naszej trójce, która może wylecieć wcześniej. W czwartki i soboty lot przez Malediwy. Osobne bilety = zapas czasu albo noc w Paryżu.",
+   "comfort": "Paryż → Kolombo: <b>Airbus A350</b> (szeroki), tania linia – posiłek i bagaż płatne osobno.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "warn",
+     "Osobne bilety"
+    ],
+    [
+     "warn",
+     "Tylko pn (bez przesiadki)"
+    ]
+   ],
+   "out_title": "Tam: pn 15.02 → wt 16.02",
+   "out": [
+    [
+     "dep",
+     "",
+     "",
+     "pn 15.02 · Kraków → Paryż (LOT), zapas kilku godzin"
+    ],
+    [
+     "dep",
+     "18:45",
+     "18:45",
+     "Paryż Orly (ORY), French Bee"
+    ],
+    [
+     "fly",
+     "lot bez przesiadki, noc"
+    ],
+    [
+     "arr",
+     "09:10",
+     "04:40",
+     "wt 16.02 · Kolombo"
+    ]
+   ],
+   "back_title": "Powrót: nd 7.03 (do sprawdzenia)",
+   "note": "Źródło: aeroroutes.com (rozkład French Bee); cena dla 7 osób jeszcze niesprawdzona."
+  },
+  {
+   "title": "LOT + Air India przez Delhi",
+   "status": "lead",
+   "gulf": false,
+   "pp": "cena do sprawdzenia",
+   "route": "Kraków → Warszawa → Delhi → Kolombo",
+   "why": "LOT lata z Warszawy do Delhi codziennie wieczorem (Dreamliner), Air India z Delhi do Kolombo 3 razy dziennie od 25.10.2026. Tam: pt wieczór → sob 10:55 w Kolombo. Z powrotem ok. 11 h nocy na lotnisku w Delhi.",
+   "comfort": "Warszawa → Delhi: <b>Boeing 787</b> (szeroki). Delhi → Kolombo: Air India A321 (wąski), 3 h 40 min.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "warn",
+     "Długa noc w Delhi w drodze powrotnej"
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "17:20",
+     "17:20",
+     "pt 19.02 · Warszawa (WAW), LOT"
+    ],
+    [
+     "stop",
+     "05:10",
+     "00:40",
+     "sob 20.02 · Delhi (DEL), Indie",
+     "Przesiadka <b>ok. 2 h</b>"
+    ],
+    [
+     "dep",
+     "07:15",
+     "02:45",
+     "Air India AI283"
+    ],
+    [
+     "arr",
+     "10:55",
+     "06:25",
+     "sob 20.02 · Kolombo"
+    ]
+   ],
+   "back_title": "Powrót: nd 7.03",
+   "back": [
+    [
+     "dep",
+     "17:05",
+     "12:35",
+     "Kolombo, Air India AI278 → Delhi 20:50, potem noc na lotnisku i LOT do Warszawy"
+    ]
+   ]
+  },
+  {
+   "title": "Turkish Airlines przez Stambuł (z Warszawy)",
+   "status": "lead",
+   "gulf": false,
+   "pp": "ok. 4 700–5 300 zł",
+   "price_date": "09.11",
+   "route": "Warszawa → Stambuł → Kolombo",
+   "why": "Bez Zatoki, jedna przesiadka w Stambule. Ceny sprzed tygodnia i tylko z Warszawy (dojazd pociągiem). Do sprawdzenia z Krakowa i Katowic.",
+   "comfort": "Stambuł → Kolombo: Turkish, duży samolot (typ do potwierdzenia).",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "warn",
+     "Z Warszawy"
+    ],
+    [
+     "warn",
+     "Stara cena"
+    ]
+   ]
+  },
+  {
+   "title": "Lufthansa + SriLankan w sobotę 20.02 przez Frankfurt i Chennai",
+   "status": "ok",
+   "gulf": false,
+   "pp": "3 665–3 877 zł",
+   "price_date": "13–14.11",
+   "route": "Kraków → Frankfurt → Chennai/Hajdarabad → Kolombo",
+   "why": "Jedyny sobotni wylot bez Zatoki, ale 29–33 h podróży z długim postojem w Indiach i przylot w niedzielę. Powrót prawdopodobnie przez Dohę. Dla dzieci słabo.",
+   "comfort": "Frankfurt → Indie: Lufthansa, duży samolot. Indie → Kolombo: wąski.",
+   "chips": [
+    [
+     "ok",
+     "Tam bez Zatoki"
+    ],
+    [
+     "bad",
+     "29–33 h"
+    ],
+    [
+     "warn",
+     "Powrót pewnie przez Dohę"
+    ]
+   ],
+   "book": [
+    "Flights from KRK to CMB on 2027-02-20 return 2027-03-07 4 adults 3 children Lufthansa",
+    "Lufthansa"
+   ]
+  },
+  {
+   "title": "Air Arabia przez Szardżę",
+   "status": "no",
+   "gulf": true,
+   "pp": "3 194 zł",
+   "price_date": "14.11",
+   "route": "Kraków → Szardża → Kolombo",
+   "why": "Najtaniej i najszybciej (11 h), ale <b>obie rodziny odrzuciły</b>: wąski samolot, mało miejsca jak w Ryanairze, dwa nocne loty w każdą stronę z dziećmi, i przesiadka w Zatoce.",
+   "comfort": "Oba loty: <b>Airbus A320/A321 – wąski</b> (3-3), tania linia, 5 h 40 min + 4 h 25 min.",
+   "chips": [
+    [
+     "bad",
+     "Komfort"
+    ],
+    [
+     "warn",
+     "Przesiadka w ZEA"
+    ],
+    [
+     "ok",
+     "Najtaniej"
+    ]
+   ],
+   "stats": [
+    [
+     "11 h 05 min",
+     "ok. 10 h",
+     "1 h",
+     ""
+    ],
+    [
+     "13 h 10 min",
+     "",
+     "ok. 2 h",
+     ""
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "22:10",
+     "22:10",
+     "pt 19.02 · Kraków (KRK)"
+    ],
+    [
+     "stop",
+     "ok. 06:50",
+     "ok. 03:50",
+     "Szardża (SHJ), ZEA",
+     "Przesiadka <b>1 h</b>"
+    ],
+    [
+     "arr",
+     "13:45",
+     "09:15",
+     "sob 20.02 · Kolombo"
+    ]
+   ],
+   "back_title": "Powrót: nd 7.03",
+   "back": [
+    [
+     "dep",
+     "02:40",
+     "sob 22:10",
+     "Kolombo"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Szardża",
+     "Przesiadka ok. 2 h"
+    ],
+    [
+     "arr",
+     "11:20",
+     "11:20",
+     "nd 7.03 · Kraków"
+    ]
+   ],
+   "book": [
+    "Flights from KRK to CMB on 2027-02-19 return 2027-03-07 4 adults 3 children Air Arabia",
+    "Air Arabia"
+   ]
+  },
+  {
+   "title": "Lufthansa + Etihad przez Monachium i Abu Zabi",
+   "status": "no",
+   "gulf": true,
+   "pp": "ok. 7 870 zł",
+   "price_date": "14.11",
+   "route": "Kraków → Monachium → Abu Zabi → Kolombo",
+   "why": "Prawie dwa razy drożej niż Qatar tą samą drogą przez Zatokę. Etihad z Krakowa lata tylko latem.",
+   "chips": [
+    [
+     "bad",
+     "Drogo"
+    ],
+    [
+     "warn",
+     "Przesiadka w ZEA"
+    ]
+   ]
+  }
+ ]
+}
