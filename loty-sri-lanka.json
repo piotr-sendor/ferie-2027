@@ -1047,6 +1047,99 @@
  "others_note": "Kierunki z podobną różnicą czasu, sprawdzone 14.11.2026 (KAYAK, Google Flights). Ceny za osobę przy 7 osobach. Wyloty w piątek rano są oznaczone – do ustalenia, czy wszyscy dadzą radę.",
  "others": [
   {
+   "group": "chennai_sl",
+   "title": "Lufthansa: tam do Chennai, z powrotem z Kolombo w sobotę za dnia",
+   "tag": "Przygoda + dzienny powrót",
+   "status": "ok",
+   "gulf": false,
+   "pp": "ok. 4 550 zł",
+   "price_date": "14.11, KAYAK + szacunek pociągów i promu",
+   "route": "Kraków → Frankfurt → Chennai · pociągi · prom Nagapattinam → Jaffna · pociągi · Kolombo → Zurych → Monachium → Kraków",
+   "why": "Jeden bilet Lufthansy: tam do Chennai, z powrotem z Kolombo – <b>4 027 zł</b>. Powrót w sobotę 6.03 o 11:25 – za dnia, bez nocnej pobudki. Pociągi w Indiach i na Sri Lance oraz prom to ok. 500 zł/os. Razem ok. <b>4 550 zł/os.</b> – tyle co Edelweiss na samą Sri Lankę, a w pakiecie Tamil Nadu i przeprawa morska.",
+   "comfort": "Frankfurt → Chennai i Kolombo → Zurych: duże samoloty (Kolombo → Zurych to Edelweiss, A350/A340). Prom: mały statek, 3–4 h. Pociągi: klasa z klimatyzacją (3A/2A).",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "Jeden bilet"
+    ],
+    [
+     "ok",
+     "Powrót za dnia"
+    ],
+    [
+     "warn",
+     "Prom niepewny – plan B samolotem"
+    ],
+    [
+     "warn",
+     "Wylot pt 6:20"
+    ],
+    [
+     "warn",
+     "2 przesiadki z powrotem"
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "06:20",
+     "06:20",
+     "pt 19.02 · Kraków, Lufthansa"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Frankfurt",
+     "Przesiadka <b>2 h 15 min</b>"
+    ],
+    [
+     "arr",
+     "00:05",
+     "19:35",
+     "sob 20.02 (w nocy) · Chennai – hotel"
+    ],
+    [
+     "night",
+     "🚂 ok. 3–4 dni: Chennai / Mahabalipuram → pociąg do Thanjavur → Nagapattinam · 🚢 prom do Jaffny (np. śr 24.02) · Sri Lanka pociągami na południe"
+    ]
+   ],
+   "back_title": "Powrót: sob 6.03",
+   "back": [
+    [
+     "dep",
+     "11:25",
+     "06:55",
+     "sob 6.03 · Kolombo (CMB), Edelweiss / SWISS"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Zurych (2 h 50 min), potem Monachium (55 min)",
+     "2 przesiadki"
+    ],
+    [
+     "arr",
+     "23:40",
+     "23:40",
+     "sob 6.03 · Kraków"
+    ]
+   ],
+   "note": "Inna wersja: zamiast promu samolot Chennai → Kolombo (SriLankan / IndiGo, ok. 470 zł, kilka lotów dziennie). Godziny promu i ceny na luty 2027 sprawdzimy w styczniu. Ceny lotów: KAYAK 14.11.",
+   "kayak": "KRK-MAA/2027-02-19/CMB-KRK/2027-03-06",
+   "local_flights": true,
+   "book": [
+    "",
+    "Lufthansa"
+   ]
+  },
+  {
    "group": "south",
    "title": "Turkish z Krakowa do Mumbaju przez Stambuł – jeden bilet",
    "status": "ok",
@@ -1830,6 +1923,35 @@
      "w lutym Holetown Festival – w 2027 400-lecie osadnictwa (do sprawdzenia)"
     ]
    ]
+  },
+  "chennai_sl": {
+   "title": "🚢 Przez Chennai na Sri Lankę: pociągi przez Tamil Nadu i prom do Jaffny",
+   "lead": "Przygoda zamiast samolotu: lądujemy w Chennai, kilka dni pociągami przez Tamil Nadu, promem na północ Sri Lanki (Jaffna), dalej pociągiem na południe wyspy. Wracamy samolotem prosto z Kolombo – za dnia.",
+   "points": [
+    [
+     "Prom",
+     "Nagapattinam → Kankesanthurai (Jaffna), statek Sivagangai (ok. 150 miejsc), 6 dni w tygodniu (bez wtorków), 3–4 h; ok. 5 500 rupii (ok. 235 zł) za dorosłego, 30 kg bagażu; rezerwacja sailsubham.com. Godziny 2026/27 niepotwierdzone (ostatnio 8:00 → 12:00)"
+    ],
+    [
+     "Ryzyko promu",
+     "w poprzednich sezonach prom stał zimą (wznowienie 22.02.2025 i 6.03.2026); w tym sezonie armator zapowiada rejsy także w monsunie – nie sprawdzone. Plan B: samolot Chennai → Jaffna (IndiGo ok. 360 zł) albo → Kolombo (ok. 470 zł), kilka lotów dziennie"
+    ],
+    [
+     "Pociągi w Tamil Nadu",
+     "Chennai → Thanjavur (Chozhan Express 8:00 → 13:54), stamtąd 1,5–2,5 h do Nagapattinam; po drodze Mahabalipuram, Puducherry, świątynie Thanjavur i Kumbakonam; bilety ok. 35 zł/os.; sprzedaż 60 dni wcześniej"
+    ],
+    [
+     "Sri Lanka",
+     "Jaffna 2–3 noce, pociąg na południe (linia północna znów działa od 2026): Anuradhapura, Sigiriya, Kandy, góry, plaże na południu"
+    ],
+    [
+     "Wjazd",
+     "e-wiza do Indii (25 USD), Sri Lanka: bezpłatna ETA online dla każdego, także dzieci"
+    ]
+   ],
+   "summary_name": "🚢 Chennai → pociągi → prom → Sri Lanka",
+   "summary_pp": "ok. 4 550 zł",
+   "summary": "Lufthansa do Chennai, Tamil Nadu pociągami, prom do Jaffny, powrót z Kolombo za dnia (11:25)"
   }
  }
 }
