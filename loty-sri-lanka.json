@@ -1128,25 +1128,49 @@
      "sob 6.03 · Kraków"
     ]
    ],
-   "note": "Można też zamienić czekanie w Stambule na nocleg (postój ponad 20 h, hotel od Turkish), ale bilet kosztuje wtedy 3 071 zł – ok. 370 zł/os. więcej, więc się nie opłaca. Sprawdzamy jeszcze, czy osobny dolot do Stambułu skróci czekanie do ok. 3 h.",
+   "note": "Turkish lata w Indiach tylko do Mumbaju i Delhi (umowa Indie–Turcja: 1 lot dziennie), do Chennai nie. Z Mumbaju do Stambułu jest tylko poranny lot (6:50) – nocnego nie ma. Osobny dolot do Stambułu się nie opłaca: sam lot Stambuł ⇄ Mumbaj kosztuje 3 140 zł/os., więcej niż cały bilet z Krakowa. Ceny: KAYAK 14.11.",
    "kayak": "KRK-BOM/2027-02-19/2027-03-06",
    "local_flights": true,
    "book": [
     "",
     "Turkish Airlines"
    ],
-   "tag": "Najtaniej"
+   "tag": "Najtaniej",
+   "variants": {
+    "head": [
+     "Wariant Turkish (jeden bilet)",
+     "Powrót",
+     "Za osobę"
+    ],
+    "rows": [
+     [
+      "<b>Zwykły</b>",
+      "sob 6.03 Mumbaj 6:50 → Stambuł 11:45, 6 h 30 min czekania, 18:15 → Kraków 18:30",
+      "2 701 zł"
+     ],
+     [
+      "<b>Z nocą w Stambule w drodze powrotnej</b>",
+      "sob 6.03 Mumbaj 6:50 → Stambuł 11:45, popołudnie i noc w Stambule (20 h 15 min – darmowy hotel, jeśli taryfa nie jest N/R), nd 7.03 Stambuł 8:00 → Kraków 8:20",
+      "2 957 zł"
+     ],
+     [
+      "Z całym dniem w Stambule",
+      "pt 5.03 Mumbaj 7:00 → Stambuł 11:45, noc, sob 6.03 Stambuł 18:15 → Kraków 18:30",
+      "3 130 zł"
+     ]
+    ]
+   }
   },
   {
-   "title": "Lufthansa z Krakowa do Chennai – start w Tamil Nadu",
-   "tag": "Najtaniej z wygodą",
+   "title": "Lufthansa do Chennai, z powrotem SWISS z Bengaluru – nocny powrót z jedną krótką przesiadką",
+   "tag": "Najlepszy powrót",
    "status": "ok",
    "gulf": false,
-   "pp": "ok. 3 650 zł",
+   "pp": "ok. 3 700 zł",
    "price_date": "14.11, KAYAK + szacunek lotów w Indiach",
-   "route": "Kraków → Frankfurt → Chennai · Tamil Nadu → Kerala · Kochi → Chennai → Kraków",
-   "why": "Jeden bilet Lufthansy z Krakowa do Chennai i z powrotem (<b>3 249 zł</b>), bez Zatoki i bez Delhi. Zaczynamy w Tamil Nadu, kończymy w Kerali i wracamy krótkim lotem Kochi → Chennai (ok. 200 zł). Razem ok. <b>3 650 zł/os.</b>",
-   "comfort": "Frankfurt ⇄ Chennai: Lufthansa, <b>duży samolot</b> (szeroki kadłub). Kraków ⇄ Frankfurt / Monachium: mały samolot. Chennai ⇄ Kochi: A320, ok. 1 h.",
+   "route": "Kraków → Frankfurt → Chennai · Tamil Nadu → Kerala · Bengaluru → Zurych → Kraków",
+   "why": "Jeden bilet: tam Lufthansa do Chennai, z powrotem SWISS z Bengaluru – <b>3 297 zł</b>. Powrót to wygodny lot nocny i jedna krótka przesiadka w Zurychu, w domu w sobotę o 13:55. Z Kerali do Bengaluru krótki lot albo nocny pociąg (szacunek ok. 200 zł). Razem ok. <b>3 700 zł/os.</b>",
+   "comfort": "Frankfurt → Chennai: Lufthansa, duży samolot. Bengaluru → Zurych: SWISS <b>A330-300</b> (trasa od 27.10.2026, 5 razy w tygodniu). Kraków ⇄ Frankfurt / Zurych: mały samolot.",
    "chips": [
     [
      "ok",
@@ -1154,15 +1178,15 @@
     ],
     [
      "ok",
-     "Bilet z Krakowa"
+     "Jeden bilet"
+    ],
+    [
+     "ok",
+     "Nocny powrót, 1 przesiadka"
     ],
     [
      "warn",
      "Wylot pt 6:20"
-    ],
-    [
-     "warn",
-     "Przylot w nocy"
     ]
    ],
    "out_title": "Tam: pt 19.02 → sob 20.02",
@@ -1187,35 +1211,29 @@
      "sob 20.02 (w nocy) · Chennai (MAA) · Polska + 4 h 30 min – krótka noc w hotelu przy lotnisku"
     ]
    ],
-   "back_title": "Powrót: pt 5.03 → sob 6.03",
+   "back_title": "Powrót: sob 6.03",
    "back": [
     [
      "dep",
-     "",
-     "",
-     "pt 5.03 wieczorem · Kochi → Chennai, ok. 1 h (osobny bilet)"
-    ],
-    [
-     "dep",
-     "01:45",
-     "pt 21:15",
-     "sob 6.03 (w nocy) · Chennai, Lufthansa"
+     "04:50",
+     "00:20",
+     "sob 6.03 (w nocy) · Bengaluru (BLR), SWISS – dzień wcześniej dojazd z Kerali"
     ],
     [
      "stop",
-     "",
-     "",
-     "Frankfurt, potem Monachium",
-     "2 przesiadki"
+     "10:50",
+     "10:50",
+     "Zurych",
+     "Przesiadka <b>1 h 15 min</b> (ten sam bilet)"
     ],
     [
      "arr",
-     "16:55",
-     "16:55",
+     "13:55",
+     "13:55",
      "sob 6.03 · Kraków"
     ]
    ],
-   "kayak": "KRK-MAA/2027-02-19/2027-03-06",
+   "kayak": "KRK-MAA/2027-02-19/BLR-KRK/2027-03-06",
    "book": [
     "",
     "Lufthansa"
@@ -1225,16 +1243,16 @@
      "13 h 15 min do Chennai",
      "ok. 11 h",
      "2 h 15 min",
-     "+ lot do Kochi następnego dnia"
+     ""
     ],
     [
-     "19 h 40 min z Chennai",
-     "",
-     "2 przesiadki",
+     "ok. 13 h 30 min z Bengaluru",
+     "ok. 11 h",
+     "1 h 15 min",
      ""
     ]
    ],
-   "note": "Plus: najtaniej, jedna przesiadka tam, w domu w sobotę. Minus: wylot o świcie i przylot do Chennai w nocy.",
+   "note": "Do potwierdzenia przy zakupie: czy SWISS lata z Bengaluru akurat w sobotę 6.03 (5 dni w tygodniu; KAYAK i Google pokazały ten lot). Sama Lufthansa w obie strony do Chennai: 3 249 zł, ale powrót z dwiema przesiadkami (Frankfurt 4 h 20 min, Monachium 2 h 20 min) i w domu 16:55.",
    "local_flights": true,
    "points": [
     [
@@ -1445,10 +1463,10 @@
    "tag": "Dwa światy i coś nowego: Tamil Nadu",
    "status": "ok",
    "gulf": false,
-   "pp": "ok. 4 240 zł",
+   "pp": "ok. 4 290 zł",
    "price_date": "14.11, KAYAK + Google Flights + szacunek",
    "route": "Kraków → Frankfurt → Chennai → Port Blair → Chennai … Tamil Nadu … Kerala → Chennai → Kraków",
-   "why": "Bilet Lufthansy z Krakowa do Chennai i z powrotem <b>3 249 zł</b>; w Indiach osobno: Chennai ⇄ Port Blair (ok. 390 + 400 zł) i Kochi → Chennai (ok. 200 zł). Razem ok. <b>4 240 zł/os.</b> Plan: 4 noce Andamany → ok. 6 nocy Tamil Nadu → ok. 4 noce Kerala.",
+   "why": "Bilet: tam Lufthansa do Chennai, z powrotem SWISS z Bengaluru (<b>3 297 zł</b>, nocny powrót z jedną krótką przesiadką). W Indiach osobno: Chennai ⇄ Port Blair (ok. 390 + 400 zł) i Kerala → Bengaluru (ok. 200 zł). Razem ok. <b>4 290 zł/os.</b> Plan: 4 noce Andamany → ok. 6 nocy Tamil Nadu → ok. 4 noce Kerala.",
    "comfort": "Frankfurt ⇄ Chennai: Lufthansa, <b>duży samolot</b>. Loty w Indiach: wąskie A320/A321, 1–2 h, bagaż 15 kg.",
    "chips": [
     [
@@ -1510,30 +1528,30 @@
      "🏝 4 noce Andamany · śr 24.02 Port Blair → Chennai · ok. 6 nocy Tamil Nadu · ok. 4 noce Kerala"
     ]
    ],
-   "back_title": "Powrót: pt 5.03 → sob 6.03",
+   "back_title": "Powrót: sob 6.03",
    "back": [
     [
      "dep",
-     "01:45",
-     "pt 21:15",
-     "sob 6.03 (w nocy) · Chennai, Lufthansa – dzień wcześniej wieczorem lot z Kochi do Chennai (ok. 1 h)"
+     "04:50",
+     "00:20",
+     "sob 6.03 (w nocy) · Bengaluru, SWISS"
     ],
     [
      "stop",
-     "",
-     "",
-     "Frankfurt, potem Monachium",
-     "2 przesiadki"
+     "10:50",
+     "10:50",
+     "Zurych",
+     "Przesiadka <b>1 h 15 min</b>"
     ],
     [
      "arr",
-     "16:55",
-     "16:55",
+     "13:55",
+     "13:55",
      "sob 6.03 · Kraków"
     ]
    ],
    "note": "Lot Chennai → Port Blair: godziny i cena z niedzieli 21.02 (10:15 → 12:25, 386 zł); na sobotę do sprawdzenia. Loty w Indiach kupujemy później, jest ich dużo.",
-   "kayak": "KRK-MAA/2027-02-19/2027-03-06",
+   "kayak": "KRK-MAA/2027-02-19/BLR-KRK/2027-03-06",
    "local_flights": true,
    "book": [
     "",
@@ -1557,7 +1575,7 @@
    "group": "andaman",
    "summary_name": "🏝 Andamany + Tamil Nadu + Kerala",
    "summary": "Najpierw 4 noce na wyspach, potem południowe Indie; Lufthansa do Chennai, pt 6:20",
-   "summary_pp": "ok. 4 240 zł"
+   "summary_pp": "ok. 4 290 zł"
   },
   {
    "title": "🇧🇧 Barbados – KLM z Krakowa przez Amsterdam",
@@ -1675,7 +1693,7 @@
    ],
    "summary_name": "🇮🇳 Południowe Indie · Kerala i Tamil Nadu",
    "summary_pp": "od ok. 3 100 zł",
-   "summary": "4 warianty dolotu: Turkish przez Stambuł (najtaniej), Lufthansa do Chennai, KLM do Kochi, LOT przez Delhi"
+   "summary": "4 warianty dolotu: Turkish przez Stambuł (najtaniej), Lufthansa tam + SWISS nocą z powrotem, KLM do Kochi, LOT przez Delhi"
   },
   "andaman": {
    "title": "🏝 Andamany + południowe Indie (przez Chennai)",
