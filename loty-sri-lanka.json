@@ -1114,93 +1114,132 @@
    ]
   },
   {
-   "title": "🇮🇳 Andamany + Kerala – KLM z Krakowa, tam do Chennai, z powrotem z Kochi",
+   "title": "🇮🇳 Andamany + Kerala – LOT z Krakowa przez Warszawę do Delhi, potem samoloty po Indiach",
    "tag": "Dwa światy: plaże i Kerala",
    "status": "ok",
    "gulf": false,
-   "pp": "ok. 5 500 zł",
-   "price_date": "14.11, KAYAK + Google Flights",
-   "route": "Kraków → Amsterdam → Indie → Chennai → Port Blair … Kochi → Kraków",
-   "why": "Najpierw Andamany (odpoczynek na plażach: Havelock, Neil), potem Kerala (Fort Kochi, Munnar, Thekkady, rozlewiska, pociąg). Bilet KLM 4 552 zł + loty w Indiach: Chennai → Port Blair 386 zł, Port Blair → Kochi 563 zł (przez Bengaluru). Andamany: pora sucha, 23–31°C, morze 28–29°C; pozwolenie dla cudzoziemców zniesione w marcu 2026. Promy na wyspy rezerwować ok. 2 miesiące wcześniej. Ok. 6 z 16 dni to podróże.",
-   "comfort": "Amsterdam ⇄ Indie: KLM, <b>duże samoloty</b>. Loty w Indiach i promy: krótkie, wąskie samoloty IndiGo / Air India.",
+   "pp": "ok. 4 950 zł",
+   "price_date": "14.11, Google Flights, wylot w sobotę",
+   "route": "Kraków → Warszawa → Delhi → Port Blair … Port Blair → Kochi … Kochi → Delhi → Warszawa → Kraków",
+   "why": "Jeden bilet LOT z Krakowa do Delhi i z powrotem (3 258 zł), bez Zatoki, Dreamliner. W Indiach trzy osobne loty: Delhi → Port Blair (Akasa 691 zł, przez Kalkutę), Port Blair → Kochi (IndiGo 526 zł, przez Chennai), Kochi → Delhi (Air India 480 zł). Razem ok. <b>4 955 zł/os.</b> + noc w hotelu przy lotnisku w Delhi przed powrotem. Wariant z wylotem w piątek 19.02 (Kraków 15:00): bilet LOT 3 392 zł, razem ok. 5 330 zł. Plan: ok. 6 nocy na Andamanach (Havelock, Neil – pora sucha, morze 28–29°C; pozwolenie dla cudzoziemców zniesione w marcu 2026), ok. 6 nocy w Kerali (Fort Kochi, Munnar, Thekkady, rozlewiska, pociąg). Promy na wyspy rezerwować ok. 2 miesiące wcześniej.",
+   "comfort": "Warszawa ⇄ Delhi: LOT <b>Boeing 787 Dreamliner</b>, 7 h 20 min bez przesiadki. Kraków ⇄ Warszawa: mały samolot LOT (na tym samym bilecie). Loty w Indiach: wąskie A320/A321, 3–5 h, bagaż 15 kg.",
    "chips": [
     [
      "ok",
      "Bez Zatoki"
     ],
     [
-     "warn",
-     "Wylot pt rano"
-    ],
-    [
-     "warn",
-     "Loty krajowe + promy"
+     "ok",
+     "Bilet z Krakowa"
     ],
     [
      "ok",
-     "Plaże + prawdziwe życie"
+     "Dreamliner"
+    ],
+    [
+     "warn",
+     "3 loty krajowe + promy"
+    ],
+    [
+     "ok",
+     "Powrót w sobotę"
     ]
    ],
-   "out_title": "Tam: pt 19.02 → nd 21.02",
+   "out_title": "Tam: sob 20.02 → nd 21.02",
    "out": [
     [
      "dep",
-     "06:00",
-     "06:00",
-     "pt 19.02 · Kraków, KLM – albo 11:55"
-    ],
-    [
-     "arr",
-     "ok. 06:15–11:20",
-     "",
-     "sob 20.02 · Chennai – noc w Chennai"
-    ],
-    [
-     "dep",
-     "10:15",
-     "05:45",
-     "nd 21.02 · Chennai → Port Blair, IndiGo bez przesiadki"
-    ],
-    [
-     "arr",
-     "12:25",
-     "07:55",
-     "nd 21.02 · Port Blair (Andamany)"
-    ],
-    [
-     "night",
-     "🏝 ok. 6 nocy: Havelock, Neil · potem Port Blair → Kochi (przez Bengaluru) · ok. 7 nocy w Kerali"
-    ]
-   ],
-   "back_title": "Powrót: sob 6.03 → nd 7.03",
-   "back": [
-    [
-     "dep",
-     "21:30",
-     "17:00",
-     "sob 6.03 · Kochi, KLM"
+     "13:30",
+     "13:30",
+     "sob 20.02 · Kraków (KRK), LOT"
     ],
     [
      "stop",
      "",
      "",
-     "Bengaluru, potem Amsterdam",
-     "2 przesiadki"
+     "Warszawa",
+     "Przesiadka <b>3 h</b>"
+    ],
+    [
+     "dep",
+     "17:20",
+     "17:20",
+     "Warszawa → Delhi, Dreamliner"
     ],
     [
      "arr",
-     "13:45",
-     "13:45",
-     "nd 7.03 · Kraków"
+     "05:10",
+     "00:40",
+     "nd 21.02 · Delhi · Polska + 4 h 30 min"
+    ],
+    [
+     "dep",
+     "08:50",
+     "04:20",
+     "Delhi → Port Blair, Akasa Air (osobny bilet, 3 h 40 min zapasu)"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Kalkuta",
+     "Postój 40 min"
+    ],
+    [
+     "arr",
+     "14:10",
+     "09:40",
+     "nd 21.02 · Port Blair (Andamany)"
+    ],
+    [
+     "night",
+     "🏝 6 nocy: Havelock, Neil · sob 27.02 Port Blair 13:05 → Kochi 18:10 (IndiGo przez Chennai) · 6 nocy w Kerali"
     ]
    ],
-   "note": "Inny wariant: LOT Warszawa → Delhi Dreamlinerem w sobotę 20.02 (17:20 → 5:10), powrót sob 6.03 Delhi 7:20 → Warszawa 11:05: 2 913 zł + Delhi → Port Blair 934 + Port Blair → Kochi 563 + Kochi → Delhi 480 = ok. 4 890 zł, do tego pociąg do Warszawy i noc w Delhi. Osobne bilety, ciasna przesiadka w Delhi (2 h 10 min).",
-   "kayak": "KRK-MAA/2027-02-19/COK-KRK/2027-03-06",
+   "back_title": "Powrót: pt 5.03 → sob 6.03",
+   "back": [
+    [
+     "dep",
+     "16:00",
+     "11:30",
+     "pt 5.03 · Kochi → Delhi, Air India bez przesiadki"
+    ],
+    [
+     "arr",
+     "19:00",
+     "14:30",
+     "Delhi – noc w hotelu przy lotnisku"
+    ],
+    [
+     "dep",
+     "07:20",
+     "02:50",
+     "sob 6.03 · Delhi → Warszawa, LOT Dreamliner"
+    ],
+    [
+     "arr",
+     "11:05",
+     "11:05",
+     "Warszawa, przesiadka do Krakowa – w domu w sobotę po południu"
+    ]
+   ],
+   "note": "Ryzyko: loty w Indiach są na osobnych biletach. Tam zapas 3 h 40 min w Delhi (bezpośredni Air India 7:20 → 11:00 za 853 zł daje tylko 2 h 10 min). Z powrotem nocujemy w Delhi, więc spóźniony lot z Kochi nic nie psuje. Inny wariant: KLM z Krakowa przez Amsterdam do Chennai, z powrotem z Kochi, wylot pt rano – ok. 5 500 zł z lotami w Indiach. Ceny: Google Flights 14.11.",
+   "kayak": "KRK-DEL/2027-02-20/2027-03-06",
    "local_flights": true,
    "book": [
-    "",
-    "KLM"
-   ]
+    "Flights from KRK to DEL on 2027-02-20 return 2027-03-06 4 adults 3 children LOT",
+    "LOT"
+   ],
+   "stats": [
+    [
+     "ok. 24 h do Port Blair",
+     "ok. 13 h",
+     "Warszawa 3 h + Delhi 3 h 40 min",
+     ""
+    ],
+    null
+   ],
+   "back_bio": "Powrót w sobotę – niedziela na odpoczynek przed szkołą."
   },
   {
    "title": "🇧🇧 Barbados – KLM z Krakowa przez Amsterdam",
