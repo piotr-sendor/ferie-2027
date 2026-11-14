@@ -1,7 +1,7 @@
 {
  "updated": "14.11.2026",
  "intro": "<p><b>Kto:</b> dwie rodziny, 4 dorosłych + 3 dzieci (8, 8 i 6 lat). <b>Kiedy:</b> wylot pt 19.02 (najlepiej po 14:00, rano też do rozważenia) albo sob 20.02, powrót najpóźniej nd 7.03.2027. Najwcześniej śr–czw 17–18.02 (oznaczone „wylot przed piątkiem”). <b>Skąd:</b> Kraków, ewentualnie Katowice, Warszawa.</p><p><b>Zasady:</b> wygoda dzieci przed ceną – długie loty dużymi samolotami, bez wąskich tanich linii (Air Arabia, flydubai). Najchętniej bez przesiadki w Zatoce Perskiej; Zatoka tylko wtedy, gdy wyraźnie wygodniej (Qatar, Emirates na dużych samolotach). Na miejscu wolimy prawdziwe życie (targi, pociągi, plantacje) niż hotel z basenem.</p><p class='m'>Stronę aktualizuje automatyczny zwiad: Sri Lanka we wtorki i piątki rano, inne kierunki raz w tygodniu. Ceny z Google Flights i KAYAK z dnia podanego przy opcji.</p>",
- "comfort": "💺 <b>Jak czytać „komfort”:</b> <b>szeroki kadłub</b> (A350, 777, 787) = dwa przejścia, więcej miejsca, ekrany, posiłki, lepsze powietrze i ciszej – na nocnym locie z dziećmi robi różnicę. <b>Wąski</b> (A320/A321, 737) = jedno przejście, rząd 3-3, jak Ryanair. Ranking: najpierw wygoda i brak Zatoki, potem godziny i liczba przesiadek, na końcu cena.",
+ "comfort": "💺 <b>Jak czytać „komfort”:</b> <b>szeroki kadłub</b> (A350, 777, 787) = dwa przejścia, więcej miejsca, ekrany, posiłki, lepsze powietrze i ciszej – na nocnym locie z dziećmi robi różnicę. <b>Wąski</b> (A320/A321, 737) = jedno przejście, rząd 3-3, jak Ryanair. Ranking: najpierw wygoda i brak Zatoki, potem godziny i liczba przesiadek, na końcu cena. <b>Godziny:</b> wylot między ok. 0:30 a 5:00 to dla nas najgorsza opcja (bez snu przed lotem) – gorsza niż start o 7–8 rano; dobry lot nocny to wylot ok. 20:00–23:30.",
  "options": [
   {
    "title": "Edelweiss z Zurychu bez przesiadki (A350)",
@@ -1075,7 +1075,7 @@
     ],
     [
      "warn",
-     "Wylot pt 9:15"
+     "Powrót z Mumbaju o 6:50"
     ]
    ],
    "out_title": "Tam: pt 19.02 → sob 20.02",
@@ -1187,6 +1187,10 @@
     [
      "warn",
      "Powrót z 6 h 20 min w Kopenhadze"
+    ],
+    [
+     "warn",
+     "Powrót z Mumbaju o 6:30"
     ]
    ],
    "out_title": "Tam: pt 19.02 → sob 20.02",
@@ -1242,14 +1246,14 @@
    ]
   },
   {
-   "title": "Lufthansa do Chennai, z powrotem z Bengaluru w niedzielę – nocny lot, jedna przesiadka",
-   "tag": "Najlepszy powrót",
+   "title": "Lufthansa do Chennai, z powrotem z Bengaluru w niedzielę – jedna przesiadka",
+   "tag": "Krótki powrót, ale wylot o 2:50",
    "status": "ok",
    "gulf": false,
    "pp": "ok. 3 900 zł",
    "price_date": "14.11, KAYAK + szacunek lotów w Indiach",
    "route": "Kraków → Frankfurt → Chennai · Tamil Nadu → Kerala · Bengaluru → Monachium → Kraków",
-   "why": "Jeden bilet Lufthansy: tam do Chennai, z powrotem z Bengaluru – <b>3 495 zł</b>. Powrót w niedzielę 7.03: nocny lot A350, jedna przesiadka 3 h 15 min w Monachium, w Krakowie 12:50. Z Kerali do Bengaluru krótki lot albo nocny pociąg (ok. 200 zł). Razem ok. <b>3 900 zł/os.</b>",
+   "why": "Jeden bilet Lufthansy: tam do Chennai, z powrotem z Bengaluru – <b>3 495 zł</b>. Powrót w niedzielę 7.03: A350 z Bengaluru o 2:50 w nocy (bez snu przed lotem – minus), jedna przesiadka 3 h 15 min w Monachium, w Krakowie 12:50. Z Kerali do Bengaluru krótki lot albo nocny pociąg (ok. 200 zł). Razem ok. <b>3 900 zł/os.</b>",
    "comfort": "Frankfurt → Chennai: Lufthansa, duży samolot. Bengaluru → Monachium: Lufthansa <b>A350</b>, lot nocny. Kraków ⇄ Frankfurt / Monachium: mały samolot.",
    "chips": [
     [
@@ -1262,15 +1266,15 @@
     ],
     [
      "ok",
-     "Nocny powrót, 1 przesiadka"
+     "Powrót z 1 przesiadką"
+    ],
+    [
+     "bad",
+     "Wylot powrotny o 2:50 w nocy"
     ],
     [
      "warn",
      "Wylot pt 6:20"
-    ],
-    [
-     "warn",
-     "W domu w niedzielę"
     ]
    ],
    "out_title": "Tam: pt 19.02 → sob 20.02",
@@ -1543,8 +1547,8 @@
    ]
   },
   {
-   "title": "Lufthansa do Chennai → Andamany → Tamil Nadu → Kerala",
-   "tag": "Dwa światy i coś nowego: Tamil Nadu",
+   "title": "Lufthansa do Chennai, z powrotem z Bengaluru w niedzielę – jedna przesiadka",
+   "tag": "Krótki powrót, ale wylot o 2:50",
    "status": "ok",
    "gulf": false,
    "pp": "ok. 4 490 zł",
@@ -1559,19 +1563,19 @@
     ],
     [
      "ok",
-     "Bez Delhi"
+     "Jeden bilet"
     ],
     [
      "ok",
-     "Bilet z Krakowa"
+     "Powrót z 1 przesiadką"
+    ],
+    [
+     "bad",
+     "Wylot powrotny o 2:50 w nocy"
     ],
     [
      "warn",
-     "Wylot pt rano"
-    ],
-    [
-     "warn",
-     "Loty krajowe + promy"
+     "Wylot pt 6:20"
     ]
    ],
    "out_title": "Tam: pt 19.02 → sob 20.02",
