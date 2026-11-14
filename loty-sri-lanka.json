@@ -1,6 +1,6 @@
 {
  "updated": "14.11.2026",
- "intro": "<p><b>Kto:</b> dwie rodziny, 4 dorosłych + 3 dzieci (8, 8 i 6 lat). <b>Kiedy:</b> wylot pt 19.02 po 14:00 albo sob 20.02, powrót najpóźniej nd 7.03.2027; nasza trójka może wylecieć wcześniej (pn–czw 15–18.02). <b>Skąd:</b> Kraków, ewentualnie Katowice, Warszawa.</p><p><b>Zasady:</b> komfort dla dzieci jest ważniejszy niż cena. Wąskie samoloty taniej linii (Air Arabia, flydubai) odpadają. Najchętniej bez przesiadki w Zatoce Perskiej. Przesiadkę w Zatoce bierzemy pod uwagę tylko wtedy, gdy podróż jest wyraźnie wygodniejsza, np. Qatar Airways dużymi samolotami.</p><p>Tę stronę uzupełnia automatyczny zwiad na serwerze we wtorki i piątki rano. Ceny z Google Flights z dnia podanego przy opcji.</p>",
+ "intro": "<p><b>Kto:</b> dwie rodziny, 4 dorosłych + 3 dzieci (8, 8 i 6 lat). <b>Kiedy:</b> wylot pt 19.02 po 14:00 albo sob 20.02, powrót najpóźniej nd 7.03.2027; kto może, wylatuje wcześniej (pn–czw 15–18.02) – takie warianty są oznaczone „wylot przed piątkiem”. <b>Skąd:</b> Kraków, ewentualnie Katowice, Warszawa.</p><p><b>Zasady:</b> komfort dla dzieci jest ważniejszy niż cena. Wąskie samoloty taniej linii (Air Arabia, flydubai) odpadają. Najchętniej bez przesiadki w Zatoce Perskiej. Przesiadkę w Zatoce bierzemy pod uwagę tylko wtedy, gdy podróż jest wyraźnie wygodniejsza, np. Qatar Airways dużymi samolotami.</p><p>Tę stronę uzupełnia automatyczny zwiad na serwerze we wtorki i piątki rano. Ceny z Google Flights z dnia podanego przy opcji.</p>",
  "comfort": "💺 <b>Jak czytać „komfort”:</b> <b>szeroki kadłub</b> (A350, 777, 787) = dwa przejścia, więcej miejsca, ekrany, posiłki, lepsze powietrze i ciszej – na nocnym locie z dziećmi robi różnicę. <b>Wąski</b> (A320/A321, 737) = jedno przejście, rząd 3-3, jak Ryanair. Ranking: najpierw wygoda i brak Zatoki, potem godziny i liczba przesiadek, na końcu cena.",
  "options": [
   {
@@ -258,13 +258,13 @@
    "note": "Ceny: <a href=\"https://www.kayak.pl/flights/ORY-CMB/2027-02-20/2027-03-07/4adults/children-8-8-6?sort=price_a\">KAYAK 14.11</a> (Air Caraïbes 3 632 zł/os. z postojem w Malé; bez postoju 4 436; ten sam lot jako French Bee 4 302). Dolot: easyJet sob 20.02 1 974 zł za 7 os., powrót pn 8.03 easyJet 209 zł/os. (KAYAK, Google 14.11)."
   },
   {
-   "title": "Air Caraïbes z Paryża Orly bez przesiadki – nasza trójka od poniedziałku",
+   "title": "Air Caraïbes z Paryża Orly bez przesiadki – wylot w poniedziałek 15.02",
    "status": "ok",
    "gulf": false,
    "pp": "2 773 zł + dolot do Paryża",
-   "price_date": "14.11, KAYAK, 2 dorosłych + dziecko",
+   "price_date": "14.11, KAYAK, 3 osoby",
    "route": "Kraków → Paryż → Kolombo (bez przesiadki)",
-   "why": "Dla nas (Piotr, Magda, Gaja), jeśli wylecimy wcześniej: pn 15.02 Paryż 18:45 → Kolombo wt 9:10, bez przesiadki. Powrót razem z drugą rodziną w niedzielę 7.03 (Paryż 21:30, Kraków pn rano). Najtańsza wygodna opcja w całym zestawieniu. Druga rodzina w tę noc nie leci, bo wylatuje dopiero w piątek.",
+   "why": "Wariant z wylotem przed piątkiem: pn 15.02 Paryż 18:45 → Kolombo wt 9:10, bez przesiadki. Powrót razem ze wszystkimi w niedzielę 7.03 (Paryż 21:30, Kraków pn rano). Najtańsza wygodna opcja w zestawieniu. Lot w poniedziałek, więc tylko dla tych, którzy mogą wyjechać wcześniej. Cena dla 2 dorosłych + dziecka.",
    "comfort": "Paryż ⇄ Kolombo: <b>Airbus A350</b>, oba loty bez przesiadki (9 h 55 min tam, 11 h 05 min z powrotem).",
    "chips": [
     [
@@ -277,7 +277,7 @@
     ],
     [
      "warn",
-     "Tylko nasza rodzina"
+     "Wylot przed piątkiem"
     ],
     [
      "bad",
@@ -863,7 +863,7 @@
    "pp": "2 863 zł tam (w jedną stronę)",
    "price_date": "14.11, KAYAK",
    "route": "Kraków → Stambuł → Kolombo",
-   "why": "Turkish lata też z Krakowa: pt 19.02 9:15 → Stambuł (5 h 25 min przesiadki) → Kolombo sob 5:50, 2 863 zł/os. w jedną stronę. Powrót sob 6.03 7:25 → Kraków 18:30, 3 212 zł. Bez Zatoki, ale wylot w piątek rano, a drugą rodzinę ogranicza piątek po 14:00. Cena w obie strony do sprawdzenia.",
+   "why": "Turkish lata też z Krakowa: pt 19.02 9:15 → Stambuł (5 h 25 min przesiadki) → Kolombo sob 5:50, 2 863 zł/os. w jedną stronę. Powrót sob 6.03 7:25 → Kraków 18:30, 3 212 zł. Bez Zatoki, ale wylot w piątek rano, a w piątek wylatujemy najwcześniej po 14:00. Cena w obie strony do sprawdzenia.",
    "comfort": "Stambuł → Kolombo: Turkish, duży samolot (typ do potwierdzenia).",
    "chips": [
     [
@@ -909,13 +909,13 @@
    ]
   },
   {
-   "title": "Czarter Enter Air (Rainbow) w jedną stronę – nasza trójka w czwartek 18.02",
+   "title": "Czarter Enter Air (Rainbow) w jedną stronę – wylot w czwartek 18.02",
    "status": "ok",
    "gulf": true,
    "pp": "2 131 zł w jedną stronę + powrót",
    "price_date": "14.11, r.pl",
-   "route": "Katowice → (tankowanie) → Kolombo · powrót z drugą rodziną",
-   "why": "Tylko bilet w jedną stronę (w obie strony czarter jest drogi i wraca już 1.03). Czw 18.02 Katowice 15:15 → Kolombo pt 7:40, 2 131 zł/os.; 16 kg bagażu + 5 kg podręcznego w cenie. Z powrotem razem z drugą rodziną dowolnym biletem w jedną stronę, np. Qatar + Lufthansa do Krakowa w niedzielę (2 148 zł) – razem ok. 4 280 zł/os. Pierwszy dzień na wyspie dzień wcześniej niż druga rodzina.",
+   "route": "Katowice → (tankowanie) → Kolombo · powrót razem ze wszystkimi",
+   "why": "Tylko bilet w jedną stronę (w obie strony czarter jest drogi i wraca już 1.03). Czw 18.02 Katowice 15:15 → Kolombo pt 7:40, 2 131 zł/os.; 16 kg bagażu + 5 kg podręcznego w cenie. Wariant z wylotem przed piątkiem. Z powrotem razem ze wszystkimi dowolnym biletem w jedną stronę, np. Qatar + Lufthansa do Krakowa w niedzielę (2 148 zł) – razem ok. 4 280 zł/os. Na wyspie dzień wcześniej.",
    "comfort": "<b>Boeing 737 Enter Air – wąski</b>, ok. 12 h w jednym samolocie z lądowaniem na tankowanie (w ubiegłym sezonie Ras al-Chajma w ZEA). Wygoda jak Air Arabia albo gorzej.",
    "chips": [
     [
@@ -932,7 +932,7 @@
     ],
     [
      "warn",
-     "Tylko nasza rodzina"
+     "Wylot przed piątkiem"
     ]
    ],
    "out_title": "Tam: czw 18.02 → pt 19.02",
