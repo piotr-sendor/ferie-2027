@@ -1162,15 +1162,95 @@
    }
   },
   {
-   "title": "Lufthansa do Chennai, z powrotem SWISS z Bengaluru – nocny powrót z jedną krótką przesiadką",
+   "group": "south",
+   "title": "SAS z Krakowa przez Kopenhagę do Mumbaju – nocny lot tam",
+   "status": "ok",
+   "gulf": false,
+   "pp": "ok. 3 160 zł",
+   "price_date": "14.11, KAYAK + szacunek lotów w Indiach",
+   "route": "Kraków → Kopenhaga → Mumbaj → Kerala / Tamil Nadu",
+   "why": "Nowa trasa SAS (od października 2026): jeden bilet <b>2 762 zł</b>, bez Zatoki. Wylot z Krakowa dopiero o 10:15, lot do Mumbaju nocny, w Mumbaju o 4:30. Dalej Mumbaj ⇄ Kerala osobno (ok. 400 zł w obie strony). Razem ok. <b>3 160 zł/os.</b> Minus: powrót rano z Mumbaju i 6 h 20 min w Kopenhadze.",
+   "comfort": "Kopenhaga ⇄ Mumbaj: SAS <b>Airbus A330</b> (szeroki), 5 razy w tygodniu. Kraków ⇄ Kopenhaga: mały samolot.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "Jeden bilet"
+    ],
+    [
+     "ok",
+     "Nocny lot tam"
+    ],
+    [
+     "warn",
+     "Powrót z 6 h 20 min w Kopenhadze"
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "10:15",
+     "10:15",
+     "pt 19.02 · Kraków, SAS"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Kopenhaga",
+     "Przesiadka <b>3 h 45 min</b>"
+    ],
+    [
+     "arr",
+     "04:30",
+     "00:00",
+     "sob 20.02 · Mumbaj – dalej lot do Kerali"
+    ]
+   ],
+   "back_title": "Powrót: sob 6.03",
+   "back": [
+    [
+     "dep",
+     "06:30",
+     "02:00",
+     "sob 6.03 · Mumbaj"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Kopenhaga",
+     "Przesiadka <b>6 h 20 min</b>"
+    ],
+    [
+     "arr",
+     "19:40",
+     "19:40",
+     "sob 6.03 · Kraków"
+    ]
+   ],
+   "note": "Do potwierdzenia: czy SAS lata akurat 19.02 i 6.03 (5 dni w tygodniu; KAYAK pokazał te loty).",
+   "kayak": "KRK-BOM/2027-02-19/2027-03-06",
+   "local_flights": true,
+   "book": [
+    "",
+    "SAS"
+   ]
+  },
+  {
+   "title": "Lufthansa do Chennai, z powrotem z Bengaluru w niedzielę – nocny lot, jedna przesiadka",
    "tag": "Najlepszy powrót",
    "status": "ok",
    "gulf": false,
-   "pp": "ok. 3 700 zł",
+   "pp": "ok. 3 900 zł",
    "price_date": "14.11, KAYAK + szacunek lotów w Indiach",
-   "route": "Kraków → Frankfurt → Chennai · Tamil Nadu → Kerala · Bengaluru → Zurych → Kraków",
-   "why": "Jeden bilet: tam Lufthansa do Chennai, z powrotem SWISS z Bengaluru – <b>3 297 zł</b>. Powrót to wygodny lot nocny i jedna krótka przesiadka w Zurychu, w domu w sobotę o 13:55. Z Kerali do Bengaluru krótki lot albo nocny pociąg (szacunek ok. 200 zł). Razem ok. <b>3 700 zł/os.</b>",
-   "comfort": "Frankfurt → Chennai: Lufthansa, duży samolot. Bengaluru → Zurych: SWISS <b>A330-300</b> (trasa od 27.10.2026, 5 razy w tygodniu). Kraków ⇄ Frankfurt / Zurych: mały samolot.",
+   "route": "Kraków → Frankfurt → Chennai · Tamil Nadu → Kerala · Bengaluru → Monachium → Kraków",
+   "why": "Jeden bilet Lufthansy: tam do Chennai, z powrotem z Bengaluru – <b>3 495 zł</b>. Powrót w niedzielę 7.03: nocny lot A350, jedna przesiadka 3 h 15 min w Monachium, w Krakowie 12:50. Z Kerali do Bengaluru krótki lot albo nocny pociąg (ok. 200 zł). Razem ok. <b>3 900 zł/os.</b>",
+   "comfort": "Frankfurt → Chennai: Lufthansa, duży samolot. Bengaluru → Monachium: Lufthansa <b>A350</b>, lot nocny. Kraków ⇄ Frankfurt / Monachium: mały samolot.",
    "chips": [
     [
      "ok",
@@ -1187,6 +1267,10 @@
     [
      "warn",
      "Wylot pt 6:20"
+    ],
+    [
+     "warn",
+     "W domu w niedzielę"
     ]
    ],
    "out_title": "Tam: pt 19.02 → sob 20.02",
@@ -1211,29 +1295,29 @@
      "sob 20.02 (w nocy) · Chennai (MAA) · Polska + 4 h 30 min – krótka noc w hotelu przy lotnisku"
     ]
    ],
-   "back_title": "Powrót: sob 6.03",
+   "back_title": "Powrót: nd 7.03",
    "back": [
     [
      "dep",
-     "04:50",
-     "00:20",
-     "sob 6.03 (w nocy) · Bengaluru (BLR), SWISS – dzień wcześniej dojazd z Kerali"
+     "02:50",
+     "nd 22:20 (sob)",
+     "nd 7.03 (w nocy) · Bengaluru (BLR), Lufthansa A350 – w sobotę dojazd z Kerali"
     ],
     [
      "stop",
-     "10:50",
-     "10:50",
-     "Zurych",
-     "Przesiadka <b>1 h 15 min</b> (ten sam bilet)"
+     "08:10",
+     "08:10",
+     "Monachium",
+     "Przesiadka <b>3 h 15 min</b>"
     ],
     [
      "arr",
-     "13:55",
-     "13:55",
-     "sob 6.03 · Kraków"
+     "12:50",
+     "12:50",
+     "nd 7.03 · Kraków"
     ]
    ],
-   "kayak": "KRK-MAA/2027-02-19/BLR-KRK/2027-03-06",
+   "kayak": "KRK-MAA/2027-02-19/BLR-KRK/2027-03-07",
    "book": [
     "",
     "Lufthansa"
@@ -1246,13 +1330,13 @@
      ""
     ],
     [
-     "ok. 13 h 30 min z Bengaluru",
+     "ok. 14 h 30 min z Bengaluru",
      "ok. 11 h",
-     "1 h 15 min",
+     "3 h 15 min",
      ""
     ]
    ],
-   "note": "Do potwierdzenia przy zakupie: czy SWISS lata z Bengaluru akurat w sobotę 6.03 (5 dni w tygodniu; KAYAK i Google pokazały ten lot). Sama Lufthansa w obie strony do Chennai: 3 249 zł, ale powrót z dwiema przesiadkami (Frankfurt 4 h 20 min, Monachium 2 h 20 min) i w domu 16:55.",
+   "note": "Lufthansa ma do 15.11.2026 promocję rodzinną (do 50% taryfy dzieci 2–11, bez podatków i opłat, podróże 12.01–30.04.2027) – cenę z promocją widać tylko na lufthansa.com. Ten sam bilet z powrotem w sobotę (Bengaluru 3:30, 2 przesiadki) wychodzi drożej. Lufthansa w obie strony do Chennai: 3 249 zł, ale powrót z dwiema przesiadkami.",
    "local_flights": true,
    "points": [
     [
@@ -1463,10 +1547,10 @@
    "tag": "Dwa światy i coś nowego: Tamil Nadu",
    "status": "ok",
    "gulf": false,
-   "pp": "ok. 4 290 zł",
+   "pp": "ok. 4 490 zł",
    "price_date": "14.11, KAYAK + Google Flights + szacunek",
    "route": "Kraków → Frankfurt → Chennai → Port Blair → Chennai … Tamil Nadu … Kerala → Chennai → Kraków",
-   "why": "Bilet: tam Lufthansa do Chennai, z powrotem SWISS z Bengaluru (<b>3 297 zł</b>, nocny powrót z jedną krótką przesiadką). W Indiach osobno: Chennai ⇄ Port Blair (ok. 390 + 400 zł) i Kerala → Bengaluru (ok. 200 zł). Razem ok. <b>4 290 zł/os.</b> Plan: 4 noce Andamany → ok. 6 nocy Tamil Nadu → ok. 4 noce Kerala.",
+   "why": "Bilet Lufthansy: tam do Chennai, z powrotem z Bengaluru w niedzielę (<b>3 495 zł</b>, nocny lot A350, jedna przesiadka 3 h 15 min). W Indiach osobno: Chennai ⇄ Port Blair (ok. 390 + 400 zł) i Kerala → Bengaluru (ok. 200 zł). Razem ok. <b>4 490 zł/os.</b> Plan: 4 noce Andamany → ok. 6 nocy Tamil Nadu → ok. 5 nocy Kerala.",
    "comfort": "Frankfurt ⇄ Chennai: Lufthansa, <b>duży samolot</b>. Loty w Indiach: wąskie A320/A321, 1–2 h, bagaż 15 kg.",
    "chips": [
     [
@@ -1528,30 +1612,30 @@
      "🏝 4 noce Andamany · śr 24.02 Port Blair → Chennai · ok. 6 nocy Tamil Nadu · ok. 4 noce Kerala"
     ]
    ],
-   "back_title": "Powrót: sob 6.03",
+   "back_title": "Powrót: nd 7.03",
    "back": [
     [
      "dep",
-     "04:50",
-     "00:20",
-     "sob 6.03 (w nocy) · Bengaluru, SWISS"
+     "02:50",
+     "nd 22:20 (sob)",
+     "nd 7.03 (w nocy) · Bengaluru, Lufthansa A350"
     ],
     [
      "stop",
-     "10:50",
-     "10:50",
-     "Zurych",
-     "Przesiadka <b>1 h 15 min</b>"
+     "08:10",
+     "08:10",
+     "Monachium",
+     "Przesiadka <b>3 h 15 min</b>"
     ],
     [
      "arr",
-     "13:55",
-     "13:55",
-     "sob 6.03 · Kraków"
+     "12:50",
+     "12:50",
+     "nd 7.03 · Kraków"
     ]
    ],
    "note": "Lot Chennai → Port Blair: godziny i cena z niedzieli 21.02 (10:15 → 12:25, 386 zł); na sobotę do sprawdzenia. Loty w Indiach kupujemy później, jest ich dużo.",
-   "kayak": "KRK-MAA/2027-02-19/BLR-KRK/2027-03-06",
+   "kayak": "KRK-MAA/2027-02-19/BLR-KRK/2027-03-07",
    "local_flights": true,
    "book": [
     "",
@@ -1575,7 +1659,7 @@
    "group": "andaman",
    "summary_name": "🏝 Andamany + Tamil Nadu + Kerala",
    "summary": "Najpierw 4 noce na wyspach, potem południowe Indie; Lufthansa do Chennai, pt 6:20",
-   "summary_pp": "ok. 4 290 zł"
+   "summary_pp": "ok. 4 490 zł"
   },
   {
    "title": "🇧🇧 Barbados – KLM z Krakowa przez Amsterdam",
@@ -1693,7 +1777,7 @@
    ],
    "summary_name": "🇮🇳 Południowe Indie · Kerala i Tamil Nadu",
    "summary_pp": "od ok. 3 100 zł",
-   "summary": "4 warianty dolotu: Turkish przez Stambuł (najtaniej), Lufthansa tam + SWISS nocą z powrotem, KLM do Kochi, LOT przez Delhi"
+   "summary": "5 wariantów dolotu: Turkish przez Stambuł (najtaniej), SAS przez Kopenhagę, Lufthansa z nocnym powrotem, KLM do Kochi, LOT przez Delhi"
   },
   "andaman": {
    "title": "🏝 Andamany + południowe Indie (przez Chennai)",
