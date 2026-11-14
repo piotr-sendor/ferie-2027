@@ -1118,10 +1118,10 @@
    "tag": "Dwa światy: plaże i Kerala",
    "status": "ok",
    "gulf": false,
-   "pp": "ok. 4 950 zł",
+   "pp": "ok. 5 120 zł",
    "price_date": "14.11, Google Flights, wylot w sobotę",
    "route": "Kraków → Warszawa → Delhi → Port Blair … Port Blair → Kochi … Kochi → Delhi → Warszawa → Kraków",
-   "why": "Jeden bilet LOT z Krakowa do Delhi i z powrotem (3 258 zł), bez Zatoki, Dreamliner. W Indiach trzy osobne loty: Delhi → Port Blair (Akasa 691 zł, przez Kalkutę), Port Blair → Kochi (IndiGo 526 zł, przez Chennai), Kochi → Delhi (Air India 480 zł). Razem ok. <b>4 955 zł/os.</b> + noc w hotelu przy lotnisku w Delhi przed powrotem. Wariant z wylotem w piątek 19.02 (Kraków 15:00): bilet LOT 3 392 zł, razem ok. 5 330 zł. Plan: ok. 6 nocy na Andamanach (Havelock, Neil – pora sucha, morze 28–29°C; pozwolenie dla cudzoziemców zniesione w marcu 2026), ok. 6 nocy w Kerali (Fort Kochi, Munnar, Thekkady, rozlewiska, pociąg). Promy na wyspy rezerwować ok. 2 miesiące wcześniej.",
+   "why": "Jeden bilet LOT z Krakowa do Delhi i z powrotem (3 258 zł), bez Zatoki, Dreamliner. W Indiach trzy osobne loty: Delhi → Port Blair bez przesiadki (Air India 853 zł), Port Blair → Kochi (IndiGo 526 zł, przez Chennai), Kochi → Delhi (Air India 480 zł). Razem ok. <b>5 120 zł/os.</b> + noc w hotelu przy lotnisku w Delhi przed powrotem. Wariant z wylotem w piątek 19.02 (Kraków 15:00): bilet LOT 3 392 zł. Plan: 4 noce na Andamanach (Port Blair + Havelock – pora sucha, morze 28–29°C; pozwolenie dla cudzoziemców zniesione w marcu 2026), 8 nocy w Kerali (Fort Kochi, Munnar, Thekkady, rozlewiska, pociąg). Promy na wyspy rezerwować ok. 2 miesiące wcześniej.",
    "comfort": "Warszawa ⇄ Delhi: LOT <b>Boeing 787 Dreamliner</b>, 7 h 20 min bez przesiadki. Kraków ⇄ Warszawa: mały samolot LOT (na tym samym bilecie). Loty w Indiach: wąskie A320/A321, 3–5 h, bagaż 15 kg.",
    "chips": [
     [
@@ -1174,26 +1174,23 @@
     ],
     [
      "dep",
-     "08:50",
-     "04:20",
-     "Delhi → Port Blair, Akasa Air (osobny bilet, 3 h 40 min zapasu)"
+     "07:20",
+     "02:50",
+     "Delhi → Port Blair bez przesiadki, Air India (osobny bilet, 2 h 10 min na przesiadkę)"
     ],
     [
-     "stop",
-     "",
-     "",
-     "Kalkuta",
-     "Postój 40 min"
+     "fly",
+     "lot 3 h 40 min"
     ],
     [
      "arr",
-     "14:10",
-     "09:40",
+     "11:00",
+     "06:30",
      "nd 21.02 · Port Blair (Andamany)"
     ],
     [
      "night",
-     "🏝 6 nocy: Havelock, Neil · sob 27.02 Port Blair 13:05 → Kochi 18:10 (IndiGo przez Chennai) · 6 nocy w Kerali"
+     "🏝 4 noce: Port Blair, Havelock · czw 25.02 prom rano, Port Blair 13:05 → Kochi 18:10 (IndiGo przez Chennai) · 8 nocy w Kerali"
     ]
    ],
    "back_title": "Powrót: pt 5.03 → sob 6.03",
@@ -1223,7 +1220,7 @@
      "Warszawa, przesiadka do Krakowa – w domu w sobotę po południu"
     ]
    ],
-   "note": "Ryzyko: loty w Indiach są na osobnych biletach. Tam zapas 3 h 40 min w Delhi (bezpośredni Air India 7:20 → 11:00 za 853 zł daje tylko 2 h 10 min). Z powrotem nocujemy w Delhi, więc spóźniony lot z Kochi nic nie psuje. Inny wariant: KLM z Krakowa przez Amsterdam do Chennai, z powrotem z Kochi, wylot pt rano – ok. 5 500 zł z lotami w Indiach. Ceny: Google Flights 14.11.",
+   "note": "Andamany leżą na Zatoce Bengalskiej, na wschód od Indii (na południe od Kalkuty, na wysokości Tajlandii), a Kerala na zachodnim wybrzeżu – stąd przesiadka w Chennai po drodze. Ryzyko: loty w Indiach są na osobnych biletach; w Delhi tylko 2 h 10 min na przesiadkę z 7 osobami. Bezpieczniejsza wersja: Akasa 8:50 → 14:10 przez Kalkutę (691 zł, 3 h 40 min zapasu, ale ok. 1 h 40 min dłużej w drodze). Z powrotem nocujemy w Delhi, więc spóźniony lot z Kochi nic nie psuje. Inny wariant: KLM z Krakowa przez Amsterdam do Chennai, z powrotem z Kochi, wylot pt rano – ok. 5 500 zł z lotami w Indiach. Ceny: Google Flights 14.11.",
    "kayak": "KRK-DEL/2027-02-20/2027-03-06",
    "local_flights": true,
    "book": [
@@ -1232,9 +1229,9 @@
    ],
    "stats": [
     [
-     "ok. 24 h do Port Blair",
-     "ok. 13 h",
-     "Warszawa 3 h + Delhi 3 h 40 min",
+     "ok. 22 h do Port Blair",
+     "ok. 12 h",
+     "Warszawa 3 h + Delhi 2 h 10 min",
      ""
     ],
     null
