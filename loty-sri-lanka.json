@@ -1,5 +1,5 @@
 {
- "updated": "14.11.2026",
+ "updated": "18.11.2026",
  "intro": "<p><b>Kto:</b> dwie rodziny, 4 dorosłych + 3 dzieci (8, 8 i 6 lat). <b>Kiedy:</b> wylot pt 19.02 (najlepiej po 14:00, rano też do rozważenia) albo sob 20.02, powrót najpóźniej nd 7.03.2027. Najwcześniej śr–czw 17–18.02 (oznaczone „wylot przed piątkiem”). <b>Skąd:</b> Kraków, ewentualnie Katowice, Warszawa.</p><p><b>Zasady:</b> wygoda dzieci przed ceną – długie loty dużymi samolotami, bez wąskich tanich linii (Air Arabia, flydubai). Najchętniej bez przesiadki w Zatoce Perskiej; Zatoka tylko wtedy, gdy wyraźnie wygodniej (Qatar, Emirates na dużych samolotach). Na miejscu wolimy prawdziwe życie (targi, pociągi, plantacje) niż hotel z basenem.</p><p class='m'>Stronę aktualizuje automatyczny zwiad: Sri Lanka we wtorki i piątki rano, inne kierunki raz w tygodniu. Ceny z Google Flights i KAYAK z dnia podanego przy opcji.</p>",
  "comfort": "💺 <b>Jak czytać „komfort”:</b> <b>szeroki kadłub</b> (A350, 777, 787) = dwa przejścia, więcej miejsca, ekrany, posiłki, lepsze powietrze i ciszej – na nocnym locie z dziećmi robi różnicę. <b>Wąski</b> (A320/A321, 737) = jedno przejście, rząd 3-3, jak Ryanair. Ranking: najpierw wygoda i brak Zatoki, potem godziny i liczba przesiadek, na końcu cena. <b>Godziny:</b> wylot między ok. 0:30 a 5:00 to dla nas najgorsza opcja (bez snu przed lotem) – gorsza niż start o 7–8 rano; dobry lot nocny to wylot ok. 20:00–23:30.",
  "options": [
@@ -1839,6 +1839,237 @@
    "group": "bb",
    "summary_name": "🇧🇧 Barbados · KLM przez Amsterdam",
    "summary": "Najtańszy wygodny lot (787), jedna przesiadka; sob 6:00, powrót nd rano"
+  },
+  {
+   "title": "🇨🇳 Hainan – Turkish do Hongkongu + HK Express do Sanyi",
+   "tag": "Najlepszy dolot",
+   "status": "ok",
+   "gulf": false,
+   "pp": "ok. 4 200 zł",
+   "price_date": "18.11, KAYAK + Google Flights",
+   "route": "Kraków → Stambuł → Hongkong → Sanya",
+   "why": "Turkish Kraków ⇄ Hongkong jednym biletem: <b>3 605 zł/os.</b> przy 7 osobach, walizka 23 kg w cenie. Do tego HK Express Hongkong ⇄ Sanya ok. 330 + 230 zł (osobny bilet, walizkę dokupić ok. 150 zł za odcinek). Razem ok. 4 200–4 300 zł/os. Wylot w sobotę wieczorem, w domu w niedzielę rano.",
+   "comfort": "Stambuł ⇄ Hongkong: Turkish <b>Boeing 777</b> (szeroki, lot nocny tam i z powrotem). Kraków ⇄ Stambuł i Hongkong ⇄ Sanya: wąskie samoloty (2–2,5 h, 1 h 45 min).",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "Walizka w cenie (Turkish)"
+    ],
+    [
+     "ok",
+     "Wjazd bez wizy (program Hainanu)"
+    ],
+    [
+     "warn",
+     "Osobny bilet do Sanyi"
+    ],
+    [
+     "warn",
+     "Nocleg w Hongkongu"
+    ]
+   ],
+   "out_title": "Tam: sob 20.02 → pn 22.02",
+   "out": [
+    [
+     "dep",
+     "19:25",
+     "19:25",
+     "sob 20.02 · Kraków, Turkish"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Stambuł",
+     "Przesiadka 1 h 55 min"
+    ],
+    [
+     "arr",
+     "17:05",
+     "10:05",
+     "nd 21.02 · Hongkong · czas lokalny = Polska + 7 h"
+    ],
+    [
+     "night",
+     "Noc w Hongkongu (hotel przy lotnisku albo w mieście)"
+    ],
+    [
+     "dep",
+     "08:45",
+     "01:45",
+     "pn 22.02 · Hongkong, HK Express"
+    ],
+    [
+     "arr",
+     "10:30",
+     "03:30",
+     "pn 22.02 · Sanya (Hainan)"
+    ]
+   ],
+   "back_title": "Powrót: sob 6.03 → nd 7.03",
+   "back": [
+    [
+     "dep",
+     "11:30",
+     "04:30",
+     "sob 6.03 · Sanya, HK Express"
+    ],
+    [
+     "stop",
+     "13:05",
+     "06:05",
+     "Hongkong",
+     "Ok. 10 h – można wyjść do miasta"
+    ],
+    [
+     "dep",
+     "23:15",
+     "16:15",
+     "sob 6.03 · Hongkong, Turkish (lot nocny)"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Stambuł",
+     "Przesiadka 1 h 50 min"
+    ],
+    [
+     "arr",
+     "08:20",
+     "08:20",
+     "nd 7.03 · Kraków"
+    ]
+   ],
+   "back_bio": "Nocny lot na zachód – dzieci śpią, w domu w niedzielę rano.",
+   "kayak": "KRK-HKG/2027-02-20/2027-03-06",
+   "book": [
+    "",
+    "Turkish Airlines"
+   ],
+   "group": "hainan"
+  },
+  {
+   "title": "🇨🇳 Hainan – Air China z Warszawy przez Pekin, jeden bilet",
+   "status": "ok",
+   "gulf": false,
+   "pp": "4 979 zł",
+   "price_date": "18.11, KAYAK",
+   "route": "Warszawa → Pekin → (Chongqing) → Sanya",
+   "why": "Jedyny bezpośredni lot do Chin z Polski: Air China Warszawa → Pekin bez przesiadki, dalej lotami krajowymi do Sanyi – wszystko jednym biletem, <b>4 979 zł/os.</b> przy 7 osobach. Drożej o ok. 700 zł/os. niż przez Hongkong, bo lot krajowy na Hainan w lutym jest drogi. Sam Warszawa ⇄ Pekin bez przesiadki: 4 057 zł/os.",
+   "comfort": "Warszawa ⇄ Pekin: Air China <b>Boeing 777-300ER</b> (szeroki), ok. 9 h 30 min, leci nad Rosją. Loty krajowe w Chinach: wąskie samoloty, 2 przesiadki w każdą stronę.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "Jeden bilet"
+    ],
+    [
+     "warn",
+     "2 przesiadki"
+    ],
+    [
+     "warn",
+     "Nad Rosją"
+    ],
+    [
+     "bad",
+     "Wjazd zależy od decyzji Chin na 2027"
+    ]
+   ],
+   "out_title": "Tam: pt 19.02 → sob 20.02",
+   "out": [
+    [
+     "dep",
+     "19:30",
+     "19:30",
+     "pt 19.02 · Warszawa, Air China (bez przesiadki, nocny)"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Pekin",
+     "Przesiadka 1 h 35 min"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Chongqing",
+     "Przesiadka 1 h 40 min"
+    ],
+    [
+     "arr",
+     "19:40",
+     "12:40",
+     "sob 20.02 · Sanya"
+    ]
+   ],
+   "back_title": "Powrót: sob 6.03 → nd 7.03",
+   "back": [
+    [
+     "dep",
+     "22:15",
+     "15:15",
+     "sob 6.03 · Sanya, Air China"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Chengdu",
+     "Przesiadka 6–8 h (w nocy)"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Pekin",
+     "Przesiadka 3–5 h"
+    ],
+    [
+     "arr",
+     "17:20",
+     "17:20",
+     "nd 7.03 · Warszawa"
+    ]
+   ],
+   "note": "Wjazd przez Pekin to nie program Hainanu: potrzebny ogólny ruch bezwizowy na 2027 (jeszcze nie ogłoszony, zwykle Chiny przedłużają w listopadzie–grudniu) albo wiza.",
+   "kayak": "WAW-SYX/2027-02-19/2027-03-06",
+   "book": [
+    "",
+    "Air China"
+   ],
+   "group": "hainan"
+  },
+  {
+   "title": "🇨🇳 Hainan – LOT + SCAT przez Pragę (Boeing 737)",
+   "status": "no",
+   "gulf": false,
+   "pp": "4 174 zł",
+   "price_date": "18.11, KAYAK",
+   "route": "Kraków → Warszawa → Praga → Sanya",
+   "why": "Jedyny „bezpośredni” lot z Europy Środkowej na Hainan: SCAT (Kazachstan) Praga → Sanya z międzylądowaniem w Biszkeku, ok. 12 h <b>wąskim Boeingiem 737 MAX</b>. Przesiadka w Pradze na własne ryzyko (osobne bilety) i 15 h czekania w Warszawie. Odrzucone: komfort.",
+   "chips": [
+    [
+     "bad",
+     "Wąski samolot ok. 12 h"
+    ],
+    [
+     "bad",
+     "Przesiadka na własne ryzyko"
+    ]
+   ],
+   "kayak": "KRK-SYX/2027-02-20/2027-03-07",
+   "group": "hainan"
   }
  ],
  "show": 5,
@@ -1952,6 +2183,35 @@
    "summary_name": "🚢 Chennai → pociągi → prom → Sri Lanka",
    "summary_pp": "ok. 4 550 zł",
    "summary": "Lufthansa do Chennai, Tamil Nadu pociągami, prom do Jaffny, powrót z Kolombo za dnia (11:25)"
+  },
+  "hainan": {
+   "title": "🇨🇳 Chiny: wyspa Hainan (Sanya)",
+   "lead": "Tropikalna wyspa na południu Chin – plaże w Sanyi, a obok zwykłe chińskie życie. Najlepiej dolecieć do Hongkongu jednym biletem, a dalej tanim lotem do Sanyi (1 h 45 min). Z Pekinu lub Kantonu lot na Hainan w lutym jest bardzo drogi (szczyt sezonu w Chinach).",
+   "points": [
+    [
+     "Na miejscu",
+     "plaże Sanyi (Yalong Bay, Haitang Bay), nocne targi z owocami morza, wioski ludu Li, plantacje kawy i herbaty w górach, małpia wyspa (kolejka linowa), skutery; można dołożyć 1–2 dni w Hongkongu"
+    ],
+    [
+     "Pogoda",
+     "pora sucha, ok. 26–28°C, morze ok. 25°C"
+    ],
+    [
+     "Czas",
+     "Polska + 7 h"
+    ],
+    [
+     "Wjazd",
+     "lot z Hongkongu do Sanyi = program bezwizowy Hainanu (30 dni, Polska na liście, tylko wyspa). Wjazd przez Pekin/Kanton wymaga ogólnego ruchu bezwizowego – dla Polaków ogłoszony tylko do 31.12.2026, na 2027 jeszcze nic (18.11). Hongkong bez wizy."
+    ],
+    [
+     "Uwaga",
+     "luty to chiński szczyt sezonu na Hainanie – hotele drożeją; Hongkong ↔ Sanya to osobny bilet, więc nocleg w Hongkongu po przylocie"
+    ]
+   ],
+   "summary_name": "🇨🇳 Chiny · Hainan (Sanya)",
+   "summary_pp": "ok. 4 200 zł",
+   "summary": "Turkish do Hongkongu + tani lot do Sanyi; bez wizy dzięki programowi Hainanu"
   }
  }
 }
