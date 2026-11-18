@@ -29,7 +29,7 @@ B.UPDATED = DATA["updated"]
 B.AL.update({"SAS": "https://www.flysas.com/pl-pl/", "Edelweiss": "https://www.flyedelweiss.com/pl", "SWISS": "https://www.swiss.com/pl/pl/homepage",
              "Qatar Airways": "https://www.qatarairways.com/pl-pl/homepage.html", "Emirates": "https://www.emirates.com/pl/polish/",
              "SriLankan": "https://www.srilankan.com/pl_pl/", "French Bee": "https://www.frenchbee.com/pl",
-             "Etihad": "https://www.etihad.com/pl-pl/", "Air China": "https://www.airchina.com.cn/en/", "IndiGo": "https://www.goindigo.in/", "Air India": "https://www.airindia.com/"})
+             "Etihad": "https://www.etihad.com/pl-pl/", "Air China": "https://www.airchina.com.cn/en/", "Rainbow": "https://r.pl/bilety-czarterowe/wietnam/phu-quoc", "IndiGo": "https://www.goindigo.in/", "Air India": "https://www.airindia.com/"})
 STATUS = {"ok": ('ok', 'Sprawdzona cena'), "lead": ('warn', 'Trop – do potwierdzenia'), "no": ('bad', 'Odrzucona')}
 
 

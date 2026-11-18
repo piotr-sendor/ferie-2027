@@ -2070,6 +2070,167 @@
    ],
    "kayak": "KRK-SYX/2027-02-20/2027-03-07",
    "group": "hainan"
+  },
+  {
+   "title": "🇻🇳 Phu Quoc – czarter LOT Dreamliner z Warszawy, bez przesiadki",
+   "tag": "Najwygodniej",
+   "status": "ok",
+   "gulf": false,
+   "pp": "5 849 zł",
+   "p7": "40 943 zł",
+   "price_date": "18.11, Rainbow (r.pl, bilety czarterowe)",
+   "route": "Warszawa → Phu Quoc (bez przesiadki)",
+   "why": "Czarter Rainbow lotem LOT (Dreamliner) prosto na wyspę, ok. 11 h bez przesiadki, posiłek i walizka 20 kg w cenie. Bilet w obie strony dla 7 osób: <b>40 943 zł</b> (5 849 zł/os.). Wylot w czwartek wieczorem, powrót w piątek wieczorem – 15 dni. Z Krakowa do Warszawy pociągiem ok. 2,5 h. Jest też czarter LOT z Katowic w niedziele (21.02, 21:35), ale powrót wypada w poniedziałek 8.03.",
+   "comfort": "<b>Boeing 787 Dreamliner</b> (szeroki) w obie strony, bez przesiadki. Bagaż podręczny tylko 5 kg.",
+   "chips": [
+    [
+     "ok",
+     "Bez przesiadki"
+    ],
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "Szeroki samolot"
+    ],
+    [
+     "warn",
+     "Wylot czw 18.02"
+    ],
+    [
+     "warn",
+     "Z Warszawy"
+    ],
+    [
+     "warn",
+     "Drogo"
+    ]
+   ],
+   "out_title": "Tam: czw 18.02 → pt 19.02",
+   "out": [
+    [
+     "dep",
+     "18:55",
+     "18:55",
+     "czw 18.02 · Warszawa, czarter LOT (lot nocny)"
+    ],
+    [
+     "arr",
+     "11:50",
+     "05:50",
+     "pt 19.02 · Phu Quoc · czas lokalny = Polska + 6 h"
+    ]
+   ],
+   "back_title": "Powrót: pt 5.03",
+   "back": [
+    [
+     "dep",
+     "13:45",
+     "07:45",
+     "pt 5.03 · Phu Quoc, czarter LOT"
+    ],
+    [
+     "arr",
+     "20:15",
+     "20:15",
+     "pt 5.03 · Warszawa"
+    ]
+   ],
+   "back_bio": "Lot w dzień, wieczorem w Warszawie – weekend na odpoczynek przed szkołą.",
+   "book": [
+    "",
+    "Rainbow"
+   ],
+   "group": "pqc"
+  },
+  {
+   "title": "🇻🇳 Phu Quoc – Turkish do Sajgonu + krótki lot na wyspę",
+   "status": "ok",
+   "gulf": false,
+   "pp": "ok. 5 500 zł",
+   "price_date": "18.11, KAYAK",
+   "route": "Kraków → Stambuł → Sajgon → Phu Quoc",
+   "why": "Turkish Kraków ⇄ Sajgon jednym biletem: <b>5 327 zł/os.</b> przy 7 osobach, walizka w cenie. Dalej Vietjet/Vietnam Airlines Sajgon ⇄ Phu Quoc (1 h), ok. 150 zł/os. w jedną stronę (cena z 25.10). Jednym biletem z Wietnam Airlines do samej wyspy: 5 328 zł, ale powrót z 10 h 50 min czekania w Hanoi.",
+   "comfort": "Stambuł ⇄ Sajgon: Turkish, szeroki samolot (do potwierdzenia typu na 2027). Kraków ⇄ Stambuł i Sajgon ⇄ Phu Quoc: wąskie.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "Kraków"
+    ],
+    [
+     "ok",
+     "Walizka w cenie"
+    ],
+    [
+     "warn",
+     "2 przesiadki z lotem na wyspę"
+    ]
+   ],
+   "out_title": "Tam: sob 20.02 → nd 21.02",
+   "out": [
+    [
+     "dep",
+     "19:25",
+     "19:25",
+     "sob 20.02 · Kraków, Turkish"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Stambuł",
+     "Przesiadka 2 h 35 min"
+    ],
+    [
+     "arr",
+     "16:30",
+     "10:30",
+     "nd 21.02 · Sajgon · czas lokalny = Polska + 6 h"
+    ],
+    [
+     "fly",
+     "Sajgon → Phu Quoc ok. 1 h (osobny bilet, wieczorem albo w poniedziałek rano)"
+    ]
+   ],
+   "back_title": "Powrót: sob 6.03 → nd 7.03",
+   "back": [
+    [
+     "fly",
+     "Phu Quoc → Sajgon ok. 1 h (osobny bilet, w ciągu dnia)"
+    ],
+    [
+     "dep",
+     "22:15",
+     "16:15",
+     "sob 6.03 · Sajgon, Turkish (lot nocny)"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Stambuł",
+     "Przesiadka 2 h 40 min"
+    ],
+    [
+     "arr",
+     "08:20",
+     "08:20",
+     "nd 7.03 · Kraków"
+    ]
+   ],
+   "back_bio": "Nocny lot – w domu w niedzielę rano.",
+   "kayak": "KRK-SGN/2027-02-20/2027-03-06",
+   "book": [
+    "",
+    "Turkish Airlines"
+   ],
+   "group": "pqc"
   }
  ],
  "show": 5,
@@ -2212,6 +2373,35 @@
    "summary_name": "🇨🇳 Chiny · Hainan (Sanya)",
    "summary_pp": "ok. 4 200 zł",
    "summary": "Turkish do Hongkongu + tani lot do Sanyi; bez wizy dzięki programowi Hainanu"
+  },
+  "pqc": {
+   "title": "🇻🇳 Wietnam: wyspa Phu Quoc",
+   "lead": "Ciepła wyspa na południu Wietnamu, popularna wśród Polaków – w lutym zimą latają tam czartery prosto z Polski. Najwygodniej czarterem LOT (Dreamliner) z Warszawy bez przesiadki; liniami regularnymi przez Stambuł i Sajgon.",
+   "points": [
+    [
+     "Na miejscu",
+     "plaże (Sao, Ong Lang), nocny targ w Duong Dong, wioski rybackie, farmy pieprzu i perłowe farmy, kolejka linowa nad morzem na Hon Thom, park VinWonders i safari, skutery"
+    ],
+    [
+     "Pogoda",
+     "pora sucha, ok. 30–32°C, morze ok. 27–28°C"
+    ],
+    [
+     "Czas",
+     "Polska + 6 h"
+    ],
+    [
+     "Wjazd",
+     "bez wizy: Polacy 45 dni w całym Wietnamie, a przy przylocie prosto na Phu Quoc 30 dni dla wszystkich"
+    ],
+    [
+     "Uwaga",
+     "czarter i loty regularne są wyraźnie droższe niż Sri Lanka czy Hainan"
+    ]
+   ],
+   "summary_name": "🇻🇳 Wietnam · Phu Quoc",
+   "summary_pp": "ok. 5 500–5 850 zł",
+   "summary": "Czarter LOT Dreamliner z Warszawy bez przesiadki (czw 18.02 → pt 5.03) albo Turkish do Sajgonu + krótki lot"
   }
  }
 }
