@@ -18,6 +18,7 @@ JSON: {"updated": "DD.MM.YYYY", "show": 8 (how many best options stay visible; t
   the destination header (shared facts) and one row in "W skrócie" for the whole group.
   summary + summary_name (optional): the option gets a row in the "W skrócie" table at the top.
   points [[label, html]] and variants {"head": [...], "rows": [[...]]} (optional): short facts / comparison table.
+  compare (optional): {title, lead, head, rows, note} – side-by-side table under "W skrócie".
   Timeline items: ["dep", time, polish time, text], ["arr", ...], ["stop", time, pl, text, box], ["fly", text], ["night", text].
 """
 import html, json, pathlib
@@ -45,7 +46,8 @@ MORE_CSS = ('<style>details.more{margin:18px 0}details.more>summary{cursor:point
             '.srow{display:grid;grid-template-columns:1fr auto;gap:4px 10px;background:#fff;border:1px solid #e3e8ec;border-radius:12px;'
             'padding:12px 14px;text-decoration:none;color:#1f2a33}.srow .sn{font-weight:700;color:#0e5f8a}'
             '.srow .sp{font-weight:800;color:#0b7a75;white-space:nowrap;text-align:right}.srow .sl{grid-column:1/-1;font-size:14px;color:#62707c}'
-            '.srow .flag{margin-right:4px}</style>')
+            '.srow .flag{margin-right:4px}table.cmp{min-width:640px}table.cmp th:first-child{width:18%;color:#1f2a33}'
+            'table.cmp tr:nth-child(even) td,table.cmp tr:nth-child(even) th{background:#f6f9fb}table.cmp td{line-height:1.45}</style>')
 
 
 def anchor(prefix, i):
@@ -116,6 +118,18 @@ def summary_table(ops, others):
             '<p class="note">Kliknij wiersz, żeby przejść do szczegółów. Ceny za osobę w obie strony, przy 7 osobach.</p>')
 
 
+def compare_table():
+    """DATA["compare"] = {title, lead, head, rows, note}: one clear side-by-side table under 'W skrócie' (19.11.2026)."""
+    c = DATA.get("compare")
+    if not c:
+        return ''
+    head = ''.join(f'<th>{x}</th>' for x in c["head"])
+    rows = ''.join('<tr>' + ''.join((f'<th>{x}</th>' if j == 0 else f'<td>{x}</td>') for j, x in enumerate(r)) + '</tr>' for r in c["rows"])
+    return (f'<h2 id="porownanie">{c["title"]}</h2><p class="note">{c.get("lead", "")}</p>'
+            f'<div class="sumwrap"><table class="var cmp"><tr>{head}</tr>{rows}</table></div>'
+            f'<p class="note">{c.get("note", "")}</p>')
+
+
 def main():
     ops = DATA["options"]
     show = DATA.get("show", 8)  # Piotr 14.11: only the best real options in view, the rest folded under "Pozostałe opcje"
@@ -140,7 +154,7 @@ def main():
         other_html = (f'<h2 id="inne">Inne kierunki – też warte rozważenia</h2><p class="note">{DATA.get("others_note", "")}</p>'
                       + other_html)
 
-    body = (f'<div class="card intro">{DATA["intro"]}</div>' + summary_table(ops, others) +
+    body = (f'<div class="card intro">{DATA["intro"]}</div>' + summary_table(ops, others) + compare_table() +
             f'<div class="callout info">{DATA["comfort"]}</div>'
             f'<h2 id="sri-lanka">Najlepsze opcje na Sri Lankę</h2>'
             f'<p class="note">Ceny za osobę w obie strony, przy rezerwacji dla 7 osób (4 dorosłych + 3 dzieci). '

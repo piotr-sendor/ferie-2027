@@ -2887,5 +2887,102 @@
    "summary_pp": "ok. 4 425 zł",
    "summary": "Turkish do Singapuru A350 (26 772 zł za 7 osób) + AirAsia do Kota Kinabalu (4 205 zł); orangutany i wyspy, bez wizy"
   }
+ },
+ "compare": {
+  "title": "Porównanie: Hainan czy Borneo",
+  "lead": "Ceny za 7 osób (4 dorosłych + 3 dzieci), stan 19.11: Turkish z turkishairlines.com, krótkie loty z KAYAK. Godziny lokalne; wszędzie czas = Polska + 7 h.",
+  "head": [
+   "",
+   "🇨🇳 Hainan (Sanya)<br>przez Hongkong",
+   "🇲🇾 Borneo<br>przez Singapur",
+   "🇲🇾 Borneo<br>przez Hongkong"
+  ],
+  "rows": [
+   [
+    "<b>Razem za loty (7 osób)</b>",
+    "<b>30 474,88 zł</b>",
+    "<b>30 976,52 zł</b>",
+    "<b>31 666,88 zł</b>"
+   ],
+   [
+    "Na osobę",
+    "ok. 4 355 zł",
+    "ok. 4 425 zł",
+    "ok. 4 525 zł"
+   ],
+   [
+    "Turkish (7 osób)",
+    "26 484,88 zł · EcoFly",
+    "26 771,52 zł · ExtraFly",
+    "26 484,88 zł · EcoFly"
+   ],
+   [
+    "Krótki lot w obie strony (7 osób)",
+    "3 990 zł · HK Express",
+    "4 205 zł · AirAsia",
+    "5 182 zł · HK Express + AirAsia"
+   ],
+   [
+    "<b>Tam</b>",
+    "sob 20.02 19:25 Kraków<br>→ Stambuł 23:50 / 01:45<br>→ nd 21.02 17:05 Hongkong<br>🛏 noc w Hongkongu<br>pn 22.02 08:45 → <b>10:30 Sanya</b>",
+    "sob 20.02 19:25 Kraków<br>→ Stambuł 23:50 / 01:50<br>→ nd 21.02 17:40 Singapur<br>🛏 noc w Singapurze<br>pn 22.02 12:10 → <b>14:35 Kota Kinabalu</b> (albo 17:40 → 20:05)",
+    "sob 20.02 19:25 Kraków<br>→ Stambuł 23:50 / 01:45<br>→ nd 21.02 17:05 Hongkong<br>🛏 noc i dzień w Hongkongu<br>pn 22.02 21:30 → <b>wt 00:35 Kota Kinabalu</b> (w nocy)"
+   ],
+   [
+    "<b>Z powrotem</b>",
+    "sob 6.03 11:30 Sanya → 13:05 Hongkong<br>⏱ ok. 10 h w Hongkongu<br>23:15 Hongkong (lot nocny)<br>→ Stambuł 06:10 / 08:00<br>→ <b>nd 7.03 08:20 Kraków</b>",
+    "pt 5.03 14:45 Kota Kinabalu → 17:10 Singapur<br>🛏 noc w Singapurze<br>sob 6.03 10:25 Singapur (za dnia)<br>→ Stambuł 17:15 / 18:15<br>→ <b>sob 6.03 18:30 Kraków</b>",
+    "sob 6.03 09:20 Kota Kinabalu → 12:25 Hongkong<br>⏱ ok. 11 h w Hongkongu<br>23:15 Hongkong (lot nocny)<br>→ Stambuł 06:10 / 08:00<br>→ <b>nd 7.03 08:20 Kraków</b>"
+   ],
+   [
+    "W domu",
+    "niedziela rano",
+    "<b>sobota wieczorem</b> – cała niedziela wolna",
+    "niedziela rano"
+   ],
+   [
+    "Noce na miejscu",
+    "12",
+    "11",
+    "11 (przylot po północy)"
+   ],
+   [
+    "Noce w mieście przesiadkowym",
+    "1 (Hongkong)",
+    "2 (Singapur)",
+    "1 (Hongkong)"
+   ],
+   [
+    "Długi lot",
+    "Boeing 777-300ER, nocą w obie strony",
+    "<b>Airbus A350</b>, tam nocą, z powrotem za dnia",
+    "Boeing 777-300ER, nocą w obie strony"
+   ],
+   [
+    "Bagaż na krótkim locie",
+    "tylko podręczny, walizki dokupić",
+    "tylko podręczny, walizki dokupić",
+    "tylko podręczny, walizki dokupić"
+   ],
+   [
+    "Na miejscu",
+    "plaże Sanyi, nocne targi, wioski Li, plantacje herbaty i kawy, prawdziwe Chiny",
+    "orangutany w Sepilok, dżungla i rzeka Kinabatangan, wyspy z rafą, park Kinabalu",
+    "jak obok"
+   ],
+   [
+    "Pogoda",
+    "sucho, 26–28°C, morze ok. 25°C",
+    "sucho, ok. 31°C, morze 28–29°C",
+    "jak obok"
+   ],
+   [
+    "Wjazd",
+    "bez wizy 30 dni (program Hainanu, tylko przy locie z Hongkongu)",
+    "bez wizy 90 dni, karta MDAC online",
+    "bez wizy 90 dni, karta MDAC online"
+   ]
+  ],
+  "note": "Różnice w cenie są małe (do ok. 1 200 zł za całą grupę). Decyduje kierunek (plaże i Chiny czy orangutany i dżungla) i powrót: przez Singapur w sobotę wieczorem w domu, przez Hongkong w niedzielę rano po nocnym locie."
  }
 }
