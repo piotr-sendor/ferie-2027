@@ -2204,6 +2204,176 @@
    "group": "hainan"
   },
   {
+   "title": "🇲🇾 Borneo – Turkish do Hongkongu + lot do Kota Kinabalu",
+   "tag": "Ten sam dolot co Hainan",
+   "status": "ok",
+   "gulf": false,
+   "pp": "ok. 4 520 zł",
+   "p7": "31 667 zł",
+   "price_date": "19.11, turkishairlines.com (Turkish) + KAYAK (Hongkong ⇄ Borneo)",
+   "route": "Kraków → Stambuł → Hongkong → Kota Kinabalu (Borneo) → Hongkong → Stambuł → Kraków",
+   "why": "Ten sam Turkish co przy Hainanie, <b>kupiony u linii: 26 484,88 zł za 7 osób</b>. Dalej lot wewnętrzny Hongkong ⇄ Kota Kinabalu, bez przesiadki, 3 h: <b>HK Express tam (pn 22.02, 21:30) + AirAsia z powrotem (sob 6.03, 09:20) – 741 zł/os., 5 182 zł za 7 osób</b> (osobny bilet, walizki nie w cenie). <b>Razem 31 666,88 zł za 7 osób, ok. 4 520 zł/os.</b> Wylot w sobotę wieczorem, w domu w niedzielę rano.",
+   "comfort": "Stambuł ⇄ Hongkong: Turkish <b>Boeing 777-300ER</b> (szeroki, nocny tam i z powrotem). Kraków ⇄ Stambuł i Hongkong ⇄ Kota Kinabalu: wąskie samoloty (2–2,5 h, 3 h).",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "Bez wizy (90 dni)"
+    ],
+    [
+     "ok",
+     "Pora sucha"
+    ],
+    [
+     "warn",
+     "Osobny bilet na Borneo"
+    ],
+    [
+     "warn",
+     "Nocleg w Hongkongu"
+    ],
+    [
+     "warn",
+     "Przylot na Borneo po północy"
+    ]
+   ],
+   "points": [
+    [
+     "Turkish (7 osób)",
+     "taryfa 9 393,00 zł + dopłata paliwowa 15 039,64 zł + podatki i opłaty 2 052,24 zł = <b>26 484,88 zł</b>"
+    ],
+    [
+     "Lot wewnętrzny (7 osób)",
+     "HK Express pn 22.02 21:30 → 00:35 + AirAsia sob 6.03 09:20 → 12:25: <b>5 182 zł</b> (741 zł/os.), walizki dokupić"
+    ],
+    [
+     "Razem za loty",
+     "<b>31 666,88 zł za 7 osób</b> (ok. 4 520 zł/os.) + walizki na locie wewnętrznym"
+    ],
+    [
+     "Powrót z Borneo",
+     "AirAsia 09:20 → Hongkong 12:25, Turkish o 23:15 – ok. 11 h zapasu, można wyjść do miasta"
+    ]
+   ],
+   "variants": {
+    "head": [
+     "Hongkong ⇄ Kota Kinabalu (22.02 / 6.03, 7 osób)",
+     "Za osobę",
+     "Za 7 osób"
+    ],
+    "rows": [
+     [
+      "<b>HK Express tam 21:30 + AirAsia z powrotem 09:20</b>",
+      "<b>741 zł</b>",
+      "<b>5 182 zł</b> – wybrane"
+     ],
+     [
+      "HK Express w obie strony (powrót 01:30 w nocy)",
+      "731 zł",
+      "5 112 zł – nocny powrót i ok. 19 h czekania w Hongkongu, odpada"
+     ],
+     [
+      "AirAsia tam 13:15 (za dnia) + AirAsia z powrotem 09:20",
+      "931 zł",
+      "6 511 zł – na Borneo po południu zamiast po północy"
+     ],
+     [
+      "Inny plan: Hongkong → Borneo → Singapur (jak na stronie Malezji)",
+      "HK Express 23.02 280 zł + AirAsia 4.03 185 zł",
+      "Turkish Kraków → Hongkong / Singapur → Kraków od 3 429 zł/os., ale z 17 h czekania w Stambule – do sprawdzenia"
+     ]
+    ]
+   },
+   "out_title": "Tam: sob 20.02 → wt 23.02",
+   "out": [
+    [
+     "dep",
+     "19:25",
+     "19:25",
+     "sob 20.02 · Kraków, Turkish TK1274"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Stambuł",
+     "Przesiadka 1 h 55 min"
+    ],
+    [
+     "arr",
+     "17:05",
+     "10:05",
+     "nd 21.02 · Hongkong · czas lokalny = Polska + 7 h (na Borneo też + 7 h)"
+    ],
+    [
+     "night",
+     "🛏 Noc i dzień w Hongkongu"
+    ],
+    [
+     "dep",
+     "21:30",
+     "14:30",
+     "pn 22.02 · Hongkong, HK Express"
+    ],
+    [
+     "arr",
+     "00:35",
+     "17:35",
+     "wt 23.02 (w nocy) · Kota Kinabalu, Borneo"
+    ],
+    [
+     "night",
+     "🏝 ok. 11 nocy na Borneo: wyspy Tunku Abdul Rahman, plaże, orangutany w Sepilok"
+    ]
+   ],
+   "back_title": "Powrót: sob 6.03 → nd 7.03",
+   "back": [
+    [
+     "dep",
+     "09:20",
+     "02:20",
+     "sob 6.03 · Kota Kinabalu, AirAsia"
+    ],
+    [
+     "stop",
+     "12:25",
+     "05:25",
+     "Hongkong",
+     "Ok. 11 h – można wyjść do miasta"
+    ],
+    [
+     "dep",
+     "23:15",
+     "16:15",
+     "sob 6.03 · Hongkong, Turkish TK71 (lot nocny)"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Stambuł",
+     "Przesiadka 1 h 50 min"
+    ],
+    [
+     "arr",
+     "08:20",
+     "08:20",
+     "nd 7.03 · Kraków"
+    ]
+   ],
+   "back_bio": "Nocny lot na zachód – dzieci śpią, w domu w niedzielę rano.",
+   "kayak": "KRK-HKG/2027-02-20/2027-03-06",
+   "local_flights": true,
+   "book": [
+    "",
+    "Turkish Airlines"
+   ],
+   "group": "borneo"
+  },
+  {
    "title": "🇻🇳 Phu Quoc – czarter LOT Dreamliner z Warszawy, bez przesiadki",
    "tag": "Najwygodniej",
    "status": "ok",
@@ -2534,6 +2704,31 @@
    "summary_name": "🇻🇳 Wietnam · Phu Quoc",
    "summary_pp": "ok. 5 500–5 850 zł",
    "summary": "Czarter LOT Dreamliner z Warszawy bez przesiadki (czw 18.02 → pt 5.03) albo Turkish do Sajgonu + krótki lot"
+  },
+  "borneo": {
+   "title": "🇲🇾 Malezja: Borneo (Kota Kinabalu)",
+   "lead": "Dżungla, orangutany i wyspy z rafą – ten sam dolot Turkishem do Hongkongu co przy Hainanie, dalej 3 h lotu na Borneo. Więcej o kierunku: <a href='malezja-borneo.html'>strona Malezji</a>.",
+   "points": [
+    [
+     "Na miejscu",
+     "orangutany i niedźwiedzie malajskie w Sepilok, wyspy parku Tunku Abdul Rahman (snorkeling), rejs rzeką Kinabatangan (słonie, nosacze), park Kinabalu, targi w Kota Kinabalu"
+    ],
+    [
+     "Pogoda",
+     "pora sucha, ok. 31°C, noc 23°C, przelotne deszcze, morze 28–29°C"
+    ],
+    [
+     "Czas",
+     "Polska + 7 h (tak jak Hainan)"
+    ],
+    [
+     "Wjazd",
+     "bez wizy 90 dni; karta MDAC online"
+    ]
+   ],
+   "summary_name": "🇲🇾 Malezja · Borneo",
+   "summary_pp": "ok. 4 520 zł",
+   "summary": "Turkish do Hongkongu (26 485 zł za 7 osób) + HK Express / AirAsia do Kota Kinabalu (5 182 zł); orangutany i wyspy, bez wizy"
   }
  }
 }
