@@ -1845,10 +1845,10 @@
    "tag": "Najlepszy dolot · cena z turkishairlines.com",
    "status": "ok",
    "gulf": false,
-   "pp": "ok. 4 400 zł",
-   "price_date": "19.11, turkishairlines.com (Turkish) + Google Flights (HK Express)",
+   "pp": "ok. 4 350 zł",
+   "price_date": "19.11, turkishairlines.com (Turkish) + KAYAK (HK Express)",
    "route": "Kraków → Stambuł → Hongkong → Sanya",
-   "why": "Turkish Kraków ⇄ Hongkong jednym biletem, <b>kupiony prosto u Turkish: 26 484,88 zł za 7 osób</b> (średnio 3 784 zł/os., taryfa Economy EcoFly). W KAYAK najtaniej przez pośrednika Sembo (25 481 zł), ale różnica to tylko ok. 1 000 zł (ok. 140 zł/os.), a u linii zmiany, odwołania i zwroty załatwiamy bezpośrednio – wybieramy Turkish. Do tego HK Express Hongkong ⇄ Sanya ok. 330 + 310 zł/os. (osobny bilet, walizkę dokupić ok. 150 zł za odcinek). Razem ok. 4 400 zł/os. (bez walizek na HK Express). Wylot w sobotę wieczorem, w domu w niedzielę rano.",
+   "why": "Turkish Kraków ⇄ Hongkong jednym biletem, <b>kupiony prosto u Turkish: 26 484,88 zł za 7 osób</b> (średnio 3 784 zł/os., taryfa Economy EcoFly). W KAYAK najtaniej przez pośrednika Sembo (25 481 zł), ale różnica to tylko ok. 1 000 zł (ok. 140 zł/os.), a u linii zmiany, odwołania i zwroty załatwiamy bezpośrednio – wybieramy Turkish. Do tego <b>HK Express Hongkong ⇄ Sanya: 3 990 zł za 7 osób</b> (570 zł/os., osobny bilet, w cenie tylko bagaż podręczny). <b>Razem 30 474,88 zł za 7 osób, ok. 4 350 zł/os.</b> (plus walizki na HK Express). Wylot w sobotę wieczorem, w domu w niedzielę rano.",
    "comfort": "Stambuł ⇄ Hongkong: Turkish <b>Boeing 777</b> (szeroki, lot nocny tam i z powrotem). Kraków ⇄ Stambuł i Hongkong ⇄ Sanya: wąskie samoloty (2–2,5 h, 1 h 45 min).",
    "chips": [
     [
@@ -1976,23 +1976,23 @@
     "Turkish Airlines"
    ],
    "group": "hainan",
-   "p7": "26 485 zł (sam Turkish)",
+   "p7": "ok. 30 475 zł (Turkish + HK Express)",
    "points": [
     [
      "Cena Turkish (7 osób)",
-     "taryfa 9 393,00 zł + dopłata paliwowa 15 039,64 zł + podatki i opłaty 2 052,24 zł = <b>26 484,88 zł</b>"
-    ],
-    [
-     "Na osobę",
-     "średnio 3 784 zł (dorośli i dzieci razem; Turkish nie pokazuje podziału na tym ekranie)"
+     "taryfa 9 393,00 zł + dopłata paliwowa 15 039,64 zł + podatki i opłaty 2 052,24 zł = <b>26 484,88 zł</b> (średnio 3 784 zł/os.; Turkish nie pokazuje tu podziału na dorosłych i dzieci)"
     ],
     [
      "HK Express (7 osób)",
-     "ok. 640 zł × 7 = ok. 4 480 zł, plus walizki ok. 150 zł za sztukę na odcinek"
+     "pn 22.02 08:45 → 10:30 i sob 6.03 11:30 → 13:05, bez przesiadek: <b>3 990 zł</b> (570 zł/os.), tylko bagaż podręczny; walizkę rejestrowaną dokupić (ok. 150 zł za sztukę na odcinek – sprawdzić przy zakupie)"
     ],
     [
      "Razem za loty",
-     "ok. 30 960 zł za 7 osób (ok. 4 420 zł/os.) bez walizek na HK Express"
+     "<b>30 474,88 zł za 7 osób</b> (ok. 4 350 zł/os.) + walizki na HK Express"
+    ],
+    [
+     "Powrót z Sanyi",
+     "tylko poranny HK Express 11:30 (w Hongkongu 13:05, Turkish o 23:15). Wieczorny Hong Kong Airlines 22:10 → 23:40 <b>nie zdąży</b> na Turkish – odpada."
     ],
     [
      "Przed zakupem",
@@ -2001,25 +2001,40 @@
    ],
    "variants": {
     "head": [
-     "Gdzie kupić",
+     "Odcinek · gdzie kupić",
      "Za 7 osób",
      "Uwagi"
     ],
     "rows": [
      [
-      "Sembo (przez KAYAK)",
+      "Kraków ⇄ Hongkong · Sembo (KAYAK)",
       "25 481 zł",
       "najtaniej, ale słabe opinie (Trustpilot 1,5–3,5/5), zmiany przez pośrednika"
      ],
      [
-      "lastminute.com",
+      "Kraków ⇄ Hongkong · lastminute.com",
       "26 016 zł",
       "pośrednik"
      ],
      [
-      "<b>Turkish (turkishairlines.com)</b>",
+      "<b>Kraków ⇄ Hongkong · Turkish</b>",
       "<b>26 485 zł</b>",
       "<b>wybrane</b> – zmiany i zwroty prosto u linii"
+     ],
+     [
+      "<b>Hongkong ⇄ Sanya · HK Express tam i z powrotem</b>",
+      "<b>3 990 zł</b>",
+      "<b>wybrane</b> – rano 08:45 tam, 11:30 z powrotem; tylko bagaż podręczny"
+     ],
+     [
+      "Hongkong ⇄ Sanya · Hong Kong Airlines tam 19:20 + HK Express z powrotem",
+      "5 033 zł",
+      "wylot wieczorem (cały dzień w Hongkongu), walizki nie w cenie"
+     ],
+     [
+      "Hongkong ⇄ Sanya · Hong Kong Airlines w obie strony",
+      "5 230 zł",
+      "walizka w cenie, ale powrót 22:10 → 23:40 nie zdąży na Turkish 23:15 – odpada"
      ]
     ]
    }
@@ -2442,8 +2457,8 @@
     ]
    ],
    "summary_name": "🇨🇳 Chiny · Hainan (Sanya)",
-   "summary_pp": "ok. 4 400 zł",
-   "summary": "Turkish do Hongkongu (26 485 zł za 7 osób u linii) + tani lot do Sanyi; bez wizy dzięki programowi Hainanu"
+   "summary_pp": "ok. 4 350 zł",
+   "summary": "Turkish do Hongkongu (26 485 zł za 7 osób u linii) + HK Express do Sanyi (3 990 zł); bez wizy dzięki programowi Hainanu"
   },
   "pqc": {
    "title": "🇻🇳 Wietnam: wyspa Phu Quoc",
