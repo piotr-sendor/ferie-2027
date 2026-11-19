@@ -1176,6 +1176,7 @@ def index(dests):
     amer_html = f'<h2 class="region">Ameryka</h2><div class="tiles">{amer}</div>' if amer else ''
     body = f'''<h2 class="region">Azja</h2><div class="tiles">{asia}</div>{amer_html}
 <div class="callout ok"><a href="loty-sri-lanka.html"><b>✈ Sri Lanka: wszystkie loty, stan na bieżąco →</b></a></div>
+<div class="callout info"><a href="europa.html"><b>🇪🇸🇵🇹 Bliżej: Madera, Wyspy Kanaryjskie, Azory – loty i pogoda →</b></a></div>
 <div class="callout warn"><a href="info.html">Zatoka Perska, rezygnacja i ubezpieczenie, bagaż →</a></div>
 <h2>Kierunki, których nie bierzemy pod uwagę</h2>
 <div class="card rejected">
