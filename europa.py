@@ -108,7 +108,7 @@ def main():
         'Sprawdziliśmy Maderę, Wyspy Kanaryjskie i Azory: konkretne loty bez przesiadki z Krakowa, Katowic i Warszawy dla 4 dorosłych + 3 dzieci, '
         'ceny z KAYAK z 19.11.2026.</p>'
         '<p><b>Ważne:</b> to tanie linie (Ryanair, Wizz Air) – w cenie tylko mały bagaż pod fotel. Walizka rejestrowana to zwykle ok. 150–250 zł '
-        'za sztukę w jedną stronę (przy 3–4 walizkach na grupę ok. 1 000–2 000 zł w obie strony). Lot trwa 4,5–6 h – bez zmiany strefy czasowej, '
+        'za sztukę w jedną stronę (przy 3–4 walizkach na grupę ok. 1 000–2 000 zł w obie strony). Lot trwa 4,5–6 h, różnica czasu tylko 1 h (Azory 2 h) – '
         'dzieci nie odczuwają różnicy czasu.</p></div>'
         '<h2>W skrócie</h2><div class="sumwrap"><table class="sum"><tr><th>Kierunek</th><th>Najlepszy wariant</th><th>Za 7 osób</th><th>Na osobę</th>'
         f'<th>Pogoda</th><th>Dla kogo</th></tr>{summ}</table></div>'
