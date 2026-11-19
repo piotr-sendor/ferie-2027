@@ -2204,8 +2204,170 @@
    "group": "hainan"
   },
   {
+   "title": "🇲🇾 Borneo – Turkish do Singapuru (A350) + AirAsia do Kota Kinabalu",
+   "tag": "Najlepszy plan na Borneo",
+   "status": "ok",
+   "gulf": false,
+   "pp": "ok. 4 425 zł",
+   "p7": "30 977 zł",
+   "price_date": "19.11, turkishairlines.com (Turkish) + KAYAK (AirAsia)",
+   "route": "Kraków → Stambuł → Singapur → Kota Kinabalu (Borneo) → Singapur → Stambuł → Kraków",
+   "why": "Turkish Kraków ⇄ Singapur, <b>kupiony u linii: 26 771,52 zł za 7 osób</b> (taryfa ExtraFly, średnio 3 825 zł/os.). Dalej <b>AirAsia Singapur ⇄ Kota Kinabalu, bez przesiadki, 2 h 25 min: 601 zł/os., 4 205 zł za 7 osób</b> (osobny bilet, walizki nie w cenie). <b>Razem 30 976,52 zł za 7 osób, ok. 4 425 zł/os.</b> – taniej niż przez Hongkong (31 667 zł), długie loty w obie strony <b>Airbusem A350</b>, na Borneo za dnia. Powrót w sobotę za dnia, w Krakowie 18:30.",
+   "comfort": "Stambuł ⇄ Singapur: Turkish <b>Airbus A350-900</b> (szeroki) w obie strony, tam nocą. Kraków ⇄ Stambuł: Boeing 737 (wąski). Singapur ⇄ Kota Kinabalu: AirAsia, wąski, 2 h 25 min.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "A350 w obie strony"
+    ],
+    [
+     "ok",
+     "Bez wizy (90 dni)"
+    ],
+    [
+     "ok",
+     "Na Borneo za dnia"
+    ],
+    [
+     "warn",
+     "Osobny bilet na Borneo"
+    ],
+    [
+     "warn",
+     "Noce w Singapurze"
+    ]
+   ],
+   "points": [
+    [
+     "Turkish (7 osób)",
+     "taryfa 10 382,00 zł + dopłata paliwowa 13 991,88 zł + podatki i opłaty 2 397,64 zł = <b>26 771,52 zł</b> (Economy ExtraFly; bagaż sprawdzić na kroku „bagaż”)"
+    ],
+    [
+     "AirAsia (7 osób)",
+     "pn 22.02 12:10 → 14:35 i pt 5.03 14:45 → 17:10 (albo 9:05 → 11:30): <b>4 205 zł</b> (601 zł/os.), walizki dokupić"
+    ],
+    [
+     "Razem za loty",
+     "<b>30 976,52 zł za 7 osób</b> (ok. 4 425 zł/os.) + walizki na AirAsii"
+    ],
+    [
+     "Singapur",
+     "noc po przylocie (nd 21.02) i noc przed powrotem (pt 5.03): Gardens by the Bay, zoo nocne, Sentosa"
+    ],
+    [
+     "Uwaga",
+     "z Borneo trzeba wrócić dzień wcześniej (pt 5.03) – Turkish z Singapuru leci w sobotę o 10:25, a pierwszy lot z Kota Kinabalu ląduje 11:30"
+    ]
+   ],
+   "out_title": "Tam: sob 20.02 → pn 22.02",
+   "out": [
+    [
+     "dep",
+     "19:25",
+     "19:25",
+     "sob 20.02 · Kraków, Turkish TK1274 (Boeing 737-800)"
+    ],
+    [
+     "arr",
+     "23:50",
+     "21:50",
+     "sob 20.02 · Stambuł (IST) · Polska + 2 h"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Stambuł",
+     "Przesiadka 2 h"
+    ],
+    [
+     "dep",
+     "01:50",
+     "23:50",
+     "nd 21.02 · Stambuł, Turkish TK54 (Airbus A350-900, lot nocny)"
+    ],
+    [
+     "arr",
+     "17:40",
+     "10:40",
+     "nd 21.02 · Singapur · czas lokalny = Polska + 7 h (na Borneo też + 7 h)"
+    ],
+    [
+     "night",
+     "🛏 Noc w Singapurze"
+    ],
+    [
+     "dep",
+     "12:10",
+     "05:10",
+     "pn 22.02 · Singapur, AirAsia"
+    ],
+    [
+     "arr",
+     "14:35",
+     "07:35",
+     "pn 22.02 · Kota Kinabalu, Borneo"
+    ],
+    [
+     "night",
+     "🏝 11 nocy na Borneo: wyspy Tunku Abdul Rahman, plaże, orangutany w Sepilok"
+    ]
+   ],
+   "back_title": "Powrót: pt 5.03 → sob 6.03",
+   "back": [
+    [
+     "dep",
+     "14:45",
+     "07:45",
+     "pt 5.03 · Kota Kinabalu, AirAsia"
+    ],
+    [
+     "arr",
+     "17:10",
+     "10:10",
+     "pt 5.03 · Singapur – noc w Singapurze"
+    ],
+    [
+     "dep",
+     "10:25",
+     "03:25",
+     "sob 6.03 · Singapur, Turkish TK209 (Airbus A350-900)"
+    ],
+    [
+     "stop",
+     "17:15",
+     "15:15",
+     "Stambuł",
+     "Przesiadka 1 h"
+    ],
+    [
+     "dep",
+     "18:15",
+     "16:15",
+     "sob 6.03 · Stambuł, Turkish TK1273 (Boeing 737-900)"
+    ],
+    [
+     "arr",
+     "18:30",
+     "18:30",
+     "sob 6.03 · Kraków"
+    ]
+   ],
+   "back_bio": "Lot w dzień, wieczorem w domu – cała niedziela na odpoczynek przed szkołą.",
+   "kayak": "KRK-SIN/2027-02-20/2027-03-06",
+   "local_flights": true,
+   "book": [
+    "",
+    "Turkish Airlines"
+   ],
+   "group": "borneo"
+  },
+  {
    "title": "🇲🇾 Borneo – Turkish do Hongkongu + lot do Kota Kinabalu",
-   "tag": "Ten sam dolot co Hainan",
+   "tag": "Przez Hongkong (jak Hainan)",
    "status": "ok",
    "gulf": false,
    "pp": "ok. 4 520 zł",
@@ -2279,11 +2441,6 @@
       "AirAsia tam 13:15 (za dnia) + AirAsia z powrotem 09:20",
       "931 zł",
       "6 511 zł – na Borneo po południu zamiast po północy"
-     ],
-     [
-      "Inny plan: Hongkong → Borneo → Singapur (jak na stronie Malezji)",
-      "HK Express 23.02 280 zł + AirAsia 4.03 185 zł",
-      "Turkish Kraków → Hongkong / Singapur → Kraków od 3 429 zł/os., ale z 17 h czekania w Stambule – do sprawdzenia"
      ]
     ]
    },
@@ -2707,7 +2864,7 @@
   },
   "borneo": {
    "title": "🇲🇾 Malezja: Borneo (Kota Kinabalu)",
-   "lead": "Dżungla, orangutany i wyspy z rafą – ten sam dolot Turkishem do Hongkongu co przy Hainanie, dalej 3 h lotu na Borneo. Więcej o kierunku: <a href='malezja-borneo.html'>strona Malezji</a>.",
+   "lead": "Dżungla, orangutany i wyspy z rafą. Najlepiej Turkishem do Singapuru (A350 w obie strony) i 2 h 25 min AirAsią na Borneo; albo tym samym Turkishem do Hongkongu co przy Hainanie. Więcej o kierunku: <a href='malezja-borneo.html'>strona Malezji</a>.",
    "points": [
     [
      "Na miejscu",
@@ -2727,8 +2884,8 @@
     ]
    ],
    "summary_name": "🇲🇾 Malezja · Borneo",
-   "summary_pp": "ok. 4 520 zł",
-   "summary": "Turkish do Hongkongu (26 485 zł za 7 osób) + HK Express / AirAsia do Kota Kinabalu (5 182 zł); orangutany i wyspy, bez wizy"
+   "summary_pp": "ok. 4 425 zł",
+   "summary": "Turkish do Singapuru A350 (26 772 zł za 7 osób) + AirAsia do Kota Kinabalu (4 205 zł); orangutany i wyspy, bez wizy"
   }
  }
 }
