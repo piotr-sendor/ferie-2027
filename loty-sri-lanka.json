@@ -1,5 +1,5 @@
 {
- "updated": "18.11.2026",
+ "updated": "19.11.2026",
  "intro": "<p><b>Kto:</b> dwie rodziny, 4 dorosłych + 3 dzieci (8, 8 i 6 lat). <b>Kiedy:</b> wylot pt 19.02 (najlepiej po 14:00, rano też do rozważenia) albo sob 20.02, powrót najpóźniej nd 7.03.2027. Najwcześniej śr–czw 17–18.02 (oznaczone „wylot przed piątkiem”). <b>Skąd:</b> Kraków, ewentualnie Katowice, Warszawa.</p><p><b>Zasady:</b> wygoda dzieci przed ceną – długie loty dużymi samolotami, bez wąskich tanich linii (Air Arabia, flydubai). Najchętniej bez przesiadki w Zatoce Perskiej; Zatoka tylko wtedy, gdy wyraźnie wygodniej (Qatar, Emirates na dużych samolotach). Na miejscu wolimy prawdziwe życie (targi, pociągi, plantacje) niż hotel z basenem.</p><p class='m'>Stronę aktualizuje automatyczny zwiad: Sri Lanka we wtorki i piątki rano, inne kierunki raz w tygodniu. Ceny z Google Flights i KAYAK z dnia podanego przy opcji.</p>",
  "comfort": "💺 <b>Jak czytać „komfort”:</b> <b>szeroki kadłub</b> (A350, 777, 787) = dwa przejścia, więcej miejsca, ekrany, posiłki, lepsze powietrze i ciszej – na nocnym locie z dziećmi robi różnicę. <b>Wąski</b> (A320/A321, 737) = jedno przejście, rząd 3-3, jak Ryanair. Ranking: najpierw wygoda i brak Zatoki, potem godziny i liczba przesiadek, na końcu cena. <b>Godziny:</b> wylot między ok. 0:30 a 5:00 to dla nas najgorsza opcja (bez snu przed lotem) – gorsza niż start o 7–8 rano; dobry lot nocny to wylot ok. 20:00–23:30.",
  "options": [
@@ -1842,13 +1842,13 @@
   },
   {
    "title": "🇨🇳 Hainan – Turkish do Hongkongu + HK Express do Sanyi",
-   "tag": "Najlepszy dolot",
+   "tag": "Najlepszy dolot · cena z turkishairlines.com",
    "status": "ok",
    "gulf": false,
-   "pp": "ok. 4 200 zł",
-   "price_date": "18.11, KAYAK + Google Flights",
+   "pp": "ok. 4 400 zł",
+   "price_date": "19.11, turkishairlines.com (Turkish) + Google Flights (HK Express)",
    "route": "Kraków → Stambuł → Hongkong → Sanya",
-   "why": "Turkish Kraków ⇄ Hongkong jednym biletem: <b>3 605 zł/os.</b> przy 7 osobach, walizka 23 kg w cenie. Do tego HK Express Hongkong ⇄ Sanya ok. 330 + 310 zł (osobny bilet, walizkę dokupić ok. 150 zł za odcinek). Razem ok. 4 200–4 300 zł/os. Wylot w sobotę wieczorem, w domu w niedzielę rano.",
+   "why": "Turkish Kraków ⇄ Hongkong jednym biletem, <b>kupiony prosto u Turkish: 26 484,88 zł za 7 osób</b> (średnio 3 784 zł/os., taryfa Economy EcoFly). W KAYAK najtaniej przez pośrednika Sembo (25 481 zł), ale różnica to tylko ok. 1 000 zł (ok. 140 zł/os.), a u linii zmiany, odwołania i zwroty załatwiamy bezpośrednio – wybieramy Turkish. Do tego HK Express Hongkong ⇄ Sanya ok. 330 + 310 zł/os. (osobny bilet, walizkę dokupić ok. 150 zł za odcinek). Razem ok. 4 400 zł/os. (bez walizek na HK Express). Wylot w sobotę wieczorem, w domu w niedzielę rano.",
    "comfort": "Stambuł ⇄ Hongkong: Turkish <b>Boeing 777</b> (szeroki, lot nocny tam i z powrotem). Kraków ⇄ Stambuł i Hongkong ⇄ Sanya: wąskie samoloty (2–2,5 h, 1 h 45 min).",
    "chips": [
     [
@@ -1878,7 +1878,13 @@
      "dep",
      "19:25",
      "19:25",
-     "sob 20.02 · Kraków, Turkish"
+     "sob 20.02 · Kraków, Turkish TK1274 (Boeing 737-800)"
+    ],
+    [
+     "arr",
+     "23:50",
+     "21:50",
+     "sob 20.02 · Stambuł (IST)"
     ],
     [
      "stop",
@@ -1886,6 +1892,12 @@
      "",
      "Stambuł",
      "Przesiadka 1 h 55 min"
+    ],
+    [
+     "dep",
+     "01:45",
+     "23:45",
+     "nd 21.02 · Stambuł, Turkish TK70 (Boeing 777-300ER, lot nocny)"
     ],
     [
      "arr",
@@ -1929,7 +1941,13 @@
      "dep",
      "23:15",
      "16:15",
-     "sob 6.03 · Hongkong, Turkish (lot nocny)"
+     "sob 6.03 · Hongkong, Turkish TK71 (Boeing 777-300ER, lot nocny)"
+    ],
+    [
+     "arr",
+     "06:10",
+     "04:10",
+     "nd 7.03 · Stambuł (IST)"
     ],
     [
      "stop",
@@ -1937,6 +1955,12 @@
      "",
      "Stambuł",
      "Przesiadka 1 h 50 min"
+    ],
+    [
+     "dep",
+     "08:00",
+     "06:00",
+     "nd 7.03 · Stambuł, Turkish TK1271 (Boeing 737-800)"
     ],
     [
      "arr",
@@ -1951,7 +1975,54 @@
     "",
     "Turkish Airlines"
    ],
-   "group": "hainan"
+   "group": "hainan",
+   "p7": "26 485 zł (sam Turkish)",
+   "points": [
+    [
+     "Cena Turkish (7 osób)",
+     "taryfa 9 393,00 zł + dopłata paliwowa 15 039,64 zł + podatki i opłaty 2 052,24 zł = <b>26 484,88 zł</b>"
+    ],
+    [
+     "Na osobę",
+     "średnio 3 784 zł (dorośli i dzieci razem; Turkish nie pokazuje podziału na tym ekranie)"
+    ],
+    [
+     "HK Express (7 osób)",
+     "ok. 640 zł × 7 = ok. 4 480 zł, plus walizki ok. 150 zł za sztukę na odcinek"
+    ],
+    [
+     "Razem za loty",
+     "ok. 30 960 zł za 7 osób (ok. 4 420 zł/os.) bez walizek na HK Express"
+    ],
+    [
+     "Przed zakupem",
+     "sprawdzić na kroku „bagaż”, ile walizki daje EcoFly; dane jak w paszportach, paszporty ważne 6 miesięcy po powrocie"
+    ]
+   ],
+   "variants": {
+    "head": [
+     "Gdzie kupić",
+     "Za 7 osób",
+     "Uwagi"
+    ],
+    "rows": [
+     [
+      "Sembo (przez KAYAK)",
+      "25 481 zł",
+      "najtaniej, ale słabe opinie (Trustpilot 1,5–3,5/5), zmiany przez pośrednika"
+     ],
+     [
+      "lastminute.com",
+      "26 016 zł",
+      "pośrednik"
+     ],
+     [
+      "<b>Turkish (turkishairlines.com)</b>",
+      "<b>26 485 zł</b>",
+      "<b>wybrane</b> – zmiany i zwroty prosto u linii"
+     ]
+    ]
+   }
   },
   {
    "title": "🇨🇳 Hainan – Air China z Warszawy przez Pekin, jeden bilet",
@@ -2371,8 +2442,8 @@
     ]
    ],
    "summary_name": "🇨🇳 Chiny · Hainan (Sanya)",
-   "summary_pp": "ok. 4 200 zł",
-   "summary": "Turkish do Hongkongu + tani lot do Sanyi; bez wizy dzięki programowi Hainanu"
+   "summary_pp": "ok. 4 400 zł",
+   "summary": "Turkish do Hongkongu (26 485 zł za 7 osób u linii) + tani lot do Sanyi; bez wizy dzięki programowi Hainanu"
   },
   "pqc": {
    "title": "🇻🇳 Wietnam: wyspa Phu Quoc",
