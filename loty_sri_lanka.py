@@ -46,7 +46,7 @@ MORE_CSS = ('<style>details.more{margin:18px 0}details.more>summary{cursor:point
             '.srow{display:grid;grid-template-columns:1fr auto;gap:4px 10px;background:#fff;border:1px solid #e3e8ec;border-radius:12px;'
             'padding:12px 14px;text-decoration:none;color:#1f2a33}.srow .sn{font-weight:700;color:#0e5f8a}'
             '.srow .sp{font-weight:800;color:#0b7a75;white-space:nowrap;text-align:right}.srow .sl{grid-column:1/-1;font-size:14px;color:#62707c}'
-            '.srow .flag{margin-right:4px}table.cmp{min-width:640px}table.cmp th:first-child{width:18%;color:#1f2a33}'
+            '.srow .flag{margin-right:4px}table.cmp{min-width:820px}table.cmp th:first-child{width:18%;color:#1f2a33}'
             'table.cmp tr:nth-child(even) td,table.cmp tr:nth-child(even) th{background:#f6f9fb}table.cmp td{line-height:1.45}'
             'table.cmp tr.sec th{background:#0b7a75!important;color:#fff;font-size:14px;letter-spacing:.3px;padding:9px 8px}</style>')
 
