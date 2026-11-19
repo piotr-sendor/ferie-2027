@@ -1048,15 +1048,15 @@
  "others": [
   {
    "group": "chennai_sl",
-   "title": "Lufthansa: tam do Chennai, z powrotem z Kolombo w sobotę za dnia",
-   "tag": "Przygoda + dzienny powrót",
+   "title": "Lufthansa do Chennai, kilka dni Tamil Nadu, lot do Kolombo, powrót z Kolombo za dnia",
+   "tag": "Tamil Nadu + Sri Lanka, lot zamiast promu",
    "status": "ok",
    "gulf": false,
-   "pp": "ok. 4 550 zł",
-   "price_date": "14.11, KAYAK + szacunek pociągów i promu",
-   "route": "Kraków → Frankfurt → Chennai · pociągi · prom Nagapattinam → Jaffna · pociągi · Kolombo → Zurych → Monachium → Kraków",
-   "why": "Jeden bilet Lufthansy: tam do Chennai, z powrotem z Kolombo – <b>4 027 zł</b>. Powrót w sobotę 6.03 o 11:25 – za dnia, bez nocnej pobudki. Pociągi w Indiach i na Sri Lance oraz prom to ok. 500 zł/os. Razem ok. <b>4 550 zł/os.</b> – tyle co Edelweiss na samą Sri Lankę, a w pakiecie Tamil Nadu i przeprawa morska.",
-   "comfort": "Frankfurt → Chennai i Kolombo → Zurych: duże samoloty (Kolombo → Zurych to Edelweiss, A350/A340). Prom: mały statek, 3–4 h. Pociągi: klasa z klimatyzacją (3A/2A).",
+   "pp": "ok. 4 630 zł",
+   "price_date": "14.11 (Lufthansa) + 19.11 (Chennai → Kolombo), KAYAK",
+   "route": "Kraków → Frankfurt → Chennai · pociągi po Tamil Nadu · ✈ Chennai → Kolombo · Sri Lanka pociągami · Kolombo → Zurych → Monachium → Kraków",
+   "why": "Jeden bilet Lufthansy: tam do Chennai, z powrotem z Kolombo – <b>4 027 zł/os.</b> Po 3–4 dniach w Tamil Nadu <b>lot Chennai → Kolombo: FitsAir 10:15 → 11:30, bez przesiadki, 453 zł/os. = 3 171 zł za 7 osób</b> (KAYAK 19.11, na śr 24.02; tyle samo wt 23.02). Pociągi w Indiach i na Sri Lance ok. 150 zł/os. Razem ok. <b>4 630 zł/os., ok. 32 400 zł za 7 osób</b>. Powrót w sobotę 6.03 o 11:25 – za dnia, bez nocnej pobudki.",
+   "comfort": "Frankfurt → Chennai i Kolombo → Zurych: duże samoloty (Kolombo → Zurych to Edelweiss, A350/A340). Chennai → Kolombo: FitsAir, wąski samolot, 1 h 15 min. Pociągi: klasa z klimatyzacją (3A/2A).",
    "chips": [
     [
      "ok",
@@ -1064,7 +1064,7 @@
     ],
     [
      "ok",
-     "Jeden bilet"
+     "Lot Chennai → Kolombo 1 h 15 min"
     ],
     [
      "ok",
@@ -1072,7 +1072,7 @@
     ],
     [
      "warn",
-     "Prom niepewny – plan B samolotem"
+     "Osobny bilet do Kolombo"
     ],
     [
      "warn",
@@ -1106,7 +1106,23 @@
     ],
     [
      "night",
-     "🚂 ok. 3–4 dni: Chennai / Mahabalipuram → pociąg do Thanjavur → Nagapattinam · 🚢 prom do Jaffny (np. śr 24.02) · Sri Lanka pociągami na południe"
+     "🚂 ok. 3–4 dni Tamil Nadu: Chennai, Mahabalipuram, Puducherry, świątynie w Thanjavur (pociągiem, wracamy do Chennai)"
+    ],
+    [
+     "dep",
+     "10:15",
+     "05:45",
+     "śr 24.02 · Chennai (MAA), FitsAir bez przesiadki (osobny bilet)"
+    ],
+    [
+     "arr",
+     "11:30",
+     "07:00",
+     "śr 24.02 · Kolombo (CMB) · czas lokalny = Polska + 4 h 30 min"
+    ],
+    [
+     "night",
+     "🚂 Sri Lanka pociągami: Kandy, góry, plaże na południu"
     ]
    ],
    "back_title": "Powrót: sob 6.03",
@@ -1131,13 +1147,43 @@
      "sob 6.03 · Kraków"
     ]
    ],
-   "note": "Inna wersja: zamiast promu samolot Chennai → Kolombo (SriLankan / IndiGo, ok. 470 zł, kilka lotów dziennie). Godziny promu i ceny na luty 2027 sprawdzimy w styczniu. Ceny lotów: KAYAK 14.11.",
+   "note": "Ceny lotu Chennai → Kolombo z KAYAK 19.11 dla 4 dorosłych + 3 dzieci, w jedną stronę, bez przesiadki; bagaż sprawdzić przy zakupie (FitsAir – rejestrowany zwykle w cenie, IndiGo Lite – tylko podręczny). Lot kupujemy osobno, gdy będą znane dni w Tamil Nadu. Wariant z promem do Jaffny zostaje tylko jako ciekawostka – wybieramy samolot. Ceny Lufthansy: KAYAK 14.11.",
    "kayak": "KRK-MAA/2027-02-19/CMB-KRK/2027-03-06",
    "local_flights": true,
    "book": [
     "",
     "Lufthansa"
-   ]
+   ],
+   "p7": "ok. 32 400 zł",
+   "variants": {
+    "head": [
+     "Chennai → Kolombo (śr 24.02, 7 osób)",
+     "Za osobę",
+     "Za 7 osób"
+    ],
+    "rows": [
+     [
+      "<b>FitsAir 10:15 → 11:30</b>",
+      "<b>453 zł</b>",
+      "<b>3 171 zł</b>"
+     ],
+     [
+      "SriLankan 09:50 → 11:10 (też 16:00, 20:55)",
+      "479 zł",
+      "3 350 zł"
+     ],
+     [
+      "IndiGo 10:10 → 11:30 (też 20:55, 0:40)",
+      "511 zł",
+      "3 574 zł"
+     ],
+     [
+      "dla porównania: prom Nagapattinam → Jaffna",
+      "ok. 235 zł",
+      "ok. 1 650 zł – niepewny zimą, odpada"
+     ]
+    ]
+   }
   },
   {
    "group": "south",
@@ -2403,20 +2449,16 @@
    ]
   },
   "chennai_sl": {
-   "title": "🚢 Przez Chennai na Sri Lankę: pociągi przez Tamil Nadu i prom do Jaffny",
-   "lead": "Przygoda zamiast samolotu: lądujemy w Chennai, kilka dni pociągami przez Tamil Nadu, promem na północ Sri Lanki (Jaffna), dalej pociągiem na południe wyspy. Wracamy samolotem prosto z Kolombo – za dnia.",
+   "title": "✈ Przez Chennai na Sri Lankę: kilka dni Tamil Nadu, potem lot do Kolombo",
+   "lead": "Lądujemy w Chennai, kilka dni pociągami po Tamil Nadu, potem krótki lot (1 h 15 min) do Kolombo i dalej pociągami po Sri Lance. Wracamy samolotem prosto z Kolombo – za dnia.",
    "points": [
     [
-     "Prom",
-     "Nagapattinam → Kankesanthurai (Jaffna), statek Sivagangai (ok. 150 miejsc), 6 dni w tygodniu (bez wtorków), 3–4 h; ok. 5 500 rupii (ok. 235 zł) za dorosłego, 30 kg bagażu; rezerwacja sailsubham.com. Godziny 2026/27 niepotwierdzone (ostatnio 8:00 → 12:00)"
-    ],
-    [
-     "Ryzyko promu",
-     "w poprzednich sezonach prom stał zimą (wznowienie 22.02.2025 i 6.03.2026); w tym sezonie armator zapowiada rejsy także w monsunie – nie sprawdzone. Plan B: samolot Chennai → Jaffna (IndiGo ok. 360 zł) albo → Kolombo (ok. 470 zł), kilka lotów dziennie"
+     "Lot Chennai → Kolombo",
+     "FitsAir, SriLankan i IndiGo kilka razy dziennie, 1 h 15 min, <b>453–511 zł/os.</b> (KAYAK 19.11); najtaniej FitsAir 10:15 → 11:30, 3 171 zł za 7 osób"
     ],
     [
      "Pociągi w Tamil Nadu",
-     "Chennai → Thanjavur (Chozhan Express 8:00 → 13:54), stamtąd 1,5–2,5 h do Nagapattinam; po drodze Mahabalipuram, Puducherry, świątynie Thanjavur i Kumbakonam; bilety ok. 35 zł/os.; sprzedaż 60 dni wcześniej"
+     "Chennai → Thanjavur (Chozhan Express 8:00 → 13:54) i z powrotem; po drodze Mahabalipuram, Puducherry, świątynie Thanjavur i Kumbakonam; bilety ok. 35 zł/os.; sprzedaż 60 dni wcześniej"
     ],
     [
      "Sri Lanka",
@@ -2425,11 +2467,15 @@
     [
      "Wjazd",
      "e-wiza do Indii (25 USD), Sri Lanka: bezpłatna ETA online dla każdego, także dzieci"
+    ],
+    [
+     "Prom (odpada)",
+     "Nagapattinam → Jaffna, 3–4 h, ok. 235 zł – zimą bywał zawieszony; wybraliśmy samolot"
     ]
    ],
-   "summary_name": "🚢 Chennai → pociągi → prom → Sri Lanka",
-   "summary_pp": "ok. 4 550 zł",
-   "summary": "Lufthansa do Chennai, Tamil Nadu pociągami, prom do Jaffny, powrót z Kolombo za dnia (11:25)"
+   "summary_name": "✈ Chennai → Tamil Nadu → lot do Kolombo",
+   "summary_pp": "ok. 4 630 zł",
+   "summary": "Lufthansa do Chennai, Tamil Nadu pociągami, FitsAir do Kolombo (453 zł), powrót z Kolombo za dnia (11:25)"
   },
   "hainan": {
    "title": "🇨🇳 Chiny: wyspa Hainan (Sanya)",
