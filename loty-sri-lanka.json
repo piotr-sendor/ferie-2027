@@ -2531,6 +2531,179 @@
    "group": "borneo"
   },
   {
+   "title": "🇵🇭 Filipiny – Turkish do Hongkongu + Cebu Pacific do Cebu (bez przesiadki)",
+   "tag": "Ten sam dolot co Hainan",
+   "status": "ok",
+   "gulf": false,
+   "pp": "ok. 4 690 zł",
+   "p7": "32 833 zł",
+   "price_date": "19.11, turkishairlines.com (Turkish) + KAYAK (Cebu Pacific)",
+   "route": "Kraków → Stambuł → Hongkong → Cebu · prom na Bohol · Cebu → Hongkong → Stambuł → Kraków",
+   "why": "Ten sam Turkish co przy Hainanie, <b>kupiony u linii: 26 484,88 zł za 7 osób</b>. Z Hongkongu bez przesiadki lata się tylko do <b>Cebu</b> (2 h 50 min, Cebu Pacific): tam pn 22.02 11:45 (3 285 zł), z powrotem pt 5.03 17:45 (3 063 zł) – <b>6 348 zł za 7 osób</b>, tylko bagaż podręczny. <b>Razem 32 832,88 zł za 7 osób, ok. 4 690 zł/os.</b> Z Cebu na Bohol promem ok. 2 h.",
+   "comfort": "Stambuł ⇄ Hongkong: Turkish <b>Boeing 777-300ER</b> (szeroki, nocą). Hongkong ⇄ Cebu: Cebu Pacific, wąski (A320/A321), ok. 3 h.",
+   "chips": [
+    [
+     "ok",
+     "Bez Zatoki"
+    ],
+    [
+     "ok",
+     "Bez wizy (30 dni)"
+    ],
+    [
+     "ok",
+     "Pora sucha"
+    ],
+    [
+     "ok",
+     "Lot bez przesiadki do Cebu"
+    ],
+    [
+     "warn",
+     "Osobny bilet do Cebu"
+    ],
+    [
+     "warn",
+     "2 noce w Hongkongu"
+    ]
+   ],
+   "points": [
+    [
+     "Turkish (7 osób)",
+     "26 484,88 zł (taryfa 9 393,00 + dopłata paliwowa 15 039,64 + podatki 2 052,24)"
+    ],
+    [
+     "Cebu Pacific (7 osób)",
+     "tam pn 22.02 11:45 → 14:35: 3 285 zł · z powrotem pt 5.03 17:45 → 20:50: 3 063 zł · razem <b>6 348 zł</b>, walizki dokupić"
+    ],
+    [
+     "Razem za loty",
+     "<b>32 832,88 zł za 7 osób</b> (ok. 4 690 zł/os.) + walizki na Cebu Pacific"
+    ],
+    [
+     "Dlaczego powrót w piątek",
+     "w sobotę Cebu Pacific ląduje w Hongkongu o 20:50, a Turkish leci o 23:15 – tylko 2 h 25 min na osobnych biletach, a Cebu Pacific często się spóźnia. W piątek spokojnie: noc i sobota w Hongkongu."
+    ],
+    [
+     "Inne wyspy",
+     "Palawan (El Nido), Bohol i Boracay z Hongkongu tylko z przesiadką w Manili, zwykle na osobnych biletach i z długim czekaniem – odpadają. Bohol najłatwiej promem z Cebu."
+    ]
+   ],
+   "variants": {
+    "head": [
+     "Hongkong ⇄ Cebu (7 osób)",
+     "Za osobę",
+     "Za 7 osób"
+    ],
+    "rows": [
+     [
+      "<b>Tam pn 22.02 11:45 + z powrotem pt 5.03 17:45 (noc w Hongkongu)</b>",
+      "<b>ok. 907 zł</b>",
+      "<b>6 348 zł</b> – wybrane"
+     ],
+     [
+      "Tam i z powrotem w sobotę 6.03 17:45 → 20:50",
+      "870 zł",
+      "6 088 zł – tylko 2 h 25 min do Turkisha, ryzykowne"
+     ],
+     [
+      "Tam 21:35 → 00:30 (w nocy) + sobota 17:45",
+      "809 zł",
+      "5 660 zł – przylot po północy i ciasny powrót"
+     ],
+     [
+      "Powrót sob 6.03 Cathay 12:25 → 15:20",
+      "+ ok. 600 zł/os.",
+      "bezpiecznie w sobotę, ale drogo"
+     ]
+    ]
+   },
+   "out_title": "Tam: sob 20.02 → pn 22.02",
+   "out": [
+    [
+     "dep",
+     "19:25",
+     "19:25",
+     "sob 20.02 · Kraków, Turkish TK1274"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Stambuł",
+     "Przesiadka 1 h 55 min"
+    ],
+    [
+     "arr",
+     "17:05",
+     "10:05",
+     "nd 21.02 · Hongkong · czas lokalny = Polska + 7 h (Filipiny też + 7 h)"
+    ],
+    [
+     "night",
+     "🛏 Noc w Hongkongu"
+    ],
+    [
+     "dep",
+     "11:45",
+     "04:45",
+     "pn 22.02 · Hongkong, Cebu Pacific"
+    ],
+    [
+     "arr",
+     "14:35",
+     "07:35",
+     "pn 22.02 · Cebu (Mactan)"
+    ],
+    [
+     "night",
+     "🏝 11 nocy: Bohol (Chocolate Hills, wyraki, rzeka Loboc, plaże Panglao), Moalboal (żółwie, ławice sardynek)"
+    ]
+   ],
+   "back_title": "Powrót: pt 5.03 → nd 7.03",
+   "back": [
+    [
+     "dep",
+     "17:45",
+     "10:45",
+     "pt 5.03 · Cebu, Cebu Pacific"
+    ],
+    [
+     "arr",
+     "20:50",
+     "13:50",
+     "pt 5.03 · Hongkong – noc i sobota w Hongkongu"
+    ],
+    [
+     "dep",
+     "23:15",
+     "16:15",
+     "sob 6.03 · Hongkong, Turkish TK71 (lot nocny)"
+    ],
+    [
+     "stop",
+     "",
+     "",
+     "Stambuł",
+     "Przesiadka 1 h 50 min"
+    ],
+    [
+     "arr",
+     "08:20",
+     "08:20",
+     "nd 7.03 · Kraków"
+    ]
+   ],
+   "back_bio": "Sobota na Hongkong (Victoria Peak, Ocean Park), nocny lot – w domu w niedzielę rano.",
+   "kayak": "KRK-HKG/2027-02-20/2027-03-06",
+   "local_flights": true,
+   "book": [
+    "",
+    "Turkish Airlines"
+   ],
+   "group": "filipiny"
+  },
+  {
    "title": "🇻🇳 Phu Quoc – czarter LOT Dreamliner z Warszawy, bez przesiadki",
    "tag": "Najwygodniej",
    "status": "ok",
@@ -2886,16 +3059,42 @@
    "summary_name": "🇲🇾 Malezja · Borneo",
    "summary_pp": "ok. 4 425 zł",
    "summary": "Turkish do Singapuru A350 (26 772 zł za 7 osób) + AirAsia do Kota Kinabalu (4 205 zł); orangutany i wyspy, bez wizy"
+  },
+  "filipiny": {
+   "title": "🇵🇭 Filipiny: Cebu i Bohol",
+   "lead": "Najpiękniejsze plaże z naszej listy, pora sucha. Ten sam Turkish do Hongkongu co przy Hainanie, dalej 3 h bez przesiadki do Cebu, a stamtąd promem na Bohol. Więcej: <a href='filipiny.html'>strona Filipin</a>.",
+   "points": [
+    [
+     "Na miejscu",
+     "Bohol: Chocolate Hills, wyraki (najmniejsze małpki), spływ rzeką Loboc, plaże Panglao; Cebu: Moalboal (żółwie i ławice sardynek z plaży), wodospady Kawasan, targi"
+    ],
+    [
+     "Pogoda",
+     "pora sucha, 30–31°C, noc 24°C, morze 27–28°C"
+    ],
+    [
+     "Czas",
+     "Polska + 7 h (tak jak Hainan i Borneo)"
+    ],
+    [
+     "Wjazd",
+     "bez wizy 30 dni; rejestracja eTravel online"
+    ]
+   ],
+   "summary_name": "🇵🇭 Filipiny · Cebu i Bohol",
+   "summary_pp": "ok. 4 690 zł",
+   "summary": "Turkish do Hongkongu (26 485 zł za 7 osób) + Cebu Pacific do Cebu bez przesiadki (6 348 zł); najpiękniejsze plaże, bez wizy"
   }
  },
  "compare": {
-  "title": "Porównanie: Hainan, Borneo czy Sri Lanka",
-  "lead": "Ceny za 7 osób (4 dorosłych + 3 dzieci), stan 19.11: Turkish z turkishairlines.com, krótkie loty z KAYAK. <b>Wszystkie godziny lokalne</b> – w Stambule Polska + 2 h; w Hongkongu, Singapurze, na Hainanie i Borneo Polska + 7 h; w Mumbaju i na Sri Lance Polska + 4 h 30 min.",
+  "title": "Porównanie: Hainan, Borneo, Filipiny czy Sri Lanka",
+  "lead": "Ceny za 7 osób (4 dorosłych + 3 dzieci), stan 19.11: Turkish z turkishairlines.com, krótkie loty z KAYAK. <b>Wszystkie godziny lokalne</b> – w Stambule Polska + 2 h; w Hongkongu, Singapurze, na Hainanie, Borneo i Filipinach Polska + 7 h; w Mumbaju i na Sri Lance Polska + 4 h 30 min.",
   "head": [
    "",
    "🇨🇳 Hainan (Sanya)<br>przez Hongkong",
    "🇲🇾 Borneo<br>przez Singapur",
    "🇲🇾 Borneo<br>przez Hongkong",
+   "🇵🇭 Filipiny (Cebu)<br>przez Hongkong",
    "🇱🇰 Sri Lanka<br>przez Mumbaj"
   ],
   "rows": [
@@ -2904,6 +3103,7 @@
     "<b>30 474,88 zł</b>",
     "<b>30 976,52 zł</b>",
     "<b>31 666,88 zł</b>",
+    "<b>32 832,88 zł</b>",
     "<b>28 470,37 zł</b><br><span class='m'>+ e-wizy do Indii ok. 700 zł</span>"
    ],
    [
@@ -2911,12 +3111,14 @@
     "ok. 4 355 zł",
     "ok. 4 425 zł",
     "ok. 4 525 zł",
+    "ok. 4 690 zł",
     "ok. 4 065 zł"
    ],
    [
     "Turkish (7 osób)",
     "26 484,88 zł · EcoFly",
     "26 771,52 zł · ExtraFly",
+    "26 484,88 zł · EcoFly",
     "26 484,88 zł · EcoFly",
     "20 507,37 zł · EcoFly"
    ],
@@ -2925,6 +3127,7 @@
     "3 990 zł · HK Express",
     "4 205 zł · AirAsia",
     "5 182 zł · HK Express + AirAsia",
+    "6 348 zł · Cebu Pacific",
     "7 963 zł · SriLankan (walizka w cenie)"
    ],
    [
@@ -2935,12 +3138,14 @@
     "wylot <b>sob 19:25</b><br>przylot 23:50<br><span class='m'>lot 2 h 25 min</span>",
     "wylot <b>sob 19:25</b><br>przylot 23:50<br><span class='m'>lot 2 h 25 min</span>",
     "wylot <b>sob 19:25</b><br>przylot 23:50<br><span class='m'>lot 2 h 25 min</span>",
+    "wylot <b>sob 19:25</b><br>przylot 23:50<br><span class='m'>lot 2 h 25 min</span>",
     "wylot <b>pt 19.02 09:15</b><br>przylot 13:50<br><span class='m'>lot 2 h 35 min</span>"
    ],
    [
     "Czekanie w Stambule",
     "⏱ <b>1 h 55 min</b>",
     "⏱ <b>2 h 00 min</b>",
+    "⏱ <b>1 h 55 min</b>",
     "⏱ <b>1 h 55 min</b>",
     "⏱ <b>6 h 40 min</b>"
    ],
@@ -2949,6 +3154,7 @@
     "wylot <b>nd 01:45</b><br>przylot <b>nd 17:05 Hongkong</b><br><span class='m'>lot 10 h 20 min, Boeing 777</span>",
     "wylot <b>nd 01:50</b><br>przylot <b>nd 17:40 Singapur</b><br><span class='m'>lot 10 h 50 min, Airbus A350</span>",
     "wylot <b>nd 01:45</b><br>przylot <b>nd 17:05 Hongkong</b><br><span class='m'>lot 10 h 20 min, Boeing 777</span>",
+    "wylot <b>nd 01:45</b><br>przylot <b>nd 17:05 Hongkong</b><br><span class='m'>lot 10 h 20 min, Boeing 777</span>",
     "wylot <b>pt 20:30</b><br>przylot <b>sob 20.02 05:20 Mumbaj</b><br><span class='m'>lot 6 h 20 min, Boeing 787</span>"
    ],
    [
@@ -2956,6 +3162,7 @@
     "🛏 noc w Hongkongu (ok. 15 h)",
     "🛏 noc w Singapurze (ok. 18 h 30 min)",
     "🛏 noc i cały dzień w Hongkongu (ok. 28 h)",
+    "🛏 noc w Hongkongu (ok. 18 h 40 min)",
     "⏱ ok. 15 h 30 min w Mumbaju (hotel na dzień)"
    ],
    [
@@ -2963,6 +3170,7 @@
     "wylot <b>pn 22.02 08:45</b><br>przylot <b>10:30 Sanya</b><br><span class='m'>lot 1 h 45 min, HK Express</span>",
     "wylot <b>pn 22.02 12:10</b> (albo 17:40)<br>przylot <b>14:35 Kota Kinabalu</b> (albo 20:05)<br><span class='m'>lot 2 h 25 min, AirAsia</span>",
     "wylot <b>pn 22.02 21:30</b><br>przylot <b>wt 23.02 00:35 Kota Kinabalu</b> (w nocy)<br><span class='m'>lot 3 h 05 min, HK Express</span>",
+    "wylot <b>pn 22.02 11:45</b><br>przylot <b>14:35 Cebu</b><br><span class='m'>lot 2 h 50 min, Cebu Pacific</span>",
     "wylot <b>sob 20.02 20:50</b><br>przylot <b>23:20 Kolombo</b><br><span class='m'>lot 2 h 30 min, SriLankan</span>"
    ],
    [
@@ -2970,6 +3178,7 @@
     "<b>pn 22.02 przed południem</b>",
     "<b>pn 22.02 po południu</b>",
     "<b>wt 23.02 po północy</b>",
+    "<b>pn 22.02 po południu</b>",
     "<b>sob 20.02 późnym wieczorem</b>"
    ],
    [
@@ -2980,6 +3189,7 @@
     "wylot <b>sob 6.03 11:30 Sanya</b><br>przylot 13:05 Hongkong<br><span class='m'>lot 1 h 35 min, HK Express</span>",
     "wylot <b>pt 5.03 14:45 Kota Kinabalu</b><br>przylot 17:10 Singapur<br><span class='m'>lot 2 h 25 min, AirAsia</span>",
     "wylot <b>sob 6.03 09:20 Kota Kinabalu</b><br>przylot 12:25 Hongkong<br><span class='m'>lot 3 h 05 min, AirAsia</span>",
+    "wylot <b>pt 5.03 17:45 Cebu</b><br>przylot 20:50 Hongkong<br><span class='m'>lot 3 h 05 min, Cebu Pacific</span>",
     "wylot <b>pt 5.03 17:10 Kolombo</b><br>przylot 19:50 Mumbaj<br><span class='m'>lot 2 h 40 min, SriLankan</span>"
    ],
    [
@@ -2987,12 +3197,14 @@
     "⏱ ok. 10 h w Hongkongu (można do miasta)",
     "🛏 noc w Singapurze (ok. 17 h)",
     "⏱ ok. 11 h w Hongkongu (można do miasta)",
+    "🛏 noc i cała sobota w Hongkongu (ok. 26 h)",
     "🛏 noc w Mumbaju przy lotnisku (ok. 11 h)"
    ],
    [
     "2. Azja → Stambuł",
     "wylot <b>sob 23:15 Hongkong</b> (lot nocny)<br>przylot nd 06:10<br><span class='m'>lot 11 h 55 min, Boeing 777</span>",
     "wylot <b>sob 10:25 Singapur</b> (za dnia)<br>przylot sob 17:15<br><span class='m'>lot 11 h 50 min, Airbus A350</span>",
+    "wylot <b>sob 23:15 Hongkong</b> (lot nocny)<br>przylot nd 06:10<br><span class='m'>lot 11 h 55 min, Boeing 777</span>",
     "wylot <b>sob 23:15 Hongkong</b> (lot nocny)<br>przylot nd 06:10<br><span class='m'>lot 11 h 55 min, Boeing 777</span>",
     "wylot <b>sob 06:50 Mumbaj</b> (rano)<br>przylot sob 11:45<br><span class='m'>lot 7 h 25 min, Boeing 787</span>"
    ],
@@ -3001,12 +3213,14 @@
     "⏱ <b>1 h 50 min</b>",
     "⏱ <b>1 h 00 min</b>",
     "⏱ <b>1 h 50 min</b>",
+    "⏱ <b>1 h 50 min</b>",
     "⏱ <b>6 h 30 min</b>"
    ],
    [
     "3. Stambuł → Kraków",
     "wylot <b>nd 08:00</b><br>przylot <b>nd 7.03 08:20 Kraków</b><br><span class='m'>lot 2 h 20 min</span>",
     "wylot <b>sob 18:15</b><br>przylot <b>sob 6.03 18:30 Kraków</b><br><span class='m'>lot 2 h 15 min</span>",
+    "wylot <b>nd 08:00</b><br>przylot <b>nd 7.03 08:20 Kraków</b><br><span class='m'>lot 2 h 20 min</span>",
     "wylot <b>nd 08:00</b><br>przylot <b>nd 7.03 08:20 Kraków</b><br><span class='m'>lot 2 h 20 min</span>",
     "wylot <b>sob 18:15</b><br>przylot <b>sob 6.03 18:30 Kraków</b><br><span class='m'>lot 2 h 15 min</span>"
    ],
@@ -3015,6 +3229,7 @@
     "<b>niedziela 7.03 rano</b>",
     "<b>sobota 6.03 wieczorem</b> – cała niedziela wolna",
     "<b>niedziela 7.03 rano</b>",
+    "<b>niedziela 7.03 rano</b>",
     "<b>sobota 6.03 wieczorem</b> – cała niedziela wolna"
    ],
    [
@@ -3022,6 +3237,7 @@
     "ok. 28 h od wylotu z Sanyi (w tym ok. 10 h w Hongkongu)",
     "ok. 35 h od wylotu z Kota Kinabalu (w tym noc w Singapurze)",
     "ok. 30 h od wylotu z Kota Kinabalu (w tym ok. 11 h w Hongkongu)",
+    "ok. 46 h od wylotu z Cebu (w tym noc i dzień w Hongkongu)",
     "ok. 30 h od wylotu z Kolombo (w tym noc w Mumbaju i 6 h 30 min w Stambule)"
    ],
    [
@@ -3032,6 +3248,7 @@
     "12",
     "11",
     "11 (przylot po północy)",
+    "11",
     "13"
    ],
    [
@@ -3039,6 +3256,7 @@
     "1 (Hongkong)",
     "2 (Singapur)",
     "1 (Hongkong)",
+    "2 (Hongkong)",
     "1 (Mumbaj, przed powrotem) + dzień w Mumbaju po przylocie"
    ],
    [
@@ -3046,10 +3264,12 @@
     "Boeing 777-300ER, nocą w obie strony",
     "<b>Airbus A350</b>, tam nocą, z powrotem za dnia",
     "Boeing 777-300ER, nocą w obie strony",
+    "Boeing 777-300ER, nocą w obie strony",
     "Boeing 787 (szeroki); tam w dzień i wieczorem, z powrotem rano"
    ],
    [
     "Bagaż na krótkim locie",
+    "tylko podręczny, walizki dokupić",
     "tylko podręczny, walizki dokupić",
     "tylko podręczny, walizki dokupić",
     "tylko podręczny, walizki dokupić",
@@ -3060,6 +3280,7 @@
     "plaże Sanyi, nocne targi, wioski Li, plantacje herbaty i kawy, prawdziwe Chiny",
     "orangutany w Sepilok, dżungla i rzeka Kinabatangan, wyspy z rafą, park Kinabalu",
     "jak obok",
+    "Bohol: Chocolate Hills, wyraki, rzeka Loboc, plaże Panglao; Moalboal: żółwie i sardynki",
     "plantacje herbaty i pociągi w górach, słonie, świątynie w Kandy, Sigiriya, plaże na południu"
    ],
    [
@@ -3067,6 +3288,7 @@
     "sucho, 26–28°C, morze ok. 25°C",
     "sucho, ok. 31°C, morze 28–29°C",
     "jak obok",
+    "sucho, 30–31°C, morze 27–28°C",
     "sucho na zachodzie i południu, 30–31°C, morze ok. 28°C"
    ],
    [
@@ -3074,9 +3296,10 @@
     "bez wizy 30 dni (program Hainanu, tylko przy locie z Hongkongu)",
     "bez wizy 90 dni, karta MDAC online",
     "bez wizy 90 dni, karta MDAC online",
+    "bez wizy 30 dni, eTravel online",
     "e-wiza do Indii (ok. 25 USD/os., potrzebna na przesiadkę na osobnych biletach) + bezpłatna ETA na Sri Lankę"
    ]
   ],
-  "note": "Najtaniej wychodzi Sri Lanka (ok. 28 500 zł + wizy), ale ma najwięcej czekania: 6 h 30–40 min w Stambule w każdą stronę i dzień w Mumbaju po przylocie. Hainan i Borneo różnią się ceną najwyżej o ok. 1 200 zł; przez Singapur i przez Mumbaj w domu w sobotę wieczorem, przez Hongkong w niedzielę rano."
+  "note": "Najtaniej Sri Lanka (ok. 28 500 zł + wizy), ale z najdłuższym czekaniem. Hainan i Borneo ok. 30 500–31 700 zł. Filipiny najdrożej (ok. 32 800 zł), bo bezpiecznie trzeba wrócić z Cebu dzień wcześniej i przenocować w Hongkongu – za to najpiękniejsze plaże."
  }
 }
