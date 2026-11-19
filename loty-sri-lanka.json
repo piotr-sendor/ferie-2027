@@ -2890,7 +2890,7 @@
  },
  "compare": {
   "title": "Porównanie: Hainan czy Borneo",
-  "lead": "Ceny za 7 osób (4 dorosłych + 3 dzieci), stan 19.11: Turkish z turkishairlines.com, krótkie loty z KAYAK. Godziny lokalne; wszędzie czas = Polska + 7 h.",
+  "lead": "Ceny za 7 osób (4 dorosłych + 3 dzieci), stan 19.11: Turkish z turkishairlines.com, krótkie loty z KAYAK. <b>Wszystkie godziny lokalne</b> – w Stambule Polska + 2 h, w Hongkongu, Singapurze, na Hainanie i Borneo Polska + 7 h.",
   "head": [
    "",
    "🇨🇳 Hainan (Sanya)<br>przez Hongkong",
@@ -2923,22 +2923,91 @@
     "5 182 zł · HK Express + AirAsia"
    ],
    [
-    "<b>Tam</b>",
-    "sob 20.02 19:25 Kraków<br>→ Stambuł 23:50 / 01:45<br>→ nd 21.02 17:05 Hongkong<br>🛏 noc w Hongkongu<br>pn 22.02 08:45 → <b>10:30 Sanya</b>",
-    "sob 20.02 19:25 Kraków<br>→ Stambuł 23:50 / 01:50<br>→ nd 21.02 17:40 Singapur<br>🛏 noc w Singapurze<br>pn 22.02 12:10 → <b>14:35 Kota Kinabalu</b> (albo 17:40 → 20:05)",
-    "sob 20.02 19:25 Kraków<br>→ Stambuł 23:50 / 01:45<br>→ nd 21.02 17:05 Hongkong<br>🛏 noc i dzień w Hongkongu<br>pn 22.02 21:30 → <b>wt 00:35 Kota Kinabalu</b> (w nocy)"
+    "✈ TAM – sobota 20.02"
    ],
    [
-    "<b>Z powrotem</b>",
-    "sob 6.03 11:30 Sanya → 13:05 Hongkong<br>⏱ ok. 10 h w Hongkongu<br>23:15 Hongkong (lot nocny)<br>→ Stambuł 06:10 / 08:00<br>→ <b>nd 7.03 08:20 Kraków</b>",
-    "pt 5.03 14:45 Kota Kinabalu → 17:10 Singapur<br>🛏 noc w Singapurze<br>sob 6.03 10:25 Singapur (za dnia)<br>→ Stambuł 17:15 / 18:15<br>→ <b>sob 6.03 18:30 Kraków</b>",
-    "sob 6.03 09:20 Kota Kinabalu → 12:25 Hongkong<br>⏱ ok. 11 h w Hongkongu<br>23:15 Hongkong (lot nocny)<br>→ Stambuł 06:10 / 08:00<br>→ <b>nd 7.03 08:20 Kraków</b>"
+    "1. Kraków → Stambuł",
+    "wylot <b>sob 19:25</b><br>przylot 23:50<br><span class='m'>lot 2 h 25 min</span>",
+    "wylot <b>sob 19:25</b><br>przylot 23:50<br><span class='m'>lot 2 h 25 min</span>",
+    "wylot <b>sob 19:25</b><br>przylot 23:50<br><span class='m'>lot 2 h 25 min</span>"
+   ],
+   [
+    "Czekanie w Stambule",
+    "⏱ <b>1 h 55 min</b>",
+    "⏱ <b>2 h 00 min</b>",
+    "⏱ <b>1 h 55 min</b>"
+   ],
+   [
+    "2. Stambuł → Azja (lot nocny)",
+    "wylot <b>nd 01:45</b><br>przylot <b>nd 17:05 Hongkong</b><br><span class='m'>lot 10 h 20 min, Boeing 777</span>",
+    "wylot <b>nd 01:50</b><br>przylot <b>nd 17:40 Singapur</b><br><span class='m'>lot 10 h 50 min, Airbus A350</span>",
+    "wylot <b>nd 01:45</b><br>przylot <b>nd 17:05 Hongkong</b><br><span class='m'>lot 10 h 20 min, Boeing 777</span>"
+   ],
+   [
+    "Postój",
+    "🛏 noc w Hongkongu (ok. 15 h)",
+    "🛏 noc w Singapurze (ok. 18 h 30 min)",
+    "🛏 noc i cały dzień w Hongkongu (ok. 28 h)"
+   ],
+   [
+    "3. Krótki lot na wyspę",
+    "wylot <b>pn 22.02 08:45</b><br>przylot <b>10:30 Sanya</b><br><span class='m'>lot 1 h 45 min, HK Express</span>",
+    "wylot <b>pn 22.02 12:10</b> (albo 17:40)<br>przylot <b>14:35 Kota Kinabalu</b> (albo 20:05)<br><span class='m'>lot 2 h 25 min, AirAsia</span>",
+    "wylot <b>pn 22.02 21:30</b><br>przylot <b>wt 23.02 00:35 Kota Kinabalu</b> (w nocy)<br><span class='m'>lot 3 h 05 min, HK Express</span>"
+   ],
+   [
+    "Na miejscu",
+    "<b>pn 22.02 przed południem</b>",
+    "<b>pn 22.02 po południu</b>",
+    "<b>wt 23.02 po północy</b>"
+   ],
+   [
+    "✈ POWRÓT"
+   ],
+   [
+    "1. Krótki lot z wyspy",
+    "wylot <b>sob 6.03 11:30 Sanya</b><br>przylot 13:05 Hongkong<br><span class='m'>lot 1 h 35 min, HK Express</span>",
+    "wylot <b>pt 5.03 14:45 Kota Kinabalu</b><br>przylot 17:10 Singapur<br><span class='m'>lot 2 h 25 min, AirAsia</span>",
+    "wylot <b>sob 6.03 09:20 Kota Kinabalu</b><br>przylot 12:25 Hongkong<br><span class='m'>lot 3 h 05 min, AirAsia</span>"
+   ],
+   [
+    "Postój",
+    "⏱ ok. 10 h w Hongkongu (można do miasta)",
+    "🛏 noc w Singapurze (ok. 17 h)",
+    "⏱ ok. 11 h w Hongkongu (można do miasta)"
+   ],
+   [
+    "2. Azja → Stambuł",
+    "wylot <b>sob 23:15 Hongkong</b> (lot nocny)<br>przylot nd 06:10<br><span class='m'>lot 11 h 55 min, Boeing 777</span>",
+    "wylot <b>sob 10:25 Singapur</b> (za dnia)<br>przylot sob 17:15<br><span class='m'>lot 11 h 50 min, Airbus A350</span>",
+    "wylot <b>sob 23:15 Hongkong</b> (lot nocny)<br>przylot nd 06:10<br><span class='m'>lot 11 h 55 min, Boeing 777</span>"
+   ],
+   [
+    "Czekanie w Stambule",
+    "⏱ <b>1 h 50 min</b>",
+    "⏱ <b>1 h 00 min</b>",
+    "⏱ <b>1 h 50 min</b>"
+   ],
+   [
+    "3. Stambuł → Kraków",
+    "wylot <b>nd 08:00</b><br>przylot <b>nd 7.03 08:20 Kraków</b><br><span class='m'>lot 2 h 20 min</span>",
+    "wylot <b>sob 18:15</b><br>przylot <b>sob 6.03 18:30 Kraków</b><br><span class='m'>lot 2 h 15 min</span>",
+    "wylot <b>nd 08:00</b><br>przylot <b>nd 7.03 08:20 Kraków</b><br><span class='m'>lot 2 h 20 min</span>"
    ],
    [
     "W domu",
-    "niedziela rano",
-    "<b>sobota wieczorem</b> – cała niedziela wolna",
-    "niedziela rano"
+    "<b>niedziela 7.03 rano</b>",
+    "<b>sobota 6.03 wieczorem</b> – cała niedziela wolna",
+    "<b>niedziela 7.03 rano</b>"
+   ],
+   [
+    "Ogółem w drodze",
+    "ok. 22 h od wyjścia z hotelu w Sanyi",
+    "ok. 32 h od Kota Kinabalu, z nocą w Singapurze",
+    "ok. 25 h od wyjścia z hotelu na Borneo"
+   ],
+   [
+    "📋 RESZTA"
    ],
    [
     "Noce na miejscu",
