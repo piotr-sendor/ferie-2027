@@ -1,5 +1,5 @@
 {
- "updated": "19.11.2026",
+ "updated": "20.11.2026",
  "intro": "<p><b>Kto:</b> dwie rodziny, 4 dorosłych + 3 dzieci (8, 8 i 6 lat). <b>Kiedy:</b> wylot pt 19.02 (najlepiej po 14:00, rano też do rozważenia) albo sob 20.02, powrót najpóźniej nd 7.03.2027. Najwcześniej śr–czw 17–18.02 (oznaczone „wylot przed piątkiem”). <b>Skąd:</b> Kraków, ewentualnie Katowice, Warszawa.</p><p><b>Zasady:</b> wygoda dzieci przed ceną – długie loty dużymi samolotami, bez wąskich tanich linii (Air Arabia, flydubai). Najchętniej bez przesiadki w Zatoce Perskiej; Zatoka tylko wtedy, gdy wyraźnie wygodniej (Qatar, Emirates na dużych samolotach). Na miejscu wolimy prawdziwe życie (targi, pociągi, plantacje) niż hotel z basenem.</p><p class='m'>Stronę aktualizuje automatyczny zwiad: Sri Lanka we wtorki i piątki rano, inne kierunki raz w tygodniu. Ceny z Google Flights i KAYAK z dnia podanego przy opcji.</p>",
  "comfort": "💺 <b>Jak czytać „komfort”:</b> <b>szeroki kadłub</b> (A350, 777, 787) = dwa przejścia, więcej miejsca, ekrany, posiłki, lepsze powietrze i ciszej – na nocnym locie z dziećmi robi różnicę. <b>Wąski</b> (A320/A321, 737) = jedno przejście, rząd 3-3, jak Ryanair. Ranking: najpierw wygoda i brak Zatoki, potem godziny i liczba przesiadek, na końcu cena. <b>Godziny:</b> wylot między ok. 0:30 a 5:00 to dla nas najgorsza opcja (bez snu przed lotem) – gorsza niż start o 7–8 rano; dobry lot nocny to wylot ok. 20:00–23:30.",
  "options": [
@@ -8,10 +8,10 @@
    "tag": "Najwygodniej",
    "status": "ok",
    "gulf": false,
-   "pp": "4 845 zł",
-   "price_date": "14.11",
+   "pp": "5 049 zł",
+   "price_date": "20.11",
    "route": "Kraków → Zurych → Kolombo (bez przesiadki)",
-   "why": "Jedyny bezpośredni lot dużym samolotem do Kolombo w naszym oknie. Krótki dolot do Zurychu, potem jedna noc w samolocie. Wada: powrót tylko w sobotę 6.03 i cena rośnie (10.11: 4 304 zł).",
+   "why": "Jedyny bezpośredni lot dużym samolotem do Kolombo w naszym oknie. Krótki dolot do Zurychu, potem jedna noc w samolocie. Wada: powrót tylko w sobotę 6.03 i cena rośnie (10.11: 4 304 zł, 14.11: 4 845 zł, 20.11: 5 049 zł).",
    "comfort": "Zurych → Kolombo: <b>Airbus A350</b>, szeroki kadłub (dwa przejścia, rząd 3-3-3), ok. 10 h nocą. Kraków → Zurych: SWISS, mały samolot, ok. 1 h 50 min.",
    "chips": [
     [
@@ -160,10 +160,10 @@
    "tag": "Nowe: bez Zatoki, duży samolot",
    "status": "ok",
    "gulf": false,
-   "pp": "3 632 zł + dolot do Paryża",
-   "price_date": "14.11, KAYAK",
+   "pp": "3 650 zł + dolot do Paryża",
+   "price_date": "20.11, KAYAK",
    "route": "Kraków → Paryż (easyJet, osobny bilet) → Kolombo, powrót bez przesiadki",
-   "why": "Duży samolot na obu długich lotach, bez Zatoki, powrót w niedzielę 7.03 bez przesiadki. Od drzwi do drzwi ok. <b>4 100–4 300 zł/os.</b> (lot 3 632 + easyJet Kraków → Paryż ok. 280 + powrót do Krakowa ok. 210 + nocleg w Paryżu). Wady: osobne bilety (zapas czasu w Paryżu), przejazd z lotniska CDG na Orly, a <b>w Krakowie jesteśmy dopiero w poniedziałek 8.03 rano</b> (w Paryżu lądujemy w niedzielę 21:30). Taryfa Soleil Basic – bagaż rejestrowany pewnie płatny osobno. Google Flights tej linii nie pokazuje.",
+   "why": "Duży samolot na obu długich lotach, bez Zatoki, powrót w niedzielę 7.03 bez przesiadki. Od drzwi do drzwi ok. <b>4 100–4 300 zł/os.</b> (lot 3 650 + easyJet Kraków → Paryż ok. 280 + powrót do Krakowa ok. 210 + nocleg w Paryżu). Wady: osobne bilety (zapas czasu w Paryżu), przejazd z lotniska CDG na Orly, a <b>w Krakowie jesteśmy dopiero w poniedziałek 8.03 rano</b> (w Paryżu lądujemy w niedzielę 21:30). Taryfa Soleil Basic – bagaż rejestrowany pewnie płatny osobno. Google Flights tej linii nie pokazuje.",
    "comfort": "Paryż → Kolombo i z powrotem: <b>Airbus A350</b> (szeroki kadłub). W drodze tam postój w Malé (Malediwy) ok. 1 h 30 min, z powrotem bez przesiadki, 11 h. Kraków → Paryż: easyJet, wąski, 2 h 25 min.",
    "chips": [
     [
@@ -942,8 +942,8 @@
    "title": "Air Arabia przez Szardżę",
    "status": "no",
    "gulf": true,
-   "pp": "3 194 zł",
-   "price_date": "14.11",
+   "pp": "2 921 zł",
+   "price_date": "20.11",
    "route": "Kraków → Szardża → Kolombo",
    "why": "Najtaniej i najszybciej (11 h), ale <b>obie rodziny odrzuciły</b>: wąski samolot, mało miejsca jak w Ryanairze, dwa nocne loty w każdą stronę z dziećmi, i przesiadka w Zatoce.",
    "comfort": "Oba loty: <b>Airbus A320/A321 – wąski</b> (3-3), tania linia, 5 h 40 min + 4 h 25 min.",
@@ -1593,10 +1593,10 @@
    "title": "LOT przez Warszawę do Delhi – wylot w sobotę",
    "status": "ok",
    "gulf": false,
-   "pp": "ok. 4 265 zł + hotel",
-   "price_date": "14.11, Google Flights",
+   "pp": "ok. 4 130 zł + hotel",
+   "price_date": "20.11, KAYAK (bilet LOT) + 14.11 Google (Indie)",
    "route": "Kraków → Warszawa → Delhi → Kochi · z powrotem przez Delhi (noc)",
-   "why": "Jedyny wariant z wylotem w sobotę po południu i jednym długim lotem bez przesiadki (Dreamliner). Bilet LOT 3 258 zł + Delhi → Kochi (527 zł) + Kochi → Delhi (480 zł). Delhi tylko z lotniska.",
+   "why": "Jedyny wariant z wylotem w sobotę po południu i jednym długim lotem bez przesiadki (Dreamliner). Bilet LOT 3 125 zł (KAYAK 20.11: sob 13:30 z Krakowa, Delhi 5:10; powrót sob 7:20 z Delhi, Kraków 14:20) + Delhi → Kochi (527 zł) + Kochi → Delhi (480 zł). Delhi tylko z lotniska.",
    "comfort": "Warszawa ⇄ Delhi: LOT <b>Boeing 787 Dreamliner</b>, 7 h 20 min. Delhi ⇄ Kochi: A320, 3 h.",
    "chips": [
     [
@@ -1677,7 +1677,7 @@
      "Warszawa, dalej do Krakowa"
     ]
    ],
-   "note": "Plus: sobota, jeden długi lot. Minus: ok. 600 zł/os. drożej, noc w Delhi, z Kerali wyjeżdżamy już w piątek.",
+   "note": "Plus: sobota, jeden długi lot. Minus: ok. 450 zł/os. drożej, noc w Delhi, z Kerali wyjeżdżamy już w piątek.",
    "kayak": "KRK-DEL/2027-02-20/2027-03-06",
    "local_flights": true,
    "book": [
@@ -1809,10 +1809,10 @@
    "tag": "Fajne znalezisko",
    "status": "ok",
    "gulf": false,
-   "pp": "3 375 zł",
-   "price_date": "14.11, KAYAK",
+   "pp": "3 352 zł",
+   "price_date": "20.11, KAYAK",
    "route": "Kraków → Amsterdam → Bridgetown (Barbados)",
-   "why": "Jeden bilet KLM z Krakowa, jedna przesiadka w Amsterdamie, bez Zatoki – <b>3 375 zł</b>, najtaniej ze wszystkich wygodnych lotów. KLM lata tam 3 razy w tygodniu, więc miejsca mogą szybko zniknąć.",
+   "why": "Jeden bilet KLM z Krakowa, jedna przesiadka w Amsterdamie, bez Zatoki – <b>3 352 zł</b>, najtaniej ze wszystkich wygodnych lotów. KLM lata tam 3 razy w tygodniu, więc miejsca mogą szybko zniknąć.",
    "comfort": "Amsterdam ⇄ Barbados: KLM <b>Boeing 787-9</b> (szeroki; tak było w sezonie 2025/26 – do potwierdzenia na 2027). Kraków ⇄ Amsterdam: mały samolot.",
    "chips": [
     [
